@@ -17,17 +17,18 @@ Keep those four criteria in mind for every change. A change that lowers per-scho
 The pipeline runs **Discover → Identify → Collect → Normalize → Refresh**. The code follows Clean Architecture, and dependencies point inward only:
 
 ```text
-src/duegooder/
-  domain/        # entities (School, Term, Course, Section, Meeting, Instructor…) and rules. No I/O, no framework imports.
-  application/   # use cases + ports (HttpClient, Browser, Repository, LlmExtractor, Clock)
-  connectors/    # one package per platform: banner9/, banner8/, peoplesoft/, workday/, colleague/, … + fallback/
-  adapters/      # port implementations: httpx, Playwright, SQLite/Postgres, Claude
-  cli/           # composition root and entry points
+src/
+  DueGooder.Domain/          # entities (School, Term, Course, Section, Meeting, Instructor…) and rules. No I/O, no framework types.
+  DueGooder.Application/     # use cases + ports (IConnector, ISectionRepository, IHttpFetcher, ILlmExtractor, IClock)
+  DueGooder.Connectors/      # one folder per platform: Banner9/, Banner8/, PeopleSoft/, Workday/, Colleague/, … + Fallback/
+  DueGooder.Infrastructure/  # port implementations: HttpClient, Playwright, EF Core (SQLite/Postgres), Claude
+  DueGooder.Cli/             # composition root and commands
+tests/DueGooder.Tests/
 ```
 
-- `domain` must never import from `application`, `connectors`, `adapters` or `cli`.
+- Project references enforce the dependency rule: `Domain` references nothing, `Application` references only `Domain`, and so on outward. Never add a reference that points outward.
 - Connectors depend on ports, not on concrete clients, so they can run against recorded fixtures.
-- Build the concrete classes at the composition root in `cli/`.
+- Build the concrete classes at the composition root in `DueGooder.Cli`.
 
 ## The connector contract
 
@@ -42,7 +43,7 @@ Each connector provides:
 
 Rules:
 
-- School-specific differences (base URL, term code format, page size, auth-free guest path) go in `config/schools.yaml`, never in code. If you're about to write `if school == "..."`, make it a config field instead.
+- School-specific differences (base URL, term code format, page size, auth-free guest path) go in `config/schools.yaml`, never in code. If you're about to write `if (school.Id is "...")`, make it a config field instead.
 - Prefer a platform's JSON or API endpoints over HTML, and HTML over a headless browser. Use Playwright only when the data really does require JavaScript, since it's the most expensive path.
 - Use the LLM fallback only when no connector's fingerprint matches with enough confidence. Log its token usage for cost reporting.
 - Anything that can't be collected goes to the **manual review queue** with the evidence gathered. Never drop it silently.
@@ -50,7 +51,7 @@ Rules:
 ## Data rules
 
 - Every normalized record carries `source_url` and `retrieved_at` (UTC).
-- **Missing is not failed.** A field the school doesn't publish is stored as empty/`None`. A field we failed to extract gets an extraction-failure entry with a reason. Never write placeholder values like `"TBA"` → `None` without keeping the original raw text.
+- **Missing is not failed.** A field the school doesn't publish is stored as `null`. A field we failed to extract gets an `ExtractionFailure` entry with a reason. Never turn a placeholder like `"TBA"` into `null` without keeping the original raw text.
 - Keep the raw source value next to the parsed value for times, days and locations, so accuracy can be audited.
 - Use stable natural keys (school + term + course + section) so refreshes upsert instead of duplicating.
 - Times are local to the school. Store the school's IANA timezone and keep meeting times as local wall-clock times plus days of the week.
@@ -80,22 +81,26 @@ Reports go in `reports/`. Sample normalized output goes in `data/samples/`.
 
 ## Tooling
 
-- Python 3.12, managed with `uv`.
-- `uv sync` installs dependencies. `uv run pytest` runs tests. `uv run ruff check . && uv run ruff format .` lints and formats.
-- Test connectors against **recorded fixtures** (saved HTML/JSON responses) in `tests/fixtures/<platform>/`, not against live sites. Keep a small opt-in live smoke test per connector.
+- C# / .NET 10, one solution `DueGooder.sln`.
+- `dotnet build` builds. `dotnet test` runs tests. `dotnet format` formats.
+- Run the pipeline with `dotnet run --project src/DueGooder.Cli -- run --schools config/schools.yaml`.
+- Key libraries: `IHttpClientFactory` + `Microsoft.Extensions.Http.Resilience`, AngleSharp, Microsoft.Playwright (JavaScript pages only), EF Core (SQLite locally, Npgsql for Postgres), the official Anthropic C# SDK, xUnit.
+- Test connectors against **recorded fixtures** (saved HTML/JSON responses) in `tests/fixtures/<platform>/`, not against live sites. Keep a small opt-in live smoke test per connector (an xUnit trait that's excluded by default).
 - When adding a connector, add fixtures from at least **two different schools** on that platform. That's how we show reuse.
 
 ## Code style
 
-- Readable names over comments. Comment the *why*, not the *what*. A comment of 3+ lines uses a single `"""..."""` block, not stacked `#` lines.
-- Use explicit comparisons: `len(items) == 0`, `value is None`, `flag is False` (or `not flag` when `flag` is known to be a bool). Don't use truthiness checks on non-booleans. Never write `x is 0`.
-- One class per file, named after the class.
-- SOLID: add a new platform by adding a connector package, never by growing a `match`/`if` on platform type.
+- Readable names over comments. Comment the *why*, not the *what*. Use `//` for 1–2 lines and a single `/* */` block for 3+. Use XML doc comments on public API.
+- Use explicit constant patterns: `count is 0`, `isEnabled is false`, `user is null`, `name is ""`, `items.Count is 0`. Never use a bare `!` on a boolean; write `is false`. Use `==` only to compare two variables.
+- One type per file (class, record, struct, enum, interface), named after the type. When you move a nested type out, rename it if its name is vague on its own.
+- Members go in two regions, in this order: `#region State` (constants, fields, properties) and `#region Methods`, each closed with its name (`#endregion State`).
+- Align wrapped parameter and argument lists under the first argument. A call that fits on one line stays on one line.
+- SOLID: add a new platform by adding a connector, never by growing a `switch` on platform type.
 - Business logic stays free of I/O and framework types.
 
 ## Hackathon priorities
 
-In order:
+The task breakdown, owners and dependencies are in [docs/PLAN.md](docs/PLAN.md). Check off tasks there as they land. In order:
 
 1. One connector (Banner 9 is the likely first) working end to end for **several schools**, with normalized output stored.
 2. Discovery and identification running automatically from a school list.

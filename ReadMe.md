@@ -108,28 +108,30 @@ For accuracy, we'll hand-check a random sample of sections against the live regi
 | Cost and runtime at scale | Lightweight HTTP requests first, a headless browser only when needed, LLM calls only on fallback; cost measured per school |
 | Reliable updates and failure handling | Idempotent upserts, run diffs, staleness tracking, failures kept separate from missing data, and a review queue |
 
-## Tech stack (proposed)
+## Tech stack
 
-- **Python 3.12**, managed with `uv`
-- **httpx** (async) for HTTP, **selectolax / BeautifulSoup** for HTML, **Playwright** only for pages that render with JavaScript
-- **Pydantic** for the normalized schema
-- **SQLite** for local runs, **Postgres** for the shared database
-- **Claude** for the unknown-platform fallback extractor
+- **C# / .NET 10**, one solution (`DueGooder.sln`)
+- **HttpClient** via `IHttpClientFactory` + `Microsoft.Extensions.Http.Resilience` for retries and timeouts
+- **AngleSharp** for HTML, **Microsoft.Playwright** only for pages that render with JavaScript
+- **EF Core**: SQLite for local runs, Postgres (Npgsql) for the shared database
+- **Claude** (official Anthropic C# SDK) for the unknown-platform fallback extractor
+- **xUnit** tests against recorded fixtures
 - A per-host rate limiter, respect for `robots.txt`, and an identifying User-Agent
 
 ## Repository layout (planned)
 
 ```text
-src/duegooder/
-  domain/          # normalized entities and rules — no I/O
-  application/     # use cases: discover, identify, collect, refresh; ports
-  connectors/      # one package per platform (banner9/, peoplesoft/, workday/, …) + fallback/
-  adapters/        # database, HTTP, browser and LLM implementations of the ports
-  cli/             # entry points
-config/schools.yaml  # school list + per-school overrides
-data/samples/        # sample normalized output
-reports/             # generated run reports
-docs/                # bounty brief, design notes
+src/
+  DueGooder.Domain/          # normalized entities and rules — no I/O
+  DueGooder.Application/     # use cases: discover, identify, collect, refresh; ports
+  DueGooder.Connectors/      # one folder per platform (Banner9/, PeopleSoft/, Workday/, …) + Fallback/
+  DueGooder.Infrastructure/  # EF Core, HttpClient, Playwright and Claude implementations of the ports
+  DueGooder.Cli/             # composition root + commands
+tests/DueGooder.Tests/       # unit tests + fixture-based connector tests
+config/schools.yaml          # school list + per-school overrides
+data/samples/                # sample normalized output
+reports/                     # generated run reports
+docs/                        # bounty brief, plan (PLAN.md), design notes
 ```
 
 ## Running it
@@ -137,10 +139,13 @@ docs/                # bounty brief, design notes
 > Placeholder. It gets filled in once the first connector lands.
 
 ```bash
-uv sync
-uv run duegooder run --schools config/schools.yaml   # discover → collect → normalize → store
-uv run duegooder report --latest                     # print the run report
+dotnet build
+dotnet test
+dotnet run --project src/DueGooder.Cli -- run --schools config/schools.yaml   # discover → collect → normalize → store
+dotnet run --project src/DueGooder.Cli -- report --latest                     # print the run report
 ```
+
+The task breakdown and who owns what are in [docs/PLAN.md](docs/PLAN.md).
 
 ## Submission checklist
 

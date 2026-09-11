@@ -1,0 +1,137 @@
+# Schools DueGooder collects. Everything school-specific lives here, never in code.
+#
+#   id        stable slug; root of every natural key (school + term + course + section)
+#   timezone  IANA zone; meeting times are stored as wall-clock times in this zone
+#   platform  suspected platform; identification (T12) confirms or corrects it
+#   base_url  platform entry point, when already known
+#   mep_code  Banner multi-institution code, for servers that host several campuses
+#
+# Every Banner 9 host below was confirmed on 2026-09-11: classSearch/getTerms returned term JSON.
+
+schools:
+  - id: eku
+    name: Eastern Kentucky University
+    homepage: https://www.eku.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://registrationss.eku.edu/StudentRegistrationSsb/
+
+  - id: uiuc
+    name: University of Illinois Urbana-Champaign
+    homepage: https://illinois.edu/
+    timezone: America/Chicago
+    platform: banner9
+    base_url: https://banner.apps.uillinois.edu/StudentRegistrationSSB/
+    mep_code: 1UIUC
+
+  - id: sunyempire
+    name: SUNY Empire State University
+    homepage: https://www.sunyempire.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://banner.esc.edu/StudentRegistrationSsb/
+
+  - id: oakland
+    name: Oakland University
+    homepage: https://www.oakland.edu/
+    timezone: America/Detroit
+    platform: banner9
+    base_url: https://bstreg.oakland.edu/StudentRegistrationSsb/
+
+  - id: uindy
+    name: University of Indianapolis
+    homepage: https://www.uindy.edu/
+    timezone: America/Indiana/Indianapolis
+    platform: banner9
+    base_url: https://banner.uindy.edu/StudentRegistrationSsb/
+
+  - id: wvu
+    name: West Virginia University
+    homepage: https://www.wvu.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://starss.wvu.edu/StudentRegistrationSsb/
+
+  - id: kccd
+    name: Kern Community College District
+    homepage: https://www.kccd.edu/
+    timezone: America/Los_Angeles
+    platform: banner9
+    base_url: https://reg-prod.ec.kccd.edu/StudentRegistrationSsb/
+
+  - id: starkstate
+    name: Stark State College
+    homepage: https://www.starkstate.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://selfservice-registration.starkstate.edu/StudentRegistrationSsb/
+
+  - id: oakton
+    name: Oakton College
+    homepage: https://www.oakton.edu/
+    timezone: America/Chicago
+    platform: banner9
+    base_url: https://banner.oakton.edu/StudentRegistrationSsb/
+
+  - id: lehigh
+    name: Lehigh University
+    homepage: https://www.lehigh.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://reg-prod.ec.lehigh.edu/StudentRegistrationSsb/
+
+  - id: odu
+    name: Old Dominion University
+    homepage: https://www.odu.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://reg-prod.ec.odu.edu/StudentRegistrationSsb/
+
+  - id: ctstate
+    name: Connecticut State Community College
+    homepage: https://ctstate.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://reg-prod.ec.ct.edu/StudentRegistrationSsb/
+
+  - id: tric
+    name: Cuyahoga Community College
+    homepage: https://www.tri-c.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://banstup.tri-c.edu/StudentRegistrationSsb/
+
+  - id: blinn
+    name: Blinn College
+    homepage: https://www.blinn.edu/
+    timezone: America/Chicago
+    platform: banner9
+    base_url: https://ban9reg.blinn.edu/StudentRegistrationSsb/
+
+  - id: ullafayette
+    name: University of Louisiana at Lafayette
+    homepage: https://louisiana.edu/
+    timezone: America/Chicago
+    platform: banner9
+    base_url: https://reg-prod.ec.louisiana.edu/StudentRegistrationSsb/
+
+  - id: aum
+    name: Auburn University at Montgomery
+    homepage: https://www.aum.edu/
+    timezone: America/Chicago
+    platform: banner9
+    base_url: https://ssb9.aum.edu/StudentRegistrationSsb/
+
+  - id: ucmerced
+    name: University of California, Merced
+    homepage: https://www.ucmerced.edu/
+    timezone: America/Los_Angeles
+    platform: banner9
+    base_url: https://reg-prod.ec.ucmerced.edu/StudentRegistrationSsb/
+
+  - id: uidaho
+    name: University of Idaho
+    homepage: https://www.uidaho.edu/
+    timezone: America/Los_Angeles
+    platform: banner9
+    base_url: https://banner.uidaho.edu/StudentRegistrationSsb/

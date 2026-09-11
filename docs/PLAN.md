@@ -4,112 +4,91 @@
 
 **Judged on:** section and meeting accuracy · connector reuse and per-school setup · cost and runtime at scale · reliable updates and failure handling.
 
-| Lane | Owner | Focus |
+**Deadline: Sat Sep 12, 5:00 PM ET.** Building starts Fri Sep 11, ~6:45 PM ET.
+
+| Owner | Focus |
+| --- | --- |
+| **Prateek** | Solution architecture, domain, Banner 9 connector, storage, pipeline, platform detection, refresh, run report |
+| **Fabian** | School list, fixtures, second-platform research, cost model, sample data, accuracy check, write-up (failure handling / scaling / cost), demo |
+
+Fabian's tasks need only a browser, a spreadsheet or text editor, and git. No .NET toolchain.
+
+**Hand-off rule:** each task that feeds into someone else's work has a deadline. If it isn't in by then, it gets reassigned so the critical path keeps moving.
+
+| Block | Clock (ET) | Milestone |
 | --- | --- | --- |
-| **A** — Core | Prateek | Domain, storage, pipeline, refresh, metrics and reporting |
-| **B** — Collection | Fabian | School list, connectors, fingerprinting, discovery |
-| **S** — Shared | Both | Kickoff, measured run, submission |
+| 0 — Setup | Fri 6:45–8:15 PM | Skeleton builds, contract written, school list started |
+| 1 — First slice | Fri 8:15–11:45 PM | **Checkpoint 1:** one Banner 9 school end to end |
+| 2 — Automate | Fri 11:45 PM – Sat 1:30 AM | Pipeline runs the whole list; unattended overnight run started |
+| 💤 Sleep | Sat 1:30–7:30 AM | Overnight run collects data and exposes failures |
+| 3 — Harden | Sat 7:30–11:30 AM | Failures fixed, platform detection, refresh, report. **Feature freeze at 11:30 AM** |
+| 4 — Measure + submit | Sat 11:30 AM – 5 PM | Measured run by 12:30 PM, write-up by 3 PM, rehearse by 4 PM, **submit by 4:30 PM** |
 
-Owners can swap lanes. What matters is that each lane can keep moving without waiting on the other.
-
-**Deadline: Sat Sep 12, 5:00 PM ET.** H0 = Fri Sep 11, ~9:00 PM ET, which gives 20 hours.
-
-| Phase | Hours | Clock (ET) | Milestone |
-| --- | --- | --- | --- |
-| 0 — Kickoff | H0–H1 | Fri 9–10 PM | Skeleton builds, contract agreed |
-| 1 — First slice | H1–H5 | Fri 10 PM – Sat 2 AM | **Sync 1:** one school end to end |
-| 2 — Automate + scale | H5–H10 | Sat 2–7 AM | **Sync 2:** automated multi-school run + report |
-| 3 — Reliability + breadth | H10–H14 | Sat 7–11 AM | **Feature freeze at 11 AM** |
-| 4 — Measured run + submit | H14–H20 | Sat 11 AM – 5 PM | Run done by 12 PM, write-up by 3 PM, rehearse by 4 PM, submit by 4:30 PM |
-
-Take rest in turns (each person gets about 2 hours during Phase 2) so one lane is always moving. Runs that need no babysitting, like the scaling runs in B6, are a good time for the other person to sleep.
-
-**Task format:** `ID` Title — depends on · **done when** …
+**Task format:** `ID` Title · owner — depends on · **done when** …
 
 ---
 
-## Phase 0 — Kickoff (H0–H1 · Fri 9–10 PM, together)
+## Block 0 — Setup (Fri 6:45–8:15 PM)
 
-- [x] **S1** Switch the docs to C# and add `.gitignore` — none · **done when** README/AGENTS.md describe .NET and `.gitignore` covers `bin/`, `obj/`, `.DS_Store`, `*.db`, `.env`, the crawl cache
-- [ ] **S2** Solution skeleton — S1 · **done when** `DueGooder.sln` has Domain, Application, Connectors, Infrastructure, Cli and Tests projects, references point inward only, and `dotnet build` passes
-- [ ] **S3** Agree the contract — S2 · **done when** the domain entities (`School`, `Term`, `Course`, `Section`, `Meeting`, `Instructor`, `ExtractionFailure`) and the `IConnector` interface (Fingerprint → ListTerms → CollectSections → Map) are committed. This is the only hard dependency between the lanes.
+- [x] **T0** Switch the docs to C# and add `.gitignore` · Prateek
+- [x] **T1** Solution skeleton · Prateek — T0 · **done when** `DueGooder.slnx` has Domain, Application, Connectors, Infrastructure, Cli and Tests projects, references point inward only, and `dotnet build` passes
+- [x] **T2** Contract · Prateek — T1 · **done when** the domain entities (`School`, `Term`, `Course`, `Section`, `Meeting`, `Instructor`, `ExtractionFailure`) have natural keys, missing fields are represented differently from `ExtractionFailure`, raw values sit next to parsed ones, and `IConnector` (Fingerprint → ListTerms → CollectSections → Map) is defined
+- [ ] **T3** School list · Fabian — none · **due 9:30 PM** · **done when** `config/schools.yaml` has 20+ schools with name, homepage and suspected platform, including at least **15 on Banner 9** plus a few PeopleSoft/Colleague/Workday schools.
+  - _How:_ search `"StudentRegistrationSsb" site:edu`. A school is on Banner 9 if `https://<host>/StudentRegistrationSsb/ssb/term/termSelection?mode=search` loads a term picker. Kentucky schools make a nice demo story.
 
-## Phase 1 — First vertical slice (H1–H5 · Fri 10 PM – Sat 2 AM)
+## Block 1 — First vertical slice (Fri 8:15–11:45 PM)
 
-### Phase 1 · Lane A — Prateek
+- [ ] **T4** Banner 9 fixtures · Fabian — T3 · **due 9:30 PM** · **done when** term and class-search JSON responses from **2 schools** are saved in `tests/fixtures/banner9/` (browser DevTools → Network → copy the response; trim to 1–2 pages of results)
+- [ ] **T5** Banner 9 connector · Prateek — T2, T4 · **done when** it lists terms, pages through class search, maps sections, meetings, instructors and enrollment, and its fixture tests pass for both schools
+- [ ] **T6** Storage + upsert · Prateek — T2 · **done when** there's an EF Core SQLite schema, `ISectionRepository` upserts by natural key, and a test proves that re-saving identical data writes nothing
+- [ ] **T7** Single-school CLI · Prateek — T5, T6 · **done when** `duegooder run --school <id>` collects one school into SQLite with source URLs and timestamps
 
-- [ ] **A1** Domain entities — S3 · **done when** natural keys (school + term + course + section) exist, a missing field is represented differently from an `ExtractionFailure`, and raw source values sit next to parsed ones for times, days and locations
-- [ ] **A2** Storage + upsert — A1 · **done when** there's an EF Core SQLite schema, `ISectionRepository` upserts by natural key, and a test proves that re-saving identical data writes nothing
-- [ ] **A3** Run metrics — S2 · **done when** the HTTP adapter records requests, bytes and duration per school, and a run context aggregates counts per school and per run
+**Checkpoint 1 (target 11:45 PM, hard limit 12:30 AM):** one Banner 9 school end to end. If you miss 12:30 AM, drop T15 now.
 
-### Phase 1 · Lane B — Fabian
+## Block 2 — Automate (Fri 11:45 PM – Sat 1:30 AM)
 
-- [ ] **B1** Demo school list — none · **done when** `config/schools.yaml` lists schools with their homepage and suspected platform, including 10+ on Banner 9 (Kentucky schools are a nice touch for the demo)
-- [ ] **B2** Banner 9 fixtures — B1 · **done when** term and section search JSON from at least **2 schools** is saved in `tests/fixtures/banner9/`
-- [ ] **B3** Banner 9 connector — S3, B2 · **done when** it lists terms, pages through class search, maps sections, meetings, instructors and enrollment, and its fixture tests pass for both schools
+- [ ] **T8** Pipeline over the list · Prateek — T7, T3 · **done when** `duegooder run --schools config/schools.yaml` processes every school without human input, running schools concurrently while keeping requests to any one host sequential, and one failing school doesn't stop the run
+- [ ] **T9** Politeness + metrics · Prateek — T7 · **done when** there's a per-host rate limiter, `robots.txt` is respected, an identifying User-Agent is sent, a dev response cache is in place, and requests, bytes, duration and counts are recorded per school
+- [ ] **T10** Start the overnight run · Prateek — T8, T9 · **done when** a full run over the list is going unattended (`caffeinate -i` keeps the Mac awake) with its logs saved
 
-### Sync 1
+## Block 3 — Harden (Sat 7:30–11:30 AM)
 
-- [ ] One Banner 9 school collected end to end into SQLite, with its source URLs and timestamps.
+- [ ] **T11** Triage the overnight run · Prateek — T10 · **done when** mapping edge cases are fixed (TBA times, online/async sections, multiple meetings, cross-listed courses) and every remaining failure has a recorded reason
+- [ ] **T12** Detect the platform and find the schedule page · Prateek — T5 · **done when** a school's homepage alone gets resolved to its Banner 9 base URL (probe known paths, check HTML markers, run the probe request), the evidence is logged, and non-Banner schools land in the review list with that evidence
+- [ ] **T13** Run report · Prateek — T9, T22 · **done when** each run writes `reports/<run-id>.md` + `.json` with: schools attempted/identified/collected/failed; term, section and meeting counts; field completeness; runtime; requests; **cost with the formula written out and estimates labeled**; human steps; and failures with reasons
+- [ ] **T14** Refresh · Prateek — T6, T8 · **done when** re-running writes zero duplicates, new terms get picked up, a large drop in section count flags the integration as broken (without deleting data), and each record has a `last_confirmed_at`
+- [ ] **T15** _(stretch)_ Second platform · Fabian researches, Prateek builds — T12 · **done when** the most common non-Banner platform in the list has its URL patterns, endpoints and fixtures from **2 schools** documented, and a connector for it works. Build it only if T11–T14 are done by 10:30 AM.
+- [ ] **T22** Cost model · Fabian — none · **due 10:00 AM** · **done when** a spreadsheet (or `docs/cost-model.md`) has current prices for a small cloud VM, bandwidth and LLM tokens, with sources linked, and a formula for cost per school and per 1,000 schools. It takes measured runtime, requests and bytes as inputs, labels every assumption as an estimate, and gets the real numbers plugged in after T16.
 
-## Phase 2 — Automate and scale (H5–H10 · Sat 2–7 AM)
+## Block 4 — Measured run and submission (Sat 11:30 AM – 5 PM)
 
-### Phase 2 · Lane A — Prateek
+No new features after 11:30 AM. Only fixes that affect the measured run.
 
-- [ ] **A4** Pipeline + `run` command — A2, B3 · **done when** `duegooder run --schools config/schools.yaml` processes every school without human input, running schools concurrently while keeping requests to any one host sequential
-- [ ] **A5** Politeness — A4 · **done when** there's a per-host rate limiter, `robots.txt` is respected, an identifying User-Agent is sent, and a dev response cache avoids re-hitting registrars
-- [ ] **A6** Run report — A3, A4 · **done when** each run writes `reports/<run-id>.md` + `.json` with: schools attempted/identified/collected/failed by platform; term, section and meeting counts; field completeness; runtime; requests; **cost with the formula written out and estimates labeled**; human steps; and failures with reasons
-
-### Phase 2 · Lane B — Fabian
-
-- [ ] **B4** Fingerprinting — B3 · **done when** each connector scores a site using URL patterns, HTML markers, headers and a probe request, and the platform chosen is logged with its evidence
-- [ ] **B5** Discovery — B4 · **done when** a school name or homepage resolves to a registrar/schedule URL (known paths probed first, then a shallow crawl), with no hand-entered URLs
-- [ ] **B6** Scale Banner 9 — B3 · **done when** every Banner 9 school in the list collects, and the edge cases are handled: TBA times, online/async sections, multiple meetings, cross-listed courses
-
-### Sync 2
-
-- [ ] An automated run over the whole school list produces a report.
-
-## Phase 3 — Reliability and breadth (H10–H14 · Sat 7–11 AM)
-
-### Phase 3 · Lane A — Prateek
-
-- [ ] **A7** Refresh — A4, A6 · **done when** re-running finds new terms, diffs against the previous run, flags an integration as broken on large drops (without deleting any data), and marks unconfirmed data stale
-- [ ] **A8** Review queue + endpoint health — A7, B4 · **done when** unidentified or failed schools land in a review queue with the evidence, and moved or erroring endpoints are recorded per school
-
-### Phase 3 · Lane B — Fabian
-
-- [ ] **B7** Second platform connector — B4 · **done when** whichever of PeopleSoft / Colleague / Banner 8 is most common in the list works, with fixtures from **2 schools**
-- [ ] **B8** _(stretch)_ LLM fallback extractor — B4, A3 · **done when** unknown platforms get LLM-assisted extraction from schedule pages, token usage feeds the cost metrics, and low-confidence results go to the review queue
-
-## Phase 4 — Measured run and submission (H14–H20 · Sat 11 AM – 5 PM, together)
-
-No new features after 11 AM. Only fixes that affect the measured run.
-
-- [ ] **S4** Full measured run — all above · **done when** a run from a clean DB completes and its report is committed
-- [ ] **S5** Accuracy spot-check — S4 · **done when** ~50 randomly sampled sections have been hand-checked against the live pages and the match rate is recorded
-- [ ] **S6** Sample data — S4 · **done when** normalized samples are exported to `data/samples/`
-- [ ] **S7** Write-up — S4, S5 · **done when** it covers per-school setup, failure handling, scaling and cost math, and the disclosed human steps, the README "Running it" section is final, and the submission checklist is ticked off
-- [ ] **S8** Demo — S7 · **done when** the script is rehearsed and it shows one connector across several schools, a refresh with zero duplicates, and a flagged failure
+- [ ] **T16** Measured run · Prateek — T11–T14 · **done when** a run from a clean DB completes, followed by a refresh run that shows zero duplicates, both reports are committed, and the full normalized data is exported to CSV/JSON
+- [ ] **T17** Sample data + spot-check sheet · Fabian — T16 · **done when** representative samples from the export (a few schools, including edge cases like TBA and online sections) are in `data/samples/` with a short README, and a 50-row random spot-check sheet with source URLs is ready
+- [ ] **T18** Accuracy spot-check · Fabian — T17 · **done when** each sampled section has been compared with its live registrar page (course, section, days, times, room, instructor), marked match or mismatch with a note, and the match rate is calculated
+- [ ] **T19** Write-up: setup and architecture · Prateek — T16 · **done when** it covers per-school setup, connector reuse, the pipeline and run instructions, and the README "Running it" section is final
+- [ ] **T20** Write-up: failure handling, scaling, cost · Fabian — T16, T18 · **done when** it covers how failures are detected and reported, the scaling and cost math from the measured run (estimates labeled), the accuracy result, and the disclosed human steps
+- [ ] **T21** Demo · Fabian presents, Prateek runs it live — T19, T20 · **done when** the script is rehearsed and it opens with the Kentucky story, shows one connector across many schools, a refresh with zero duplicates, and a flagged failure; submission checklist ticked off
 
 ---
 
 ## Cut line
 
-If time runs short, drop **B8**, then **B7**. Protect **S4–S7**. Check at each sync: if Sync 1 isn't done by **Sat 3 AM** or Sync 2 by **Sat 8 AM**, cut the next item on this list right away instead of hoping to catch up. Breadth on one working connector plus measured, honest results is what's judged.
+In order, cut: **T15** (second platform) → the shallow crawl in **T12** (keep only the known-path probes) → the stale/broken-integration flags in **T14** (keep the zero-duplicate refresh). Never cut **T13, T16, T17, T19, T20, T22**: breadth on one working connector plus measured, honest results is what's judged.
 
 ## Bounty requirement → task
 
 | Requirement | Tasks |
 | --- | --- |
-| Find catalogs and schedules automatically | B5 |
-| Identify the platform (Banner, PeopleSoft, Workday, custom) | B4 |
-| Reuse connectors with minimal setup | B3, B6, B7 |
-| Fallback or flag for manual review | B8, A8 |
-| Normalized fields + source URL + timestamp; missing ≠ failed | A1, B3 |
-| Refresh without duplicates, new terms, broken/stale detection | A2, A7, A8 |
-| Real sections and meeting times | B3, B6 |
-| Demo multiple schools on a shared connector | B6, S8 |
-| Code, run instructions, sample data, write-up | S6, S7 |
-| Actual run report: schools, data, runtime, cost, manual steps, failures | A6, S4 |
-| Accuracy | S5 |
+| Find catalogs and schedules automatically | T12 |
+| Identify the platform (Banner, PeopleSoft, Workday, custom) | T12, T15 |
+| Reuse connectors with minimal setup | T5, T8, T11 |
+| Fallback or flag for manual review | T12 (review list with evidence) |
+| Normalized fields + source URL + timestamp; missing ≠ failed | T2, T5 |
+| Refresh without duplicates, new terms, broken/stale detection | T6, T14 |
+| Real sections and meeting times | T5, T11 |
+| Demo multiple schools on a shared connector | T16, T21 |
+| Code, run instructions, sample data, write-up | T17, T19, T20 |
+| Actual run report: schools, data, runtime, cost, manual steps, failures | T13, T16, T22 |
+| Accuracy | T18 |

@@ -81,7 +81,7 @@ Reports go in `reports/`. Sample normalized output goes in `data/samples/`.
 
 ## Tooling
 
-- C# / .NET 10, one solution `DueGooder.sln`.
+- C# / .NET 10, one solution `DueGooder.slnx` at the repo root.
 - `dotnet build` builds. `dotnet test` runs tests. `dotnet format` formats.
 - Run the pipeline with `dotnet run --project src/DueGooder.Cli -- run --schools config/schools.yaml`.
 - Key libraries: `IHttpClientFactory` + `Microsoft.Extensions.Http.Resilience`, AngleSharp, Microsoft.Playwright (JavaScript pages only), EF Core (SQLite locally, Npgsql for Postgres), the official Anthropic C# SDK, xUnit.

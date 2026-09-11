@@ -33,7 +33,7 @@ Fabian's tasks need only a browser, a spreadsheet or text editor, and git. No .N
 - [x] **T0** Switch the docs to C# and add `.gitignore` · Prateek
 - [x] **T1** Solution skeleton · Prateek — T0 · **done when** `DueGooder.slnx` has Domain, Application, Connectors, Infrastructure, Cli and Tests projects, references point inward only, and `dotnet build` passes
 - [x] **T2** Contract · Prateek — T1 · **done when** the domain entities (`School`, `Term`, `Course`, `Section`, `Meeting`, `Instructor`, `ExtractionFailure`) have natural keys, missing fields are represented differently from `ExtractionFailure`, raw values sit next to parsed ones, and `IConnector` (Fingerprint → ListTerms → CollectSections → Map) is defined
-- [ ] **T3** School list · Fabian — none · **due 9:30 PM** · **done when** `config/schools.yaml` has 20+ schools with name, homepage and suspected platform, including at least **15 on Banner 9** plus a few PeopleSoft/Colleague/Workday schools.
+- [x] **T3** School list · Fabian — none · **due 9:30 PM** · **done when** `config/schools.yaml` has 20+ schools with name, homepage and suspected platform, including at least **15 on Banner 9** plus a few PeopleSoft/Colleague/Workday schools.
   - _How:_ search `"StudentRegistrationSsb" site:edu`. A school is on Banner 9 if `https://<host>/StudentRegistrationSsb/ssb/term/termSelection?mode=search` loads a term picker. Kentucky schools make a nice demo story.
 
 ## Block 1 — First vertical slice (Fri 8:15–11:45 PM)

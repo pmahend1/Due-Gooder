@@ -51,7 +51,7 @@ Fabian's tasks need only a browser, a spreadsheet or text editor, and git. No .N
 - [x] **T8** Pipeline over the list · Prateek — T7, T3 · **done when** `duegooder run --schools config/schools.yaml` processes every school without human input, running schools concurrently while keeping requests to any one host sequential, and one failing school doesn't stop the run
 - [x] **T9** Politeness + metrics · Prateek — T7 · **done when** there's a per-host rate limiter, `robots.txt` is respected, an identifying User-Agent is sent, a dev response cache is in place, and requests, bytes, duration and counts are recorded per school
   - _robots.txt is enforced strictly (RFC 9309). A live pre-flight on Sep 11 found it blocks 14 of the 18 listed hosts: 4 say `Disallow: /` and 10 can't be read (5xx or dropped connection), which RFC 9309 treats as disallow-all. The school list needs Banner 9 hosts whose robots.txt permits crawling; check `https://<host>/robots.txt` when adding one._
-- [ ] **T10** Start the overnight run · Prateek — T8, T9 · **done when** a full run over the list is going unattended (`caffeinate -i` keeps the Mac awake) with its logs saved
+- [x] **T10** Start the overnight run · Prateek — T8, T9 · **done when** a full run over the list is going unattended (`caffeinate -i` keeps the Mac awake) with its logs saved
 
 ## Block 3 — Harden (Sat 7:30–11:30 AM)
 

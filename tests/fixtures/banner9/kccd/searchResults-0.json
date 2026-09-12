@@ -1,0 +1,1136 @@
+{
+  "success": true,
+  "totalCount": 4089,
+  "data": 
+  [
+    {
+      "id": 420671,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72755",
+      "partOfTerm": "BOT",
+      "courseNumber": "B70A",
+      "courseDisplay": "B70A",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "66",
+      "campusDescription": "BC Online",
+      "scheduleTypeDescription": "Delayed Interactn - NET",
+      "courseTitle": "Time Management Strategies for Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 25,
+      "enrollment": 22,
+      "seatsAvailable": 3,
+      "waitCapacity": 20,
+      "waitCount": 0,
+      "waitAvailable": 20,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0.5,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB70A",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72755",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72755",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1OLL",
+            "buildingDescription": "Online",
+            "campus": "BL",
+            "campusDescription": "BC Online",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72755",
+            "creditHourSession": 0.5,
+            "endDate": "09/11/2026",
+            "endTime": null,
+            "friday": false,
+            "hoursWeek": 0.5,
+            "meetingScheduleType": "V",
+            "meetingType": "ONL",
+            "meetingTypeDescription": "Online Asynchronous",
+            "monday": false,
+            "room": null,
+            "saturday": false,
+            "startDate": "08/24/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": false,
+            "tuesday": false,
+            "wednesday": false
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "NDA",
+          "courseReferenceNumber": "72755",
+          "description": "Non Degree Applicable",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        },
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "PCBS",
+          "courseReferenceNumber": "72755",
+          "description": "Pre-collegiate Basic Skills",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "72",
+      "instructionalMethodDescription": "Delayed Interactn - NET"
+    },
+    {
+      "id": 420672,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72756",
+      "partOfTerm": "BNC",
+      "courseNumber": "B70AN",
+      "courseDisplay": "B70AN",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "66",
+      "campusDescription": "BC Online",
+      "scheduleTypeDescription": "Delayed Interactn - NET",
+      "courseTitle": "Time Management Strategies for Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 10,
+      "enrollment": 8,
+      "seatsAvailable": 2,
+      "waitCapacity": 20,
+      "waitCount": 3,
+      "waitAvailable": 17,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB70AN",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72756",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72756",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1OLL",
+            "buildingDescription": "Online",
+            "campus": "BL",
+            "campusDescription": "BC Online",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72756",
+            "creditHourSession": 0.0,
+            "endDate": "09/11/2026",
+            "endTime": null,
+            "friday": false,
+            "hoursWeek": 0.5,
+            "meetingScheduleType": "V",
+            "meetingType": "ONL",
+            "meetingTypeDescription": "Online Asynchronous",
+            "monday": false,
+            "room": null,
+            "saturday": false,
+            "startDate": "08/24/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": false,
+            "tuesday": false,
+            "wednesday": false
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "BSKL",
+          "courseReferenceNumber": "72756",
+          "description": "Basic Skills not precollegiate",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "72",
+      "instructionalMethodDescription": "Delayed Interactn - NET"
+    },
+    {
+      "id": 420673,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72757",
+      "partOfTerm": "BOT",
+      "courseNumber": "B70B",
+      "courseDisplay": "B70B",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "66",
+      "campusDescription": "BC Online",
+      "scheduleTypeDescription": "Delayed Interactn - NET",
+      "courseTitle": "Note Taking Strategies for Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 25,
+      "enrollment": 25,
+      "seatsAvailable": 0,
+      "waitCapacity": 20,
+      "waitCount": 3,
+      "waitAvailable": 17,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0.5,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB70B",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72757",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72757",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1OLL",
+            "buildingDescription": "Online",
+            "campus": "BL",
+            "campusDescription": "BC Online",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72757",
+            "creditHourSession": 0.5,
+            "endDate": "10/02/2026",
+            "endTime": null,
+            "friday": false,
+            "hoursWeek": 0.5,
+            "meetingScheduleType": "V",
+            "meetingType": "ONL",
+            "meetingTypeDescription": "Online Asynchronous",
+            "monday": false,
+            "room": null,
+            "saturday": false,
+            "startDate": "09/14/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": false,
+            "tuesday": false,
+            "wednesday": false
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "NDA",
+          "courseReferenceNumber": "72757",
+          "description": "Non Degree Applicable",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        },
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "PCBS",
+          "courseReferenceNumber": "72757",
+          "description": "Pre-collegiate Basic Skills",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "72",
+      "instructionalMethodDescription": "Delayed Interactn - NET"
+    },
+    {
+      "id": 420674,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72758",
+      "partOfTerm": "BNC",
+      "courseNumber": "B70BN",
+      "courseDisplay": "B70BN",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "66",
+      "campusDescription": "BC Online",
+      "scheduleTypeDescription": "Delayed Interactn - NET",
+      "courseTitle": "Note Taking Strategies for Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 10,
+      "enrollment": 10,
+      "seatsAvailable": 0,
+      "waitCapacity": 20,
+      "waitCount": 0,
+      "waitAvailable": 20,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB70BN",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72758",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72758",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1OLL",
+            "buildingDescription": "Online",
+            "campus": "BL",
+            "campusDescription": "BC Online",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72758",
+            "creditHourSession": 0.0,
+            "endDate": "10/02/2026",
+            "endTime": null,
+            "friday": false,
+            "hoursWeek": 0.5,
+            "meetingScheduleType": "V",
+            "meetingType": "ONL",
+            "meetingTypeDescription": "Online Asynchronous",
+            "monday": false,
+            "room": null,
+            "saturday": false,
+            "startDate": "09/14/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": false,
+            "tuesday": false,
+            "wednesday": false
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "BSKL",
+          "courseReferenceNumber": "72758",
+          "description": "Basic Skills not precollegiate",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "72",
+      "instructionalMethodDescription": "Delayed Interactn - NET"
+    },
+    {
+      "id": 420675,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72759",
+      "partOfTerm": "BOT",
+      "courseNumber": "B70C",
+      "courseDisplay": "B70C",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "66",
+      "campusDescription": "BC Online",
+      "scheduleTypeDescription": "Delayed Interactn - NET",
+      "courseTitle": "Textbook Reading Strategies for Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 25,
+      "enrollment": 25,
+      "seatsAvailable": 0,
+      "waitCapacity": 20,
+      "waitCount": 3,
+      "waitAvailable": 17,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0.5,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB70C",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72759",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72759",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1OLL",
+            "buildingDescription": "Online",
+            "campus": "BL",
+            "campusDescription": "BC Online",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72759",
+            "creditHourSession": 0.5,
+            "endDate": "10/23/2026",
+            "endTime": null,
+            "friday": false,
+            "hoursWeek": 0.5,
+            "meetingScheduleType": "V",
+            "meetingType": "ONL",
+            "meetingTypeDescription": "Online Asynchronous",
+            "monday": false,
+            "room": null,
+            "saturday": false,
+            "startDate": "10/05/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": false,
+            "tuesday": false,
+            "wednesday": false
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "NDA",
+          "courseReferenceNumber": "72759",
+          "description": "Non Degree Applicable",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        },
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "PCBS",
+          "courseReferenceNumber": "72759",
+          "description": "Pre-collegiate Basic Skills",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "72",
+      "instructionalMethodDescription": "Delayed Interactn - NET"
+    },
+    {
+      "id": 420676,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72760",
+      "partOfTerm": "BNC",
+      "courseNumber": "B70CN",
+      "courseDisplay": "B70CN",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "66",
+      "campusDescription": "BC Online",
+      "scheduleTypeDescription": "Delayed Interactn - NET",
+      "courseTitle": "Textbook Reading Strategies for Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 10,
+      "enrollment": 10,
+      "seatsAvailable": 0,
+      "waitCapacity": 20,
+      "waitCount": 0,
+      "waitAvailable": 20,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB70CN",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72760",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72760",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1OLL",
+            "buildingDescription": "Online",
+            "campus": "BL",
+            "campusDescription": "BC Online",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72760",
+            "creditHourSession": 0.0,
+            "endDate": "10/23/2026",
+            "endTime": null,
+            "friday": false,
+            "hoursWeek": 0.5,
+            "meetingScheduleType": "V",
+            "meetingType": "ONL",
+            "meetingTypeDescription": "Online Asynchronous",
+            "monday": false,
+            "room": null,
+            "saturday": false,
+            "startDate": "10/05/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": false,
+            "tuesday": false,
+            "wednesday": false
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "BSKL",
+          "courseReferenceNumber": "72760",
+          "description": "Basic Skills not precollegiate",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "72",
+      "instructionalMethodDescription": "Delayed Interactn - NET"
+    },
+    {
+      "id": 420677,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72761",
+      "partOfTerm": "BOT",
+      "courseNumber": "B70D",
+      "courseDisplay": "B70D",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "66",
+      "campusDescription": "BC Online",
+      "scheduleTypeDescription": "Delayed Interactn - NET",
+      "courseTitle": "Test Taking Strategies For Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 25,
+      "enrollment": 25,
+      "seatsAvailable": 0,
+      "waitCapacity": 20,
+      "waitCount": 2,
+      "waitAvailable": 18,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0.5,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB70D",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72761",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72761",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1OLL",
+            "buildingDescription": "Online",
+            "campus": "BL",
+            "campusDescription": "BC Online",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72761",
+            "creditHourSession": 0.5,
+            "endDate": "11/13/2026",
+            "endTime": null,
+            "friday": false,
+            "hoursWeek": 0.5,
+            "meetingScheduleType": "V",
+            "meetingType": "ONL",
+            "meetingTypeDescription": "Online Asynchronous",
+            "monday": false,
+            "room": null,
+            "saturday": false,
+            "startDate": "10/26/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": false,
+            "tuesday": false,
+            "wednesday": false
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "NDA",
+          "courseReferenceNumber": "72761",
+          "description": "Non Degree Applicable",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        },
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "PCBS",
+          "courseReferenceNumber": "72761",
+          "description": "Pre-collegiate Basic Skills",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "72",
+      "instructionalMethodDescription": "Delayed Interactn - NET"
+    },
+    {
+      "id": 420678,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72762",
+      "partOfTerm": "BNC",
+      "courseNumber": "B70DN",
+      "courseDisplay": "B70DN",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "66",
+      "campusDescription": "BC Online",
+      "scheduleTypeDescription": "Delayed Interactn - NET",
+      "courseTitle": "Test Taking Strategies For Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 10,
+      "enrollment": 10,
+      "seatsAvailable": 0,
+      "waitCapacity": 20,
+      "waitCount": 3,
+      "waitAvailable": 17,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB70DN",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72762",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72762",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1OLL",
+            "buildingDescription": "Online",
+            "campus": "BL",
+            "campusDescription": "BC Online",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72762",
+            "creditHourSession": 0.0,
+            "endDate": "11/13/2026",
+            "endTime": null,
+            "friday": false,
+            "hoursWeek": 0.5,
+            "meetingScheduleType": "V",
+            "meetingType": "ONL",
+            "meetingTypeDescription": "Online Asynchronous",
+            "monday": false,
+            "room": null,
+            "saturday": false,
+            "startDate": "10/26/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": false,
+            "tuesday": false,
+            "wednesday": false
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "BSKL",
+          "courseReferenceNumber": "72762",
+          "description": "Basic Skills not precollegiate",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "72",
+      "instructionalMethodDescription": "Delayed Interactn - NET"
+    },
+    {
+      "id": 420704,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72788",
+      "partOfTerm": "BOT",
+      "courseNumber": "B70E",
+      "courseDisplay": "B70E",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "66",
+      "campusDescription": "BC Online",
+      "scheduleTypeDescription": "Delayed Interactn - NET",
+      "courseTitle": "Memory Strategies For Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 25,
+      "enrollment": 25,
+      "seatsAvailable": 0,
+      "waitCapacity": 20,
+      "waitCount": 2,
+      "waitAvailable": 18,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0.5,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB70E",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72788",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72788",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1OLL",
+            "buildingDescription": "Online",
+            "campus": "BL",
+            "campusDescription": "BC Online",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72788",
+            "creditHourSession": 0.5,
+            "endDate": "12/04/2026",
+            "endTime": null,
+            "friday": false,
+            "hoursWeek": 0.5,
+            "meetingScheduleType": "V",
+            "meetingType": "ONL",
+            "meetingTypeDescription": "Online Asynchronous",
+            "monday": false,
+            "room": null,
+            "saturday": false,
+            "startDate": "11/16/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": false,
+            "tuesday": false,
+            "wednesday": false
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "NDA",
+          "courseReferenceNumber": "72788",
+          "description": "Non Degree Applicable",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        },
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "PCBS",
+          "courseReferenceNumber": "72788",
+          "description": "Pre-collegiate Basic Skills",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "72",
+      "instructionalMethodDescription": "Delayed Interactn - NET"
+    },
+    {
+      "id": 420705,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72789",
+      "partOfTerm": "BNC",
+      "courseNumber": "B70EN",
+      "courseDisplay": "B70EN",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "66",
+      "campusDescription": "BC Online",
+      "scheduleTypeDescription": "Delayed Interactn - NET",
+      "courseTitle": "Memory Strategies For Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 10,
+      "enrollment": 9,
+      "seatsAvailable": 1,
+      "waitCapacity": 20,
+      "waitCount": 4,
+      "waitAvailable": 16,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB70EN",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72789",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72789",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1OLL",
+            "buildingDescription": "Online",
+            "campus": "BL",
+            "campusDescription": "BC Online",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72789",
+            "creditHourSession": 0.0,
+            "endDate": "12/04/2026",
+            "endTime": null,
+            "friday": false,
+            "hoursWeek": 0.5,
+            "meetingScheduleType": "V",
+            "meetingType": "ONL",
+            "meetingTypeDescription": "Online Asynchronous",
+            "monday": false,
+            "room": null,
+            "saturday": false,
+            "startDate": "11/16/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": false,
+            "tuesday": false,
+            "wednesday": false
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "BSKL",
+          "courseReferenceNumber": "72789",
+          "description": "Basic Skills not precollegiate",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "72",
+      "instructionalMethodDescription": "Delayed Interactn - NET"
+    }
+  ],
+  "pageOffset": 0,
+  "pageMaxSize": 10,
+  "sectionsFetchedCount": 4089,
+  "pathMode": "search",
+  "searchResultsConfigs": 
+  [
+    {
+      "config": "term",
+      "display": "Term",
+      "title": "Term",
+      "required": false,
+      "width": "3%"
+    },
+    {
+      "config": "courseTitle",
+      "display": "Title",
+      "title": "Title",
+      "required": true,
+      "width": "9%"
+    },
+    {
+      "config": "subject",
+      "display": "Subject",
+      "title": "Subject",
+      "required": false,
+      "width": "3%"
+    },
+    {
+      "config": "courseNumber",
+      "display": "Course Number",
+      "title": "Course Number",
+      "required": false,
+      "width": "3%"
+    },
+    {
+      "config": "sequenceNumber",
+      "display": "Section",
+      "title": "Section",
+      "required": false,
+      "width": "3%"
+    },
+    {
+      "config": "courseReferenceNumber",
+      "display": "CRN",
+      "title": "CRN",
+      "required": false,
+      "width": "3%"
+    },
+    {
+      "config": "creditHours",
+      "display": "Units",
+      "title": "Units",
+      "required": false,
+      "width": "3%"
+    },
+    {
+      "config": "instructor",
+      "display": "Instructor",
+      "title": "Instructor",
+      "required": false,
+      "width": "8%"
+    },
+    {
+      "config": "meetingTime",
+      "display": "Meeting Times",
+      "title": "Meeting Times",
+      "required": false,
+      "width": "15%"
+    },
+    {
+      "config": "campus",
+      "display": "Campus",
+      "title": "Campus",
+      "required": false,
+      "width": "3%"
+    },
+    {
+      "config": "instructionalMethod",
+      "display": "Instructional Methods",
+      "title": "Instructional Methods",
+      "required": false,
+      "width": "9em"
+    },
+    {
+      "config": "status",
+      "display": "Status",
+      "title": "Status",
+      "required": false,
+      "width": "6%"
+    },
+    {
+      "config": "attribute",
+      "display": "Attribute",
+      "title": "Attribute",
+      "required": false,
+      "width": "14%"
+    }
+  ],
+  "ztcEncodedImage": "https://ssb-prod.ec.kccd.edu/stugifs/hwsgztcp.gif"
+}

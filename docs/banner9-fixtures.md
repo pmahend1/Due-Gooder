@@ -13,15 +13,19 @@ The Banner 9 connector is one piece of code shared by every Banner 9 school. Its
 | `eku` — Eastern Kentucky | 202710 (Fall 2026) | ✅ full set |
 | `sunyempire` — SUNY Empire State | 202680 (Fall 2026) | ✅ full set (mostly online sections, one with 4 meetings) |
 | `uiuc` — Illinois Urbana-Champaign | 120268 (Fall 2026) | ⚠️ `getTerms.json` only. Class search redirects to a university login, and we only collect public data |
+| `kccd` — Kern Community College District | 202670 (Fall 2026) | ✅ full set (4089 sections). One district-wide term, no `mep_code`. The two captured pages span 5 Bakersfield College campuses (Main, Online, Arvin-Lamont, Delano, Southwest); no Cerro Coso or Porterville sections appear in them, but results are sorted by subject so that isn't settled either way. Part-of-term codes are letters (`B`, `BNC`, `BOT`), course numbers carry a campus letter (`B70A`), and `creditHours` is null with the value only in `creditHourLow` (0.5-credit and 0-credit sections) |
+| `oakland` — Oakland University | 202640 (Fall Semester 2026) | ✅ full set (3658 sections). Fall is `…40`, not `…70` — `getTerms` also lists Continuing Education 2026-2027 (`202633`) and OUWB med school (`202635`), so the number really can't be guessed. Sections split across Main Campus and Internet; some have two `LEC` meeting rows for one section |
+| `odu` — Old Dominion | 202610 (Fall 2026) | ✅ full set (7279 sections, largest so far). `partOfTerm` mixes `16W`, `8A` and `8B` inside the one Fall 2026 term, so the eight-week terms don't need separate captures. `sequenceNumber` is `0` on most sections — the CRN is the only section-level key. Some meetings are `TBA` building/room with empty begin/end times |
 
 ## Your task
 
 Capture fixtures for **2–3 more schools** from `config/schools.yaml`. Good picks, each with a quirk worth testing:
 
-- `kccd`: a district with several colleges, so check whether sections from all of them come back together
-- `oakland`: odd terms mixed in (continuing ed, med school)
-- `odu`: part-of-term terms ("Fall 2026 First Eight Weeks")
 - `wvu`, `lehigh`: large, ordinary schools, good as a baseline
+- `ctstate`, `tric`: multi-campus community colleges, to follow up on the `kccd` question below (do sections from every college come back in one term?)
+- `ucmerced`, `uidaho`: different hosting setups, worth a look for base-URL surprises
+
+(`kccd`, `oakland` and `odu` are done — see the table above.)
 
 ## Steps
 

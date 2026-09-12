@@ -1,0 +1,37 @@
+# Trimmed school list for the live 3-minute table-round demo — NOT the submission list.
+# Picked so the pipeline finishes in seconds, not the full run's 1h28m:
+#   uidaho, samford, msudenver, temple  — collect cleanly, no base_url pinned, so discovery
+#     (identify.the-platform-from-the-homepage) also gets demoed live, ~6-8s each per the measured run.
+#   uiuc  — already commented in schools.yaml as "the failure-handling example": base_url is
+#     pinned (skips discovery) but term/search redirects to a sign-in, so it fails fast and
+#     visibly, on purpose.
+# The full submission list is config/schools.yaml; this file only exists for the live demo.
+
+schools:
+  - id: uiuc
+    name: University of Illinois Urbana-Champaign
+    homepage: https://illinois.edu/
+    timezone: America/Chicago
+    platform: banner9
+    base_url: https://banner.apps.uillinois.edu/StudentRegistrationSSB/
+    mep_code: 1UIUC
+
+  - id: uidaho
+    name: University of Idaho
+    homepage: https://www.uidaho.edu/
+    timezone: America/Los_Angeles
+
+  - id: samford
+    name: Samford University
+    homepage: https://www.samford.edu/
+    timezone: America/Chicago
+
+  - id: msudenver
+    name: Metropolitan State University of Denver
+    homepage: https://www.msudenver.edu/
+    timezone: America/Denver
+
+  - id: temple
+    name: Temple University
+    homepage: https://www.temple.edu/
+    timezone: America/New_York

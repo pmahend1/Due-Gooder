@@ -13,6 +13,7 @@ const string Usage = """
                          [--db <path>] [--reports <dir>] [--cache off|use|record] [--cache-dir <dir>]
                          [--min-interval <seconds>] [--max-hosts <n>] [--human-steps <path>]
            duegooder report --run <reports/run-id.json> (see `duegooder report` for its options)
+           duegooder export [--db <path>] ...                         (see `duegooder export` for its options)
 
       --schools       school list (default config/schools.yaml)
       --school        run only this school id (schools without a base_url are identified from their homepage)
@@ -36,6 +37,11 @@ string[] knownOptions =
 if (args is ["report", .. var reportArgs])
 {
     return ReportCommand.Execute(reportArgs);
+}
+
+if (args is ["export", .. var exportArgs])
+{
+    return await ExportCommand.ExecuteAsync(exportArgs);
 }
 
 if (args is not ["run", ..])

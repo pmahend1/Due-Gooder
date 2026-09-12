@@ -67,8 +67,8 @@ Fabian's tasks need only a browser, a spreadsheet or text editor, and git. No .N
 
 No new features after 11:30 AM. Only fixes that affect the measured run.
 
-- [ ] **T16** Measured run · Prateek — T11–T14 · **done when** a run from a clean DB completes, followed by a refresh run that shows zero duplicates, both reports are committed, and the full normalized data is exported to CSV/JSON
-- [ ] **T17** Sample data + spot-check sheet · Fabian — T16 · **done when** representative samples from the export (a few schools, including edge cases like TBA and online sections) are in `data/samples/` with a short README, and a 50-row random spot-check sheet with source URLs is ready
+- [x] **T16** Measured run · Prateek — T11–T14 · **done when** a run from a clean DB completes, followed by a refresh run that shows zero duplicates, both reports are committed, and the full normalized data is exported to CSV/JSON
+- [x] **T17** Sample data + spot-check sheet · Fabian — T16 · **done when** representative samples from the export (a few schools, including edge cases like TBA and online sections) are in `data/samples/` with a short README, and a 50-row random spot-check sheet with source URLs is ready
 - [ ] **T18** Accuracy spot-check · Fabian — T17 · **done when** each sampled section has been compared with its live registrar page (course, section, days, times, room, instructor), marked match or mismatch with a note, and the match rate is calculated
 - [ ] **T19** Write-up: setup and architecture · Prateek — T16 · **done when** it covers per-school setup, connector reuse, the pipeline and run instructions, and the README "Running it" section is final
 - [ ] **T20** Write-up: failure handling, scaling, cost · Fabian — T16, T18 · **done when** it covers how failures are detected and reported, the scaling and cost math from the measured run (estimates labeled), the accuracy result, and the disclosed human steps

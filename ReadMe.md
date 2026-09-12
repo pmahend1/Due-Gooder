@@ -110,7 +110,7 @@ For accuracy, we'll hand-check a random sample of sections against the live regi
 
 ## Tech stack
 
-- **C# / .NET 10**, one solution (`DueGooder.sln`)
+- **C# / .NET 10**, one solution (`DueGooder.slnx`)
 - **HttpClient** via `IHttpClientFactory` + `Microsoft.Extensions.Http.Resilience` for retries and timeouts
 - **AngleSharp** for HTML, **Microsoft.Playwright** only for pages that render with JavaScript
 - **EF Core**: SQLite for local runs, Postgres (Npgsql) for the shared database
@@ -136,14 +136,29 @@ docs/                        # bounty brief, plan (PLAN.md), design notes
 
 ## Running it
 
-> Placeholder. It gets filled in once the first connector lands.
-
 ```bash
-dotnet build
+dotnet build DueGooder.slnx -c Release
 dotnet test
-dotnet run --project src/DueGooder.Cli -- run --schools config/schools.yaml   # discover → collect → normalize → store
-dotnet run --project src/DueGooder.Cli -- report --latest                     # print the run report
+
+# Collect: discover → identify → collect → normalize → upsert into SQLite. Schools without a base_url
+# in config/schools.yaml are identified from their homepage alone; schools with one skip straight to collection.
+dotnet run --project src/DueGooder.Cli -c Release -- run --schools config/schools.yaml --db data/duegooder.db
+
+# One school only, or a discovery-only pass that identifies schools and lists terms without collecting:
+dotnet run --project src/DueGooder.Cli -c Release -- run --school uncc
+dotnet run --project src/DueGooder.Cli -c Release -- run --term none
+
+# Render a finished run's Markdown report next to its JSON:
+dotnet run --project src/DueGooder.Cli -c Release -- report --run reports/<run-id>.json
+
+# Full normalized export (CSV + JSON) to data/export/, plus curated samples, a 50-row spot-check
+# sheet and a README to data/samples/:
+dotnet run --project src/DueGooder.Cli -c Release -- export --db data/duegooder.db
 ```
+
+Pass an unknown option (or, for `run`, no arguments at all) to print the full usage text for that
+command, including flags not shown above — rate limiting, the response cache, term/host limits, and
+so on.
 
 The task breakdown and who owns what are in [docs/PLAN.md](docs/PLAN.md).
 

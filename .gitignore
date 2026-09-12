@@ -35,11 +35,13 @@ secrets.json
 *.db-wal
 *.sqlite
 
-# Pipeline output: raw crawl cache and scratch runs. Keep reports/ and data/samples/ committed.
+# Pipeline output: raw crawl cache, scratch runs, and the full export (one school alone can be
+# hundreds of MB — GitHub rejects any file over 100 MB). Keep reports/ and data/samples/ committed.
 .cache/
 cache/
 data/raw/
 data/tmp/
+data/export/
 *.har
 
 # Playwright

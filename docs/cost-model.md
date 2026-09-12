@@ -7,7 +7,7 @@ What it costs to collect one school, and what 1,000 schools would cost. Cost and
 - **measured** — comes out of a real run's `reports/<run-id>.json`. Until [T16](PLAN.md) lands, every measured slot here is a placeholder written as `___`.
 - **estimate** — a price, a machine choice, or an extrapolation. Every one is labeled. Nothing in the extrapolation to 1,000 schools is measured: it is arithmetic on top of measured per-school numbers, and the assumptions it rests on are listed in [What this model leaves out](#what-this-model-leaves-out).
 
-Prices are public list prices, in USD unless noted, **all checked 2026-09-12**. They are estimates in the sense that matters here: we have not been billed for any of it. Re-check them before the submission, since three of the four vendor pages render prices in the browser and can move without notice (Hetzner raised cloud prices in June 2026).
+Prices are public list prices, in USD unless noted, **all checked 2026-09-12**. They are estimates in the sense that matters here: we have not been billed for any of it. Re-check them before the submission, since most of the vendor pages render prices in the browser and can move without notice (Hetzner raised cloud prices in June 2026).
 
 ## Prices
 
@@ -18,13 +18,17 @@ One always-on small VM runs the whole pipeline; the work is I/O-bound and polite
 | Option | Spec | $/hour | $/month | Included outbound | Source (checked 2026-09-12) |
 | --- | --- | ---: | ---: | --- | --- |
 | **AWS `t4g.small`** (baseline) | 2 vCPU ARM, 2 GB | 0.0168 | 12.26 | 100 GB/mo free, account-wide | [Vantage's EC2 table for `t4g.small`, us-east-1](https://instances.vantage.sh/aws/ec2/t4g.small) · list price confirmed against [AWS EC2 on-demand pricing](https://aws.amazon.com/ec2/pricing/on-demand/) |
+| Azure `Standard_B2s` | 2 vCPU x86, 4 GB | 0.0416 | 30.37 | 100 GB/mo free, account-wide | [Azure Retail Prices API](https://prices.azure.com/api/retail/prices?%24filter=armRegionName%20eq%20%27eastus%27%20and%20armSkuName%20eq%20%27Standard_B2s%27), `eastus`, Linux consumption meter, effective 2025-10-01 |
+| Google Cloud `e2-small` | 2 shared vCPU, 2 GB | 0.0168 | 12.23 | 1 GiB/mo free (Premium Tier default) | [economize.cloud's GCP e2-small page](https://www.economize.cloud/resources/gcp/pricing/compute-engine/e2-small/), `us-central1`, cross-checked against [CloudPrice's e2-small mirror](https://cloudprice.net/gcp/compute/instances/e2-small) |
 | DigitalOcean Basic Droplet | 1 vCPU, 1 GB | 0.00893 | 6.00 | 1,000 GiB/mo | [DigitalOcean Droplet pricing](https://www.digitalocean.com/pricing/droplets) |
 | Hetzner Cloud `CX23` | 2 vCPU, 4 GB | €0.0088 | €5.49 | 20 TB/mo (EU) | [CostGoat's Hetzner tracker, updated 2026-09-05](https://costgoat.com/pricing/hetzner) · billing rules from [Hetzner Cloud billing FAQ](https://docs.hetzner.com/cloud/billing/faq/) |
 
 Notes on these prices, all **estimates**:
 
-- AWS is the baseline because it is the number already used in `reports/run-20260912T033215Z.md`, and because its per-GB egress price is the least forgiving of the three — if the model works out cheap on AWS it is cheap anywhere.
-- AWS's own on-demand table is JavaScript-rendered, so the `t4g.small` hourly rate is quoted from Vantage's mirror of the AWS price list. Hetzner's pages render prices client-side too; the `CX23` figures come from a third-party tracker, so treat them as indicative and confirm in the Hetzner console before quoting them. The DigitalOcean figures are from DigitalOcean's own pricing page.
+- AWS is the baseline because it is the number already used in `reports/run-20260912T033215Z.md`, and because its per-GB egress price is among the least forgiving here — cheaper than Google Cloud's default tier, pricier than Azure's or the budget providers'. It's a reasonable baseline, not the worst case: see the bandwidth table below for how the providers actually compare.
+- **Azure is included on top of the cheapest-option survey because it's the realistic deployment target, not the cheapest one**: most university IT already sits under a Microsoft Education / Azure agreement, so a pipeline meant to run close to the schools it collects from is plausibly *deployed* on Azure even though it isn't the price leader here. `Standard_B2s` is Azure's closest general-purpose burstable match to `t4g.small` — but it's x86, not ARM (Azure's newer Arm-based Cobalt VMs are a separate line, not modeled here), and 4 GB RAM instead of 2 GB, so the ~2.5× hourly price over `t4g.small` isn't an apples-to-apples comparison, just the nearest "small always-on burstable box."
+- AWS's own on-demand table is JavaScript-rendered, so the `t4g.small` hourly rate is quoted from Vantage's mirror of the AWS price list. Hetzner's pages render prices client-side too; the `CX23` figures come from a third-party tracker, so treat them as indicative and confirm in the Hetzner console before quoting them. The DigitalOcean figures are from DigitalOcean's own pricing page. **Azure's number is the one exception pulled from a machine-readable source rather than a rendered page** — the [Retail Prices API](https://learn.microsoft.com/en-us/rest/api/cost-management/retail-prices/azure-retail-prices) returns exact current meter prices as JSON, no mirror or tracker needed.
+- Google Cloud's own pricing pages (`cloud.google.com/compute/all-pricing`, `/network-tiers/pricing`, `/compute/disks-image-pricing`) render their tables client-side and returned truncated content to this session's fetch tool, so all three GCP figures here come from third-party trackers, same caveat as Hetzner's — treat as indicative and confirm in the GCP console. `e2-small`'s $0.0168/hour lands within a cent of AWS's `t4g.small`, which is a useful cross-check that both are in the right ballpark for a "small always-on burstable box," even though one is Arm and the other is a shared-core x86 slice.
 - Hetzner and DigitalOcean bill hourly up to a monthly cap, so a run that takes 25 hours costs 25 hours, not a month ([Hetzner billing FAQ](https://docs.hetzner.com/cloud/billing/faq/)). AWS on-demand bills per second with a 60-second minimum. For a pipeline that runs on a schedule and can be shut down between runs, hourly is the right unit; for a machine left running, use the monthly price.
 - Hetzner prices are in EUR and this model does not convert them. If we quote Hetzner in the write-up, convert at the rate on the day and say so.
 
@@ -32,15 +36,15 @@ Notes on these prices, all **estimates**:
 
 We are almost entirely a *download* workload: we fetch registrar JSON and pages and write rows to a local database. Outbound is request headers and query strings only, a rounding error next to inbound.
 
-| Direction | AWS | DigitalOcean | Hetzner |
-| --- | --- | --- | --- |
-| Inbound (what we actually consume) | **$0/GB** | **$0/GB** | **$0/GB** |
-| Outbound, beyond what's included | $0.09/GB, first 10 TB/mo | $0.01/GiB | €1.00/TB (≈ €0.001/GB) |
-| Included outbound | 100 GB/mo free, account-wide | 1,000 GiB/mo per Droplet pool | 20 TB/mo (EU servers) |
+| Direction | AWS | Azure | Google Cloud | DigitalOcean | Hetzner |
+| --- | --- | --- | --- | --- | --- |
+| Inbound (what we actually consume) | **$0/GB** | **$0/GB** | **$0/GB** | **$0/GB** | **$0/GB** |
+| Outbound, beyond what's included | $0.09/GB, first 10 TB/mo | $0.087/GB, first 10 TB/mo (default routing) | $0.12/GB, first 1 TB/mo (Premium Tier, the default) | $0.01/GiB | €1.00/TB (≈ €0.001/GB) |
+| Included outbound | 100 GB/mo free, account-wide | 100 GB/mo free, account-wide | 1 GiB/mo free (Premium Tier) | 1,000 GiB/mo per Droplet pool | 20 TB/mo (EU servers) |
 
-Sources, checked 2026-09-12: AWS's 100 GB/month free egress allowance is stated on [AWS EC2 on-demand pricing](https://aws.amazon.com/ec2/pricing/on-demand/); the $0.09/GB first-10-TB tier is from [EgressCost's AWS data-transfer summary](https://egresscost.com/aws/data-transfer-pricing/) (AWS's own tier table is JavaScript-rendered). DigitalOcean's $0.01/GiB overage and "inbound transfer to Droplets is free" are from [DigitalOcean's bandwidth billing docs](https://docs.digitalocean.com/products/billing/bandwidth/). Hetzner's "we only bill for outgoing traffic; incoming and internal traffic is free" is from the [Hetzner Cloud billing FAQ](https://docs.hetzner.com/cloud/billing/faq/); the €1.00/TB overage figure is widely reported but is not on a Hetzner page we could read, so treat it as an **estimate to confirm**.
+Sources, checked 2026-09-12: AWS's 100 GB/month free egress allowance is stated on [AWS EC2 on-demand pricing](https://aws.amazon.com/ec2/pricing/on-demand/); the $0.09/GB first-10-TB tier is from [EgressCost's AWS data-transfer summary](https://egresscost.com/aws/data-transfer-pricing/) (AWS's own tier table is JavaScript-rendered). Azure's row is confirmed directly from the [Retail Prices API](https://prices.azure.com/api/retail/prices?%24filter=armRegionName%20eq%20%27eastus%27%20and%20contains%28meterName%2C%27Data%20Transfer%20Out%27%29%20and%20serviceFamily%20eq%20%27Networking%27) (`serviceFamily eq 'Networking'`, product "Bandwidth" with the Microsoft-global-network routing preference, which is the default for a VM's public IP; a separate, non-default "Internet routing preference" is about 8% cheaper). Google Cloud's Premium Tier figures are from [EgressCost's GCP summary](https://egresscost.com/gcp/) (`cloud.google.com/network-tiers/pricing` is JavaScript-rendered); GCP's opt-in Standard Tier is cheaper ($0.085/GB, 200 GiB/mo free) but isn't the default, so Premium is the conservative number here, matching how AWS's least-forgiving tier was chosen as this model's baseline. DigitalOcean's $0.01/GiB overage and "inbound transfer to Droplets is free" are from [DigitalOcean's bandwidth billing docs](https://docs.digitalocean.com/products/billing/bandwidth/). Hetzner's "we only bill for outgoing traffic; incoming and internal traffic is free" is from the [Hetzner Cloud billing FAQ](https://docs.hetzner.com/cloud/billing/faq/); the €1.00/TB overage figure is widely reported but is not on a Hetzner page we could read, so treat it as an **estimate to confirm**.
 
-Because inbound is free on all three providers, the bytes we measure per school (`requests.bodyBytes`) cost **$0** as long as we run on one of them. We still measure and report them: they are the number that would matter on a provider that bills ingress, and they are the honest size of the load we put on registrars.
+Because inbound is free on all five providers, the bytes we measure per school (`requests.bodyBytes`) cost **$0** as long as we run on one of them — this is `b_in` in the formulas below, and it's the number that dominates our download-heavy workload. The only line any provider actually bills here is `b_out` (our tiny outbound footprint: request headers and query strings, ~1 kB/request), and GCP's free allowance is thin enough (1 GiB/month vs. 100 GB+ elsewhere) that it's worth naming explicitly — but at an estimated `b_out` of ~0.002 GB/school (see [Inputs we measure](#inputs-we-measure)), even 1,000 schools stays under 2 GB, a couple pennies over GCP's free tier and not the "bandwidth never matters" conclusion below.
 
 ### Storage
 
@@ -49,8 +53,13 @@ Not a per-run cost — it recurs monthly whether or not we run. Kept as a separa
 | Option | $/GB-month | Source (checked 2026-09-12) |
 | --- | ---: | --- |
 | Amazon EBS `gp3` (baseline) | 0.08 | [Amazon EBS pricing](https://aws.amazon.com/ebs/pricing/) — $0.08/GB-month in us-east-1, including 3,000 IOPS and 125 MiB/s |
+| Azure Standard SSD `LRS` | 0.075 | [Azure Retail Prices API](https://prices.azure.com/api/retail/prices?%24filter=armRegionName%20eq%20%27eastus%27%20and%20contains%28productName%2C%27Standard%20SSD%20Managed%20Disks%27%29), `eastus` — the E4 (32 GiB, $2.40/mo), E6 (64 GiB, $4.80/mo) and E10 (128 GiB, $9.60/mo) tiers all work out to the same $0.075/GB-month |
+| Google Cloud `pd-balanced` | 0.10 | [gcloud-compute.com's Persistent Disk pricing tracker](https://gcloud-compute.com/diskpricing.html), `us-central1` (Google's own disk-pricing page is JavaScript-rendered) |
 
-Estimate. Postgres-as-a-service instead of a file on a disk would cost considerably more; that choice isn't made yet.
+All estimates. Two caveats worth carrying into [After the measured run](#after-the-measured-run-t16):
+
+- **Azure bills by fixed disk tier, not by the exact GB provisioned**, unlike AWS `gp3` and Google `pd-balanced`, which both let you provision (and pay for) the exact size. A 43 GB database would round up to a 64 GiB `E6` disk at a flat $4.80/month — effectively $0.112/GB-month at that specific size, not the idealized $0.075/GB-month the tiers average out to. Once a real `d` (database size per school) lands from T16, redo this line as "rounds up to tier `X`," not a flat multiplication.
+- Postgres-as-a-service instead of a file on a disk would cost considerably more on any provider; that choice isn't made yet.
 
 ### LLM tokens (the fallback extractor)
 

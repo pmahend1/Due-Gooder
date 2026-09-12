@@ -35,7 +35,7 @@ internal sealed class HttpSession(HttpClient client, RequestMetrics metrics) : I
         }
         catch (HttpRequestException exception)
         {
-            throw new ConnectorException($"network error: {exception.Message}", url, exception);
+            throw new ConnectorException($"network error: {exception.GetBaseException().Message}", url, exception);
         }
         catch (TimeoutException exception)
         {

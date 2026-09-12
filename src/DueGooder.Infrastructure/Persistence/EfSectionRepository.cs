@@ -9,22 +9,55 @@ namespace DueGooder.Infrastructure.Persistence;
 /// their properties reassigned rather than replaced, so EF Core's change tracker only writes what
 /// actually differs: re-saving identical data produces zero SQL statements.
 /// </summary>
-public sealed class EfSectionRepository(DueGooderDbContext db) : ISectionRepository
+/// <remarks>
+/// Safe to share across schools collected concurrently: each call gets its own context, and calls take
+/// turns because SQLite allows only one writer at a time anyway.
+/// </remarks>
+public sealed class EfSectionRepository(Func<DueGooderDbContext> createContext) : ISectionRepository
 {
+    #region State
+
+    private readonly SemaphoreSlim _writeTurn = new(1, 1);
+
+    #endregion State
+
     #region Methods
 
     public async Task<int> UpsertAsync(Term term, IReadOnlyList<Section> sections, CancellationToken cancellationToken)
     {
-        await UpsertTermAsync(term, cancellationToken);
-        foreach (var section in sections)
+        await _writeTurn.WaitAsync(cancellationToken);
+        try
         {
-            await UpsertSectionAsync(section, cancellationToken);
-        }
+            await using var db = createContext();
+            await UpsertTermAsync(db, term, cancellationToken);
 
-        return await db.SaveChangesAsync(cancellationToken);
+            // One query for the whole term instead of one per section; a large term has thousands.
+            var existing = await db.Sections
+                                   .Include(row => row.Meetings)
+                                   .Include(row => row.Instructors)
+                                   .Include(row => row.Failures)
+                                   .AsSplitQuery()
+                                   .Where(row => row.SchoolId == term.Key.SchoolId && row.TermCode == term.Key.TermCode)
+                                   .ToDictionaryAsync(row => new SectionKey(row.SchoolId,
+                                                                            row.TermCode,
+                                                                            row.Subject,
+                                                                            row.CourseNumber,
+                                                                            row.SectionId),
+                                                      cancellationToken);
+            foreach (var section in sections)
+            {
+                UpsertSection(db, existing, section);
+            }
+
+            return await db.SaveChangesAsync(cancellationToken);
+        }
+        finally
+        {
+            _writeTurn.Release();
+        }
     }
 
-    private async Task UpsertTermAsync(Term term, CancellationToken cancellationToken)
+    private static async Task UpsertTermAsync(DueGooderDbContext db, Term term, CancellationToken cancellationToken)
     {
         var row = await db.Terms.FirstOrDefaultAsync(candidate => candidate.SchoolId == term.Key.SchoolId
                                                                  && candidate.TermCode == term.Key.TermCode,
@@ -47,20 +80,9 @@ public sealed class EfSectionRepository(DueGooderDbContext db) : ISectionReposit
         row.RetrievedAt = term.RetrievedAt;
     }
 
-    private async Task UpsertSectionAsync(Section section, CancellationToken cancellationToken)
+    private static void UpsertSection(DueGooderDbContext db, Dictionary<SectionKey, SectionRow> existing, Section section)
     {
-        var key = section.Key;
-        var row = await db.Sections
-                          .Include(candidate => candidate.Meetings)
-                          .Include(candidate => candidate.Instructors)
-                          .Include(candidate => candidate.Failures)
-                          .FirstOrDefaultAsync(candidate => candidate.SchoolId == key.SchoolId
-                                                          && candidate.TermCode == key.TermCode
-                                                          && candidate.Subject == key.Subject
-                                                          && candidate.CourseNumber == key.CourseNumber
-                                                          && candidate.SectionId == key.SectionId,
-                                              cancellationToken);
-        if (row is null)
+        if (existing.TryGetValue(section.Key, out var row) is false)
         {
             db.Sections.Add(NewRow(section));
             return;

@@ -1,2 +1,51 @@
 AGENT
 .DS_Store
+
+# .NET build output
+bin/
+obj/
+[Dd]ebug/
+[Rr]elease/
+*.nupkg
+*.snupkg
+TestResults/
+coverage*/
+*.trx
+
+# IDEs
+.vs/
+.idea/
+*.user
+*.suo
+*.swp
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+appsettings.*.local.json
+secrets.json
+
+# Local databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+
+# Pipeline output: raw crawl cache and scratch runs. Keep reports/ and data/samples/ committed.
+.cache/
+cache/
+data/raw/
+data/tmp/
+*.har
+
+# Playwright
+.playwright/
+playwright-report/
+test-results/
+
+# OS
+Thumbs.db

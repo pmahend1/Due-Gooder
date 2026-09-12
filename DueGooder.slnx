@@ -1,0 +1,12 @@
+<Solution>
+    <Folder Name="/src/">
+        <Project Path="src/DueGooder.Application/DueGooder.Application.csproj" />
+        <Project Path="src/DueGooder.Cli/DueGooder.Cli.csproj" />
+        <Project Path="src/DueGooder.Connectors/DueGooder.Connectors.csproj" />
+        <Project Path="src/DueGooder.Domain/DueGooder.Domain.csproj" />
+        <Project Path="src/DueGooder.Infrastructure/DueGooder.Infrastructure.csproj" />
+    </Folder>
+    <Folder Name="/tests/">
+        <Project Path="tests/DueGooder.Tests/DueGooder.Tests.csproj" />
+    </Folder>
+</Solution>

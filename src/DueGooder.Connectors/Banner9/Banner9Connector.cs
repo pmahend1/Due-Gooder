@@ -24,6 +24,12 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
 
     public const string PageSizeOption = "page_size";
 
+    /// <summary>
+    /// Request parameters whose values are random per search session. A response cache must leave them
+    /// out of its keys, or a repeated search would never be a hit.
+    /// </summary>
+    public static readonly IReadOnlySet<string> SessionScopedParameters = new HashSet<string> { "uniqueSessionId" };
+
     // Fewer, larger pages mean fewer requests per term; 500 is the largest page Banner 9 servers commonly accept.
     private const int DefaultPageSize = 500;
 

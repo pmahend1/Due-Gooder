@@ -19,6 +19,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\fixtures\**\*" LinkBase="fixtures" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\src\DueGooder.Connectors\DueGooder.Connectors.csproj" />
     <ProjectReference Include="..\..\src\DueGooder.Infrastructure\DueGooder.Infrastructure.csproj" />
     <ProjectReference Include="..\..\src\DueGooder.Application\DueGooder.Application.csproj" />

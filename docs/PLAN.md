@@ -38,8 +38,9 @@ Fabian's tasks need only a browser, a spreadsheet or text editor, and git. No .N
 
 ## Block 1 — First vertical slice (Fri 8:15–11:45 PM)
 
-- [ ] **T4** Banner 9 fixtures · Fabian — T3 · **due 9:30 PM** · **done when** term and class-search JSON responses from **2 schools** are saved in `tests/fixtures/banner9/` (browser DevTools → Network → copy the response; trim to 1–2 pages of results)
-- [ ] **T5** Banner 9 connector · Prateek — T2, T4 · **done when** it lists terms, pages through class search, maps sections, meetings, instructors and enrollment, and its fixture tests pass for both schools
+- [x] **T4** Banner 9 fixtures · Fabian — T3 · **due 9:30 PM** · **done when** term and class-search JSON responses from **2 schools** are saved in `tests/fixtures/banner9/` (browser DevTools → Network → copy the response; trim to 1–2 pages of results)
+  - _Done for EKU + SUNY Empire (UIUC's class search needs a sign-in, so only its term list is saved). More schools: [banner9-fixtures.md](banner9-fixtures.md)._
+- [x] **T5** Banner 9 connector · Prateek — T2, T4 · **done when** it lists terms, pages through class search, maps sections, meetings, instructors and enrollment, and its fixture tests pass for both schools
 - [ ] **T6** Storage + upsert · Prateek — T2 · **done when** there's an EF Core SQLite schema, `ISectionRepository` upserts by natural key, and a test proves that re-saving identical data writes nothing
 - [ ] **T7** Single-school CLI · Prateek — T5, T6 · **done when** `duegooder run --school <id>` collects one school into SQLite with source URLs and timestamps
 

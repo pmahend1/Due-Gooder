@@ -23,6 +23,8 @@ schools:
     platform: banner9
     base_url: https://banner.apps.uillinois.edu/StudentRegistrationSSB/
     mep_code: 1UIUC
+    # getTerms is public, but term/search redirects to a SAML sign-in (checked 2026-09-11), so
+    # collection is expected to fail with a recorded reason. Kept as the failure-handling example.
 
   - id: sunyempire
     name: SUNY Empire State University

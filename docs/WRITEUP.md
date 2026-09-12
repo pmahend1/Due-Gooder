@@ -1,9 +1,9 @@
 # DueGooder — write-up
 
 Covers T19 (setup, connector reuse, pipeline, run instructions) and T20 (failure handling, scaling and
-cost, accuracy, human steps). The narrative and every design decision below are final; the numbers
-marked `[PENDING S7]` get replaced with the measured run's real figures once it and its refresh finish —
-see `docs/PLAN-B.md`'s Session log (S1–S7) for the full history behind each decision.
+cost, accuracy, human steps). All numbers below are filled in from the measured run (S7) and the
+automated accuracy check (S8) — see `docs/PLAN-B.md`'s Session log (S1–S8) for the full history behind
+each decision.
 
 ## Per-school setup
 
@@ -220,11 +220,35 @@ What's already known and doesn't change once the numbers land:
 
 ## Accuracy
 
-**`[PENDING T18]`** — Fabian hand-checks 20 of the 50 spot-check rows against their live registrar pages
-(course, section, days, times, room, instructor) and records match/mismatch with a note; the remaining
-30 get re-fetched live and diffed field-by-field by a small automated script. Both match rates get
-reported **separately and labeled** (manual vs. automated) — never combined into one number, since they
-measure different things (a human's judgment on ambiguous cases vs. an exact field diff).
+**Automated-only — no human hand-check.** T18 was scoped as a manual spot-check by Fabian plus an
+automated diff on the rest, but Fabian ran out of Claude usage credits before he could do his half, and
+with the deadline hours away that half was **skipped, not deferred**: there is no manual verification
+number in this write-up, and the result below should not be read as if there were.
+
+Instead, all 50 rows of `data/samples/spot-check.csv` were re-collected **live** with `duegooder verify`
+(`src/DueGooder.Cli/VerifyCommand.cs`): for each row's school and term it re-runs the same
+`Banner9Connector` used for collection — identifying the platform live for schools without a configured
+`base_url`, listing terms, and paging class search — matches the stored row to the live section by CRN,
+and diffs title, days, start time, end time, building, room and primary instructor field-by-field.
+Sections were matched by CRN rather than re-fetched by URL because a `searchResults` URL's `pageOffset`
+is only valid for that specific request's sort order and session; the connector's own term + class-search
+walk is the same path a live URL would resolve through.
+
+**Result: 48/48 checkable rows matched (100.0%).** The remaining 2 rows (both `fhda`, terms 202642 and
+202541) could not be checked: `fhda`'s Banner term-list endpoint returned HTTP 500 at verification time,
+confirmed independently with a plain `curl` a few seconds apart returning 500 twice — a live outage on
+that registrar's server, not a data or connector problem. Those 2 rows are marked `unknown` in
+`spot-check.csv` with that reason and are excluded from the rate rather than counted as mismatches; `fhda`
+is 27,597 of the measured run's 1,749,890 stored sections (1.6%), and this outage happened at
+verification time, after `fhda`'s own data was already collected and stored.
+
+This number is real but narrower than a hand-check would have been: it re-verifies the same connector
+logic and JSON parsing that produced the stored data, using the same field extraction, so it would not
+catch a systematic misreading of the source (e.g. a mis-mapped JSON field that's wrong the same way both
+times) the way independent human judgment against the registrar's own rendered page could. It does catch
+drift since collection (enrollment changes, room reassignments, cancelled sections, stale terms) and
+exercises the connector against 17 schools' live sites in one run, which is itself a meaningful reliability
+signal on top of the accuracy number.
 
 One accuracy caveat already known from S5, worth stating regardless of the final rate: Montgomery
 College's "Spring 2028 (View Only)" term turned out to be Spring 2027 copied forward by the registrar

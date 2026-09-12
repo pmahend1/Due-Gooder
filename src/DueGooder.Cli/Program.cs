@@ -14,6 +14,7 @@ const string Usage = """
                          [--min-interval <seconds>] [--max-hosts <n>] [--human-steps <path>]
            duegooder report --run <reports/run-id.json> (see `duegooder report` for its options)
            duegooder export [--db <path>] ...                         (see `duegooder export` for its options)
+           duegooder verify [--samples <path>] ...                    (see `duegooder verify` for its options)
 
       --schools       school list (default config/schools.yaml)
       --school        run only this school id (schools without a base_url are identified from their homepage)
@@ -42,6 +43,11 @@ if (args is ["report", .. var reportArgs])
 if (args is ["export", .. var exportArgs])
 {
     return await ExportCommand.ExecuteAsync(exportArgs);
+}
+
+if (args is ["verify", .. var verifyArgs])
+{
+    return await VerifyCommand.ExecuteAsync(verifyArgs);
 }
 
 if (args is not ["run", ..])

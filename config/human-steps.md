@@ -14,5 +14,8 @@ Every step a person took, so per-school setup cost is visible. Claude Code (AI) 
 | 2026-09-12 | Removed `platform` and `base_url` from every school so discovery finds them from the homepage, then put `base_url` back for the 10 collectable Banner 9 schools the S6 discovery run couldn't find, each with its reason in `config/schools.yaml` | 10 of 41 Banner 9 schools | setup: config |
 | 2026-09-12 15:40 | Deleted the local DB and started the measured run by hand (`--max-terms 24 --max-hosts 12`, same limits as the overnight run) | all | run |
 | 2026-09-12 17:09 | Started the refresh run by hand against the measured run's database, same limits, to prove zero duplicates | all | run |
+| 2026-09-12 | Fabian ran out of Claude usage credits before doing his half of T18's spot-check; decided to skip the manual hand-check rather than wait or defer it, and rely on the automated diff alone (labeled as such in the write-up) | 50 spot-check rows | decision |
+| 2026-09-12 | Started `duegooder verify` by hand against the live spot-check schools for T18's automated accuracy check | 17 | run |
+| 2026-09-12 | Independently confirmed fhda's live HTTP 500 on its term-list endpoint with a plain `curl`, to rule out a bug in `duegooder verify` before excluding those 2 rows from the accuracy rate | fhda | review |
 
 Not done by a person: nothing was retried, skipped or edited by hand during the run. Schools whose robots.txt refuses us, or whose class search needs a sign-in, stay failed with that reason; nobody worked around them.

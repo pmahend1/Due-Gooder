@@ -154,6 +154,10 @@ dotnet run --project src/DueGooder.Cli -c Release -- report --run reports/<run-i
 # Full normalized export (CSV + JSON) to data/export/, plus curated samples, a 50-row spot-check
 # sheet and a README to data/samples/:
 dotnet run --project src/DueGooder.Cli -c Release -- export --db data/duegooder.db
+
+# Accuracy check: re-collects each spot-check row's school+term LIVE and diffs it against the stored
+# row, matched by CRN. Automated only — see docs/WRITEUP.md's Accuracy section for why.
+dotnet run --project src/DueGooder.Cli -c Release -- verify --samples data/samples/spot-check.csv
 ```
 
 Pass an unknown option (or, for `run`, no arguments at all) to print the full usage text for that

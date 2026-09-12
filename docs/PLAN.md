@@ -61,6 +61,7 @@ Fabian's tasks need only a browser, a spreadsheet or text editor, and git. No .N
 - [ ] **T14** Refresh · Prateek — T6, T8 · **done when** re-running writes zero duplicates, new terms get picked up, a large drop in section count flags the integration as broken (without deleting data), and each record has a `last_confirmed_at`
 - [ ] **T15** _(stretch)_ Second platform · Fabian researches, Prateek builds — T12 · **done when** the most common non-Banner platform in the list has its URL patterns, endpoints and fixtures from **2 schools** documented, and a connector for it works. Build it only if T11–T14 are done by 10:30 AM.
 - [x] **T22** Cost model · Fabian — none · **due 10:00 AM** · **done when** a spreadsheet (or `docs/cost-model.md`) has current prices for a small cloud VM, bandwidth and LLM tokens, with sources linked, and a formula for cost per school and per 1,000 schools. It takes measured runtime, requests and bytes as inputs, labels every assumption as an estimate, and gets the real numbers plugged in after T16.
+  - _The model is [docs/cost-model.md](cost-model.md): prices checked 2026-09-12, formulas for per school and per 1,000, and a worked example. Every measured input is still a `___` placeholder, and the "After the measured run (T16)" section lists what to fill in and to reconcile it with T13's Cost section._
 
 ## Block 4 — Measured run and submission (Sat 11:30 AM – 5 PM)
 

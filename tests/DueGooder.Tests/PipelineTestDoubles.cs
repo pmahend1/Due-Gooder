@@ -13,7 +13,13 @@ internal sealed class PipelineTestDoubles : ISectionRepository, IRunProgress, IH
 {
     #region State
 
-    public ConcurrentBag<(Term Term, IReadOnlyList<Section> Sections)> Upserts { get; } = [];
+    public ConcurrentBag<(Term Term, IReadOnlyList<Section> Sections, IReadOnlyList<CollectionGap> Gaps)> Upserts { get; } = [];
+
+    /// <summary>Fetcher for discovery; null means connectors never touch HTTP.</summary>
+    public IHttpFetcher? Http { get; init; }
+
+    /// <summary>What earlier runs "stored", by school id.</summary>
+    public Dictionary<string, List<StoredTerm>> Stored { get; } = [];
 
     public ConcurrentQueue<string> LogLines { get; } = [];
 
@@ -23,17 +29,24 @@ internal sealed class PipelineTestDoubles : ISectionRepository, IRunProgress, IH
 
     #region Methods
 
-    public Task<int> UpsertAsync(Term term, IReadOnlyList<Section> sections, CancellationToken cancellationToken)
+    public Task<IReadOnlyList<StoredTerm>> GetStoredTermsAsync(string schoolId, CancellationToken cancellationToken) =>
+        Task.FromResult<IReadOnlyList<StoredTerm>>(Stored.GetValueOrDefault(schoolId) ?? []);
+
+    public Task<SectionChanges> UpsertAsync(Term term,
+                                            IReadOnlyList<Section> sections,
+                                            IReadOnlyList<CollectionGap> gaps,
+                                            DateTimeOffset confirmedAt,
+                                            CancellationToken cancellationToken)
     {
-        Upserts.Add((term, sections));
-        return Task.FromResult(sections.Count + 1);
+        Upserts.Add((term, sections, gaps));
+        return Task.FromResult(new SectionChanges(sections.Count + 1, sections.Count, Changed: 0, Unchanged: 0, NotSeen: 0));
     }
 
     public void Log(string schoolId, string message) => LogLines.Enqueue($"[{schoolId}] {message}");
 
     public void SchoolFinished(SchoolRunResult result) => Finished.Enqueue(result);
 
-    public IHttpFetcher Create(RequestMetrics metrics) => this;
+    public IHttpFetcher Create(RequestMetrics metrics) => Http ?? this;
 
     public IHttpSession OpenSession() => throw new NotSupportedException("scripted connectors don't use HTTP");
 

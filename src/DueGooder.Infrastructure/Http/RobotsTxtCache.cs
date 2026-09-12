@@ -56,8 +56,11 @@ internal sealed class RobotsTxtCache(HttpClient client, string productToken)
         }
         catch (Exception exception) when (exception is HttpRequestException or TimeoutException)
         {
-            // The innermost exception names the real cause (reset, TLS, DNS); the outer one only says "error while sending".
-            return RobotsTxt.Unreachable(robotsUrl, productToken, exception.GetBaseException().Message);
+            // The innermost exception names the real cause (reset, TLS); the outer one only says "error while sending".
+            var reason = exception is HttpRequestException { HttpRequestError: HttpRequestError.NameResolutionError }
+                ? ConnectorException.UnresolvedHostReason
+                : exception.GetBaseException().Message;
+            return RobotsTxt.Unreachable(robotsUrl, productToken, reason);
         }
     }
 

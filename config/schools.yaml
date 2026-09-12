@@ -2,19 +2,22 @@
 #
 #   id        stable slug; root of every natural key (school + term + course + section)
 #   timezone  IANA zone; meeting times are stored as wall-clock times in this zone
-#   platform  suspected platform; identification (T12) confirms or corrects it
-#   base_url  platform entry point, when already known
+#   homepage  where discovery starts: each run identifies the platform and its entry point from this page alone
+#   platform  + base_url: set both only to skip discovery, when the entry point can't be found from the
+#             homepage (each such entry says why); a run's report lists which schools needed it
 #   mep_code  Banner multi-institution code, for servers that host several campuses
 #
-# Every Banner 9 host below was confirmed on 2026-09-11: classSearch/getTerms returned term JSON.
+# The Banner 9 schools below were confirmed on 2026-09-11 (classSearch/getTerms returned term JSON) when
+# their base_url was found by hand; since S6 discovery finds it again on every run.
 
 schools:
   - id: eku
     name: Eastern Kentucky University
     homepage: https://www.eku.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://registrationss.eku.edu/StudentRegistrationSsb/
+    # Its Banner host's robots.txt disallows every crawler (checked in S4), so it is never collected. Kept
+    # (decided in S6) so every run records that refusal in the review queue; S3's live run and the fixtures
+    # predate the check. Remove these lines to drop it from the list.
 
   - id: uiuc
     name: University of Illinois Urbana-Champaign
@@ -30,83 +33,63 @@ schools:
     name: SUNY Empire State University
     homepage: https://www.sunyempire.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://banner.esc.edu/StudentRegistrationSsb/
 
   - id: oakland
     name: Oakland University
     homepage: https://www.oakland.edu/
     timezone: America/Detroit
-    platform: banner9
-    base_url: https://bstreg.oakland.edu/StudentRegistrationSsb/
 
   - id: uindy
     name: University of Indianapolis
     homepage: https://www.uindy.edu/
     timezone: America/Indiana/Indianapolis
-    platform: banner9
-    base_url: https://banner.uindy.edu/StudentRegistrationSsb/
 
   - id: wvu
     name: West Virginia University
     homepage: https://www.wvu.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://starss.wvu.edu/StudentRegistrationSsb/
 
   - id: kccd
     name: Kern Community College District
     homepage: https://www.kccd.edu/
     timezone: America/Los_Angeles
-    platform: banner9
-    base_url: https://reg-prod.ec.kccd.edu/StudentRegistrationSsb/
 
   - id: starkstate
     name: Stark State College
     homepage: https://www.starkstate.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://selfservice-registration.starkstate.edu/StudentRegistrationSsb/
 
   - id: oakton
     name: Oakton College
     homepage: https://www.oakton.edu/
     timezone: America/Chicago
-    platform: banner9
-    base_url: https://banner.oakton.edu/StudentRegistrationSsb/
 
   - id: lehigh
     name: Lehigh University
     homepage: https://www.lehigh.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://reg-prod.ec.lehigh.edu/StudentRegistrationSsb/
 
   - id: odu
     name: Old Dominion University
     homepage: https://www.odu.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://reg-prod.ec.odu.edu/StudentRegistrationSsb/
 
   - id: ctstate
     name: Connecticut State Community College
     homepage: https://ctstate.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://reg-prod.ec.ct.edu/StudentRegistrationSsb/
 
   - id: tric
     name: Cuyahoga Community College
     homepage: https://www.tri-c.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://banstup.tri-c.edu/StudentRegistrationSsb/
 
   - id: blinn
     name: Blinn College
     homepage: https://www.blinn.edu/
     timezone: America/Chicago
+    # Discovery missed it (S6 run 2026-09-12): the homepage's "Course Schedule" link goes to the old Banner 8
+    # schedule (ssb.blinn.edu:9010); Banner 9 is ban9reg.blinn.edu
     platform: banner9
     base_url: https://ban9reg.blinn.edu/StudentRegistrationSsb/
 
@@ -114,31 +97,23 @@ schools:
     name: University of Louisiana at Lafayette
     homepage: https://louisiana.edu/
     timezone: America/Chicago
-    platform: banner9
-    base_url: https://reg-prod.ec.louisiana.edu/StudentRegistrationSsb/
 
   - id: aum
     name: Auburn University at Montgomery
     homepage: https://www.aum.edu/
     timezone: America/Chicago
-    platform: banner9
-    base_url: https://ssb9.aum.edu/StudentRegistrationSsb/
 
   - id: ucmerced
     name: University of California, Merced
     homepage: https://www.ucmerced.edu/
     timezone: America/Los_Angeles
-    platform: banner9
-    base_url: https://reg-prod.ec.ucmerced.edu/StudentRegistrationSsb/
 
   - id: uidaho
     name: University of Idaho
     homepage: https://www.uidaho.edu/
     timezone: America/Los_Angeles
-    platform: banner9
-    base_url: https://banner.uidaho.edu/StudentRegistrationSsb/
 
-  # Added 2026-09-11 night (S4). Each host's robots.txt permits crawling and one term was collected live.
+  # Added 2026-09-11 night (S4). Each Banner host's robots.txt permits crawling and one term was collected live.
   # Several schools above are refused by their own robots.txt (see the S4 pre-flight); they stay in
   # the list so the run report shows that refusal as a recorded failure.
 
@@ -146,15 +121,11 @@ schools:
     name: Samford University
     homepage: https://www.samford.edu/
     timezone: America/Chicago
-    platform: banner9
-    base_url: https://ssb.samford.edu/StudentRegistrationSsb/
 
   - id: msudenver
     name: Metropolitan State University of Denver
     homepage: https://www.msudenver.edu/
     timezone: America/Denver
-    platform: banner9
-    base_url: https://ssb.msudenver.edu/StudentRegistrationSsb/
 
   - id: okstate
     name: Oklahoma State University
@@ -168,13 +139,13 @@ schools:
     name: University of Oklahoma
     homepage: https://www.ou.edu/
     timezone: America/Chicago
-    platform: banner9
-    base_url: https://sis.ou.edu/StudentRegistrationSsb/
 
   - id: cofc
     name: College of Charleston
     homepage: https://charleston.edu/
     timezone: America/New_York
+    # Discovery missed it (S6 run 2026-09-12): the homepage (charleston.edu) links no registrar or schedule
+    # page, and Banner lives on the older cofc.edu domain
     platform: banner9
     base_url: https://ssb.cofc.edu/StudentRegistrationSsb/
 
@@ -182,20 +153,18 @@ schools:
     name: Northeastern University
     homepage: https://www.northeastern.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://nubanner.neu.edu/StudentRegistrationSsb/
 
   - id: ucr
     name: University of California, Riverside
     homepage: https://www.ucr.edu/
     timezone: America/Los_Angeles
-    platform: banner9
-    base_url: https://registrationssb.ucr.edu/StudentRegistrationSsb/
 
   - id: fhda
     name: Foothill-De Anza Community College District
     homepage: https://www.fhda.edu/
     timezone: America/Los_Angeles
+    # Discovery missed it (S6 run 2026-09-12): the district homepage links only to its colleges; the host
+    # reg.oci.fhda.edu matches no well-known name
     platform: banner9
     base_url: https://reg.oci.fhda.edu/StudentRegistrationSsb/
 
@@ -203,13 +172,13 @@ schools:
     name: Montgomery College
     homepage: https://www.montgomerycollege.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://b9pubstu.glb.montgomerycollege.edu/StudentRegistrationSsb/
 
   - id: gmu
     name: George Mason University
     homepage: https://www.gmu.edu/
     timezone: America/New_York
+    # Discovery missed it (S6 run 2026-09-12): the homepage's "Registration" links lead to event sign-ups, and
+    # the guessed ssb.gmu.edu redirects; the host is ssbstureg.gmu.edu
     platform: banner9
     base_url: https://ssbstureg.gmu.edu/StudentRegistrationSsb/
 
@@ -217,13 +186,13 @@ schools:
     name: Temple University
     homepage: https://www.temple.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://prd-xereg.temple.edu/StudentRegistrationSsb/
 
   - id: ccsf
     name: City College of San Francisco
     homepage: https://www.ccsf.edu/
     timezone: America/Los_Angeles
+    # Discovery missed it (S6 run 2026-09-12): the homepage answers HTTP 403 to our User-Agent, and Banner runs
+    # on a non-standard port (8105)
     platform: banner9
     base_url: https://ssb1.ccsf.edu:8105/StudentRegistrationSsb/
 
@@ -231,20 +200,18 @@ schools:
     name: University of North Carolina at Charlotte
     homepage: https://www.charlotte.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://selfservice.uncc.edu/StudentRegistrationSsb/
 
   - id: uncw
     name: University of North Carolina Wilmington
     homepage: https://uncw.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://registration.uncw.edu/StudentRegistrationSsb/
 
   - id: unf
     name: University of North Florida
     homepage: https://www.unf.edu/
     timezone: America/New_York
+    # Discovery missed it (S6 run 2026-09-12): the homepage links no registrar or schedule page; the host
+    # banregister.unf.edu matches no well-known name
     platform: banner9
     base_url: https://banregister.unf.edu/StudentRegistrationSsb/
 
@@ -252,13 +219,13 @@ schools:
     name: University of South Florida
     homepage: https://www.usf.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://studentssb9.it.usf.edu/StudentRegistrationSsb/
 
   - id: gsu
     name: Georgia State University
     homepage: https://www.gsu.edu/
     timezone: America/New_York
+    # Discovery missed it (S6 run 2026-09-12): registrar.gsu.edu answers HTTP 403 to our User-Agent; the host
+    # registration.gosolar.gsu.edu matches no well-known name
     platform: banner9
     base_url: https://registration.gosolar.gsu.edu/StudentRegistrationSsb/
 
@@ -266,13 +233,13 @@ schools:
     name: Saint Joseph's University
     homepage: https://www.sju.edu/
     timezone: America/New_York
-    platform: banner9
-    base_url: https://registration.sju.edu/StudentRegistrationSsb/
 
   - id: siu
     name: Southern Illinois University Carbondale
     homepage: https://siu.edu/
     timezone: America/Chicago
+    # Discovery missed it (S6 run 2026-09-12): the homepage links no registrar or schedule page; the host
+    # banssb1.siu.edu matches no well-known name
     platform: banner9
     base_url: https://banssb1.siu.edu/StudentRegistrationSsb/
 
@@ -280,6 +247,8 @@ schools:
     name: University of Texas Rio Grande Valley
     homepage: https://www.utrgv.edu/
     timezone: America/Chicago
+    # Discovery missed it (S6 run 2026-09-12): the homepage links no registrar or schedule page; the host
+    # assist.utrgv.edu matches no well-known name
     platform: banner9
     base_url: https://assist.utrgv.edu/StudentRegistrationSsb/
 
@@ -287,6 +256,8 @@ schools:
     name: Chabot-Las Positas Community College District
     homepage: https://www.clpccd.org/
     timezone: America/Los_Angeles
+    # Discovery missed it (S6 run 2026-09-12): the district homepage links only to its colleges, and Banner
+    # lives on another domain (clpccd.cc.ca.us)
     platform: banner9
     base_url: https://banssprod.clpccd.cc.ca.us/StudentRegistrationSsb/
 
@@ -294,19 +265,15 @@ schools:
     name: Central Oregon Community College
     homepage: https://www.cocc.edu/
     timezone: America/Los_Angeles
-    platform: banner9
-    base_url: https://reg-prod.cocc.edu/StudentRegistrationSsb/
 
   - id: ufv
     name: University of the Fraser Valley
     homepage: https://www.ufv.ca/
     timezone: America/Vancouver
-    platform: banner9
-    base_url: https://apps.ban.ufv.ca/StudentRegistrationSsb/
 
   # Non-Banner schools, so identification has something to tell Banner 9 apart from. All eight were
-  # confirmed on 2026-09-11 from public pages; the evidence is quoted per entry. base_url is left out
-  # on purpose here: fingerprinting has to find the platform entry point starting from the homepage.
+  # confirmed by hand on 2026-09-11 from public pages; the evidence is quoted per entry. No connector
+  # exists for them yet, so every run puts them in the manual review queue with what discovery saw.
 
   # --- PeopleSoft Campus Solutions -------------------------------------------------------------
   # Guest class search lives at /psc/<site>/EMPLOYEE/<node>/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL.
@@ -317,7 +284,6 @@ schools:
     name: University of Louisville
     homepage: https://louisville.edu/
     timezone: America/Kentucky/Louisville
-    platform: peoplesoft
     # https://csprd.louisville.edu/psc/ps_class/EMPLOYEE/PSFT_CS/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL
     # returns <title>Class Search</title> with "Search for Classes" on the GUEST node.
 
@@ -325,14 +291,12 @@ schools:
     name: University of Missouri
     homepage: https://missouri.edu/
     timezone: America/Chicago
-    platform: peoplesoft
     # https://access.myzou.missouri.edu/psc/prdpa/EMPLOYEE/SA/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL
 
   - id: nau
     name: Northern Arizona University
     homepage: https://nau.edu/
     timezone: America/Phoenix # Arizona skips DST; a good check that we never assume US DST rules
-    platform: peoplesoft
     # https://www.peoplesoft.nau.edu/psc/ps92prcs/EMPLOYEE/SA/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL
     # ?Page=SSR_CLSRCH_ENTRY&search=true&inst=NAU00&open=N
 
@@ -345,7 +309,6 @@ schools:
     name: Louisiana State University
     homepage: https://www.lsu.edu/
     timezone: America/Chicago
-    platform: workday
     # https://www.lsu.edu/workdaystudent/resources/student-resources.php sends students to Workday
     # for "all course registration activities" and links the public applicant site
     # https://wd1-student.myworkdaysite.com/lsu/LSUAM_Undergraduate_Site.
@@ -355,7 +318,6 @@ schools:
     name: Dallas College
     homepage: https://www.dallascollege.edu/
     timezone: America/Chicago
-    platform: workday
     # https://www.dallascollege.edu/resources/online-services/tutorials/workday/workday-login/
     # prints the tenant URL students register through:
     # https://wd1-identity.myworkday.com/wday/authgwy/dallascollege/upc/login
@@ -368,7 +330,6 @@ schools:
     name: Bellarmine University
     homepage: https://www.bellarmine.edu/
     timezone: America/Kentucky/Louisville
-    platform: colleague
     # https://selfservice.bellarmine.edu/Student/Courses/Search — "Search for Courses and Course
     # Sections" with term, subject, instructor and time-range filters, no sign-in.
 
@@ -376,7 +337,6 @@ schools:
     name: Southwestern College
     homepage: https://www.swccd.edu/
     timezone: America/Los_Angeles
-    platform: colleague
     # https://collselfserv.swccd.edu/Student/Courses — <title>Course Catalog - SWC Colleague
     # Self-Service</title>. Self-hosted, so the host gives no hint of the platform.
 
@@ -384,6 +344,5 @@ schools:
     name: Kishwaukee College
     homepage: https://www.kish.edu/
     timezone: America/Chicago
-    platform: colleague
     # https://kish-ss.colleague.elluciancloud.com/Student/Courses — <title>Course Catalog -
     # Kishwaukee College Self-Service</title>, on Ellucian's cloud host.

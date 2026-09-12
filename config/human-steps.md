@@ -11,5 +11,6 @@ Every step a person took, so per-school setup cost is visible. Claude Code (AI) 
 | 2026-09-12 03:32 | Chose the overnight limits (`--max-terms 24 --max-hosts 12`) and started the run by hand with `caffeinate -i` | all | run |
 | 2026-09-12 | Checked Montgomery's Spring 2028 in the public class search in a browser: 3,292 classes, the same count the run stored for term 202830; the page's row id `202830.30184` matches the stored term code and the CRN of ACCT 221 section 400 | montgomery | review: spot-check |
 | 2026-09-12 | Read the run's failures (grep + jq over the log and JSON) and changed the Banner 9 mapper once for every school; no school-specific code or config was added | all | review |
+| 2026-09-12 | Removed `platform` and `base_url` from every school so discovery finds them from the homepage, then put `base_url` back for the 10 collectable Banner 9 schools the S6 discovery run couldn't find, each with its reason in `config/schools.yaml` | 10 of 41 Banner 9 schools | setup: config |
 
 Not done by a person: nothing was retried, skipped or edited by hand during the run. Schools whose robots.txt refuses us, or whose class search needs a sign-in, stay failed with that reason; nobody worked around them.

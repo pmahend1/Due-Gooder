@@ -1,5 +1,6 @@
 using System.Globalization;
 using System.Text;
+using DueGooder.Application.Discovery;
 using DueGooder.Application.Pipeline;
 
 namespace DueGooder.Cli;
@@ -62,16 +63,21 @@ internal static class RunReportMarkdown
         Line("| | Count |");
         Line("| --- | ---: |");
         Line($"| Schools attempted | {schools.Count} |");
-        Line($"| Schools identified (the configured platform's connector returned a term list) | {schools.Count(school => school.TermsListed > 0)} |");
-        Line($"| Schools collected (every attempted term) | {Count(schools, SchoolRunStatus.Collected)} |");
-        Line($"| Schools partial (some terms failed) | {Count(schools, SchoolRunStatus.Partial)} |");
-        Line($"| Schools failed (nothing collected) | {Count(schools, SchoolRunStatus.Failed)} |");
+        Line($"| Schools identified (platform confirmed by config or by discovery) | {schools.Count(IsIdentified)} |");
+        Line($"| … found from the homepage alone | {schools.Count(school => school.Discovery is { Identified: true, Method: not DiscoveryMethod.Configured })} |");
+        Line($"| … platform and base_url set in config | {schools.Count(school => school.Discovery?.Method is DiscoveryMethod.Configured)} |");
+        Line($"| Schools in the manual review queue (not identified) | {Count(schools, SchoolRunStatus.NotIdentified)} |");
+        Line($"| Schools collected (every attempted term, complete) | {Count(schools, SchoolRunStatus.Collected)} |");
+        Line($"| Schools partial (some terms failed or stored with a gap) | {Count(schools, SchoolRunStatus.Partial)} |");
+        Line($"| Schools failed (identified, nothing collected) | {Count(schools, SchoolRunStatus.Failed)} |");
         Line($"| Terms listed / attempted / collected | {Number(schools.Sum(school => school.TermsListed))} / {Number(terms.Count)} / {Number(terms.Count(term => term.FailureReason is null))} |");
         Line($"| Sections | {Number(terms.Sum(term => term.Sections))} |");
         Line($"| Meetings | {Number(terms.Sum(term => term.Meetings))} |");
         Line($"| Extraction failures (published fields that couldn't be parsed) | {Number(terms.Sum(term => term.ExtractionFailures))} |");
         Line($"| Duplicate section records dropped | {Number(terms.Sum(term => term.DuplicateSections))} |");
-        Line($"| Rows written | {Number(terms.Sum(term => term.RowsWritten))} |");
+        Line($"| Rows written for content changes | {Number(terms.Sum(term => term.RowsWritten))} |");
+        Line($"| New terms (not in the database before this run) | {Number(terms.Count(term => term.IsNew && term.FailureReason is null))} |");
+        Line($"| Broken-integration flags | {Number(schools.Sum(school => school.IntegrationFlags.Count))} |");
 
         var collectedSchools = schools.Where(school => school.Status is not SchoolRunStatus.Failed).ToList();
         var statusCounts = schools.SelectMany(school => school.Requests.StatusCounts)
@@ -100,6 +106,8 @@ internal static class RunReportMarkdown
              + "between request starts (robots.txt Crawl-delay can raise it), robots.txt honored, identifying User-Agent "
              + $"`{document.Settings.GetValueOrDefault("userAgent", "?")}`.");
 
+        RenderDiscovery(Line, schools);
+        RenderRefresh(Line, schools);
         RenderFieldCompleteness(Line, schools, fieldsBySchool, fieldsSource);
         RenderCost(Line, cost);
 
@@ -109,8 +117,155 @@ internal static class RunReportMarkdown
         Line(humanSteps ?? $"No human-steps file was found at `{humanStepsPath}`.");
 
         RenderFailures(Line, schools);
+        RenderReviewQueue(Line, schools);
         RenderSchools(Line, schools, fieldsBySchool);
         return text.ToString();
+    }
+
+    private static void RenderDiscovery(Action<string> line, IReadOnlyList<SchoolRunResult> schools)
+    {
+        var withDiscovery = schools.Where(school => school.Discovery is not null).ToList();
+        if (withDiscovery.Count is 0)
+        {
+            return;
+        }
+
+        line("");
+        line("## Discovery");
+        line("");
+        line("Schools without a `base_url` in config are identified from their homepage alone: the homepage and up to "
+             + "a few schedule or registrar pages of the school's site are scanned for each connector's URL patterns and HTML "
+             + "markers; failing that, host names the platform commonly uses are probed. A connector's probe request has to "
+             + "confirm the candidate. Evidence for every school is in the JSON; unconfirmed schools are listed with theirs "
+             + "under *Manual review queue*.");
+        line("");
+        line("| How | Schools |");
+        line("| --- | ---: |");
+        foreach (var group in withDiscovery.GroupBy(school => school.Discovery!.Method).OrderBy(group => group.Key))
+        {
+            line($"| {MethodLabel(group.Key)} | {group.Count()} ({string.Join(", ", group.Select(school => school.SchoolId))}) |");
+        }
+
+        var discovered = withDiscovery.Where(school => school.Discovery!.Method is not DiscoveryMethod.Configured).ToList();
+        if (discovered.Count is 0)
+        {
+            return;
+        }
+
+        line("");
+        line("| School | Found by | Platform | Base URL | Pages | Probes | Time | Confirming evidence |");
+        line("| --- | --- | --- | --- | ---: | ---: | ---: | --- |");
+        foreach (var school in discovered)
+        {
+            var discovery = school.Discovery!;
+            var confirming = discovery.Identified
+                ? discovery.Evidence.LastOrDefault(evidence => evidence.Contains("probe:")) ?? ""
+                : "";
+            line($"| {school.SchoolId} | {MethodLabel(discovery.Method)} | {discovery.Platform ?? "—"} | "
+                 + $"{Cell(discovery.BaseUrl?.ToString() ?? "—")} | {discovery.PagesFetched} | {discovery.Probes} | "
+                 + $"{Duration(discovery.Duration)} | {Cell(confirming)} |");
+        }
+    }
+
+    private static void RenderRefresh(Action<string> line, IReadOnlyList<SchoolRunResult> schools)
+    {
+        var stored = schools.SelectMany(school => school.Terms.Where(term => term.Changes is not null)
+                                                              .Select(term => (school.SchoolId, Term: term)))
+                            .ToList();
+        var flagged = schools.Where(school => school.IntegrationFlags.Count > 0).ToList();
+        if (stored.Count is 0 && flagged.Count is 0)
+        {
+            return;
+        }
+
+        line("");
+        line("## Refresh");
+        line("");
+        line("Every stored term is compared with what earlier runs stored. Sections are upserted by natural key (school + term + "
+             + "course + CRN), so a re-run never duplicates. An unchanged section keeps its source URL and `retrieved_at` and "
+             + "only its `last_confirmed_at` moves, so a re-run with no source changes writes no content rows. Nothing is "
+             + "ever deleted: a section the source no longer lists stops being confirmed and goes stale.");
+        line("");
+        line("| | Count |");
+        line("| --- | ---: |");
+        line($"| Terms stored | {Number(stored.Count)} |");
+        line($"| … new (not in the database before) | {Number(stored.Count(entry => entry.Term.IsNew))} |");
+        line($"| Sections added | {Number(stored.Sum(entry => entry.Term.Changes!.Added))} |");
+        line($"| Sections changed | {Number(stored.Sum(entry => entry.Term.Changes!.Changed))} |");
+        line($"| Sections unchanged (only `last_confirmed_at` moved) | {Number(stored.Sum(entry => entry.Term.Changes!.Unchanged))} |");
+        line($"| Stored sections not seen this run (kept, going stale) | {Number(stored.Sum(entry => entry.Term.Changes!.NotSeen))} |");
+        line($"| Rows written for content changes | {Number(stored.Sum(entry => entry.Term.RowsWritten))} |");
+
+        var gapped = stored.Where(entry => entry.Term.MissingSections > 0).ToList();
+        if (gapped.Count > 0)
+        {
+            line("");
+            line("Terms stored with a recorded gap (the platform listed these records but wouldn't return them):");
+            line("");
+            line("| School | Term | Stored | Missing | Which | Reason |");
+            line("| --- | --- | ---: | ---: | --- | --- |");
+            foreach (var (schoolId, term) in gapped)
+            {
+                var which = string.Join(", ", term.Gaps!.Select(gap => gap.Count is 1
+                                                                           ? $"#{gap.FirstPosition}"
+                                                                           : $"#{gap.FirstPosition}-{gap.FirstPosition + gap.Count - 1}"));
+                line($"| {schoolId} | {term.TermCode} | {Number(term.Sections)} | {Number(term.MissingSections)} | "
+                     + $"{which} of {Number(term.Gaps![0].TotalCount)} | {Cell(term.Gaps[0].Reason)} |");
+            }
+        }
+
+        line("");
+        line("Broken-integration flags (stored data is kept for every one of them):");
+        line("");
+        if (flagged.Count is 0)
+        {
+            line("None.");
+            return;
+        }
+
+        line("| School | Flag |");
+        line("| --- | --- |");
+        foreach (var school in flagged)
+        {
+            foreach (var flag in school.IntegrationFlags)
+            {
+                line($"| {school.SchoolId} | {Cell(flag)} |");
+            }
+        }
+    }
+
+    private static void RenderReviewQueue(Action<string> line, IReadOnlyList<SchoolRunResult> schools)
+    {
+        var queue = schools.Where(school => school.Status is SchoolRunStatus.NotIdentified).ToList();
+        if (queue.Count is 0)
+        {
+            return;
+        }
+
+        line("");
+        line("## Manual review queue");
+        line("");
+        line("No connector confirmed these schools from their homepage. Each one is kept with every step of evidence, "
+             + "so a person can add a `base_url` (if the platform is supported but hidden) or pick the next connector to build.");
+        foreach (var school in queue)
+        {
+            var discovery = school.Discovery!;
+            line("");
+            line($"### {school.SchoolId}");
+            line("");
+            line($"{school.FailureReason}");
+            line("");
+            if (discovery.PlatformHints.Count > 0)
+            {
+                line($"Platforms without a connector seen on its pages: {string.Join("; ", discovery.PlatformHints.Select(hint => $"`{hint}`"))}");
+                line("");
+            }
+
+            foreach (var evidence in discovery.Evidence)
+            {
+                line($"- {evidence.ReplaceLineEndings(" ")}");
+            }
+        }
     }
 
     private static void RenderFieldCompleteness(Action<string> line,
@@ -284,9 +439,25 @@ internal static class RunReportMarkdown
         _ when reason.Contains("robots.txt") && reason.Contains("could not be read") =>
             "robots.txt unreadable (5xx or dropped connection), which RFC 9309 treats as disallow-all",
         _ when reason.Contains("sign-in") => "class search needs a sign-in",
-        _ when reason.Contains("no success") || reason.Contains("did not report success") =>
+        _ when reason.Contains("broken integration") => "broken integration suspected (section count collapsed)",
+        _ when reason.Contains("success:false") || reason.Contains("no success") || reason.Contains("did not report success") =>
             "Banner answered a results page with success:false",
+        _ when reason.StartsWith("not identified") && reason.Contains("pages point to") =>
+            "not identified: pages point to a platform without a connector",
+        _ when reason.StartsWith("not identified") => "not identified from the homepage",
         _ => "other",
+    };
+
+    // Runs from before discovery have no Discovery; there, a listed term is what showed the platform was right.
+    private static bool IsIdentified(SchoolRunResult school) => school.Discovery?.Identified ?? school.TermsListed > 0;
+
+    private static string MethodLabel(DiscoveryMethod method) => method switch
+    {
+        DiscoveryMethod.Configured => "platform and base_url in config",
+        DiscoveryMethod.HomepageLink => "link or marker on the homepage",
+        DiscoveryMethod.CrawledLink => "link on a schedule or registrar page",
+        DiscoveryMethod.GuessedHost => "well-known host name probed",
+        _ => "not found (review queue)",
     };
 
     private static int Count(IEnumerable<SchoolRunResult> schools, SchoolRunStatus status) =>

@@ -78,7 +78,7 @@ internal sealed record RunCostEstimate
 
     public static RunCostEstimate From(RunResult run, int concurrentHosts, long? databaseBytes)
     {
-        var collected = run.Schools.Where(school => school.Status is not SchoolRunStatus.Failed).ToList();
+        var collected = run.Schools.Where(school => school.Status is SchoolRunStatus.Collected or SchoolRunStatus.Partial).ToList();
         return new RunCostEstimate
         {
             WallClockHours = (decimal)run.Duration.TotalHours,

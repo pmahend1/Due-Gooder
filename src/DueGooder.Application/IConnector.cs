@@ -17,15 +17,31 @@ public interface IConnector
 
     #region Methods
 
+    /// <summary>
+    /// Base URLs of this platform that a page points to, judged from <paramref name="pageUrl"/> itself and from URL
+    /// patterns and markers in <paramref name="html"/>. Sends no request; <see cref="FingerprintAsync"/> confirms them.
+    /// </summary>
+    IReadOnlyList<Uri> FindEntryPoints(Uri pageUrl, string html);
+
+    /// <summary>
+    /// Where this platform commonly lives for a school with this homepage (well-known host names and paths), to probe
+    /// when none of the school's pages link to it.
+    /// </summary>
+    IReadOnlyList<Uri> GuessEntryPoints(Uri homepage);
+
     /// <summary>Scores how likely it is that <paramref name="candidate"/> runs this platform.</summary>
     Task<Fingerprint> FingerprintAsync(Uri candidate, CancellationToken cancellationToken);
 
     /// <summary>Lists every term the school currently publishes, including new ones.</summary>
     Task<IReadOnlyList<Term>> ListTermsAsync(ConnectorTarget target, CancellationToken cancellationToken);
 
-    /// <summary>Yields the raw section records for one term, with their meetings.</summary>
+    /// <summary>
+    /// Yields the raw section records for one term, with their meetings. Records the platform lists but won't return
+    /// are added to <paramref name="gaps"/> instead of failing the whole term.
+    /// </summary>
     IAsyncEnumerable<RawSection> CollectSectionsAsync(ConnectorTarget target,
                                                       Term term,
+                                                      ICollection<CollectionGap> gaps,
                                                       CancellationToken cancellationToken);
 
     /// <summary>

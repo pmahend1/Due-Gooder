@@ -15,8 +15,8 @@ const string Usage = """
            duegooder report --run <reports/run-id.json> (see `duegooder report` for its options)
 
       --schools       school list (default config/schools.yaml)
-      --school        run only this school id
-      --term          collect only this term code
+      --school        run only this school id (schools without a base_url are identified from their homepage)
+      --term          collect only this term code (`--term none` identifies schools and lists terms, collecting nothing)
       --max-terms     collect only the first n terms each school lists (Banner lists newest first)
       --db            SQLite database (default data/duegooder.db)
       --reports       directory for the run's JSON results (default reports)
@@ -97,10 +97,10 @@ catch (FormatException exception)
 var schools = SchoolsYamlLoader.Load(schoolsPath);
 if (values.TryGetValue("--school", out var schoolId))
 {
-    schools = schools.Where(school => school.Target.School.Id == schoolId).ToList();
+    schools = schools.Where(school => school.School.Id == schoolId).ToList();
     if (schools.Count is 0)
     {
-        Console.Error.WriteLine($"No school '{schoolId}' with a base_url in {schoolsPath}");
+        Console.Error.WriteLine($"No school '{schoolId}' in {schoolsPath}");
         return 1;
     }
 }
@@ -109,7 +109,11 @@ Directory.CreateDirectory(Path.GetDirectoryName(Path.GetFullPath(databasePath))!
 var dbOptions = new DbContextOptionsBuilder<DueGooderDbContext>().UseSqlite($"Data Source={databasePath}").Options;
 await using (var db = new DueGooderDbContext(dbOptions))
 {
-    await db.Database.EnsureCreatedAsync();
+    if (await db.EnsureCurrentSchemaAsync(CancellationToken.None) is { } schemaProblem)
+    {
+        Console.Error.WriteLine($"{databasePath}: {schemaProblem}. Pass a new --db file; runs never migrate or delete stored data.");
+        return 1;
+    }
 }
 
 var timeProvider = TimeProvider.System;
@@ -130,6 +134,11 @@ var settings = new Dictionary<string, string>
     ["maxTermsPerSchool"] = pipelineOptions.MaxTermsPerSchool?.ToString(CultureInfo.InvariantCulture) ?? "all",
     ["termCodes"] = pipelineOptions.TermCodes is null ? "all" : string.Join(",", pipelineOptions.TermCodes),
     ["maxConsecutiveTermFailures"] = pipelineOptions.MaxConsecutiveTermFailures.ToString(CultureInfo.InvariantCulture),
+    ["discoveryMaxPagesPerSchool"] = pipelineOptions.Discovery.MaxPages.ToString(CultureInfo.InvariantCulture),
+    ["discoveryMaxLinkDepth"] = pipelineOptions.Discovery.MaxDepth.ToString(CultureInfo.InvariantCulture),
+    ["discoveryMinConfidence"] = pipelineOptions.Discovery.MinConfidence.ToString(CultureInfo.InvariantCulture),
+    ["maxSectionDrop"] = pipelineOptions.MaxSectionDrop.ToString(CultureInfo.InvariantCulture),
+    ["maxGapShare"] = pipelineOptions.MaxGapShare.ToString(CultureInfo.InvariantCulture),
 };
 var report = new RunReportFile(Path.Combine(reportsDirectory, runId + ".json"), runId, settings);
 var progress = new ConsoleRunProgress(report, startedAt, timeProvider);

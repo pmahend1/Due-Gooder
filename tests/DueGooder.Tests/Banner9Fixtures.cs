@@ -56,7 +56,7 @@ internal static class Banner9Fixtures
     public static async Task<List<RawSection>> CollectCapturedSectionsAsync(string schoolId)
     {
         var connector = new Banner9Connector(new FixtureHttpFetcher(schoolId));
-        return await connector.CollectSectionsAsync(Target(schoolId), CapturedTerm(schoolId), CancellationToken.None)
+        return await connector.CollectSectionsAsync(Target(schoolId), CapturedTerm(schoolId), new List<CollectionGap>(), CancellationToken.None)
                               .Take(CapturedSections)
                               .ToListAsync();
     }

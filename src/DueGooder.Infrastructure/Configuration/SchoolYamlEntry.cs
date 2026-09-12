@@ -13,9 +13,10 @@ internal sealed class SchoolYamlEntry
 
     public string Timezone { get; set; } = "";
 
-    public string Platform { get; set; } = "";
+    /// <summary>Platform to collect with; set together with <see cref="BaseUrl"/> to skip discovery.</summary>
+    public string? Platform { get; set; }
 
-    /// <summary>Platform entry point. Not every school has one yet; discovery (T12) fills the rest in.</summary>
+    /// <summary>Platform entry point. Most schools leave it out and discovery finds it from the homepage.</summary>
     public string? BaseUrl { get; set; }
 
     /// <summary>Banner multi-institution code, for servers that host several campuses.</summary>

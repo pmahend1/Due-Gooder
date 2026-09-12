@@ -28,6 +28,9 @@ internal sealed class ScriptedConnector : IConnector
 
     public int SectionsPerTerm { get; init; } = 2;
 
+    /// <summary>Records per term the scripted platform lists but won't return, reported as one gap.</summary>
+    public int MissingPerTerm { get; init; }
+
     /// <summary>Yields the first section of every term twice, like a page boundary that shifted.</summary>
     public bool RepeatFirstSection { get; init; }
 
@@ -40,6 +43,10 @@ internal sealed class ScriptedConnector : IConnector
     #endregion State
 
     #region Methods
+
+    public IReadOnlyList<Uri> FindEntryPoints(Uri pageUrl, string html) => [];
+
+    public IReadOnlyList<Uri> GuessEntryPoints(Uri homepage) => [];
 
     public Task<Fingerprint> FingerprintAsync(Uri candidate, CancellationToken cancellationToken) =>
         throw new NotSupportedException();
@@ -65,6 +72,7 @@ internal sealed class ScriptedConnector : IConnector
 
     public async IAsyncEnumerable<RawSection> CollectSectionsAsync(ConnectorTarget target,
                                                                    Term term,
+                                                                   ICollection<CollectionGap> gaps,
                                                                    [EnumeratorCancellation] CancellationToken cancellationToken)
     {
         await Task.Yield();
@@ -76,6 +84,11 @@ internal sealed class ScriptedConnector : IConnector
         for (var index = 0; index < SectionsPerTerm; index++)
         {
             yield return new RawSection(term.Key, target.BaseUrl, DateTimeOffset.UnixEpoch, $"crn{index}");
+        }
+
+        if (MissingPerTerm > 0)
+        {
+            gaps.Add(new CollectionGap(SectionsPerTerm + 1, MissingPerTerm, SectionsPerTerm + MissingPerTerm, "refused", target.BaseUrl));
         }
 
         if (RepeatFirstSection)

@@ -10,11 +10,16 @@ namespace DueGooder.Application.Pipeline;
 /// Sections returned more than once under the same key, e.g. when results shift between pages. Only the
 /// last copy is stored.
 /// </param>
-/// <param name="RowsWritten">Rows the upsert inserted or changed; 0 means nothing differed from the database.</param>
+/// <param name="RowsWritten">Rows the upsert inserted or changed for content; 0 means nothing differed from the database.</param>
 /// <param name="Duration">Wall-clock time for this term, collection and storage together.</param>
-/// <param name="FailureReason">Why the term failed; null when it was collected. Nothing is stored for a failed term.</param>
+/// <param name="FailureReason">Why the term failed; null when it was collected. Nothing is written for a failed term.</param>
 /// <param name="FailureSourceUrl">The request that got the unexpected answer, when known.</param>
 /// <param name="Fields">Field completeness of the stored sections; null for a failed term or a run that predates it.</param>
+/// <param name="IsNew">The database had no copy of this term before this run.</param>
+/// <param name="PreviousSections">Sections the last run stored for this term; null when it's new.</param>
+/// <param name="Changes">What the upsert added, changed, re-confirmed and didn't see; null for a failed term.</param>
+/// <param name="Gaps">Records the platform listed but wouldn't return; the term was stored without them.</param>
+/// <param name="IntegrationFlag">The section count dropped so far that the integration is flagged as broken.</param>
 public sealed record TermRunResult(string TermCode,
                                    string? Name,
                                    int Sections,
@@ -25,4 +30,16 @@ public sealed record TermRunResult(string TermCode,
                                    TimeSpan Duration,
                                    string? FailureReason,
                                    Uri? FailureSourceUrl,
-                                   FieldCompleteness? Fields = null);
+                                   FieldCompleteness? Fields = null,
+                                   bool IsNew = false,
+                                   int? PreviousSections = null,
+                                   SectionChanges? Changes = null,
+                                   IReadOnlyList<CollectionGap>? Gaps = null,
+                                   bool IntegrationFlag = false)
+{
+    #region State
+
+    public int MissingSections => Gaps?.Sum(gap => gap.Count) ?? 0;
+
+    #endregion State
+}

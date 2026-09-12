@@ -55,7 +55,14 @@ internal sealed class SectionRow
 
     public required string SourceUrl { get; set; }
 
+    /// <summary>When the stored values were retrieved; moves only when they change, so a refresh with no changes writes nothing.</summary>
     public DateTimeOffset RetrievedAt { get; set; }
+
+    /// <summary>
+    /// When a run last saw this section. A section the source stops listing keeps its row but stops being confirmed, so
+    /// it goes stale instead of being deleted.
+    /// </summary>
+    public DateTimeOffset LastConfirmedAt { get; set; }
 
     public List<MeetingRow> Meetings { get; set; } = [];
 

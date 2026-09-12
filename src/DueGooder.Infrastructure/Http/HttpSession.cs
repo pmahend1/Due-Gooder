@@ -31,7 +31,13 @@ internal sealed class HttpSession(HttpClient client, RequestMetrics metrics) : I
         {
             using var response = await client.SendAsync(request, cancellationToken);
             var body = await response.Content.ReadAsStringAsync(cancellationToken);
-            return new HttpFetchResult(url, (int)response.StatusCode, body, DateTimeOffset.UtcNow);
+            var status = (int)response.StatusCode;
+            return new HttpFetchResult(url, status, body, DateTimeOffset.UtcNow)
+            {
+                RedirectLocation = status is >= 300 and < 400 && response.Headers.Location is { } location
+                    ? new Uri(url, location)
+                    : null,
+            };
         }
         catch (HttpRequestException exception)
         {

@@ -4,7 +4,9 @@ namespace DueGooder.Infrastructure.Http;
 
 /// <summary>
 /// Repeats a request after a network error, a timeout, or HTTP 429/502/503/504, waiting longer each time
-/// and honouring Retry-After. Every attempt goes back through the per-host rate limiter.
+/// and honouring Retry-After. Every attempt goes back through the per-host rate limiter. A host name that doesn't
+/// resolve is not retried: it won't resolve 10 seconds later either, and discovery probes guessed host names that
+/// mostly don't exist.
 /// </summary>
 internal sealed class RetryHandler(int maxRetries, TimeProvider timeProvider) : DelegatingHandler
 {
@@ -29,7 +31,7 @@ internal sealed class RetryHandler(int maxRetries, TimeProvider timeProvider) : 
             {
                 response = await base.SendAsync(request, cancellationToken);
             }
-            catch (Exception exception) when (exception is HttpRequestException or TimeoutException && attempt < maxRetries)
+            catch (Exception exception) when (IsRetryable(exception) && attempt < maxRetries)
             {
                 metrics?.RecordRetry();
                 await Task.Delay(Backoff(attempt), timeProvider, cancellationToken);
@@ -50,6 +52,9 @@ internal sealed class RetryHandler(int maxRetries, TimeProvider timeProvider) : 
 
     // 10s, then 30s: long enough for a registrar that is briefly overloaded to recover.
     private static TimeSpan Backoff(int attempt) => FirstBackoff * Math.Pow(3, attempt);
+
+    private static bool IsRetryable(Exception exception) =>
+        exception is TimeoutException or HttpRequestException { HttpRequestError: not HttpRequestError.NameResolutionError };
 
     private static bool IsTransient(HttpStatusCode status) =>
         status is HttpStatusCode.TooManyRequests

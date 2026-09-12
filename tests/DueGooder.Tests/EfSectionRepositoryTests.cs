@@ -13,8 +13,7 @@ public sealed class EfSectionRepositoryTests
     public async Task Upserting_the_same_data_twice_writes_nothing_on_the_second_run()
     {
         using var connection = OpenConnection();
-        await using var db = NewContext(connection);
-        var repository = new EfSectionRepository(db);
+        var repository = new EfSectionRepository(() => NewContext(connection));
         var term = NewTerm();
         var sections = new[] { NewSection() };
 
@@ -29,14 +28,14 @@ public sealed class EfSectionRepositoryTests
     public async Task Upserting_changed_data_updates_the_existing_row_instead_of_duplicating_it()
     {
         using var connection = OpenConnection();
-        await using var firstContext = NewContext(connection);
-        await new EfSectionRepository(firstContext).UpsertAsync(NewTerm(), [NewSection()], CancellationToken.None);
+        await new EfSectionRepository(() => NewContext(connection)).UpsertAsync(NewTerm(),
+                                                                                [NewSection()],
+                                                                                CancellationToken.None);
 
-        await using var secondContext = NewContext(connection);
         var changed = NewSection() with { Enrolled = 99 };
-        var rowsWritten = await new EfSectionRepository(secondContext).UpsertAsync(NewTerm(),
-                                                                                   [changed],
-                                                                                   CancellationToken.None);
+        var rowsWritten = await new EfSectionRepository(() => NewContext(connection)).UpsertAsync(NewTerm(),
+                                                                                                  [changed],
+                                                                                                  CancellationToken.None);
 
         Assert.True(rowsWritten > 0);
         await using var verifyContext = NewContext(connection);
@@ -49,8 +48,9 @@ public sealed class EfSectionRepositoryTests
     public async Task Upserting_persists_meetings_instructors_and_the_source_url_and_retrieved_at()
     {
         using var connection = OpenConnection();
-        await using var db = NewContext(connection);
-        await new EfSectionRepository(db).UpsertAsync(NewTerm(), [NewSection()], CancellationToken.None);
+        await new EfSectionRepository(() => NewContext(connection)).UpsertAsync(NewTerm(),
+                                                                                [NewSection()],
+                                                                                CancellationToken.None);
 
         await using var verifyContext = NewContext(connection);
         var section = Assert.Single(await verifyContext.Set<SectionRow>()

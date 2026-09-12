@@ -137,3 +137,87 @@ schools:
     timezone: America/Los_Angeles
     platform: banner9
     base_url: https://banner.uidaho.edu/StudentRegistrationSsb/
+
+  # Non-Banner schools, so identification has something to tell Banner 9 apart from. All eight were
+  # confirmed on 2026-09-11 from public pages; the evidence is quoted per entry. base_url is left out
+  # on purpose here: fingerprinting has to find the platform entry point starting from the homepage.
+
+  # --- PeopleSoft Campus Solutions -------------------------------------------------------------
+  # Guest class search lives at /psc/<site>/EMPLOYEE/<node>/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL.
+  # PeopleSoft hands out a session cookie first, so a cookie-less request gets an "enable cookies"
+  # screen rather than the search page. Every URL below was confirmed with a cookie jar, no login.
+
+  - id: louisville
+    name: University of Louisville
+    homepage: https://louisville.edu/
+    timezone: America/Kentucky/Louisville
+    platform: peoplesoft
+    # https://csprd.louisville.edu/psc/ps_class/EMPLOYEE/PSFT_CS/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL
+    # returns <title>Class Search</title> with "Search for Classes" on the GUEST node.
+
+  - id: mizzou
+    name: University of Missouri
+    homepage: https://missouri.edu/
+    timezone: America/Chicago
+    platform: peoplesoft
+    # https://access.myzou.missouri.edu/psc/prdpa/EMPLOYEE/SA/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL
+
+  - id: nau
+    name: Northern Arizona University
+    homepage: https://nau.edu/
+    timezone: America/Phoenix # Arizona skips DST; a good check that we never assume US DST rules
+    platform: peoplesoft
+    # https://www.peoplesoft.nau.edu/psc/ps92prcs/EMPLOYEE/SA/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL
+    # ?Page=SSR_CLSRCH_ENTRY&search=true&inst=NAU00&open=N
+
+  # --- Workday Student -------------------------------------------------------------------------
+  # Workday serves every tenant from *.myworkday.com/<tenant> and keeps section data behind the
+  # sign-in, so neither school has a public class search. Platform was confirmed from the school's
+  # own public Workday page plus the tenant sign-in Workday serves for that tenant name.
+
+  - id: lsu
+    name: Louisiana State University
+    homepage: https://www.lsu.edu/
+    timezone: America/Chicago
+    platform: workday
+    # https://www.lsu.edu/workdaystudent/resources/student-resources.php sends students to Workday
+    # for "all course registration activities" and links the public applicant site
+    # https://wd1-student.myworkdaysite.com/lsu/LSUAM_Undergraduate_Site.
+    # Tenant "lsu" resolves: https://wd1-identity.myworkday.com/wday/authgwy/lsu/upc/login.
+
+  - id: dallascollege
+    name: Dallas College
+    homepage: https://www.dallascollege.edu/
+    timezone: America/Chicago
+    platform: workday
+    # https://www.dallascollege.edu/resources/online-services/tutorials/workday/workday-login/
+    # prints the tenant URL students register through:
+    # https://wd1-identity.myworkday.com/wday/authgwy/dallascollege/upc/login
+
+  # --- Ellucian Colleague Self-Service ---------------------------------------------------------
+  # Sections are public under /Student/Courses and /Student/Courses/Search, browsable as "Guest".
+  # Some schools self-host, others sit on Ellucian's <tenant>-ss.colleague.elluciancloud.com.
+
+  - id: bellarmine
+    name: Bellarmine University
+    homepage: https://www.bellarmine.edu/
+    timezone: America/Kentucky/Louisville
+    platform: colleague
+    # https://selfservice.bellarmine.edu/Student/Courses/Search — "Search for Courses and Course
+    # Sections" with term, subject, instructor and time-range filters, no sign-in.
+
+  - id: swccd
+    name: Southwestern College
+    homepage: https://www.swccd.edu/
+    timezone: America/Los_Angeles
+    platform: colleague
+    # https://collselfserv.swccd.edu/Student/Courses — <title>Course Catalog - SWC Colleague
+    # Self-Service</title>. Self-hosted, so the host gives no hint of the platform.
+
+  - id: kishwaukee
+    name: Kishwaukee College
+    homepage: https://www.kish.edu/
+    timezone: America/Chicago
+    platform: colleague
+    # https://kish-ss.colleague.elluciancloud.com/Student/Courses — <title>Course Catalog -
+    # Kishwaukee College Self-Service</title>, on Ellucian's cloud host.

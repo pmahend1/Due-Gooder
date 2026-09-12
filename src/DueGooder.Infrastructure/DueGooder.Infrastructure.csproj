@@ -5,6 +5,16 @@
     <ProjectReference Include="..\DueGooder.Domain\DueGooder.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.0" />
+    <PackageReference Include="YamlDotNet" Version="18.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Tests read persistence rows directly to verify upserts, since ISectionRepository only writes. -->
+    <InternalsVisibleTo Include="DueGooder.Tests" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

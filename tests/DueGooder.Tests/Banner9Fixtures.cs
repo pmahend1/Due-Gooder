@@ -24,10 +24,13 @@ internal static class Banner9Fixtures
         "eku" => NewTarget(schoolId, "https://registrationss.eku.edu/StudentRegistrationSsb/", mepCode: null),
         "sunyempire" => NewTarget(schoolId, "https://banner.esc.edu/StudentRegistrationSsb/", mepCode: null),
         "uiuc" => NewTarget(schoolId, "https://banner.apps.uillinois.edu/StudentRegistrationSSB/", mepCode: "1UIUC"),
+        "kccd" => NewTarget(schoolId, "https://reg-prod.ec.kccd.edu/StudentRegistrationSsb/", mepCode: null),
+        "oakland" => NewTarget(schoolId, "https://bstreg.oakland.edu/StudentRegistrationSsb/", mepCode: null),
+        "odu" => NewTarget(schoolId, "https://reg-prod.ec.odu.edu/StudentRegistrationSsb/", mepCode: null),
         _ => throw new ArgumentOutOfRangeException(nameof(schoolId), schoolId, "No Banner 9 fixtures for this school"),
     };
 
-    /// <summary>The term each school's search fixtures were captured for (Fall 2026 at all three).</summary>
+    /// <summary>The term each school's search fixtures were captured for (Fall 2026 at every school).</summary>
     public static Term CapturedTerm(string schoolId)
     {
         var termCode = schoolId switch
@@ -35,6 +38,9 @@ internal static class Banner9Fixtures
             "eku" => "202710",
             "sunyempire" => "202680",
             "uiuc" => "120268",
+            "kccd" => "202670",
+            "oakland" => "202640",
+            "odu" => "202610",
             _ => throw new ArgumentOutOfRangeException(nameof(schoolId), schoolId, "No Banner 9 fixtures for this school"),
         };
 

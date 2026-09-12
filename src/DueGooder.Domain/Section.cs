@@ -13,6 +13,13 @@ public sealed record Section
     /// <summary>The platform's own identifier, e.g. Banner's CRN.</summary>
     public string? SourceSectionId { get; init; }
 
+    /// <summary>
+    /// The school's published section number (e.g. Banner's <c>sequenceNumber</c>), for display only.
+    /// Some platforms reuse this across sections of the same course, so <see cref="SectionKey"/> keys
+    /// on <see cref="SourceSectionId"/> instead.
+    /// </summary>
+    public string? DisplaySectionNumber { get; init; }
+
     public string? Title { get; init; }
 
     public decimal? Credits { get; init; }

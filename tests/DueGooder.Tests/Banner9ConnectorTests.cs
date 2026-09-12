@@ -12,6 +12,9 @@ public sealed class Banner9ConnectorTests
     [InlineData("eku", 79, "202750", "Summer 2027 (View Only)")]
     [InlineData("sunyempire", 25, "202680", "Fall 2026")]
     [InlineData("uiuc", 87, "120268", "Fall 2026 - Urbana-Champaign")]
+    [InlineData("kccd", 86, "202670", "Fall 2026")]
+    [InlineData("oakland", 22, "202733", "Continuing Education 2027-2028")]
+    [InlineData("odu", 24, "202617", "Fall 2026 Second Eight Weeks")]
     public async Task Lists_every_term_the_school_publishes(string schoolId,
                                                             int termCount,
                                                             string firstTermCode,
@@ -43,6 +46,9 @@ public sealed class Banner9ConnectorTests
     [Theory]
     [InlineData("eku")]
     [InlineData("sunyempire")]
+    [InlineData("kccd")]
+    [InlineData("oakland")]
+    [InlineData("odu")]
     public async Task Binds_the_term_then_pages_through_results_and_resets_in_one_session(string schoolId)
     {
         var fetcher = new FixtureHttpFetcher(schoolId);

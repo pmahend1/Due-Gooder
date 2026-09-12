@@ -20,8 +20,9 @@ public sealed class Banner9MappingTests
     {
         var section = Connector.Map(await CapturedSectionAsync("eku", crn: "11457"));
 
-        Assert.Equal(new SectionKey("eku", "202710", "ARH", "393", "001"), section.Key);
+        Assert.Equal(new SectionKey("eku", "202710", "ARH", "393", "11457"), section.Key);
         Assert.Equal("11457", section.SourceSectionId);
+        Assert.Equal("001", section.DisplaySectionNumber);
         Assert.Equal("Survey of Global Art History II", section.Title);
         Assert.Equal(3m, section.Credits);
         Assert.Equal("Traditional Face-to-Face", section.InstructionalMethod);
@@ -78,7 +79,7 @@ public sealed class Banner9MappingTests
     {
         var section = Connector.Map(await CapturedSectionAsync("sunyempire", crn: "83404"));
 
-        Assert.Equal(new SectionKey("sunyempire", "202680", "ACCT", "2005", "40"), section.Key);
+        Assert.Equal(new SectionKey("sunyempire", "202680", "ACCT", "2005", "83404"), section.Key);
         Assert.Equal("Goodwin, Valerie", Assert.Single(section.Instructors).Name);
         Assert.Empty(section.Failures);
         Assert.Equal(4, section.Meetings.Count);
@@ -102,6 +103,9 @@ public sealed class Banner9MappingTests
     [Theory]
     [InlineData("eku")]
     [InlineData("sunyempire")]
+    [InlineData("kccd")]
+    [InlineData("oakland")]
+    [InlineData("odu")]
     public async Task Every_captured_section_maps_to_a_distinct_key_without_failures(string schoolId)
     {
         var sections = (await Banner9Fixtures.CollectCapturedSectionsAsync(schoolId)).Select(Connector.Map).ToList();

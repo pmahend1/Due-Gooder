@@ -1,0 +1,1255 @@
+{
+  "success": true,
+  "totalCount": 4089,
+  "data": 
+  [
+    {
+      "id": 420706,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72790",
+      "partOfTerm": "BOT",
+      "courseNumber": "B70F",
+      "courseDisplay": "B70F",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "66",
+      "campusDescription": "BC Online",
+      "scheduleTypeDescription": "Delayed Interactn - NET",
+      "courseTitle": "Vocabulary Improvement Strategies For Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 25,
+      "enrollment": 25,
+      "seatsAvailable": 0,
+      "waitCapacity": 20,
+      "waitCount": 0,
+      "waitAvailable": 20,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0.5,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB70F",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72790",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72790",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1OLL",
+            "buildingDescription": "Online",
+            "campus": "BL",
+            "campusDescription": "BC Online",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72790",
+            "creditHourSession": 0.5,
+            "endDate": "12/04/2026",
+            "endTime": null,
+            "friday": false,
+            "hoursWeek": 0.5,
+            "meetingScheduleType": "V",
+            "meetingType": "ONL",
+            "meetingTypeDescription": "Online Asynchronous",
+            "monday": false,
+            "room": null,
+            "saturday": false,
+            "startDate": "11/16/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": false,
+            "tuesday": false,
+            "wednesday": false
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "NDA",
+          "courseReferenceNumber": "72790",
+          "description": "Non Degree Applicable",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        },
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "PCBS",
+          "courseReferenceNumber": "72790",
+          "description": "Pre-collegiate Basic Skills",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "72",
+      "instructionalMethodDescription": "Delayed Interactn - NET"
+    },
+    {
+      "id": 420707,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72791",
+      "partOfTerm": "BNC",
+      "courseNumber": "B70FN",
+      "courseDisplay": "B70FN",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "66",
+      "campusDescription": "BC Online",
+      "scheduleTypeDescription": "Delayed Interactn - NET",
+      "courseTitle": "Vocabulary Improvement  Strategies For Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 10,
+      "enrollment": 10,
+      "seatsAvailable": 0,
+      "waitCapacity": 20,
+      "waitCount": 0,
+      "waitAvailable": 20,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB70FN",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72791",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72791",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1OLL",
+            "buildingDescription": "Online",
+            "campus": "BL",
+            "campusDescription": "BC Online",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72791",
+            "creditHourSession": 0.0,
+            "endDate": "12/04/2026",
+            "endTime": null,
+            "friday": false,
+            "hoursWeek": 0.5,
+            "meetingScheduleType": "V",
+            "meetingType": "ONL",
+            "meetingTypeDescription": "Online Asynchronous",
+            "monday": false,
+            "room": null,
+            "saturday": false,
+            "startDate": "11/16/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": false,
+            "tuesday": false,
+            "wednesday": false
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "BSKL",
+          "courseReferenceNumber": "72791",
+          "description": "Basic Skills not precollegiate",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "72",
+      "instructionalMethodDescription": "Delayed Interactn - NET"
+    },
+    {
+      "id": 420708,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72792",
+      "partOfTerm": "BNC",
+      "courseNumber": "B81NC",
+      "courseDisplay": "B81NC",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "01",
+      "campusDescription": "BC  Main Campus",
+      "scheduleTypeDescription": "Lab 30 Base",
+      "courseTitle": "Supervised Tutoring",
+      "creditHours": null,
+      "maximumEnrollment": 400,
+      "enrollment": 203,
+      "seatsAvailable": 197,
+      "waitCapacity": 35,
+      "waitCount": 1,
+      "waitAvailable": 34,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB81NC",
+      "faculty": 
+      [
+        {
+          "bannerId": "36170",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72792",
+          "displayName": "Chapman, William J.",
+          "emailAddress": "wchapman@bakersfieldcollege.edu",
+          "primaryIndicator": false,
+          "term": "202670"
+        },
+        {
+          "bannerId": "36171",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72792",
+          "displayName": "Gonzalez, Fabiola",
+          "emailAddress": "fabiola.gonzalez1@bakersfieldcollege.edu",
+          "primaryIndicator": false,
+          "term": "202670"
+        },
+        {
+          "bannerId": "36172",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72792",
+          "displayName": "Wright, Maria",
+          "emailAddress": "maria.wright2@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        },
+        {
+          "bannerId": "36173",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72792",
+          "displayName": "LaClare, Denis P.",
+          "emailAddress": "denis.laclare@portervillecollege.edu",
+          "primaryIndicator": false,
+          "term": "202670"
+        },
+        {
+          "bannerId": "36174",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72792",
+          "displayName": "Martinez, Mayra L.",
+          "emailAddress": "mayra.martinez@bakersfieldcollege.edu",
+          "primaryIndicator": false,
+          "term": "202670"
+        },
+        {
+          "bannerId": "36175",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72792",
+          "displayName": "Rodgers, Ryon N.",
+          "emailAddress": "ryon.rodgers@bakersfieldcollege.edu",
+          "primaryIndicator": false,
+          "term": "202670"
+        },
+        {
+          "bannerId": "36176",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72792",
+          "displayName": "Wy, Amanda V.",
+          "emailAddress": "amanda.wy@bakersfieldcollege.edu",
+          "primaryIndicator": false,
+          "term": "202670"
+        },
+        {
+          "bannerId": "36177",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72792",
+          "displayName": "Tran, Lianna L.",
+          "emailAddress": "lianna.tran@bakersfieldcollege.edu",
+          "primaryIndicator": false,
+          "term": "202670"
+        },
+        {
+          "bannerId": "36178",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72792",
+          "displayName": "Bligh, Kimberly",
+          "emailAddress": "kvan@bakersfieldcollege.edu",
+          "primaryIndicator": false,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72792",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1CSS",
+            "buildingDescription": "Center for Student Success",
+            "campus": "BB",
+            "campusDescription": "BC  Main Campus",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72792",
+            "creditHourSession": 0.0,
+            "endDate": "12/12/2026",
+            "endTime": null,
+            "friday": false,
+            "hoursWeek": 2.0,
+            "meetingScheduleType": "B30",
+            "meetingType": "BTBA",
+            "meetingTypeDescription": "Lab-to be arranged",
+            "monday": true,
+            "room": "203",
+            "saturday": false,
+            "startDate": "08/24/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": false,
+            "tuesday": true,
+            "wednesday": false
+          },
+          "term": "202670"
+        },
+        {
+          "category": "02",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72792",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1CSS",
+            "buildingDescription": "Center for Student Success",
+            "campus": "BB",
+            "campusDescription": "BC  Main Campus",
+            "category": "02",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72792",
+            "creditHourSession": 0.0,
+            "endDate": "12/12/2026",
+            "endTime": null,
+            "friday": true,
+            "hoursWeek": 4.2,
+            "meetingScheduleType": "B30",
+            "meetingType": "BTBA",
+            "meetingTypeDescription": "Lab-to be arranged",
+            "monday": false,
+            "room": "203",
+            "saturday": false,
+            "startDate": "08/24/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": true,
+            "tuesday": false,
+            "wednesday": true
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "BSKL",
+          "courseReferenceNumber": "72792",
+          "description": "Basic Skills not precollegiate",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        },
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "NDA",
+          "courseReferenceNumber": "72792",
+          "description": "Non Degree Applicable",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "04",
+      "instructionalMethodDescription": "Laboratory/Studio/Activity"
+    },
+    {
+      "id": 420710,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72794",
+      "partOfTerm": "BNC",
+      "courseNumber": "B81NC",
+      "courseDisplay": "B81NC",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "36",
+      "campusDescription": "BC Southwest Campus",
+      "scheduleTypeDescription": "Lab 30 Base",
+      "courseTitle": "Supervised Tutoring",
+      "creditHours": null,
+      "maximumEnrollment": 100,
+      "enrollment": 88,
+      "seatsAvailable": 12,
+      "waitCapacity": 15,
+      "waitCount": 0,
+      "waitAvailable": 15,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB81NC",
+      "faculty": 
+      [
+        {
+          "bannerId": "36172",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72794",
+          "displayName": "Wright, Maria",
+          "emailAddress": "maria.wright2@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        },
+        {
+          "bannerId": "36180",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72794",
+          "displayName": "Yakoub, Janet K.",
+          "emailAddress": "janet.yakoub@bakersfieldcollege.edu",
+          "primaryIndicator": false,
+          "term": "202670"
+        },
+        {
+          "bannerId": "36173",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72794",
+          "displayName": "LaClare, Denis P.",
+          "emailAddress": "denis.laclare@portervillecollege.edu",
+          "primaryIndicator": false,
+          "term": "202670"
+        },
+        {
+          "bannerId": "36174",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72794",
+          "displayName": "Martinez, Mayra L.",
+          "emailAddress": "mayra.martinez@bakersfieldcollege.edu",
+          "primaryIndicator": false,
+          "term": "202670"
+        },
+        {
+          "bannerId": "36181",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72794",
+          "displayName": "Flesche, Shun Yee F.",
+          "emailAddress": "shun.flesche@bakersfieldcollege.edu",
+          "primaryIndicator": false,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72794",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1BSW",
+            "buildingDescription": "Southwest Campus",
+            "campus": "BD",
+            "campusDescription": "BC Southwest Campus",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72794",
+            "creditHourSession": 0.0,
+            "endDate": "12/12/2026",
+            "endTime": null,
+            "friday": false,
+            "hoursWeek": 2.6,
+            "meetingScheduleType": "B30",
+            "meetingType": "BTBA",
+            "meetingTypeDescription": "Lab-to be arranged",
+            "monday": true,
+            "room": "210",
+            "saturday": false,
+            "startDate": "08/24/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": false,
+            "tuesday": true,
+            "wednesday": false
+          },
+          "term": "202670"
+        },
+        {
+          "category": "02",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72794",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1BSW",
+            "buildingDescription": "Southwest Campus",
+            "campus": "BD",
+            "campusDescription": "BC Southwest Campus",
+            "category": "02",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72794",
+            "creditHourSession": 0.0,
+            "endDate": "12/12/2026",
+            "endTime": null,
+            "friday": true,
+            "hoursWeek": 3.9,
+            "meetingScheduleType": "B30",
+            "meetingType": "BTBA",
+            "meetingTypeDescription": "Lab-to be arranged",
+            "monday": false,
+            "room": "210",
+            "saturday": false,
+            "startDate": "08/24/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": true,
+            "tuesday": false,
+            "wednesday": true
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "BSKL",
+          "courseReferenceNumber": "72794",
+          "description": "Basic Skills not precollegiate",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        },
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "NDA",
+          "courseReferenceNumber": "72794",
+          "description": "Non Degree Applicable",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "04",
+      "instructionalMethodDescription": "Laboratory/Studio/Activity"
+    },
+    {
+      "id": 422949,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "74345",
+      "partOfTerm": "BNC",
+      "courseNumber": "B81NC",
+      "courseDisplay": "B81NC",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "38",
+      "campusDescription": "BC Arvin-Lamont",
+      "scheduleTypeDescription": "Lab 30 Base",
+      "courseTitle": "Supervised Tutoring",
+      "creditHours": null,
+      "maximumEnrollment": 100,
+      "enrollment": 49,
+      "seatsAvailable": 51,
+      "waitCapacity": 10,
+      "waitCount": 0,
+      "waitAvailable": 10,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB81NC",
+      "faculty": 
+      [
+        {
+          "bannerId": "36170",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "74345",
+          "displayName": "Chapman, William J.",
+          "emailAddress": "wchapman@bakersfieldcollege.edu",
+          "primaryIndicator": false,
+          "term": "202670"
+        },
+        {
+          "bannerId": "36172",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "74345",
+          "displayName": "Wright, Maria",
+          "emailAddress": "maria.wright2@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "74345",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1AEC",
+            "buildingDescription": "BC Arvin Education Center",
+            "campus": "BK",
+            "campusDescription": "BC Arvin-Lamont",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "74345",
+            "creditHourSession": 0.0,
+            "endDate": "12/12/2026",
+            "endTime": null,
+            "friday": true,
+            "hoursWeek": 6.5,
+            "meetingScheduleType": "B30",
+            "meetingType": "BTBA",
+            "meetingTypeDescription": "Lab-to be arranged",
+            "monday": true,
+            "room": "102",
+            "saturday": false,
+            "startDate": "08/24/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": true,
+            "tuesday": true,
+            "wednesday": true
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "BSKL",
+          "courseReferenceNumber": "74345",
+          "description": "Basic Skills not precollegiate",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        },
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "NDA",
+          "courseReferenceNumber": "74345",
+          "description": "Non Degree Applicable",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "04",
+      "instructionalMethodDescription": "Laboratory/Studio/Activity"
+    },
+    {
+      "id": 420709,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72793",
+      "partOfTerm": "BNC",
+      "courseNumber": "B81NC",
+      "courseDisplay": "B81NC",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "90",
+      "campusDescription": "BC Delano College Center",
+      "scheduleTypeDescription": "Lab 30 Base",
+      "courseTitle": "Supervised Tutoring",
+      "creditHours": null,
+      "maximumEnrollment": 200,
+      "enrollment": 37,
+      "seatsAvailable": 163,
+      "waitCapacity": 35,
+      "waitCount": 0,
+      "waitAvailable": 35,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB81NC",
+      "faculty": 
+      [
+        {
+          "bannerId": "36172",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72793",
+          "displayName": "Wright, Maria",
+          "emailAddress": "maria.wright2@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        },
+        {
+          "bannerId": "36179",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72793",
+          "displayName": "De La Mater, Christopher J.",
+          "emailAddress": "christopher.de@bakersfieldcollege.edu",
+          "primaryIndicator": false,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72793",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1DELRC",
+            "buildingDescription": "Learning Resource Center",
+            "campus": "BG",
+            "campusDescription": "BC Delano College Center",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72793",
+            "creditHourSession": 0.0,
+            "endDate": "12/12/2026",
+            "endTime": null,
+            "friday": true,
+            "hoursWeek": 6.3,
+            "meetingScheduleType": "B30",
+            "meetingType": "BTBA",
+            "meetingTypeDescription": "Lab-to be arranged",
+            "monday": true,
+            "room": null,
+            "saturday": false,
+            "startDate": "08/24/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": true,
+            "tuesday": true,
+            "wednesday": true
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "BSKL",
+          "courseReferenceNumber": "72793",
+          "description": "Basic Skills not precollegiate",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        },
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "NDA",
+          "courseReferenceNumber": "72793",
+          "description": "Non Degree Applicable",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "04",
+      "instructionalMethodDescription": "Laboratory/Studio/Activity"
+    },
+    {
+      "id": 420681,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72765",
+      "partOfTerm": "BNC",
+      "courseNumber": "B82",
+      "courseDisplay": "B82",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "01",
+      "campusDescription": "BC  Main Campus",
+      "scheduleTypeDescription": "Lab 30 Base",
+      "courseTitle": "Reading for Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 50,
+      "enrollment": 9,
+      "seatsAvailable": 41,
+      "waitCapacity": 10,
+      "waitCount": 0,
+      "waitAvailable": 10,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0.5,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB82",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72765",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72765",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1CSS",
+            "buildingDescription": "Center for Student Success",
+            "campus": "BB",
+            "campusDescription": "BC  Main Campus",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72765",
+            "creditHourSession": 0.5,
+            "endDate": "12/12/2026",
+            "endTime": null,
+            "friday": true,
+            "hoursWeek": 1.7,
+            "meetingScheduleType": "B30",
+            "meetingType": "BTBA",
+            "meetingTypeDescription": "Lab-to be arranged",
+            "monday": true,
+            "room": "143",
+            "saturday": false,
+            "startDate": "08/24/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": true,
+            "tuesday": true,
+            "wednesday": true
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "NDA",
+          "courseReferenceNumber": "72765",
+          "description": "Non Degree Applicable",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "04",
+      "instructionalMethodDescription": "Laboratory/Studio/Activity"
+    },
+    {
+      "id": 420683,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72767",
+      "partOfTerm": "BNC",
+      "courseNumber": "B82NC",
+      "courseDisplay": "B82NC",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "01",
+      "campusDescription": "BC  Main Campus",
+      "scheduleTypeDescription": "Lab 30 Base",
+      "courseTitle": "Reading for Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 50,
+      "enrollment": 14,
+      "seatsAvailable": 36,
+      "waitCapacity": 35,
+      "waitCount": 0,
+      "waitAvailable": 35,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB82NC",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72767",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72767",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1CSS",
+            "buildingDescription": "Center for Student Success",
+            "campus": "BB",
+            "campusDescription": "BC  Main Campus",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72767",
+            "creditHourSession": 0.0,
+            "endDate": "12/12/2026",
+            "endTime": null,
+            "friday": true,
+            "hoursWeek": 1.7,
+            "meetingScheduleType": "B30",
+            "meetingType": "BTBA",
+            "meetingTypeDescription": "Lab-to be arranged",
+            "monday": true,
+            "room": "143",
+            "saturday": false,
+            "startDate": "08/24/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": true,
+            "tuesday": true,
+            "wednesday": true
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "NDA",
+          "courseReferenceNumber": "72767",
+          "description": "Non Degree Applicable",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "04",
+      "instructionalMethodDescription": "Laboratory/Studio/Activity"
+    },
+    {
+      "id": 420687,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72771",
+      "partOfTerm": "B",
+      "courseNumber": "B83",
+      "courseDisplay": "B83",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "01",
+      "campusDescription": "BC  Main Campus",
+      "scheduleTypeDescription": "Lab 30 Base",
+      "courseTitle": "Writing for Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 50,
+      "enrollment": 12,
+      "seatsAvailable": 38,
+      "waitCapacity": 35,
+      "waitCount": 0,
+      "waitAvailable": 35,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0.5,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB83",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72771",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72771",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1CSS",
+            "buildingDescription": "Center for Student Success",
+            "campus": "BB",
+            "campusDescription": "BC  Main Campus",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72771",
+            "creditHourSession": 0.5,
+            "endDate": "12/12/2026",
+            "endTime": null,
+            "friday": true,
+            "hoursWeek": 1.7,
+            "meetingScheduleType": "B30",
+            "meetingType": "BTBA",
+            "meetingTypeDescription": "Lab-to be arranged",
+            "monday": true,
+            "room": "143",
+            "saturday": false,
+            "startDate": "08/24/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": true,
+            "tuesday": true,
+            "wednesday": true
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "NDA",
+          "courseReferenceNumber": "72771",
+          "description": "Non Degree Applicable",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "04",
+      "instructionalMethodDescription": "Laboratory/Studio/Activity"
+    },
+    {
+      "id": 420688,
+      "term": "202670",
+      "termDesc": "Fall 2026",
+      "courseReferenceNumber": "72772",
+      "partOfTerm": "BNC",
+      "courseNumber": "B83NC",
+      "courseDisplay": "B83NC",
+      "subject": "ACDV",
+      "subjectDescription": "Academic Development",
+      "sequenceNumber": "01",
+      "campusDescription": "BC  Main Campus",
+      "scheduleTypeDescription": "Lab 30 Base",
+      "courseTitle": "Writing for Academic Success",
+      "creditHours": null,
+      "maximumEnrollment": 500,
+      "enrollment": 5,
+      "seatsAvailable": 495,
+      "waitCapacity": 35,
+      "waitCount": 0,
+      "waitAvailable": 35,
+      "crossList": null,
+      "crossListCapacity": null,
+      "crossListCount": null,
+      "crossListAvailable": null,
+      "creditHourHigh": null,
+      "creditHourLow": 0,
+      "creditHourIndicator": null,
+      "openSection": true,
+      "linkIdentifier": null,
+      "isSectionLinked": false,
+      "subjectCourse": "ACDVB83NC",
+      "faculty": 
+      [
+        {
+          "bannerId": "36169",
+          "category": null,
+          "class": "net.hedtech.banner.student.faculty.FacultyResultDecorator",
+          "courseReferenceNumber": "72772",
+          "displayName": "Nickell, Kimberly D.",
+          "emailAddress": "knickell@bakersfieldcollege.edu",
+          "primaryIndicator": true,
+          "term": "202670"
+        }
+      ],
+      "meetingsFaculty": 
+      [
+        {
+          "category": "01",
+          "class": "net.hedtech.banner.student.schedule.SectionSessionDecorator",
+          "courseReferenceNumber": "72772",
+          "faculty": 
+          [
+          ],
+          "meetingTime": {
+            "beginTime": null,
+            "building": "1CSS",
+            "buildingDescription": "Center for Student Success",
+            "campus": "BB",
+            "campusDescription": "BC  Main Campus",
+            "category": "01",
+            "class": "net.hedtech.banner.general.overall.MeetingTimeDecorator",
+            "courseReferenceNumber": "72772",
+            "creditHourSession": 0.0,
+            "endDate": "12/12/2026",
+            "endTime": null,
+            "friday": true,
+            "hoursWeek": 1.7,
+            "meetingScheduleType": "B30",
+            "meetingType": "BTBA",
+            "meetingTypeDescription": "Lab-to be arranged",
+            "monday": true,
+            "room": "143",
+            "saturday": false,
+            "startDate": "08/24/2026",
+            "sunday": false,
+            "term": "202670",
+            "thursday": true,
+            "tuesday": true,
+            "wednesday": true
+          },
+          "term": "202670"
+        }
+      ],
+      "reservedSeatSummary": null,
+      "sectionAttributes": 
+      [
+        {
+          "class": "net.hedtech.banner.student.schedule.SectionDegreeProgramAttributeDecorator",
+          "code": "NDA",
+          "courseReferenceNumber": "72772",
+          "description": "Non Degree Applicable",
+          "isZTCAttribute": false,
+          "termCode": "202670"
+        }
+      ],
+      "instructionalMethod": "04",
+      "instructionalMethodDescription": "Laboratory/Studio/Activity"
+    }
+  ],
+  "pageOffset": 10,
+  "pageMaxSize": 10,
+  "sectionsFetchedCount": 4089,
+  "pathMode": "search",
+  "searchResultsConfigs": null,
+  "ztcEncodedImage": "https://ssb-prod.ec.kccd.edu/stugifs/hwsgztcp.gif"
+}

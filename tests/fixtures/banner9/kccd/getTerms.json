@@ -1,0 +1,347 @@
+
+[
+  {
+    "code": "202670",
+    "description": "Fall 2026"
+  },
+  {
+    "code": "202650",
+    "description": "Summer 2026 (View Only)"
+  },
+  {
+    "code": "202630",
+    "description": "Spring 2026 (View Only)"
+  },
+  {
+    "code": "202570",
+    "description": "Fall 2025 (View Only)"
+  },
+  {
+    "code": "202550",
+    "description": "Summer 2025 (View Only)"
+  },
+  {
+    "code": "202530",
+    "description": "Spring 2025 (View Only)"
+  },
+  {
+    "code": "202470",
+    "description": "Fall 2024 (View Only)"
+  },
+  {
+    "code": "202450",
+    "description": "Summer 2024 (View Only)"
+  },
+  {
+    "code": "202430",
+    "description": "Spring 2024 (View Only)"
+  },
+  {
+    "code": "202370",
+    "description": "Fall 2023 (View Only)"
+  },
+  {
+    "code": "202350",
+    "description": "Summer 2023 (View Only)"
+  },
+  {
+    "code": "202330",
+    "description": "Spring 2023 (View Only)"
+  },
+  {
+    "code": "202270",
+    "description": "Fall 2022 (View Only)"
+  },
+  {
+    "code": "202250",
+    "description": "Summer 2022 (View Only)"
+  },
+  {
+    "code": "202230",
+    "description": "Spring 2022 (View Only)"
+  },
+  {
+    "code": "202170",
+    "description": "Fall 2021 (View Only)"
+  },
+  {
+    "code": "202150",
+    "description": "Summer 2021 (View Only)"
+  },
+  {
+    "code": "202130",
+    "description": "Spring 2021 (View Only)"
+  },
+  {
+    "code": "202070",
+    "description": "Fall 2020 (View Only)"
+  },
+  {
+    "code": "202050",
+    "description": "Summer 2020 (View Only)"
+  },
+  {
+    "code": "202030",
+    "description": "Spring 2020 (View Only)"
+  },
+  {
+    "code": "201970",
+    "description": "Fall 2019 (View Only)"
+  },
+  {
+    "code": "201950",
+    "description": "Summer 2019 (View Only)"
+  },
+  {
+    "code": "201930",
+    "description": "Spring 2019 (View Only)"
+  },
+  {
+    "code": "201870",
+    "description": "Fall 2018 (View Only)"
+  },
+  {
+    "code": "201850",
+    "description": "Summer 2018 (View Only)"
+  },
+  {
+    "code": "201830",
+    "description": "Spring 2018 (View Only)"
+  },
+  {
+    "code": "201770",
+    "description": "Fall 2017 (View Only)"
+  },
+  {
+    "code": "201750",
+    "description": "Summer 2017 (View Only)"
+  },
+  {
+    "code": "201730",
+    "description": "Spring 2017 (View Only)"
+  },
+  {
+    "code": "201670",
+    "description": "Fall 2016 (View Only)"
+  },
+  {
+    "code": "201650",
+    "description": "Summer 2016 (View Only)"
+  },
+  {
+    "code": "201630",
+    "description": "Spring 2016 (View Only)"
+  },
+  {
+    "code": "201570",
+    "description": "Fall 2015 (View Only)"
+  },
+  {
+    "code": "201550",
+    "description": "Summer 2015 (View Only)"
+  },
+  {
+    "code": "201530",
+    "description": "Spring 2015 (View Only)"
+  },
+  {
+    "code": "201470",
+    "description": "Fall 2014 (View Only)"
+  },
+  {
+    "code": "201450",
+    "description": "Summer 2014 (View Only)"
+  },
+  {
+    "code": "201430",
+    "description": "Spring 2014 (View Only)"
+  },
+  {
+    "code": "201370",
+    "description": "Fall 2013 (View Only)"
+  },
+  {
+    "code": "201350",
+    "description": "Summer 2013 (View Only)"
+  },
+  {
+    "code": "201330",
+    "description": "Spring 2013 (View Only)"
+  },
+  {
+    "code": "201270",
+    "description": "Fall 2012 (View Only)"
+  },
+  {
+    "code": "201250",
+    "description": "Summer 2012 (View Only)"
+  },
+  {
+    "code": "201230",
+    "description": "Spring 2012 (View Only)"
+  },
+  {
+    "code": "201170",
+    "description": "Fall 2011 (View Only)"
+  },
+  {
+    "code": "201150",
+    "description": "Summer 2011 (View Only)"
+  },
+  {
+    "code": "201130",
+    "description": "Spring 2011 (View Only)"
+  },
+  {
+    "code": "201070",
+    "description": "Fall 2010 (View Only)"
+  },
+  {
+    "code": "201050",
+    "description": "Summer 2010 (View Only)"
+  },
+  {
+    "code": "201030",
+    "description": "Spring 2010 (View Only)"
+  },
+  {
+    "code": "200970",
+    "description": "Fall 2009 (View Only)"
+  },
+  {
+    "code": "200950",
+    "description": "Summer 2009 (View Only)"
+  },
+  {
+    "code": "200930",
+    "description": "Spring 2009 (View Only)"
+  },
+  {
+    "code": "200870",
+    "description": "Fall 2008 (View Only)"
+  },
+  {
+    "code": "200850",
+    "description": "Summer 2008 (View Only)"
+  },
+  {
+    "code": "200830",
+    "description": "Spring 2008 (View Only)"
+  },
+  {
+    "code": "200770",
+    "description": "Fall 2007 (View Only)"
+  },
+  {
+    "code": "200750",
+    "description": "Summer 2007 (View Only)"
+  },
+  {
+    "code": "200730",
+    "description": "Spring 2007 (View Only)"
+  },
+  {
+    "code": "200670",
+    "description": "Fall 2006 (View Only)"
+  },
+  {
+    "code": "200650",
+    "description": "Summer 2006 (View Only)"
+  },
+  {
+    "code": "200630",
+    "description": "Spring 2006 (View Only)"
+  },
+  {
+    "code": "200570",
+    "description": "Fall 2005 (View Only)"
+  },
+  {
+    "code": "200550",
+    "description": "Summer 2005 (View Only)"
+  },
+  {
+    "code": "200530",
+    "description": "Spring 2005 (View Only)"
+  },
+  {
+    "code": "200470",
+    "description": "Fall 2004 (View Only)"
+  },
+  {
+    "code": "200450",
+    "description": "Summer 2004 (View Only)"
+  },
+  {
+    "code": "200430",
+    "description": "Spring 2004 (View Only)"
+  },
+  {
+    "code": "200370",
+    "description": "Fall 2003 (View Only)"
+  },
+  {
+    "code": "200350",
+    "description": "Summer 2003 (View Only)"
+  },
+  {
+    "code": "200330",
+    "description": "Spring 2003 (View Only)"
+  },
+  {
+    "code": "200270",
+    "description": "Fall 2002 (View Only)"
+  },
+  {
+    "code": "200250",
+    "description": "Summer 2002 (View Only)"
+  },
+  {
+    "code": "200230",
+    "description": "Spring 2002 (View Only)"
+  },
+  {
+    "code": "200170",
+    "description": "Fall 2001 (View Only)"
+  },
+  {
+    "code": "200150",
+    "description": "Summer 2001 (View Only)"
+  },
+  {
+    "code": "200130",
+    "description": "Spring 2001 (View Only)"
+  },
+  {
+    "code": "200070",
+    "description": "Fall 2000 (View Only)"
+  },
+  {
+    "code": "200050",
+    "description": "Summer 2000 (View Only)"
+  },
+  {
+    "code": "200030",
+    "description": "Spring 2000 (View Only)"
+  },
+  {
+    "code": "199970",
+    "description": "Fall 1999 (View Only)"
+  },
+  {
+    "code": "199950",
+    "description": "Summer 1999 (View Only)"
+  },
+  {
+    "code": "199930",
+    "description": "Spring 1999 (View Only)"
+  },
+  {
+    "code": "199870",
+    "description": "Fall 1998 (View Only)"
+  },
+  {
+    "code": "199850",
+    "description": "Summer 1998 (View Only)"
+  }
+]

@@ -20,6 +20,9 @@ internal sealed class FixtureHttpFetcher(string school) : IHttpFetcher
     /// <summary>Statuses to answer with instead of a recorded response, keyed by fixture file name.</summary>
     public Dictionary<string, int> StatusOverrides { get; } = [];
 
+    /// <summary>HTTP 200 bodies to answer with, one per request, before falling back to the recorded response.</summary>
+    public Dictionary<string, Queue<string>> OneTimeBodies { get; } = [];
+
     #endregion State
 
     #region Methods
@@ -36,6 +39,11 @@ internal sealed class FixtureHttpFetcher(string school) : IHttpFetcher
         if (StatusOverrides.TryGetValue(fileName, out var status))
         {
             return new HttpFetchResult(url, status, "", RetrievedAt);
+        }
+
+        if (OneTimeBodies.TryGetValue(fileName, out var bodies) && bodies.TryDequeue(out var body))
+        {
+            return new HttpFetchResult(url, 200, body, RetrievedAt);
         }
 
         var path = Path.Combine(AppContext.BaseDirectory, "fixtures", "banner9", school, fileName);

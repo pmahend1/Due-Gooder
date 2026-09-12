@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Net;
 using System.Text.Json;
+using System.Text.RegularExpressions;
 using DueGooder.Application;
 using DueGooder.Domain;
 
@@ -27,6 +28,13 @@ internal static class Banner9SectionMapper
         ("sunday", MeetingDays.Sunday, 'U'),
     ];
 
+    /* Registrars put "not decided" values in building and room instead of leaving them empty, e.g. "TBA Tampa (TBAT)",
+       "CHABOT - TBA", "Arranged Room", room "ARR", "Not Applicable", "None" (all seen in the 2026-09-12 run). A placeholder
+       isn't a location, so the parsed field stays null while LocationRaw keeps the source codes. */
+    private static readonly Regex LocationPlaceholder =
+        new(@"\b(TBA|TBD|ARR|ARRNGD|ARRANGED|TO BE (ANNOUNCED|ARRANGED|DETERMINED))\b|^(NOT APPLICABLE|NONE|NA|N/A|NAPPL)$",
+            RegexOptions.IgnoreCase | RegexOptions.CultureInvariant | RegexOptions.Compiled);
+
     #endregion State
 
     #region Methods
@@ -36,6 +44,7 @@ internal static class Banner9SectionMapper
         using var document = JsonDocument.Parse(raw.Payload);
         var json = document.RootElement;
         var failures = new List<ExtractionFailure>();
+        var credits = ReadCredits(json);
 
         return new Section
         {
@@ -47,13 +56,19 @@ internal static class Banner9SectionMapper
             SourceSectionId = json.OptionalString("courseReferenceNumber"),
             DisplaySectionNumber = json.OptionalString("sequenceNumber"),
             Title = Decode(json.OptionalString("courseTitle")),
-            Credits = ReadCredits(json),
+            Credits = credits.Fixed,
+            CreditsMin = credits.Min,
+            CreditsMax = credits.Max,
+            CreditsRaw = credits.Raw,
             InstructionalMethod = Decode(json.OptionalString("instructionalMethodDescription")),
             Campus = Decode(json.OptionalString("campusDescription")),
             Capacity = json.OptionalInt("maximumEnrollment"),
             Enrolled = json.OptionalInt("enrollment"),
             WaitlistCapacity = json.OptionalInt("waitCapacity"),
             WaitlistCount = json.OptionalInt("waitCount"),
+            CrossListGroup = NonBlank(json.OptionalString("crossList")),
+            CrossListCapacity = json.OptionalInt("crossListCapacity"),
+            CrossListEnrolled = json.OptionalInt("crossListCount"),
             Meetings = MapMeetings(json, failures),
             Instructors = MapInstructors(json),
             Failures = failures,
@@ -68,18 +83,41 @@ internal static class Banner9SectionMapper
             ? value
             : throw new ConnectorException($"Banner 9 section record has no {property}, so it has no natural key", raw.SourceUrl);
 
-    // A variable-credit section publishes a low-high range and no creditHours; a range isn't a single value, so it stays null.
-    private static decimal? ReadCredits(JsonElement json) =>
-        json.OptionalDecimal("creditHours")
-        ?? (json.OptionalDecimal("creditHourHigh") is null ? json.OptionalDecimal("creditHourLow") : null);
+    /* Variable credit is a low-high pair joined by creditHourIndicator ("OR" / "TO"), and creditHours then holds an
+       arbitrary end of it: UCR publishes "0 OR 4" with creditHours 0. A range has no single value, so Credits stays null. */
+    private static (decimal? Fixed, decimal? Min, decimal? Max, string? Raw) ReadCredits(JsonElement json)
+    {
+        var hours = json.OptionalDecimal("creditHours");
+        var low = json.OptionalDecimal("creditHourLow");
+        var high = json.OptionalDecimal("creditHourHigh");
+        var indicator = NonBlank(json.OptionalString("creditHourIndicator"));
+        if (low is { } rangeLow && high is { } rangeHigh && rangeLow != rangeHigh && (indicator is not null || hours is null))
+        {
+            var raw = indicator is null
+                ? $"{FormatCredits(rangeLow)}-{FormatCredits(rangeHigh)}"
+                : $"{FormatCredits(rangeLow)} {indicator} {FormatCredits(rangeHigh)}";
+            return (null, Math.Min(rangeLow, rangeHigh), Math.Max(rangeLow, rangeHigh), raw);
+        }
+
+        return (hours ?? low ?? high) is { } value
+            ? (value, value, value, FormatCredits(value))
+            : (null, null, null, null);
+    }
+
+    private static string FormatCredits(decimal value) => value.ToString("0.###", CultureInfo.InvariantCulture);
 
     private static List<Meeting> MapMeetings(JsonElement json, List<ExtractionFailure> failures)
     {
         var meetings = new List<Meeting>();
+        var entry = 0;
         foreach (var meetingSession in json.OptionalArray("meetingsFaculty"))
         {
+            entry++;
             if (meetingSession.TryGetProperty("meetingTime", out var time) is false || time.ValueKind is not JsonValueKind.Object)
             {
+                failures.Add(new ExtractionFailure(nameof(Section.Meetings),
+                                                   $"meetingsFaculty entry {entry} has no meetingTime object",
+                                                   meetingSession.GetRawText()));
                 continue;
             }
 
@@ -95,8 +133,8 @@ internal static class Banner9SectionMapper
                 StartTimeRaw = startRaw,
                 EndTime = ParseTime(endRaw, $"{field}.{nameof(Meeting.EndTime)}", failures),
                 EndTimeRaw = endRaw,
-                Building = Decode(time.OptionalString("buildingDescription") ?? time.OptionalString("building")),
-                Room = time.OptionalString("room"),
+                Building = UnlessPlaceholder(Decode(time.OptionalString("buildingDescription") ?? time.OptionalString("building"))),
+                Room = UnlessPlaceholder(time.OptionalString("room")),
                 LocationRaw = ReadLocationRaw(time),
                 StartDate = ParseDate(time.OptionalString("startDate"), $"{field}.{nameof(Meeting.StartDate)}", failures),
                 EndDate = ParseDate(time.OptionalString("endDate"), $"{field}.{nameof(Meeting.EndDate)}", failures),
@@ -107,7 +145,8 @@ internal static class Banner9SectionMapper
         return meetings;
     }
 
-    // All seven flags false is Banner's way of saying "no set days" (asynchronous online), so it maps to None, not null.
+    /* All seven flags false means Banner has no set days for the meeting: asynchronous online, TBA or by arrangement.
+       Banner doesn't say which, so it maps to None (the source's answer), not null (not published). */
     private static (MeetingDays Days, string Raw) ReadDays(JsonElement time)
     {
         var days = MeetingDays.None;
@@ -131,6 +170,9 @@ internal static class Banner9SectionMapper
         var location = string.Join(' ', parts);
         return location is "" ? null : location;
     }
+
+    private static string? UnlessPlaceholder(string? location) =>
+        location is not null && LocationPlaceholder.IsMatch(location.Trim()) ? null : location;
 
     private static TimeOnly? ParseTime(string? raw, string field, List<ExtractionFailure> failures)
     {
@@ -177,6 +219,8 @@ internal static class Banner9SectionMapper
 
     // Banner HTML-encodes text inside its JSON, e.g. "Fundamentals &amp; Methods".
     private static string? Decode(string? value) => value is null ? null : WebUtility.HtmlDecode(value);
+
+    private static string? NonBlank(string? value) => string.IsNullOrWhiteSpace(value) ? null : value.Trim();
 
     #endregion Methods
 }

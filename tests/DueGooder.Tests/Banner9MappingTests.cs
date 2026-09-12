@@ -25,6 +25,8 @@ public sealed class Banner9MappingTests
         Assert.Equal("001", section.DisplaySectionNumber);
         Assert.Equal("Survey of Global Art History II", section.Title);
         Assert.Equal(3m, section.Credits);
+        Assert.Equal((3m, 3m, "3"), (section.CreditsMin, section.CreditsMax, section.CreditsRaw));
+        Assert.Null(section.CrossListGroup);
         Assert.Equal("Traditional Face-to-Face", section.InstructionalMethod);
         Assert.Equal("Richmond", section.Campus);
         Assert.Equal(30, section.Capacity);
@@ -149,6 +151,93 @@ public sealed class Banner9MappingTests
 
         Assert.Contains("subject", exception.Message);
         Assert.Equal(raw.SourceUrl, exception.SourceUrl);
+    }
+
+    [Fact]
+    public async Task Variable_credit_keeps_its_range_and_published_text_instead_of_one_end_of_it()
+    {
+        var raw = await CapturedSectionAsync("eku", crn: "11457");
+        var payload = JsonNode.Parse(raw.Payload)!;
+        // How UCR publishes variable credit: creditHours holds the low end of "0 OR 4".
+        payload["creditHours"] = 0;
+        payload["creditHourLow"] = 0;
+        payload["creditHourHigh"] = 4;
+        payload["creditHourIndicator"] = "OR";
+
+        var section = Connector.Map(raw with { Payload = payload.ToJsonString() });
+
+        Assert.Null(section.Credits);
+        Assert.Equal((0m, 4m, "0 OR 4"), (section.CreditsMin, section.CreditsMax, section.CreditsRaw));
+        Assert.Empty(section.Failures);
+    }
+
+    [Fact]
+    public async Task A_cross_listed_section_keeps_its_group_and_shared_seats_under_its_own_key()
+    {
+        var section = Connector.Map(await CapturedSectionAsync("odu", crn: "15268"));
+
+        Assert.Equal(new SectionKey("odu", section.Key.TermCode, section.Key.Subject, section.Key.CourseNumber, "15268"),
+                     section.Key);
+        Assert.Equal("BU102", section.CrossListGroup);
+        Assert.Equal(30, section.CrossListCapacity);
+        Assert.Equal(3, section.CrossListEnrolled);
+        Assert.Null(section.Credits);
+        Assert.Equal((1.5m, 3m, "1.5 TO 3"), (section.CreditsMin, section.CreditsMax, section.CreditsRaw));
+    }
+
+    [Theory]
+    [InlineData("TBA Tampa (TBAT)")]
+    [InlineData("CHABOT - TBA")]
+    [InlineData("To Be Arranged")]
+    [InlineData("Arranged Room")]
+    [InlineData("Not Applicable")]
+    [InlineData("None")]
+    public async Task A_placeholder_building_is_not_a_location_but_its_raw_codes_are_kept(string buildingDescription)
+    {
+        var meeting = await MapWithLocationAsync("TBAT", buildingDescription, room: "TBA");
+
+        Assert.Null(meeting.Building);
+        Assert.Null(meeting.Room);
+        Assert.Equal("TBAT TBA", meeting.LocationRaw);
+    }
+
+    [Theory]
+    [InlineData("Tarrant Hall")]
+    [InlineData("Off Campus Location")]
+    public async Task A_real_building_with_a_room_to_be_arranged_keeps_the_building(string buildingDescription)
+    {
+        var meeting = await MapWithLocationAsync("KC", buildingDescription, room: "ARR");
+
+        Assert.Equal(buildingDescription, meeting.Building);
+        Assert.Null(meeting.Room);
+        Assert.Equal("KC ARR", meeting.LocationRaw);
+    }
+
+    [Fact]
+    public async Task A_meeting_entry_without_a_meeting_time_is_recorded_as_a_failure_not_dropped()
+    {
+        var raw = await CapturedSectionAsync("eku", crn: "11457");
+        var payload = JsonNode.Parse(raw.Payload)!;
+        payload["meetingsFaculty"]![0]!["meetingTime"] = null;
+
+        var section = Connector.Map(raw with { Payload = payload.ToJsonString() });
+
+        Assert.Empty(section.Meetings);
+        var failure = Assert.Single(section.Failures);
+        Assert.Equal("Meetings", failure.Field);
+        Assert.Contains("no meetingTime", failure.Reason);
+        Assert.NotNull(failure.RawValue);
+    }
+
+    private static async Task<Meeting> MapWithLocationAsync(string building, string buildingDescription, string room)
+    {
+        var raw = await CapturedSectionAsync("eku", crn: "11457");
+        var payload = JsonNode.Parse(raw.Payload)!;
+        var time = payload["meetingsFaculty"]![0]!["meetingTime"]!;
+        time["building"] = building;
+        time["buildingDescription"] = buildingDescription;
+        time["room"] = room;
+        return Assert.Single(Connector.Map(raw with { Payload = payload.ToJsonString() }).Meetings);
     }
 
     private static async Task<RawSection> CapturedSectionAsync(string schoolId, string crn) =>

@@ -1,0 +1,748 @@
+2026-09-12T17:09:14Z run-20260912T170914Z: 49 schools from config/schools.yaml; cache Off; 2s between requests per host; up to 12 hosts at once
+2026-09-12T17:09:14Z [sunyempire] identifying the platform from https://www.sunyempire.edu/
+2026-09-12T17:09:14Z [wvu] identifying the platform from https://www.wvu.edu/
+2026-09-12T17:09:14Z [oakton] identifying the platform from https://www.oakton.edu/
+2026-09-12T17:09:14Z [lehigh] identifying the platform from https://www.lehigh.edu/
+2026-09-12T17:09:14Z [eku] identifying the platform from https://www.eku.edu/
+2026-09-12T17:09:14Z [ctstate] identifying the platform from https://ctstate.edu/
+2026-09-12T17:09:14Z [uindy] identifying the platform from https://www.uindy.edu/
+2026-09-12T17:09:14Z [starkstate] identifying the platform from https://www.starkstate.edu/
+2026-09-12T17:09:14Z [odu] identifying the platform from https://www.odu.edu/
+2026-09-12T17:09:14Z [oakland] identifying the platform from https://www.oakland.edu/
+2026-09-12T17:09:14Z [kccd] identifying the platform from https://www.kccd.edu/
+2026-09-12T17:09:15Z [tric] identifying the platform from https://www.tri-c.edu/
+2026-09-12T17:09:17Z [wvu] not identified from the homepage: no connector recognized the site after 1 pages and 10 probes (1 pages, 10 probes)
+2026-09-12T17:09:17Z [ullafayette] identifying the platform from https://louisiana.edu/
+2026-09-12T17:09:17Z [tric] not identified from the homepage: a banner9 entry point https://banstup.tri-c.edu/StudentRegistrationSsb/ was found on https://www.tri-c.edu/, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://banstup.tri-c.edu/robots.txt) disallows /StudentRegistrationSsb/ssb/classSearch/getTerms?searchTerm=&offset=1&max=100 for DueGooderBot, so the request was not sent (2 pages, 11 probes)
+2026-09-12T17:09:18Z [aum] identifying the platform from https://www.aum.edu/
+2026-09-12T17:09:27Z [starkstate] identified banner9 at https://selfservice-registration.starkstate.edu/StudentRegistrationSsb/ (HomepageLink; 1 pages, 1 probes, 12.7s)
+2026-09-12T17:09:27Z [ucmerced] identifying the platform from https://www.ucmerced.edu/
+2026-09-12T17:09:30Z [sunyempire] not identified from the homepage: a banner9 entry point https://banner.esc.edu/StudentRegistrationSsb/ was found on https://www.sunyempire.edu/academics/classes-and-registration/index.html, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://banner.esc.edu/robots.txt) disallows /StudentRegistrationSsb/ssb/classSearch/getTerms?searchTerm=&offset=1&max=100 for DueGooderBot, so the request was not sent (10 pages, 11 probes)
+2026-09-12T17:09:30Z [uidaho] identifying the platform from https://www.uidaho.edu/
+2026-09-12T17:09:33Z [oakland] not identified from the homepage: a banner9 entry point https://bstreg.oakland.edu/StudentRegistrationSsb/ was found on https://www.oakland.edu/registrar/registration/regschedule/, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://bstreg.oakland.edu/robots.txt) disallows /StudentRegistrationSsb/ssb/classSearch/getTerms?searchTerm=&offset=1&max=100 for DueGooderBot, so the request was not sent (10 pages, 11 probes)
+2026-09-12T17:09:33Z [samford] identifying the platform from https://www.samford.edu/
+2026-09-12T17:09:38Z [uidaho] identified banner9 at https://banner.uidaho.edu/StudentRegistrationSsb/ (CrawledLink; 3 pages, 1 probes, 8.5s)
+2026-09-12T17:09:38Z [msudenver] identifying the platform from https://www.msudenver.edu/
+2026-09-12T17:09:41Z [samford] identified banner9 at https://ssb.samford.edu/StudentRegistrationSsb/ (CrawledLink; 3 pages, 1 probes, 8.2s)
+2026-09-12T17:09:41Z [ou] identifying the platform from https://www.ou.edu/
+2026-09-12T17:09:44Z [msudenver] identified banner9 at https://ssb.msudenver.edu/StudentRegistrationSsb/ (CrawledLink; 2 pages, 1 probes, 6.4s)
+2026-09-12T17:09:44Z [neu] identifying the platform from https://www.northeastern.edu/
+2026-09-12T17:09:57Z [kccd] not identified from the homepage: the well-known banner9 host reg-prod.ec.kccd.edu exists, but its robots.txt refused the probe: the probe was not sent or failed: robots.txt (https://reg-prod.ec.kccd.edu/robots.txt) could not be read (HTTP 503); RFC 9309 treats that as disallow-all, so the request was not sent (1 pages, 10 probes)
+2026-09-12T17:09:57Z [ucr] identifying the platform from https://www.ucr.edu/
+2026-09-12T17:09:59Z [odu] not identified from the homepage: the well-known banner9 host reg-prod.ec.odu.edu exists, but its robots.txt refused the probe: the probe was not sent or failed: robots.txt (https://reg-prod.ec.odu.edu/robots.txt) could not be read (HTTP 503); RFC 9309 treats that as disallow-all, so the request was not sent (1 pages, 10 probes)
+2026-09-12T17:09:59Z [montgomery] identifying the platform from https://www.montgomerycollege.edu/
+2026-09-12T17:10:03Z [neu] identified banner9 at https://nubanner.neu.edu/StudentRegistrationSsb/ (CrawledLink; 6 pages, 1 probes, 18.7s)
+2026-09-12T17:10:03Z [temple] identifying the platform from https://www.temple.edu/
+2026-09-12T17:10:04Z [lehigh] not identified from the homepage: the well-known banner9 host reg-prod.ec.lehigh.edu exists, but its robots.txt refused the probe: the probe was not sent or failed: robots.txt (https://reg-prod.ec.lehigh.edu/robots.txt) could not be read (HTTP 503); RFC 9309 treats that as disallow-all, so the request was not sent (2 pages, 10 probes)
+2026-09-12T17:10:04Z [uncc] identifying the platform from https://www.charlotte.edu/
+2026-09-12T17:10:04Z [montgomery] identified banner9 at https://b9pubstu.glb.montgomerycollege.edu/StudentRegistrationSsb/ (HomepageLink; 1 pages, 1 probes, 4.4s)
+2026-09-12T17:10:04Z [uncw] identifying the platform from https://uncw.edu/
+2026-09-12T17:10:05Z [ucr] identified banner9 at https://registrationssb.ucr.edu/StudentRegistrationSsb/ (GuessedHost; 1 pages, 9 probes, 7.2s)
+2026-09-12T17:10:05Z [usf] identifying the platform from https://www.usf.edu/
+2026-09-12T17:10:10Z [temple] identified banner9 at https://prd-xereg.temple.edu/StudentRegistrationSsb/ (CrawledLink; 2 pages, 1 probes, 6.4s)
+2026-09-12T17:10:10Z [sju] identifying the platform from https://www.sju.edu/
+2026-09-12T17:10:10Z [uncw] identified banner9 at https://registration.uncw.edu/StudentRegistrationSsb/ (GuessedHost; 2 pages, 2 probes, 6.5s)
+2026-09-12T17:10:10Z [cocc] identifying the platform from https://www.cocc.edu/
+2026-09-12T17:10:12Z [uncc] identified banner9 at https://selfservice.uncc.edu/StudentRegistrationSsb/ (CrawledLink; 3 pages, 1 probes, 8.4s)
+2026-09-12T17:10:12Z [ufv] identifying the platform from https://www.ufv.ca/
+2026-09-12T17:10:16Z [sju] identified banner9 at https://registration.sju.edu/StudentRegistrationSsb/ (GuessedHost; 1 pages, 2 probes, 6.5s)
+2026-09-12T17:10:16Z [louisville] identifying the platform from https://louisville.edu/
+2026-09-12T17:10:16Z [ctstate] not identified from the homepage: a banner9 entry point https://reg-prod.ec.ct.edu/StudentRegistrationSsb/ was found on https://ctstate.edu/admissions-registration/one-stop-enrollment-center, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://reg-prod.ec.ct.edu/robots.txt) could not be read (HTTP 503); RFC 9309 treats that as disallow-all, so the request was not sent (10 pages, 11 probes)
+2026-09-12T17:10:16Z [mizzou] identifying the platform from https://missouri.edu/
+2026-09-12T17:10:18Z [ufv] identified banner9 at https://apps.ban.ufv.ca/StudentRegistrationSsb/ (CrawledLink; 2 pages, 1 probes, 6.4s)
+2026-09-12T17:10:18Z [nau] identifying the platform from https://nau.edu/
+2026-09-12T17:10:19Z [cocc] identified banner9 at https://reg-prod.cocc.edu/StudentRegistrationSsb/ (CrawledLink; 3 pages, 1 probes, 8.9s)
+2026-09-12T17:10:19Z [lsu] identifying the platform from https://www.lsu.edu/
+2026-09-12T17:10:21Z [mizzou] not identified from the homepage: no connector recognized the site after 2 pages and 10 probes (2 pages, 10 probes)
+2026-09-12T17:10:21Z [dallascollege] identifying the platform from https://www.dallascollege.edu/
+2026-09-12T17:10:21Z [nau] not identified from the homepage: no connector recognized the site after 1 pages and 10 probes (1 pages, 10 probes)
+2026-09-12T17:10:21Z [bellarmine] identifying the platform from https://www.bellarmine.edu/
+2026-09-12T17:10:23Z [eku] not identified from the homepage: the well-known banner9 host banner.eku.edu exists, but its robots.txt refused the probe: the probe was not sent or failed: robots.txt (https://banner.eku.edu/robots.txt) could not be read (Cannot determine the frame size or a corrupted frame was received.); RFC 9309 treats that as disallow-all, so the request was not sent (3 pages, 10 probes)
+2026-09-12T17:10:23Z [swccd] identifying the platform from https://www.swccd.edu/
+2026-09-12T17:10:27Z [usf] identified banner9 at https://studentssb9.it.usf.edu/StudentRegistrationSsb/ (CrawledLink; 10 pages, 1 probes, 22.3s)
+2026-09-12T17:10:27Z [kishwaukee] identifying the platform from https://www.kish.edu/
+2026-09-12T17:10:29Z [louisville] not identified from the homepage: no connector recognized the site; its pages point to workday, peoplesoft (7 pages, 10 probes)
+2026-09-12T17:10:36Z [bellarmine] not identified from the homepage: no connector recognized the site after 6 pages and 10 probes (6 pages, 10 probes)
+2026-09-12T17:10:38Z [lsu] not identified from the homepage: no connector recognized the site after 10 pages and 10 probes (10 pages, 10 probes)
+2026-09-12T17:10:38Z [oakton] not identified from the homepage: a banner9 entry point https://banner.oakton.edu/StudentRegistrationSsb/ was found on https://www.oakton.edu/, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://banner.oakton.edu/robots.txt) could not be read (HTTP 503); RFC 9309 treats that as disallow-all, so the request was not sent (4 pages, 10 probes)
+2026-09-12T17:10:41Z [dallascollege] not identified from the homepage: no connector recognized the site; its pages point to workday (10 pages, 10 probes)
+2026-09-12T17:10:41Z [swccd] not identified from the homepage: no connector recognized the site; its pages point to colleague (10 pages, 10 probes)
+2026-09-12T17:10:47Z [ou] identified banner9 at https://sis.ou.edu/StudentRegistrationSsb/ (GuessedHost; 1 pages, 7 probes, 66.4s)
+2026-09-12T17:10:56Z [ullafayette] not identified from the homepage: a banner9 entry point https://reg-prod.ec.louisiana.edu/StudentRegistrationSsb/ was found on https://louisiana.edu/registrar/registration/schedule-classes, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://reg-prod.ec.louisiana.edu/robots.txt) could not be read (HTTP 503); RFC 9309 treats that as disallow-all, so the request was not sent (10 pages, 10 probes)
+2026-09-12T17:11:12Z [ucmerced] not identified from the homepage: the well-known banner9 host reg-prod.ec.ucmerced.edu exists, but its robots.txt refused the probe: the probe was not sent or failed: robots.txt (https://reg-prod.ec.ucmerced.edu/robots.txt) could not be read (HTTP 503); RFC 9309 treats that as disallow-all, so the request was not sent (1 pages, 10 probes)
+2026-09-12T17:11:41Z [kishwaukee] not identified from the homepage: no connector recognized the site; its pages point to colleague (6 pages, 10 probes)
+2026-09-12T17:12:17Z [uindy] not identified from the homepage: a banner9 entry point https://banner.uindy.edu/StudentRegistrationSsb/ was found on https://uindy.edu/registrar/course-schedules, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://banner.uindy.edu/robots.txt) could not be read (The response ended prematurely. (ResponseEnded)); RFC 9309 treats that as disallow-all, so the request was not sent (10 pages, 10 probes)
+2026-09-12T17:12:22Z [aum] not identified from the homepage: a banner9 entry point https://ssb9.aum.edu/StudentRegistrationSsb/ was found on https://www.aum.edu/, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://ssb9.aum.edu/robots.txt) could not be read (The response ended prematurely. (ResponseEnded)); RFC 9309 treats that as disallow-all, so the request was not sent (10 pages, 10 probes)
+2026-09-12T17:12:22Z [samford] started (banner9, https://ssb.samford.edu/StudentRegistrationSsb/)
+2026-09-12T17:12:22Z [okstate] started (banner9, https://studentregistrationssb.okstate.edu/StudentRegistrationSsb/)
+2026-09-12T17:12:22Z [uiuc] started (banner9, https://banner.apps.uillinois.edu/StudentRegistrationSSB/)
+2026-09-12T17:12:22Z [ucr] started (banner9, https://registrationssb.ucr.edu/StudentRegistrationSsb/)
+2026-09-12T17:12:22Z [neu] started (banner9, https://nubanner.neu.edu/StudentRegistrationSsb/)
+2026-09-12T17:12:22Z [cofc] started (banner9, https://ssb.cofc.edu/StudentRegistrationSsb/)
+2026-09-12T17:12:22Z [ou] started (banner9, https://sis.ou.edu/StudentRegistrationSsb/)
+2026-09-12T17:12:22Z [msudenver] started (banner9, https://ssb.msudenver.edu/StudentRegistrationSsb/)
+2026-09-12T17:12:22Z [starkstate] started (banner9, https://selfservice-registration.starkstate.edu/StudentRegistrationSsb/)
+2026-09-12T17:12:22Z [uidaho] started (banner9, https://banner.uidaho.edu/StudentRegistrationSsb/)
+2026-09-12T17:12:22Z [blinn] started (banner9, https://ban9reg.blinn.edu/StudentRegistrationSsb/)
+2026-09-12T17:12:22Z [fhda] started (banner9, https://reg.oci.fhda.edu/StudentRegistrationSsb/)
+2026-09-12T17:12:22Z [samford] 3 terms listed, collecting 3
+2026-09-12T17:12:22Z [starkstate] 87 terms listed, collecting 24
+2026-09-12T17:12:22Z [msudenver] 72 terms listed, collecting 24
+2026-09-12T17:12:22Z [uidaho] 48 terms listed, collecting 24
+2026-09-12T17:12:24Z [ou] 138 terms listed, collecting 24
+2026-09-12T17:12:24Z [ucr] 183 terms listed, collecting 24
+2026-09-12T17:12:24Z [cofc] 28 terms listed, collecting 24
+2026-09-12T17:12:24Z [uiuc] 87 terms listed, collecting 24
+2026-09-12T17:12:24Z [okstate] 31 terms listed, collecting 24
+2026-09-12T17:12:24Z [blinn] 9 terms listed, collecting 9
+2026-09-12T17:12:26Z [fhda] 136 terms listed, collecting 24
+2026-09-12T17:12:26Z [uiuc] term 120268 "Fall 2026 - Urbana-Champaign" FAILED: term/search redirected (HTTP 302), so class search needs a sign-in; only public data is collected [https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search&mepCode=1UIUC]
+2026-09-12T17:12:26Z [neu] 269 terms listed, collecting 24
+2026-09-12T17:12:28Z [uiuc] term 120265 "Summer 2026 - Urbana-Champaign" FAILED: term/search redirected (HTTP 302), so class search needs a sign-in; only public data is collected [https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search&mepCode=1UIUC]
+2026-09-12T17:12:30Z [uiuc] term 120261 "Spring 2026 - Urbana-Champaign" FAILED: term/search redirected (HTTP 302), so class search needs a sign-in; only public data is collected [https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search&mepCode=1UIUC]
+2026-09-12T17:12:30Z [blinn] term 502710 "QTR 1 2026-2027-Cont Ed ONLY": 11 sections, 14 meetings, 0 extraction failures; 0 added, 0 changed, 11 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:12:30Z [ou] term 202660 "Long Term Liberal Studies 2026": 0 sections, 0 meetings, 0 extraction failures; 0 added, 0 changed, 0 unchanged, 0 not seen; 0 rows written (6.4s)
+2026-09-12T17:12:32Z [uiuc] term 120260 "Winter 2025-2026 Urbana-Chmpgn" FAILED: term/search redirected (HTTP 302), so class search needs a sign-in; only public data is collected [https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search&mepCode=1UIUC]
+2026-09-12T17:12:34Z [uiuc] term 120258 "Fall 2025 - Urbana-Champaign" FAILED: term/search redirected (HTTP 302), so class search needs a sign-in; only public data is collected [https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search&mepCode=1UIUC]
+2026-09-12T17:12:34Z [uiuc] Failed: 0/5 terms (0 new), 0 sections, 0 meetings, 7 requests (0 from cache), 0.0 MB, 00:00:12; stopped after 5 terms failed in a row; last: term/search redirected (HTTP 302), so class search needs a sign-in; only public data is collected
+2026-09-12T17:12:34Z [montgomery] started (banner9, https://b9pubstu.glb.montgomerycollege.edu/StudentRegistrationSsb/)
+2026-09-12T17:12:34Z [montgomery] 8 terms listed, collecting 8
+2026-09-12T17:12:36Z [blinn] term 502640 "QTR 4 2025-2026-Cont Ed ONLY (View Only)": 32 sections, 32 meetings, 0 extraction failures; 0 added, 0 changed, 32 unchanged, 0 not seen; 0 rows written (5.6s)
+2026-09-12T17:12:42Z [blinn] term 502610 "QTR 1 2025-2026-Cont Ed ONLY (View Only)": 34 sections, 34 meetings, 0 extraction failures; 0 added, 0 changed, 34 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:12:49Z [starkstate] term 202720 "Fall 2026": 1818 sections, 2030 meetings, 0 extraction failures; 0 added, 1 changed, 1817 unchanged, 0 not seen; 5 rows written (27.2s)
+2026-09-12T17:12:51Z [cofc] term 202710 "2026 Fall": 3317 sections, 3445 meetings, 0 extraction failures; 0 added, 1 changed, 3316 unchanged, 0 not seen; 5 rows written (26.9s)
+2026-09-12T17:12:53Z [samford] term 202670 "Fall 2026 24-AUG-2026 - 10-DEC-2026": 2363 sections, 2404 meetings, 0 extraction failures; 0 added, 3 changed, 2360 unchanged, 0 not seen; 39 rows written (30.5s)
+2026-09-12T17:12:55Z [fhda] term 202742 "2027 Spring De Anza (View Only)": 1511 sections, 2308 meetings, 0 extraction failures; 0 added, 0 changed, 1511 unchanged, 0 not seen; 0 rows written (29.1s)
+2026-09-12T17:12:57Z [starkstate] term 202710 "Summer 2026 (View Only)": 359 sections, 376 meetings, 0 extraction failures; 0 added, 1 changed, 358 unchanged, 0 not seen; 5 rows written (8.1s)
+2026-09-12T17:13:00Z [cofc] term 202630 "2026 Summer (View Only)": 716 sections, 740 meetings, 0 extraction failures; 0 added, 1 changed, 715 unchanged, 0 not seen; 5 rows written (8.8s)
+2026-09-12T17:13:01Z [samford] term 202650 "Summer 2026 04-MAY-2026 - 07-AUG-2026 (View Only)": 496 sections, 447 meetings, 0 extraction failures; 0 added, 2 changed, 494 unchanged, 0 not seen; 14 rows written (8.9s)
+2026-09-12T17:13:08Z [uidaho] term 202620 "Spring 2027 (View Only)": 3544 sections, 3852 meetings, 0 extraction failures; 0 added, 0 changed, 3544 unchanged, 0 not seen; 0 rows written (45.5s)
+2026-09-12T17:13:17Z [fhda] term 202741 "2027 Spring Foothill (View Only)": 1034 sections, 1545 meetings, 0 extraction failures; 0 added, 0 changed, 1034 unchanged, 0 not seen; 0 rows written (21.9s)
+2026-09-12T17:13:21Z [montgomery] term 202830 "Spring 2028 (View Only)": 3292 sections, 3637 meetings, 0 extraction failures; 0 added, 0 changed, 3292 unchanged, 0 not seen; 0 rows written (46.6s)
+2026-09-12T17:13:23Z [starkstate] term 202640 "Spring 2026 (View Only)": 1723 sections, 1892 meetings, 0 extraction failures; 0 added, 6 changed, 1717 unchanged, 0 not seen; 30 rows written (25.1s)
+2026-09-12T17:13:27Z [montgomery] term 202824 "Winter 2028 (View Only)": 180 sections, 188 meetings, 0 extraction failures; 0 added, 0 changed, 180 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:13:27Z [cofc] term 202620 "2026 Spring (View Only)": 3158 sections, 3281 meetings, 0 extraction failures; 0 added, 4 changed, 3154 unchanged, 0 not seen; 28 rows written (27.4s)
+2026-09-12T17:13:29Z [okstate] term 202660 "Fall 2026": 8492 sections, 10490 meetings, 0 extraction failures; 0 added, 0 changed, 8492 unchanged, 0 not seen; 0 rows written (64.6s)
+2026-09-12T17:13:30Z [ou] term 202610 "Fall 2026": 12256 sections, 15377 meetings, 0 extraction failures; 0 added, 104 changed, 12152 unchanged, 0 not seen; 658 rows written (59.8s)
+2026-09-12T17:13:35Z [samford] term 202620 "Spring 2026 12-JAN-2026 - 30-APR-2026 (View Only)": 2217 sections, 2180 meetings, 0 extraction failures; 0 added, 0 changed, 2217 unchanged, 0 not seen; 0 rows written (33.2s)
+2026-09-12T17:13:35Z [samford] Collected: 3/3 terms (0 new), 5076 sections, 5031 meetings, 24 requests (0 from cache), 16.4 MB, 00:01:20
+2026-09-12T17:13:35Z [gmu] started (banner9, https://ssbstureg.gmu.edu/StudentRegistrationSsb/)
+2026-09-12T17:13:35Z [ou] term 202560 "Long Term Liberal Studies 2025 (View Only)": 1 sections, 1 meetings, 0 extraction failures; 0 added, 0 changed, 1 unchanged, 0 not seen; 0 rows written (4.6s)
+2026-09-12T17:13:39Z [gmu] 113 terms listed, collecting 24
+2026-09-12T17:13:44Z [fhda] term 202732 "2027 Winter De Anza (View Only)": 1552 sections, 2366 meetings, 0 extraction failures; 0 added, 0 changed, 1552 unchanged, 0 not seen; 0 rows written (27.0s)
+2026-09-12T17:13:45Z [blinn] term 202710 "Fall 2026": 2241 sections, 2599 meetings, 0 extraction failures; 0 added, 0 changed, 2241 unchanged, 0 not seen; 0 rows written (63.3s)
+2026-09-12T17:13:45Z [starkstate] term 202620 "Fall 2025 (View Only)": 1750 sections, 1938 meetings, 0 extraction failures; 0 added, 13 changed, 1737 unchanged, 0 not seen; 65 rows written (22.9s)
+2026-09-12T17:13:48Z [msudenver] term 202650 "Fall 2026": 3482 sections, 3834 meetings, 0 extraction failures; 0 added, 12 changed, 3470 unchanged, 0 not seen; 80 rows written (85.6s)
+2026-09-12T17:13:51Z [ou] term 202530 "Summer 2026 (View Only)": 2727 sections, 2968 meetings, 0 extraction failures; 0 added, 6 changed, 2721 unchanged, 0 not seen; 62 rows written (16.6s)
+2026-09-12T17:13:52Z [okstate] term 202640 "Summer 2026 (View Only)": 3471 sections, 3706 meetings, 0 extraction failures; 0 added, 0 changed, 3471 unchanged, 0 not seen; 0 rows written (23.0s)
+2026-09-12T17:13:52Z [starkstate] term 202610 "Summer 2025 (View Only)": 364 sections, 384 meetings, 0 extraction failures; 0 added, 1 changed, 363 unchanged, 0 not seen; 5 rows written (6.8s)
+2026-09-12T17:13:53Z [cofc] term 202610 "2025 Fall (View Only)": 3173 sections, 3274 meetings, 0 extraction failures; 0 added, 10 changed, 3163 unchanged, 0 not seen; 68 rows written (26.0s)
+2026-09-12T17:13:56Z [ucr] term 202640 "Fall 2026": 11240 sections, 11240 meetings, 0 extraction failures; 0 added, 79 changed, 11161 unchanged, 0 not seen; 253 rows written (91.9s)
+2026-09-12T17:13:56Z [blinn] term 202640 "Summer II 2026 (View Only)": 173 sections, 187 meetings, 0 extraction failures; 0 added, 0 changed, 173 unchanged, 0 not seen; 0 rows written (10.6s)
+2026-09-12T17:14:02Z [cofc] term 202530 "2025 Summer (View Only)": 689 sections, 741 meetings, 0 extraction failures; 0 added, 0 changed, 689 unchanged, 0 not seen; 0 rows written (8.9s)
+2026-09-12T17:14:04Z [neu] term 202710 "Fall 2026 Semester": 9644 sections, 10216 meetings, 0 extraction failures; 0 added, 135 changed, 9509 unchanged, 0 not seen; 135 rows written (97.7s)
+2026-09-12T17:14:06Z [fhda] term 202731 "2027 Winter Foothill (View Only)": 1147 sections, 1693 meetings, 0 extraction failures; 0 added, 0 changed, 1147 unchanged, 0 not seen; 0 rows written (21.6s)
+2026-09-12T17:14:07Z [uidaho] term 202610 "Fall 2026": 4012 sections, 4317 meetings, 0 extraction failures; 0 added, 0 changed, 4012 unchanged, 0 not seen; 0 rows written (59.5s)
+2026-09-12T17:14:09Z [msudenver] term 202640 "Summer 2026 (View Only)": 671 sections, 722 meetings, 0 extraction failures; 0 added, 0 changed, 671 unchanged, 0 not seen; 0 rows written (20.8s)
+2026-09-12T17:14:09Z [neu] term 202655 "Summer 2026 CPS Quarter (View Only)": 132 sections, 163 meetings, 0 extraction failures; 0 added, 0 changed, 132 unchanged, 0 not seen; 0 rows written (5.1s)
+2026-09-12T17:14:14Z [blinn] term 202630 "Summer I 2026 (View Only)": 330 sections, 413 meetings, 0 extraction failures; 0 added, 0 changed, 330 unchanged, 0 not seen; 0 rows written (18.5s)
+2026-09-12T17:14:15Z [ucr] term 202630 "Summer 2026 (View Only)": 1657 sections, 1679 meetings, 0 extraction failures; 0 added, 9 changed, 1648 unchanged, 0 not seen; 47 rows written (19.2s)
+2026-09-12T17:14:17Z [starkstate] term 202540 "Spring 2025 (View Only)": 1789 sections, 1946 meetings, 0 extraction failures; 0 added, 5 changed, 1784 unchanged, 0 not seen; 29 rows written (24.7s)
+2026-09-12T17:14:20Z [blinn] term 202625 "May Minimester 2026 (View Only)": 41 sections, 41 meetings, 0 extraction failures; 0 added, 0 changed, 41 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:14:21Z [uidaho] term 202600 "Summer 2026 (View Only)": 899 sections, 916 meetings, 0 extraction failures; 0 added, 0 changed, 899 unchanged, 0 not seen; 0 rows written (13.7s)
+2026-09-12T17:14:25Z [montgomery] term 202820 "Fall 2027 (View Only)": 3588 sections, 3920 meetings, 0 extraction failures; 0 added, 2 changed, 3586 unchanged, 0 not seen; 28 rows written (58.5s)
+2026-09-12T17:14:29Z [cofc] term 202520 "2025 Spring (View Only)": 3114 sections, 3212 meetings, 0 extraction failures; 0 added, 12 changed, 3102 unchanged, 0 not seen; 76 rows written (26.9s)
+2026-09-12T17:14:35Z [fhda] term 202722 "2026 Fall De Anza": 1672 sections, 2520 meetings, 0 extraction failures; 0 added, 17 changed, 1655 unchanged, 0 not seen; 17 rows written (29.3s)
+2026-09-12T17:14:39Z [starkstate] term 202520 "Fall 2024 (View Only)": 1936 sections, 2133 meetings, 0 extraction failures; 0 added, 10 changed, 1926 unchanged, 0 not seen; 58 rows written (22.5s)
+2026-09-12T17:14:47Z [ou] term 202520 "Spring 2026 (View Only)": 11942 sections, 14743 meetings, 0 extraction failures; 0 added, 34 changed, 11908 unchanged, 0 not seen; 274 rows written (55.3s)
+2026-09-12T17:14:47Z [starkstate] term 202510 "Summer 2024 (View Only)": 353 sections, 375 meetings, 0 extraction failures; 0 added, 0 changed, 353 unchanged, 0 not seen; 0 rows written (7.7s)
+2026-09-12T17:14:49Z [neu] term 202650 "Summer 2026 Semester (View Only)": 3503 sections, 3564 meetings, 0 extraction failures; 0 added, 0 changed, 3503 unchanged, 0 not seen; 0 rows written (39.6s)
+2026-09-12T17:14:55Z [cofc] term 202510 "2024 Fall (View Only)": 3198 sections, 3347 meetings, 0 extraction failures; 0 added, 15 changed, 3183 unchanged, 0 not seen; 109 rows written (25.8s)
+2026-09-12T17:14:57Z [fhda] term 202721 "2026 Fall Foothill": 1128 sections, 1675 meetings, 0 extraction failures; 0 added, 7 changed, 1121 unchanged, 0 not seen; 7 rows written (21.9s)
+2026-09-12T17:14:59Z [neu] term 202635 "Spring 2026 CPS Quarter (View Only)": 549 sections, 580 meetings, 0 extraction failures; 0 added, 0 changed, 549 unchanged, 0 not seen; 0 rows written (10.7s)
+2026-09-12T17:15:04Z [cofc] term 202430 "2024 Summer (View Only)": 670 sections, 716 meetings, 0 extraction failures; 0 added, 2 changed, 668 unchanged, 0 not seen; 14 rows written (9.2s)
+2026-09-12T17:15:06Z [okstate] term 202620 "Spring 2026 (View Only)": 8427 sections, 12964 meetings, 0 extraction failures; 0 added, 0 changed, 8427 unchanged, 0 not seen; 0 rows written (74.1s)
+2026-09-12T17:15:08Z [starkstate] term 202440 "Spring 2024 (View Only)": 1725 sections, 1916 meetings, 0 extraction failures; 0 added, 2 changed, 1723 unchanged, 0 not seen; 12 rows written (21.4s)
+2026-09-12T17:15:10Z [fhda] term 202712 "2026 Summer De Anza": 593 sections, 817 meetings, 0 extraction failures; 0 added, 0 changed, 593 unchanged, 0 not seen; 0 rows written (13.4s)
+2026-09-12T17:15:17Z [uidaho] term 202520 "Spring 2026 (View Only)": 3837 sections, 4138 meetings, 0 extraction failures; 0 added, 0 changed, 3837 unchanged, 0 not seen; 0 rows written (56.2s)
+2026-09-12T17:15:19Z [montgomery] term 202730 "Spring 2027 (View Only)": 3297 sections, 3636 meetings, 0 extraction failures; 0 added, 2 changed, 3295 unchanged, 0 not seen; 10 rows written (53.5s)
+2026-09-12T17:15:23Z [uidaho] term 202515 "Winter Intersession 2025 (View Only)": 10 sections, 10 meetings, 0 extraction failures; 0 added, 0 changed, 10 unchanged, 0 not seen; 0 rows written (5.6s)
+2026-09-12T17:15:24Z [fhda] term 202711 "2026 Summer Foothill": 509 sections, 734 meetings, 0 extraction failures; 0 added, 0 changed, 509 unchanged, 0 not seen; 0 rows written (13.6s)
+2026-09-12T17:15:24Z [montgomery] term 202724 "Winter 2027 (View Only)": 180 sections, 188 meetings, 0 extraction failures; 0 added, 0 changed, 180 unchanged, 0 not seen; 0 rows written (5.9s)
+2026-09-12T17:15:28Z [gmu] term 202670 "Fall 2026": 6735 sections, 7558 meetings, 0 extraction failures; 0 added, 28 changed, 6707 unchanged, 0 not seen; 322 rows written (109.7s)
+2026-09-12T17:15:29Z [cofc] term 202420 "2024 Spring (View Only)": 3210 sections, 3192 meetings, 0 extraction failures; 0 added, 3 changed, 3207 unchanged, 0 not seen; 21 rows written (25.0s)
+2026-09-12T17:15:32Z [msudenver] term 202630 "Spring 2026 (View Only)": 3370 sections, 3729 meetings, 0 extraction failures; 0 added, 5 changed, 3365 unchanged, 0 not seen; 29 rows written (83.4s)
+2026-09-12T17:15:35Z [starkstate] term 202420 "Fall 2023 (View Only)": 1857 sections, 2059 meetings, 0 extraction failures; 0 added, 6 changed, 1851 unchanged, 0 not seen; 40 rows written (26.2s)
+2026-09-12T17:15:35Z [blinn] term 202620 "Spring 2026 (View Only)": 2062 sections, 2421 meetings, 0 extraction failures; 0 added, 0 changed, 2062 unchanged, 0 not seen; 0 rows written (74.7s)
+2026-09-12T17:15:42Z [ou] term 202510 "Fall 2025 (View Only)": 12170 sections, 15268 meetings, 0 extraction failures; 0 added, 63 changed, 12107 unchanged, 0 not seen; 377 rows written (55.4s)
+2026-09-12T17:15:42Z [blinn] term 202615 "Winter Minimester 2025-2026 (View Only)": 80 sections, 80 meetings, 0 extraction failures; 0 added, 0 changed, 80 unchanged, 0 not seen; 0 rows written (7.0s)
+2026-09-12T17:15:42Z [blinn] Collected: 9/9 terms (0 new), 5004 sections, 5821 meetings, 37 requests (0 from cache), 14.9 MB, 00:03:20
+2026-09-12T17:15:42Z [temple] started (banner9, https://prd-xereg.temple.edu/StudentRegistrationSsb/)
+2026-09-12T17:15:42Z [starkstate] term 202410 "Summer 2023 (View Only)": 349 sections, 373 meetings, 0 extraction failures; 0 added, 2 changed, 347 unchanged, 0 not seen; 10 rows written (7.7s)
+2026-09-12T17:15:43Z [temple] 63 terms listed, collecting 24
+2026-09-12T17:15:47Z [ou] term 202460 "Long Term Liberal Studies 2024 (View Only)": 1 sections, 1 meetings, 0 extraction failures; 0 added, 0 changed, 1 unchanged, 0 not seen; 0 rows written (4.7s)
+2026-09-12T17:15:48Z [ucr] term 202620 "Spring 2026 (View Only)": 10613 sections, 10614 meetings, 0 extraction failures; 0 added, 151 changed, 10462 unchanged, 0 not seen; 1167 rows written (93.2s)
+2026-09-12T17:15:48Z [starkstate] term 202345 "Continuing Educ. Spring 2023 (View Only)": 0 sections, 0 meetings, 0 extraction failures; 0 added, 0 changed, 0 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:15:51Z [fhda] term 202642 "2026 Spring De Anza (View Only)": 1524 sections, 2259 meetings, 0 extraction failures; 0 added, 0 changed, 1524 unchanged, 0 not seen; 0 rows written (27.5s)
+2026-09-12T17:15:53Z [ou] term 202450 "Self-Paced 2024-2025 (View Only)": 0 sections, 0 meetings, 0 extraction failures; 0 added, 0 changed, 0 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:15:55Z [cofc] term 202410 "2023 Fall (View Only)": 3161 sections, 3190 meetings, 0 extraction failures; 0 added, 16 changed, 3145 unchanged, 0 not seen; 110 rows written (25.6s)
+2026-09-12T17:16:01Z [gmu] term 202640 "Summer 2026 (View Only)": 1481 sections, 1703 meetings, 0 extraction failures; 0 added, 5 changed, 1476 unchanged, 0 not seen; 85 rows written (32.0s)
+2026-09-12T17:16:03Z [cofc] term 202330 "2023 Summer (View Only)": 710 sections, 715 meetings, 0 extraction failures; 0 added, 1 changed, 709 unchanged, 0 not seen; 5 rows written (8.7s)
+2026-09-12T17:16:09Z [ou] term 202430 "Summer 2025 (View Only)": 2595 sections, 2821 meetings, 0 extraction failures; 0 added, 4 changed, 2591 unchanged, 0 not seen; 24 rows written (16.3s)
+2026-09-12T17:16:13Z [fhda] term 202641 "2026 Spring Foothill (View Only)": 1042 sections, 1553 meetings, 0 extraction failures; 0 added, 0 changed, 1042 unchanged, 0 not seen; 0 rows written (21.6s)
+2026-09-12T17:16:16Z [starkstate] term 202340 "Spring 2023 (View Only)": 1798 sections, 1978 meetings, 0 extraction failures; 0 added, 6 changed, 1792 unchanged, 0 not seen; 42 rows written (27.2s)
+2026-09-12T17:16:19Z [uidaho] term 202510 "Fall 2025 (View Only)": 3927 sections, 4220 meetings, 0 extraction failures; 0 added, 0 changed, 3927 unchanged, 0 not seen; 0 rows written (56.0s)
+2026-09-12T17:16:23Z [okstate] term 202560 "Fall 2025 (View Only)": 8680 sections, 13603 meetings, 0 extraction failures; 0 added, 0 changed, 8680 unchanged, 0 not seen; 0 rows written (77.5s)
+2026-09-12T17:16:27Z [cofc] term 202320 "2023 Spring (View Only)": 2958 sections, 3150 meetings, 0 extraction failures; 0 added, 6 changed, 2952 unchanged, 0 not seen; 40 rows written (23.9s)
+2026-09-12T17:16:32Z [uidaho] term 202500 "Summer 2025 (View Only)": 902 sections, 926 meetings, 0 extraction failures; 0 added, 0 changed, 902 unchanged, 0 not seen; 0 rows written (13.2s)
+2026-09-12T17:16:37Z [starkstate] term 202320 "Fall 2022 (View Only)": 1869 sections, 2114 meetings, 0 extraction failures; 0 added, 14 changed, 1855 unchanged, 0 not seen; 74 rows written (21.9s)
+2026-09-12T17:16:42Z [fhda] term 202632 "2026 Winter De Anza (View Only)": 1602 sections, 2343 meetings, 0 extraction failures; 0 added, 0 changed, 1602 unchanged, 0 not seen; 0 rows written (29.2s)
+2026-09-12T17:16:45Z [starkstate] term 202310 "Summer 2022 (View Only)": 354 sections, 384 meetings, 0 extraction failures; 0 added, 1 changed, 353 unchanged, 0 not seen; 5 rows written (7.6s)
+2026-09-12T17:16:47Z [okstate] term 202540 "Summer 2025 (View Only)": 3580 sections, 3771 meetings, 0 extraction failures; 0 added, 0 changed, 3580 unchanged, 0 not seen; 0 rows written (23.6s)
+2026-09-12T17:16:51Z [starkstate] term 202245 "Continuing Educ. Spring 2022 (View Only)": 0 sections, 0 meetings, 0 extraction failures; 0 added, 0 changed, 0 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:16:54Z [cofc] term 202310 "2022 Fall (View Only)": 3045 sections, 3271 meetings, 0 extraction failures; 0 added, 3 changed, 3042 unchanged, 0 not seen; 15 rows written (26.4s)
+2026-09-12T17:17:00Z [neu] term 202630 "Spring 2026 Semester (View Only)": 7012 sections, 8128 meetings, 0 extraction failures; 0 added, 0 changed, 7012 unchanged, 0 not seen; 0 rows written (120.9s)
+2026-09-12T17:17:03Z [cofc] term 202230 "2022 Summer (View Only)": 646 sections, 727 meetings, 0 extraction failures; 0 added, 3 changed, 643 unchanged, 0 not seen; 15 rows written (9.1s)
+2026-09-12T17:17:05Z [ou] term 202420 "Spring 2025 (View Only)": 11785 sections, 14584 meetings, 0 extraction failures; 0 added, 16 changed, 11769 unchanged, 0 not seen; 102 rows written (56.0s)
+2026-09-12T17:17:05Z [fhda] term 202631 "2026 Winter Foothill (View Only)": 1162 sections, 1701 meetings, 0 extraction failures; 0 added, 0 changed, 1162 unchanged, 0 not seen; 0 rows written (23.2s)
+2026-09-12T17:17:10Z [montgomery] term 202720 "Fall 2026": 4558 sections, 5254 meetings, 0 extraction failures; 0 added, 28 changed, 4530 unchanged, 0 not seen; 38 rows written (105.3s)
+2026-09-12T17:17:10Z [neu] term 202625 "Winter 2026 CPS Quarter (View Only)": 654 sections, 691 meetings, 0 extraction failures; 0 added, 0 changed, 654 unchanged, 0 not seen; 0 rows written (10.2s)
+2026-09-12T17:17:16Z [starkstate] term 202240 "Spring 2022 (View Only)": 1805 sections, 2034 meetings, 0 extraction failures; 0 added, 7 changed, 1798 unchanged, 0 not seen; 39 rows written (25.1s)
+2026-09-12T17:17:22Z [neu] term 202615 "Fall 2025 CPS Quarter (View Only)": 782 sections, 909 meetings, 0 extraction failures; 0 added, 0 changed, 782 unchanged, 0 not seen; 0 rows written (12.0s)
+2026-09-12T17:17:26Z [cofc] term 202220 "2022 Spring (View Only)": 2893 sections, 3159 meetings, 0 extraction failures; 0 added, 7 changed, 2886 unchanged, 0 not seen; 41 rows written (23.2s)
+2026-09-12T17:17:29Z [montgomery] term 202710 "Summer II 2026 (View Only)": 878 sections, 1039 meetings, 0 extraction failures; 0 added, 2 changed, 876 unchanged, 0 not seen; 12 rows written (19.2s)
+2026-09-12T17:17:30Z [uidaho] term 202420 "Spring 2025 (View Only)": 4103 sections, 4393 meetings, 0 extraction failures; 0 added, 0 changed, 4103 unchanged, 0 not seen; 0 rows written (58.5s)
+2026-09-12T17:17:31Z [msudenver] term 202550 "Fall 2025 (View Only)": 3417 sections, 3739 meetings, 0 extraction failures; 0 added, 0 changed, 3417 unchanged, 0 not seen; 0 rows written; 1 sections missing (#2268 of 3418: Banner answered success:false with no sections, which it does when it can't return a record in the requested range) (119.2s)
+2026-09-12T17:17:34Z [fhda] term 202622 "2025 Fall De Anza (View Only)": 1717 sections, 2511 meetings, 0 extraction failures; 0 added, 0 changed, 1717 unchanged, 0 not seen; 0 rows written (29.3s)
+2026-09-12T17:17:36Z [uidaho] term 202415 "Winter Intersession 2024 (View Only)": 9 sections, 9 meetings, 0 extraction failures; 0 added, 0 changed, 9 unchanged, 0 not seen; 0 rows written (5.6s)
+2026-09-12T17:17:40Z [starkstate] term 202220 "Fall 2021 (View Only)": 1905 sections, 2193 meetings, 0 extraction failures; 0 added, 14 changed, 1891 unchanged, 0 not seen; 78 rows written (23.5s)
+2026-09-12T17:17:48Z [montgomery] term 202640 "Summer I 2026 (View Only)": 772 sections, 912 meetings, 0 extraction failures; 0 added, 0 changed, 772 unchanged, 0 not seen; 0 rows written (19.2s)
+2026-09-12T17:17:48Z [montgomery] Collected: 8/8 terms (0 new), 16745 sections, 18774 meetings, 59 requests (0 from cache), 57.9 MB, 00:05:18
+2026-09-12T17:17:48Z [ccsf] started (banner9, https://ssb1.ccsf.edu:8105/StudentRegistrationSsb/)
+2026-09-12T17:17:48Z [starkstate] term 202210 "Summer 2021 (View Only)": 393 sections, 412 meetings, 0 extraction failures; 0 added, 1 changed, 392 unchanged, 0 not seen; 7 rows written (8.8s)
+2026-09-12T17:17:51Z [cofc] term 202210 "2021 Fall (View Only)": 2995 sections, 3303 meetings, 0 extraction failures; 0 added, 30 changed, 2965 unchanged, 0 not seen; 188 rows written (25.1s)
+2026-09-12T17:17:52Z [ccsf] 146 terms listed, collecting 24
+2026-09-12T17:17:52Z [msudenver] term 202540 "Summer 2025 (View Only)": 680 sections, 742 meetings, 0 extraction failures; 0 added, 0 changed, 680 unchanged, 0 not seen; 0 rows written (21.2s)
+2026-09-12T17:17:54Z [ucr] term 202610 "Winter 2026 (View Only)": 11237 sections, 11254 meetings, 0 extraction failures; 0 added, 198 changed, 11039 unchanged, 0 not seen; 2228 rows written (125.7s)
+2026-09-12T17:17:56Z [fhda] term 202621 "2025 Fall Foothill (View Only)": 1117 sections, 1644 meetings, 0 extraction failures; 0 added, 0 changed, 1117 unchanged, 0 not seen; 0 rows written (21.7s)
+2026-09-12T17:17:59Z [okstate] term 202520 "Spring 2025 (View Only)": 8454 sections, 13146 meetings, 0 extraction failures; 0 added, 0 changed, 8454 unchanged, 0 not seen; 0 rows written (72.2s)
+2026-09-12T17:17:59Z [ccsf] term 202671 "Fall 2026 Noncredit": 271 sections, 419 meetings, 0 extraction failures; 3 added, 7 changed, 261 unchanged, 0 not seen; 18 rows written (6.9s)
+2026-09-12T17:18:00Z [gmu] term 202610 "Spring 2026 (View Only)": 6601 sections, 7657 meetings, 0 extraction failures; 0 added, 25 changed, 6576 unchanged, 0 not seen; 323 rows written (119.3s)
+2026-09-12T17:18:01Z [ou] term 202410 "Fall 2024 (View Only)": 12097 sections, 15106 meetings, 0 extraction failures; 0 added, 20 changed, 12077 unchanged, 0 not seen; 114 rows written (56.0s)
+2026-09-12T17:18:01Z [cofc] term 202130 "2021 Summer (View Only)": 675 sections, 810 meetings, 0 extraction failures; 0 added, 3 changed, 672 unchanged, 0 not seen; 19 rows written (10.1s)
+2026-09-12T17:18:05Z [ou] term 202360 "Long Term Liberal Studies 2023 (View Only)": 0 sections, 0 meetings, 0 extraction failures; 0 added, 0 changed, 0 unchanged, 0 not seen; 0 rows written (4.4s)
+2026-09-12T17:18:10Z [fhda] term 202612 "2025 Summer De Anza (View Only)": 648 sections, 902 meetings, 0 extraction failures; 0 added, 0 changed, 648 unchanged, 0 not seen; 0 rows written (13.6s)
+2026-09-12T17:18:11Z [ou] term 202350 "Self-Paced 2023-2024 (View Only)": 1 sections, 1 meetings, 0 extraction failures; 0 added, 0 changed, 1 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:18:13Z [starkstate] term 202140 "Spring 2021 (View Only)": 1788 sections, 1984 meetings, 0 extraction failures; 0 added, 7 changed, 1781 unchanged, 0 not seen; 45 rows written (24.3s)
+2026-09-12T17:18:15Z [ccsf] term 202670 "Fall 2026": 1818 sections, 2766 meetings, 0 extraction failures; 0 added, 10 changed, 1808 unchanged, 0 not seen; 10 rows written (15.8s)
+2026-09-12T17:18:18Z [starkstate] term 202125 "Continuing Educ. Fall 2020 (View Only)": 0 sections, 0 meetings, 0 extraction failures; 0 added, 0 changed, 0 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:18:21Z [ccsf] term 202651 "Summer 2026 Noncredit (View Only)": 127 sections, 223 meetings, 0 extraction failures; 0 added, 0 changed, 127 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:18:23Z [fhda] term 202611 "2025 Summer Foothill (View Only)": 510 sections, 708 meetings, 0 extraction failures; 0 added, 0 changed, 510 unchanged, 0 not seen; 0 rows written (13.1s)
+2026-09-12T17:18:27Z [cofc] term 202120 "2021 Spring (View Only)": 2837 sections, 3623 meetings, 0 extraction failures; 0 added, 6 changed, 2831 unchanged, 0 not seen; 42 rows written (25.6s)
+2026-09-12T17:18:27Z [ccsf] term 202650 "Summer 2026 (View Only)": 293 sections, 393 meetings, 0 extraction failures; 0 added, 0 changed, 293 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:18:28Z [ou] term 202330 "Summer 2024 (View Only)": 2547 sections, 2798 meetings, 0 extraction failures; 0 added, 1 changed, 2546 unchanged, 0 not seen; 5 rows written (16.2s)
+2026-09-12T17:18:33Z [ccsf] term 202631 "Spring 2026 Noncredit (View Only)": 347 sections, 541 meetings, 0 extraction failures; 0 added, 0 changed, 347 unchanged, 0 not seen; 0 rows written (6.4s)
+2026-09-12T17:18:33Z [ou] term 202321 "Spring 2024 Advanced Programs (View Only)": 1 sections, 1 meetings, 0 extraction failures; 0 added, 0 changed, 1 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:18:36Z [uidaho] term 202410 "Fall 2024 (View Only)": 4209 sections, 4488 meetings, 0 extraction failures; 0 added, 0 changed, 4209 unchanged, 0 not seen; 0 rows written (59.9s)
+2026-09-12T17:18:41Z [starkstate] term 202120 "Fall 2020 (View Only)": 1858 sections, 2109 meetings, 0 extraction failures; 0 added, 8 changed, 1850 unchanged, 0 not seen; 42 rows written (22.5s)
+2026-09-12T17:18:47Z [starkstate] term 202115 "Continuing Educ. Summer 2020 (View Only)": 0 sections, 0 meetings, 0 extraction failures; 0 added, 0 changed, 0 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:18:50Z [fhda] term 202542 "2025 Spring De Anza (View Only)": 1531 sections, 2281 meetings, 0 extraction failures; 0 added, 0 changed, 1531 unchanged, 0 not seen; 0 rows written (27.1s)
+2026-09-12T17:18:50Z [ccsf] term 202630 "Spring 2026 (View Only)": 1886 sections, 2908 meetings, 0 extraction failures; 0 added, 0 changed, 1886 unchanged, 0 not seen; 0 rows written (16.9s)
+2026-09-12T17:18:51Z [neu] term 202610 "Fall 2025 Semester (View Only)": 7430 sections, 8876 meetings, 0 extraction failures; 0 added, 0 changed, 7430 unchanged, 0 not seen; 0 rows written (89.1s)
+2026-09-12T17:18:52Z [cofc] term 202110 "2020 Fall (View Only)": 2877 sections, 3309 meetings, 0 extraction failures; 0 added, 24 changed, 2853 unchanged, 0 not seen; 152 rows written (25.1s)
+2026-09-12T17:18:53Z [uidaho] term 202400 "Summer 2024 (View Only)": 1109 sections, 1114 meetings, 0 extraction failures; 0 added, 0 changed, 1109 unchanged, 0 not seen; 0 rows written (16.9s)
+2026-09-12T17:18:55Z [starkstate] term 202110 "Summer 2020 (View Only)": 371 sections, 397 meetings, 0 extraction failures; 0 added, 2 changed, 369 unchanged, 0 not seen; 10 rows written (8.1s)
+2026-09-12T17:18:55Z [starkstate] Collected: 24/24 terms (0 new), 26164 sections, 29027 meetings, 116 requests (0 from cache), 92.1 MB, 00:06:45
+2026-09-12T17:18:55Z [uncc] started (banner9, https://selfservice.uncc.edu/StudentRegistrationSsb/)
+2026-09-12T17:18:55Z [uncc] 74 terms listed, collecting 24
+2026-09-12T17:18:56Z [ccsf] term 202571 "Fall 2025 Noncredit (View Only)": 282 sections, 435 meetings, 0 extraction failures; 0 added, 0 changed, 282 unchanged, 0 not seen; 0 rows written (5.7s)
+2026-09-12T17:19:01Z [cofc] term 202030 "2020 Summer (View Only)": 590 sections, 649 meetings, 0 extraction failures; 0 added, 2 changed, 588 unchanged, 0 not seen; 12 rows written (8.9s)
+2026-09-12T17:19:02Z [neu] term 202560 "Summer 2 2025 Semester (View Only)": 660 sections, 744 meetings, 0 extraction failures; 0 added, 0 changed, 660 unchanged, 0 not seen; 0 rows written (10.7s)
+2026-09-12T17:19:08Z [neu] term 202555 "Summer 2025 CPS Quarter (View Only)": 185 sections, 203 meetings, 0 extraction failures; 0 added, 0 changed, 185 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:19:11Z [fhda] term 202541 "2025 Spring Foothill (View Only)": 1032 sections, 1470 meetings, 0 extraction failures; 0 added, 0 changed, 1032 unchanged, 0 not seen; 0 rows written (20.7s)
+2026-09-12T17:19:12Z [ccsf] term 202570 "Fall 2025 (View Only)": 1801 sections, 2738 meetings, 0 extraction failures; 0 added, 0 changed, 1801 unchanged, 0 not seen; 0 rows written (16.0s)
+2026-09-12T17:19:14Z [neu] term 202554 "Summer 2025 CPS Semester (View Only)": 217 sections, 217 meetings, 0 extraction failures; 0 added, 0 changed, 217 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:19:15Z [msudenver] term 202530 "Spring 2025 (View Only)": 3318 sections, 3601 meetings, 0 extraction failures; 0 added, 0 changed, 3318 unchanged, 0 not seen; 0 rows written (82.1s)
+2026-09-12T17:19:18Z [okstate] term 202460 "Fall 2024 (View Only)": 8775 sections, 14078 meetings, 0 extraction failures; 0 added, 0 changed, 8775 unchanged, 0 not seen; 0 rows written (78.9s)
+2026-09-12T17:19:18Z [ccsf] term 202551 "Summer 2025 Noncredit (View Only)": 144 sections, 225 meetings, 0 extraction failures; 0 added, 0 changed, 144 unchanged, 0 not seen; 0 rows written (6.2s)
+2026-09-12T17:19:20Z [neu] term 202552 "Summer 2025 Law Semester (View Only)": 87 sections, 108 meetings, 0 extraction failures; 0 added, 0 changed, 87 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:19:24Z [ccsf] term 202550 "Summer 2025 (View Only)": 288 sections, 376 meetings, 0 extraction failures; 0 added, 0 changed, 288 unchanged, 0 not seen; 0 rows written (5.7s)
+2026-09-12T17:19:26Z [ucr] term 202540 "Fall 2025 (View Only)": 11173 sections, 11174 meetings, 0 extraction failures; 0 added, 70 changed, 11103 unchanged, 0 not seen; 588 rows written (92.0s)
+2026-09-12T17:19:27Z [cofc] term 202020 "2020 Spring (View Only)": 3105 sections, 3331 meetings, 0 extraction failures; 0 added, 12 changed, 3093 unchanged, 0 not seen; 68 rows written (26.2s)
+2026-09-12T17:19:28Z [ou] term 202320 "Spring 2024 (View Only)": 11785 sections, 14608 meetings, 0 extraction failures; 0 added, 42 changed, 11743 unchanged, 0 not seen; 248 rows written (54.6s)
+2026-09-12T17:19:30Z [ccsf] term 202531 "Spring 2025 Noncredit (View Only)": 284 sections, 464 meetings, 0 extraction failures; 0 added, 0 changed, 284 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:19:33Z [ou] term 202311 "Fall 2023 Advanced Programs (View Only)": 2 sections, 2 meetings, 0 extraction failures; 0 added, 0 changed, 2 unchanged, 0 not seen; 0 rows written (4.6s)
+2026-09-12T17:19:40Z [okstate] term 202440 "Summer 2024 (View Only)": 3435 sections, 3627 meetings, 0 extraction failures; 0 added, 0 changed, 3435 unchanged, 0 not seen; 0 rows written (22.1s)
+2026-09-12T17:19:40Z [neu] term 202550 "Summer Full 2025 Semester (View Only)": 1782 sections, 1832 meetings, 0 extraction failures; 0 added, 0 changed, 1782 unchanged, 0 not seen; 0 rows written (20.2s)
+2026-09-12T17:19:41Z [gmu] term 202570 "Fall 2025 (View Only)": 6696 sections, 7654 meetings, 0 extraction failures; 0 added, 19 changed, 6677 unchanged, 0 not seen; 239 rows written (101.5s)
+2026-09-12T17:19:41Z [fhda] term 202532 "2025 Winter De Anza (View Only)": 1591 sections, 2378 meetings, 0 extraction failures; 0 added, 0 changed, 1591 unchanged, 0 not seen; 0 rows written (30.9s)
+2026-09-12T17:19:44Z [ucr] term 202530 "Summer 2025 (View Only)": 1603 sections, 1607 meetings, 0 extraction failures; 0 added, 46 changed, 1557 unchanged, 0 not seen; 278 rows written (17.7s)
+2026-09-12T17:19:45Z [ccsf] term 202530 "Spring 2025 (View Only)": 1824 sections, 2777 meetings, 0 extraction failures; 0 added, 0 changed, 1824 unchanged, 0 not seen; 0 rows written (15.7s)
+2026-09-12T17:19:51Z [uidaho] term 202320 "Spring 2024 (View Only)": 4205 sections, 4450 meetings, 0 extraction failures; 0 added, 0 changed, 4205 unchanged, 0 not seen; 0 rows written (58.5s)
+2026-09-12T17:19:51Z [ccsf] term 202471 "Fall 2024 Noncredit (View Only)": 294 sections, 514 meetings, 0 extraction failures; 0 added, 0 changed, 294 unchanged, 0 not seen; 0 rows written (6.1s)
+2026-09-12T17:19:52Z [cofc] term 202010 "2019 Fall (View Only)": 3011 sections, 3138 meetings, 0 extraction failures; 0 added, 10 changed, 3001 unchanged, 0 not seen; 66 rows written (24.9s)
+2026-09-12T17:19:55Z [neu] term 202540 "Summer 1 2025 Semester (View Only)": 954 sections, 1126 meetings, 0 extraction failures; 0 added, 0 changed, 954 unchanged, 0 not seen; 0 rows written (14.4s)
+2026-09-12T17:19:57Z [uidaho] term 202315 "Winter Intersession 2023 (View Only)": 17 sections, 17 meetings, 0 extraction failures; 0 added, 0 changed, 17 unchanged, 0 not seen; 0 rows written (5.6s)
+2026-09-12T17:20:00Z [cofc] term 201930 "2019 Summer (View Only)": 678 sections, 742 meetings, 0 extraction failures; 0 added, 1 changed, 677 unchanged, 0 not seen; 5 rows written (8.8s)
+2026-09-12T17:20:02Z [fhda] term 202531 "2025 Winter Foothill (View Only)": 1132 sections, 1643 meetings, 0 extraction failures; 0 added, 0 changed, 1132 unchanged, 0 not seen; 0 rows written (21.0s)
+2026-09-12T17:20:04Z [temple] term 202636 "2026 Fall": 9059 sections, 10848 meetings, 0 extraction failures; 0 added, 1 changed, 9058 unchanged, 0 not seen; 1 rows written (261.8s)
+2026-09-12T17:20:07Z [ccsf] term 202470 "Fall 2024 (View Only)": 1793 sections, 2630 meetings, 0 extraction failures; 0 added, 0 changed, 1793 unchanged, 0 not seen; 0 rows written (15.2s)
+2026-09-12T17:20:10Z [gmu] term 202540 "Summer 2025 (View Only)": 1470 sections, 1696 meetings, 0 extraction failures; 0 added, 2 changed, 1468 unchanged, 0 not seen; 20 rows written (29.0s)
+2026-09-12T17:20:12Z [ccsf] term 202451 "Summer 2024 Noncredit (View Only)": 137 sections, 201 meetings, 0 extraction failures; 0 added, 0 changed, 137 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:20:15Z [neu] term 202535 "Spring 2025 CPS Quarter (View Only)": 731 sections, 827 meetings, 0 extraction failures; 0 added, 0 changed, 731 unchanged, 0 not seen; 0 rows written (20.6s)
+2026-09-12T17:20:18Z [ccsf] term 202450 "Summer 2024 (View Only)": 302 sections, 390 meetings, 0 extraction failures; 0 added, 0 changed, 302 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:20:24Z [neu] term 202534 "Spring 2025 CPS Semester (View Only)": 339 sections, 370 meetings, 0 extraction failures; 0 added, 0 changed, 339 unchanged, 0 not seen; 0 rows written (8.6s)
+2026-09-12T17:20:24Z [ccsf] term 202431 "Spring 2024 Noncredit (View Only)": 255 sections, 417 meetings, 0 extraction failures; 0 added, 0 changed, 255 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:20:25Z [cofc] term 201920 "2019 Spring (View Only)": 3171 sections, 3297 meetings, 0 extraction failures; 0 added, 17 changed, 3154 unchanged, 0 not seen; 95 rows written (25.0s)
+2026-09-12T17:20:25Z [cofc] Collected: 24/24 terms (0 new), 54597 sections, 58362 meetings, 173 requests (0 from cache), 158.3 MB, 00:08:03
+2026-09-12T17:20:25Z [uncw] started (banner9, https://registration.uncw.edu/StudentRegistrationSsb/)
+2026-09-12T17:20:27Z [uncw] 64 terms listed, collecting 24
+2026-09-12T17:20:30Z [ou] term 202310 "Fall 2023 (View Only)": 12052 sections, 15191 meetings, 0 extraction failures; 0 added, 38 changed, 12014 unchanged, 0 not seen; 232 rows written (56.9s)
+2026-09-12T17:20:30Z [fhda] term 202522 "2024 Fall De Anza (View Only)": 1694 sections, 2529 meetings, 0 extraction failures; 0 added, 0 changed, 1694 unchanged, 0 not seen; 0 rows written (27.2s)
+2026-09-12T17:20:30Z [neu] term 202532 "Spring 2025 Law Semester (View Only)": 185 sections, 200 meetings, 0 extraction failures; 0 added, 1 changed, 184 unchanged, 0 not seen; 5 rows written (6.0s)
+2026-09-12T17:20:34Z [ou] term 202260 "Long Term Liberal Studies 2022 (View Only)": 2 sections, 2 meetings, 0 extraction failures; 0 added, 0 changed, 2 unchanged, 0 not seen; 0 rows written (4.8s)
+2026-09-12T17:20:37Z [msudenver] term 202450 "Fall 2024 (View Only)": 3397 sections, 3614 meetings, 0 extraction failures; 0 added, 0 changed, 3397 unchanged, 0 not seen; 0 rows written (82.7s)
+2026-09-12T17:20:40Z [temple] term 202626 "2026 Summer II": 453 sections, 498 meetings, 0 extraction failures; 0 added, 0 changed, 453 unchanged, 0 not seen; 0 rows written (35.2s)
+2026-09-12T17:20:40Z [ccsf] term 202430 "Spring 2024 (View Only)": 1840 sections, 2712 meetings, 0 extraction failures; 0 added, 0 changed, 1840 unchanged, 0 not seen; 0 rows written (15.7s)
+2026-09-12T17:20:40Z [ou] term 202250 "Self-Paced 2022-2023 (View Only)": 1 sections, 1 meetings, 0 extraction failures; 0 added, 0 changed, 1 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:20:46Z [ccsf] term 202371 "Fall 2023 Noncredit (View Only)": 286 sections, 449 meetings, 0 extraction failures; 0 added, 0 changed, 286 unchanged, 0 not seen; 0 rows written (5.9s)
+2026-09-12T17:20:46Z [ou] term 202231 "Summer 2023 Advanced Programs (View Only)": 24 sections, 24 meetings, 0 extraction failures; 0 added, 0 changed, 24 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:20:49Z [uncc] term 202680 "Fall 2026" (new): 5603 sections, 6527 meetings, 0 extraction failures; 5603 added, 0 changed, 0 unchanged, 0 not seen; 18064 rows written (113.4s)
+2026-09-12T17:20:50Z [fhda] term 202521 "2024 Fall Foothill (View Only)": 1047 sections, 1507 meetings, 0 extraction failures; 0 added, 0 changed, 1047 unchanged, 0 not seen; 0 rows written (20.2s)
+2026-09-12T17:20:53Z [okstate] term 202420 "Spring 2024 (View Only)": 8406 sections, 13201 meetings, 0 extraction failures; 0 added, 0 changed, 8406 unchanged, 0 not seen; 0 rows written (72.7s)
+2026-09-12T17:20:57Z [uidaho] term 202310 "Fall 2023 (View Only)": 4241 sections, 4550 meetings, 0 extraction failures; 0 added, 0 changed, 4241 unchanged, 0 not seen; 0 rows written (60.0s)
+2026-09-12T17:20:57Z [msudenver] term 202440 "Summer 2024 (View Only)": 679 sections, 718 meetings, 0 extraction failures; 0 added, 0 changed, 679 unchanged, 0 not seen; 0 rows written (19.7s)
+2026-09-12T17:21:01Z [ccsf] term 202370 "Fall 2023 (View Only)": 1811 sections, 2473 meetings, 0 extraction failures; 0 added, 0 changed, 1811 unchanged, 0 not seen; 0 rows written (14.8s)
+2026-09-12T17:21:03Z [uncw] term 202720 "Spring 2027": 3066 sections, 3884 meetings, 0 extraction failures; 0 added, 3 changed, 3063 unchanged, 0 not seen; 15 rows written (36.5s)
+2026-09-12T17:21:04Z [fhda] term 202512 "2024 Summer De Anza (View Only)": 645 sections, 899 meetings, 0 extraction failures; 0 added, 0 changed, 645 unchanged, 0 not seen; 0 rows written (13.6s)
+2026-09-12T17:21:07Z [ccsf] term 202351 "Summer 2023 Noncredit (View Only)": 132 sections, 226 meetings, 0 extraction failures; 0 added, 0 changed, 132 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:21:11Z [ou] term 202230 "Summer 2023 (View Only)": 2496 sections, 2775 meetings, 0 extraction failures; 0 added, 4 changed, 2492 unchanged, 0 not seen; 56 rows written (24.2s)
+2026-09-12T17:21:13Z [ccsf] term 202350 "Summer 2023 (View Only)": 293 sections, 354 meetings, 0 extraction failures; 0 added, 0 changed, 293 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:21:13Z [uidaho] term 202300 "Summer 2023 (View Only)": 1151 sections, 1167 meetings, 0 extraction failures; 0 added, 0 changed, 1151 unchanged, 0 not seen; 0 rows written (16.6s)
+2026-09-12T17:21:14Z [fhda] term 202511 "2024 Summer Foothill (View Only)": 457 sections, 648 meetings, 0 extraction failures; 0 added, 0 changed, 457 unchanged, 0 not seen; 0 rows written (10.3s)
+2026-09-12T17:21:14Z [fhda] Collected: 24/24 terms (0 new), 27597 sections, 40634 meetings, 125 requests (0 from cache), 104.4 MB, 00:08:52
+2026-09-12T17:21:14Z [unf] started (banner9, https://banregister.unf.edu/StudentRegistrationSsb/)
+2026-09-12T17:21:15Z [ucr] term 202520 "Spring 2025 (View Only)": 10418 sections, 10397 meetings, 0 extraction failures; 0 added, 86 changed, 10332 unchanged, 0 not seen; 668 rows written (91.8s)
+2026-09-12T17:21:16Z [uncc] term 202660 "Summer 2026 (View Only)" (new): 1666 sections, 1727 meetings, 0 extraction failures; 1666 added, 0 changed, 0 unchanged, 0 not seen; 5019 rows written (27.3s)
+2026-09-12T17:21:16Z [unf] 78 terms listed, collecting 24
+2026-09-12T17:21:16Z [ou] term 202221 "Spring 2023 Advanced Programs (View Only)": 39 sections, 39 meetings, 0 extraction failures; 0 added, 0 changed, 39 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:21:19Z [ccsf] term 202331 "Spring 2023 Noncredit (View Only)": 249 sections, 350 meetings, 0 extraction failures; 0 added, 0 changed, 249 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:21:33Z [ccsf] term 202330 "Spring 2023 (View Only)": 1803 sections, 2480 meetings, 0 extraction failures; 0 added, 0 changed, 1803 unchanged, 0 not seen; 0 rows written (14.7s)
+2026-09-12T17:21:33Z [ccsf] Collected: 24/24 terms (0 new), 18560 sections, 27461 meetings, 99 requests (0 from cache), 59.7 MB, 00:03:45
+2026-09-12T17:21:33Z [usf] started (banner9, https://studentssb9.it.usf.edu/StudentRegistrationSsb/)
+2026-09-12T17:21:34Z [usf] 89 terms listed, collecting 24
+2026-09-12T17:21:39Z [usf] term 202805 "Summer 2028 (View Only)": 0 sections, 0 meetings, 0 extraction failures; 0 added, 0 changed, 0 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:21:42Z [temple] term 202620 "2026 Summer I": 1861 sections, 2164 meetings, 0 extraction failures; 0 added, 1 changed, 1860 unchanged, 0 not seen; 3 rows written (62.6s)
+2026-09-12T17:21:45Z [usf] term 202801 "Spring 2028 (View Only)": 0 sections, 0 meetings, 0 extraction failures; 0 added, 0 changed, 0 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:21:46Z [uncw] term 202710 "Fall 2026": 3777 sections, 4650 meetings, 0 extraction failures; 0 added, 2 changed, 3775 unchanged, 0 not seen; 10 rows written (42.8s)
+2026-09-12T17:21:52Z [neu] term 202530 "Spring 2025 Semester (View Only)": 6699 sections, 7828 meetings, 0 extraction failures; 0 added, 1 changed, 6698 unchanged, 0 not seen; 5 rows written (81.8s)
+2026-09-12T17:21:54Z [gmu] term 202510 "Spring 2025 (View Only)": 6463 sections, 7527 meetings, 0 extraction failures; 0 added, 37 changed, 6426 unchanged, 0 not seen; 555 rows written (103.4s)
+2026-09-12T17:21:57Z [uncw] term 202660 "Summer 2026 (View Only)": 939 sections, 1067 meetings, 0 extraction failures; 0 added, 0 changed, 939 unchanged, 0 not seen; 0 rows written (10.8s)
+2026-09-12T17:22:04Z [neu] term 202525 "Winter 2025 CPS Quarter (View Only)": 922 sections, 1029 meetings, 0 extraction failures; 0 added, 0 changed, 922 unchanged, 0 not seen; 0 rows written (12.0s)
+2026-09-12T17:22:11Z [ou] term 202220 "Spring 2023 (View Only)": 11691 sections, 14526 meetings, 0 extraction failures; 0 added, 34 changed, 11657 unchanged, 0 not seen; 216 rows written (54.4s)
+2026-09-12T17:22:11Z [ou] Collected: 24/24 terms (0 new), 106215 sections, 130837 meetings, 293 requests (0 from cache), 503.7 MB, 00:10:55
+2026-09-12T17:22:11Z [gsu] started (banner9, https://registration.gosolar.gsu.edu/StudentRegistrationSsb/)
+2026-09-12T17:22:13Z [uidaho] term 202220 "Spring 2023 (View Only)": 4303 sections, 4534 meetings, 0 extraction failures; 0 added, 0 changed, 4303 unchanged, 0 not seen; 0 rows written (59.0s)
+2026-09-12T17:22:13Z [gsu] 73 terms listed, collecting 24
+2026-09-12T17:22:13Z [okstate] term 202360 "Fall 2023 (View Only)": 8734 sections, 14544 meetings, 0 extraction failures; 0 added, 0 changed, 8734 unchanged, 0 not seen; 0 rows written (80.6s)
+2026-09-12T17:22:17Z [neu] term 202515 "Fall 2024 CPS Quarter (View Only)": 936 sections, 1046 meetings, 0 extraction failures; 0 added, 0 changed, 936 unchanged, 0 not seen; 0 rows written (13.5s)
+2026-09-12T17:22:18Z [uidaho] term 202215 "Winter Intersession 2022 (View Only)": 4 sections, 4 meetings, 0 extraction failures; 0 added, 0 changed, 4 unchanged, 0 not seen; 0 rows written (5.6s)
+2026-09-12T17:22:20Z [msudenver] term 202430 "Spring 2024 (View Only)": 3339 sections, 3577 meetings, 0 extraction failures; 0 added, 0 changed, 3339 unchanged, 0 not seen; 0 rows written (82.7s)
+2026-09-12T17:22:23Z [neu] term 202514 "Fall 2024 CPS Semester (View Only)": 333 sections, 364 meetings, 0 extraction failures; 0 added, 0 changed, 333 unchanged, 0 not seen; 0 rows written (6.3s)
+2026-09-12T17:22:29Z [neu] term 202512 "Fall 2024 Law Semester (View Only)": 199 sections, 224 meetings, 0 extraction failures; 0 added, 0 changed, 199 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:22:35Z [okstate] term 202340 "Summer 2023 (View Only)": 3243 sections, 3431 meetings, 0 extraction failures; 0 added, 0 changed, 3243 unchanged, 0 not seen; 0 rows written (21.3s)
+2026-09-12T17:22:39Z [uncw] term 202620 "Spring 2026 (View Only)": 3718 sections, 4526 meetings, 0 extraction failures; 0 added, 0 changed, 3718 unchanged, 0 not seen; 0 rows written (42.1s)
+2026-09-12T17:22:49Z [ucr] term 202510 "Winter 2025 (View Only)": 11034 sections, 11042 meetings, 0 extraction failures; 0 added, 55 changed, 10979 unchanged, 0 not seen; 423 rows written (94.1s)
+2026-09-12T17:22:59Z [uncc] term 202610 "Spring 2026 (View Only)" (new): 5543 sections, 6291 meetings, 0 extraction failures; 5543 added, 0 changed, 0 unchanged, 0 not seen; 17610 rows written (103.1s)
+2026-09-12T17:22:59Z [usf] term 202705 "Summer 2027 (View Only)": 3556 sections, 3646 meetings, 0 extraction failures; 0 added, 0 changed, 3556 unchanged, 0 not seen; 0 rows written (73.9s)
+2026-09-12T17:23:01Z [unf] term 202680 "Fall 2026": 3232 sections, 4215 meetings, 0 extraction failures; 0 added, 0 changed, 3232 unchanged, 0 not seen; 0 rows written (104.5s)
+2026-09-12T17:23:14Z [uncw] term 202610 "Fall 2025 (View Only)": 3752 sections, 4559 meetings, 0 extraction failures; 0 added, 0 changed, 3752 unchanged, 0 not seen; 0 rows written (34.5s)
+2026-09-12T17:23:16Z [uidaho] term 202210 "Fall 2022 (View Only)": 4282 sections, 4566 meetings, 0 extraction failures; 0 added, 0 changed, 4282 unchanged, 0 not seen; 0 rows written (58.3s)
+2026-09-12T17:23:25Z [uncw] term 202560 "Summer 2025 (View Only)": 947 sections, 1016 meetings, 0 extraction failures; 0 added, 0 changed, 947 unchanged, 0 not seen; 0 rows written (11.8s)
+2026-09-12T17:23:33Z [gmu] term 202470 "Fall 2024 (View Only)": 6525 sections, 7423 meetings, 0 extraction failures; 0 added, 29 changed, 6496 unchanged, 0 not seen; 345 rows written (99.2s)
+2026-09-12T17:23:33Z [uidaho] term 202200 "Summer 2022 (View Only)": 1144 sections, 1148 meetings, 0 extraction failures; 0 added, 0 changed, 1144 unchanged, 0 not seen; 0 rows written (16.5s)
+2026-09-12T17:23:41Z [unf] term 202650 "Summer 2026 (View Only)": 1256 sections, 1529 meetings, 0 extraction failures; 0 added, 0 changed, 1256 unchanged, 0 not seen; 0 rows written (40.3s)
+2026-09-12T17:23:42Z [msudenver] term 202350 "Fall 2023 (View Only)": 3428 sections, 3596 meetings, 0 extraction failures; 0 added, 0 changed, 3428 unchanged, 0 not seen; 0 rows written (82.1s)
+2026-09-12T17:23:49Z [neu] term 202510 "Fall 2024 Semester (View Only)": 6948 sections, 8187 meetings, 0 extraction failures; 0 added, 0 changed, 6948 unchanged, 0 not seen; 0 rows written (79.2s)
+2026-09-12T17:23:49Z [okstate] term 202320 "Spring 2023 (View Only)": 8425 sections, 13646 meetings, 0 extraction failures; 0 added, 0 changed, 8425 unchanged, 0 not seen; 0 rows written (74.7s)
+2026-09-12T17:23:58Z [gmu] term 202440 "Summer 2024 (View Only)": 1379 sections, 1615 meetings, 0 extraction failures; 0 added, 9 changed, 1370 unchanged, 0 not seen; 107 rows written (25.2s)
+2026-09-12T17:24:00Z [neu] term 202460 "Summer 2 2024 Semester (View Only)": 657 sections, 749 meetings, 0 extraction failures; 0 added, 3 changed, 654 unchanged, 0 not seen; 17 rows written (11.0s)
+2026-09-12T17:24:00Z [neu] Collected: 24/24 terms (0 new), 51540 sections, 58181 meetings, 176 requests (0 from cache), 160.2 MB, 00:11:56
+2026-09-12T17:24:00Z [sju] started (banner9, https://registration.sju.edu/StudentRegistrationSsb/)
+2026-09-12T17:24:00Z [sju] 45 terms listed, collecting 24
+2026-09-12T17:24:00Z [uncw] term 202520 "Spring 2025 (View Only)": 3606 sections, 4260 meetings, 0 extraction failures; 0 added, 0 changed, 3606 unchanged, 0 not seen; 0 rows written (34.9s)
+2026-09-12T17:24:08Z [gsu] term 202608 "Fall Semester 2026": 10606 sections, 11601 meetings, 0 extraction failures; 0 added, 0 changed, 10606 unchanged, 0 not seen; 0 rows written (115.4s)
+2026-09-12T17:24:17Z [sju] term 202640 "Fall 2026": 1884 sections, 2005 meetings, 0 extraction failures; 0 added, 0 changed, 1884 unchanged, 0 not seen; 0 rows written (16.9s)
+2026-09-12T17:24:21Z [ucr] term 202440 "Fall 2024 (View Only)": 10843 sections, 10838 meetings, 0 extraction failures; 0 added, 106 changed, 10737 unchanged, 0 not seen; 718 rows written (91.2s)
+2026-09-12T17:24:24Z [sju] term 202620 "Summer 2026 (View Only)": 489 sections, 524 meetings, 0 extraction failures; 0 added, 0 changed, 489 unchanged, 0 not seen; 0 rows written (7.0s)
+2026-09-12T17:24:28Z [uidaho] term 202120 "Spring 2022 (View Only)": 4106 sections, 4352 meetings, 0 extraction failures; 0 added, 0 changed, 4106 unchanged, 0 not seen; 0 rows written (54.8s)
+2026-09-12T17:24:33Z [uidaho] term 202115 "Winter Intersession 2021 (View Only)": 4 sections, 4 meetings, 0 extraction failures; 0 added, 0 changed, 4 unchanged, 0 not seen; 0 rows written (5.6s)
+2026-09-12T17:24:37Z [ucr] term 202430 "Summer 2024 (View Only)": 1384 sections, 1392 meetings, 0 extraction failures; 0 added, 64 changed, 1320 unchanged, 0 not seen; 378 rows written (16.2s)
+2026-09-12T17:24:37Z [msudenver] term 202340 "Summer 2023 (View Only)": 683 sections, 717 meetings, 0 extraction failures; 0 added, 0 changed, 683 unchanged, 0 not seen; 0 rows written; 1 sections missing (#383 of 684: Banner answered success:false with no sections, which it does when it can't return a record in the requested range) (55.3s)
+2026-09-12T17:24:39Z [uncc] term 202580 "Fall 2025 (View Only)" (new): 5528 sections, 6433 meetings, 0 extraction failures; 5528 added, 0 changed, 0 unchanged, 0 not seen; 17737 rows written (100.5s)
+2026-09-12T17:24:41Z [sju] term 202610 "Spring 2026 (View Only)": 1831 sections, 2009 meetings, 0 extraction failures; 0 added, 0 changed, 1831 unchanged, 0 not seen; 0 rows written (17.1s)
+2026-09-12T17:24:42Z [uncw] term 202510 "Fall 2024 (View Only)": 3681 sections, 4440 meetings, 0 extraction failures; 0 added, 0 changed, 3681 unchanged, 0 not seen; 0 rows written (42.1s)
+2026-09-12T17:24:46Z [gsu] term 202605 "Summer Semester 2026 (View Only)": 3800 sections, 4036 meetings, 0 extraction failures; 0 added, 0 changed, 3800 unchanged, 0 not seen; 0 rows written (37.6s)
+2026-09-12T17:24:47Z [sju] term 202600 "Intersession 2026 (View Only)": 19 sections, 19 meetings, 0 extraction failures; 0 added, 0 changed, 19 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:24:52Z [uncw] term 202460 "Summer 2024 (View Only)": 754 sections, 858 meetings, 0 extraction failures; 0 added, 0 changed, 754 unchanged, 0 not seen; 0 rows written (9.3s)
+2026-09-12T17:25:03Z [sju] term 202540 "Fall 2025 (View Only)": 1918 sections, 2045 meetings, 0 extraction failures; 0 added, 0 changed, 1918 unchanged, 0 not seen; 0 rows written (16.2s)
+2026-09-12T17:25:09Z [okstate] term 202260 "Fall 2022 (View Only)": 8644 sections, 14431 meetings, 0 extraction failures; 0 added, 0 changed, 8644 unchanged, 0 not seen; 0 rows written (79.7s)
+2026-09-12T17:25:11Z [uncc] term 202560 "Summer 2025 (View Only)" (new): 1999 sections, 2015 meetings, 0 extraction failures; 1999 added, 0 changed, 0 unchanged, 0 not seen; 5830 rows written (32.0s)
+2026-09-12T17:25:12Z [sju] term 202520 "Summer 2025 (View Only)": 519 sections, 551 meetings, 0 extraction failures; 0 added, 0 changed, 519 unchanged, 0 not seen; 0 rows written (8.8s)
+2026-09-12T17:25:18Z [unf] term 202610 "Spring 2026 (View Only)": 3097 sections, 4002 meetings, 0 extraction failures; 0 added, 0 changed, 3097 unchanged, 0 not seen; 0 rows written (97.5s)
+2026-09-12T17:25:29Z [sju] term 202510 "Spring 2025 (View Only)": 1903 sections, 2070 meetings, 0 extraction failures; 0 added, 0 changed, 1903 unchanged, 0 not seen; 0 rows written (17.4s)
+2026-09-12T17:25:29Z [uncw] term 202420 "Spring 2024 (View Only)": 3395 sections, 4076 meetings, 0 extraction failures; 0 added, 4 changed, 3391 unchanged, 0 not seen; 30 rows written (37.7s)
+2026-09-12T17:25:30Z [uidaho] term 202110 "Fall 2021 (View Only)": 4187 sections, 4502 meetings, 0 extraction failures; 0 added, 0 changed, 4187 unchanged, 0 not seen; 0 rows written (56.5s)
+2026-09-12T17:25:30Z [okstate] term 202240 "Summer 2022 (View Only)": 3183 sections, 3324 meetings, 0 extraction failures; 0 added, 0 changed, 3183 unchanged, 0 not seen; 0 rows written (20.9s)
+2026-09-12T17:25:34Z [gmu] term 202410 "Spring 2024 (View Only)": 6296 sections, 7320 meetings, 0 extraction failures; 0 added, 27 changed, 6269 unchanged, 0 not seen; 393 rows written (95.5s)
+2026-09-12T17:25:35Z [sju] term 202500 "Intersession 2025 (View Only)": 17 sections, 18 meetings, 0 extraction failures; 0 added, 0 changed, 17 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:25:46Z [uidaho] term 202100 "Summer 2021 (View Only)": 1203 sections, 1214 meetings, 0 extraction failures; 0 added, 0 changed, 1203 unchanged, 0 not seen; 0 rows written (16.2s)
+2026-09-12T17:25:55Z [sju] term 202440 "Fall 2024 (View Only)": 2054 sections, 2204 meetings, 0 extraction failures; 0 added, 0 changed, 2054 unchanged, 0 not seen; 0 rows written (20.3s)
+2026-09-12T17:25:58Z [msudenver] term 202330 "Spring 2023 (View Only)": 3335 sections, 3699 meetings, 0 extraction failures; 0 added, 0 changed, 3335 unchanged, 0 not seen; 0 rows written (81.1s)
+2026-09-12T17:26:01Z [sju] term 202420 "Summer 2024 (View Only)": 393 sections, 413 meetings, 0 extraction failures; 0 added, 0 changed, 393 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:26:04Z [ucr] term 202420 "Spring 2024 (View Only)": 10128 sections, 10094 meetings, 0 extraction failures; 0 added, 86 changed, 10042 unchanged, 0 not seen; 598 rows written (87.5s)
+2026-09-12T17:26:07Z [usf] term 202701 "Spring 2027 (View Only)": 8012 sections, 8555 meetings, 0 extraction failures; 0 added, 2 changed, 8010 unchanged, 0 not seen; 10 rows written (187.4s)
+2026-09-12T17:26:09Z [temple] term 202603 "2026 Spring": 9117 sections, 10755 meetings, 0 extraction failures; 0 added, 2 changed, 9115 unchanged, 0 not seen; 6 rows written (266.4s)
+2026-09-12T17:26:10Z [uncw] term 202410 "Fall 2023 (View Only)": 3638 sections, 4409 meetings, 0 extraction failures; 0 added, 1 changed, 3637 unchanged, 0 not seen; 17 rows written (40.9s)
+2026-09-12T17:26:18Z [sju] term 202410 "Spring 2024 (View Only)": 1784 sections, 1895 meetings, 0 extraction failures; 0 added, 0 changed, 1784 unchanged, 0 not seen; 0 rows written (16.7s)
+2026-09-12T17:26:21Z [gsu] term 202601 "Spring Semester 2026 (View Only)": 9916 sections, 10880 meetings, 0 extraction failures; 0 added, 0 changed, 9916 unchanged, 0 not seen; 0 rows written (95.1s)
+2026-09-12T17:26:21Z [uncw] term 202360 "Summer 2023 (View Only)": 950 sections, 1036 meetings, 0 extraction failures; 0 added, 1 changed, 949 unchanged, 0 not seen; 9 rows written (10.7s)
+2026-09-12T17:26:23Z [sju] term 202400 "Intersession 2024 (View Only)": 14 sections, 21 meetings, 0 extraction failures; 0 added, 0 changed, 14 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:26:40Z [sju] term 202340 "Fall 2023 (View Only)": 1857 sections, 1990 meetings, 0 extraction failures; 0 added, 0 changed, 1857 unchanged, 0 not seen; 0 rows written (16.5s)
+2026-09-12T17:26:42Z [uidaho] term 202020 "Spring 2021 (View Only)": 4048 sections, 4306 meetings, 0 extraction failures; 0 added, 0 changed, 4048 unchanged, 0 not seen; 0 rows written (56.2s)
+2026-09-12T17:26:42Z [uidaho] Collected: 24/24 terms (0 new), 59456 sections, 63197 meetings, 190 requests (0 from cache), 164.1 MB, 00:14:28
+2026-09-12T17:26:42Z [siu] started (banner9, https://banssb1.siu.edu/StudentRegistrationSsb/)
+2026-09-12T17:26:45Z [siu] 53 terms listed, collecting 24
+2026-09-12T17:26:46Z [sju] term 202320 "Summer 2023 (View Only)": 411 sections, 432 meetings, 0 extraction failures; 0 added, 0 changed, 411 unchanged, 0 not seen; 0 rows written (6.4s)
+2026-09-12T17:26:53Z [unf] term 202580 "Fall 2025 (View Only)": 3106 sections, 3937 meetings, 0 extraction failures; 0 added, 0 changed, 3106 unchanged, 0 not seen; 0 rows written (94.8s)
+2026-09-12T17:26:55Z [uncc] term 202510 "Spring 2025 (View Only)" (new): 5431 sections, 6169 meetings, 0 extraction failures; 5431 added, 0 changed, 0 unchanged, 0 not seen; 17209 rows written (103.5s)
+2026-09-12T17:26:56Z [okstate] term 202220 "Spring 2022 (View Only)": 8279 sections, 14797 meetings, 0 extraction failures; 0 added, 1 changed, 8278 unchanged, 0 not seen; 31 rows written (85.8s)
+2026-09-12T17:26:56Z [uncw] term 202320 "Spring 2023 (View Only)": 3501 sections, 4132 meetings, 0 extraction failures; 0 added, 15 changed, 3486 unchanged, 0 not seen; 99 rows written (35.4s)
+2026-09-12T17:27:03Z [sju] term 202310 "Spring 2023 (View Only)": 1852 sections, 1977 meetings, 0 extraction failures; 0 added, 0 changed, 1852 unchanged, 0 not seen; 0 rows written (16.4s)
+2026-09-12T17:27:09Z [sju] term 202300 "Intersession 2023 (View Only)": 13 sections, 14 meetings, 0 extraction failures; 0 added, 0 changed, 13 unchanged, 0 not seen; 0 rows written (5.9s)
+2026-09-12T17:27:12Z [gmu] term 202370 "Fall 2023 (View Only)": 6413 sections, 7278 meetings, 0 extraction failures; 0 added, 18 changed, 6395 unchanged, 0 not seen; 162 rows written (98.1s)
+2026-09-12T17:27:17Z [siu] term 202720 "Spring 2027 (View Only)": 3968 sections, 4317 meetings, 0 extraction failures; 0 added, 9 changed, 3959 unchanged, 0 not seen; 39 rows written (32.0s)
+2026-09-12T17:27:21Z [sju] term 202240 "Fall 2022 (View Only)": 1426 sections, 1546 meetings, 0 extraction failures; 0 added, 0 changed, 1426 unchanged, 0 not seen; 0 rows written (12.9s)
+2026-09-12T17:27:22Z [msudenver] term 202250 "Fall 2022 (View Only)": 3404 sections, 3781 meetings, 0 extraction failures; 0 added, 0 changed, 3404 unchanged, 0 not seen; 0 rows written (83.7s)
+2026-09-12T17:27:27Z [sju] term 202220 "Summer 2022 (View Only)": 333 sections, 369 meetings, 0 extraction failures; 0 added, 0 changed, 333 unchanged, 0 not seen; 0 rows written (5.9s)
+2026-09-12T17:27:35Z [ucr] term 202410 "Winter 2024 (View Only)": 10489 sections, 10498 meetings, 0 extraction failures; 0 added, 63 changed, 10426 unchanged, 0 not seen; 461 rows written (90.1s)
+2026-09-12T17:27:35Z [unf] term 202550 "Summer 2025 (View Only)": 1237 sections, 1547 meetings, 0 extraction failures; 0 added, 0 changed, 1237 unchanged, 0 not seen; 0 rows written (41.5s)
+2026-09-12T17:27:35Z [gmu] term 202340 "Summer 2023 (View Only)": 1368 sections, 1619 meetings, 0 extraction failures; 0 added, 1 changed, 1367 unchanged, 0 not seen; 5 rows written (23.6s)
+2026-09-12T17:27:41Z [uncw] term 202310 "Fall 2022 (View Only)": 3910 sections, 4887 meetings, 0 extraction failures; 0 added, 21 changed, 3889 unchanged, 0 not seen; 115 rows written (44.3s)
+2026-09-12T17:27:41Z [sju] term 202210 "Spring 2022 (View Only)": 1422 sections, 1483 meetings, 0 extraction failures; 0 added, 0 changed, 1422 unchanged, 0 not seen; 0 rows written (13.4s)
+2026-09-12T17:27:43Z [msudenver] term 202240 "Summer 2022 (View Only)": 722 sections, 790 meetings, 0 extraction failures; 0 added, 0 changed, 722 unchanged, 0 not seen; 0 rows written (21.1s)
+2026-09-12T17:27:47Z [sju] term 202200 "Intersession 2022 (View Only)": 14 sections, 15 meetings, 0 extraction failures; 0 added, 0 changed, 14 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:27:52Z [uncw] term 202260 "Summer 2022 (View Only)": 928 sections, 1027 meetings, 0 extraction failures; 0 added, 1 changed, 927 unchanged, 0 not seen; 9 rows written (11.8s)
+2026-09-12T17:27:55Z [siu] term 202660 "Fall 2026": 3694 sections, 4131 meetings, 0 extraction failures; 0 added, 12 changed, 3682 unchanged, 0 not seen; 58 rows written (38.5s)
+2026-09-12T17:28:01Z [sju] term 202140 "Fall 2021 (View Only)": 1480 sections, 1567 meetings, 0 extraction failures; 0 added, 0 changed, 1480 unchanged, 0 not seen; 0 rows written (14.0s)
+2026-09-12T17:28:07Z [gsu] term 202508 "Fall Semester 2025 (View Only)": 10952 sections, 11943 meetings, 0 extraction failures; 0 added, 0 changed, 10952 unchanged, 0 not seen; 0 rows written (106.7s)
+2026-09-12T17:28:08Z [sju] term 202120 "Summer 2021 (View Only)": 356 sections, 384 meetings, 0 extraction failures; 0 added, 0 changed, 356 unchanged, 0 not seen; 0 rows written (6.9s)
+2026-09-12T17:28:10Z [siu] term 202640 "Summer 2026 (View Only)": 1014 sections, 1027 meetings, 0 extraction failures; 0 added, 0 changed, 1014 unchanged, 0 not seen; 0 rows written (14.9s)
+2026-09-12T17:28:20Z [okstate] term 202160 "Fall 2021 (View Only)": 8581 sections, 14515 meetings, 0 extraction failures; 0 added, 0 changed, 8581 unchanged, 0 not seen; 0 rows written (83.8s)
+2026-09-12T17:28:20Z [sju] term 202110 "Spring 2021 (View Only)": 1437 sections, 1542 meetings, 0 extraction failures; 0 added, 0 changed, 1437 unchanged, 0 not seen; 0 rows written (12.6s)
+2026-09-12T17:28:26Z [sju] term 202100 "Intersession 2021 (View Only)": 22 sections, 24 meetings, 0 extraction failures; 0 added, 0 changed, 22 unchanged, 0 not seen; 0 rows written (5.9s)
+2026-09-12T17:28:26Z [sju] Collected: 24/24 terms (0 new), 23448 sections, 25117 meetings, 113 requests (0 from cache), 77.1 MB, 00:04:32
+2026-09-12T17:28:26Z [utrgv] started (banner9, https://assist.utrgv.edu/StudentRegistrationSsb/)
+2026-09-12T17:28:28Z [utrgv] 55 terms listed, collecting 24
+2026-09-12T17:28:34Z [utrgv] term 202749 "Fall-Spr 2026-27 SOM Y4" (new): 249 sections, 249 meetings, 0 extraction failures; 249 added, 0 changed, 0 unchanged, 0 not seen; 1039 rows written (5.7s)
+2026-09-12T17:28:37Z [uncc] term 202480 "Fall 2024 (View Only)" (new): 5463 sections, 6357 meetings, 0 extraction failures; 5463 added, 0 changed, 0 unchanged, 0 not seen; 17488 rows written (102.2s)
+2026-09-12T17:28:38Z [uncw] term 202220 "Spring 2022 (View Only)": 3548 sections, 4473 meetings, 0 extraction failures; 0 added, 21 changed, 3527 unchanged, 0 not seen; 171 rows written (45.2s)
+2026-09-12T17:28:40Z [utrgv] term 202748 "Fall-Spr 2026-27 SOPM Y4" (new): 10 sections, 10 meetings, 0 extraction failures; 10 added, 0 changed, 0 unchanged, 0 not seen; 30 rows written (5.9s)
+2026-09-12T17:28:42Z [okstate] term 202140 "Summer 2021 (View Only)": 3036 sections, 3206 meetings, 0 extraction failures; 0 added, 0 changed, 3036 unchanged, 0 not seen; 0 rows written (22.6s)
+2026-09-12T17:28:46Z [utrgv] term 202739 "Fall-Spr 2026-27 SOM Y3" (new): 60 sections, 60 meetings, 0 extraction failures; 60 added, 0 changed, 0 unchanged, 0 not seen; 247 rows written (6.0s)
+2026-09-12T17:28:50Z [siu] term 202620 "Spring 2026 (View Only)": 4152 sections, 4494 meetings, 0 extraction failures; 0 added, 0 changed, 4152 unchanged, 0 not seen; 0 rows written (39.8s)
+2026-09-12T17:28:51Z [gsu] term 202505 "Summer Semester 2025 (View Only)": 4478 sections, 4770 meetings, 0 extraction failures; 0 added, 0 changed, 4478 unchanged, 0 not seen; 0 rows written (43.8s)
+2026-09-12T17:28:52Z [utrgv] term 202738 "Fall-Spr 2026-27 SOPM Y3" (new): 61 sections, 61 meetings, 0 extraction failures; 61 added, 0 changed, 0 unchanged, 0 not seen; 184 rows written (6.0s)
+2026-09-12T17:28:58Z [utrgv] term 202729 "Fall-Spr 2026-27 SOM Y2" (new): 7 sections, 7 meetings, 0 extraction failures; 7 added, 0 changed, 0 unchanged, 0 not seen; 31 rows written (6.0s)
+2026-09-12T17:29:05Z [ucr] term 202340 "Fall 2023 (View Only)": 10647 sections, 10644 meetings, 0 extraction failures; 0 added, 64 changed, 10583 unchanged, 0 not seen; 428 rows written (90.1s)
+2026-09-12T17:29:05Z [utrgv] term 202728 "Fall-Spr 2026-27 SOPM Y2" (new): 11 sections, 11 meetings, 0 extraction failures; 11 added, 0 changed, 0 unchanged, 0 not seen; 46 rows written (6.6s)
+2026-09-12T17:29:06Z [gmu] term 202310 "Spring 2023 (View Only)": 6340 sections, 7164 meetings, 0 extraction failures; 0 added, 11 changed, 6329 unchanged, 0 not seen; 91 rows written (90.3s)
+2026-09-12T17:29:06Z [unf] term 202510 "Spring 2025 (View Only)": 2917 sections, 3770 meetings, 0 extraction failures; 0 added, 0 changed, 2917 unchanged, 0 not seen; 0 rows written (91.6s)
+2026-09-12T17:29:07Z [uncc] term 202460 "Summer 2024 (View Only)" (new): 1837 sections, 1878 meetings, 0 extraction failures; 1837 added, 0 changed, 0 unchanged, 0 not seen; 5401 rows written (30.0s)
+2026-09-12T17:29:08Z [msudenver] term 202230 "Spring 2022 (View Only)": 3394 sections, 3850 meetings, 0 extraction failures; 0 added, 0 changed, 3394 unchanged, 0 not seen; 0 rows written (85.0s)
+2026-09-12T17:29:10Z [utrgv] term 202727 "SPRING 2027 MODULE 2 (View Only)" (new): 66 sections, 66 meetings, 0 extraction failures; 66 added, 0 changed, 0 unchanged, 0 not seen; 196 rows written (5.4s)
+2026-09-12T17:29:14Z [uncw] term 202210 "Fall 2021 (View Only)": 3707 sections, 4858 meetings, 0 extraction failures; 0 added, 16 changed, 3691 unchanged, 0 not seen; 214 rows written (36.7s)
+2026-09-12T17:29:16Z [utrgv] term 202723 "SPRING 2027 MODULE 1 (View Only)" (new): 68 sections, 68 meetings, 0 extraction failures; 68 added, 0 changed, 0 unchanged, 0 not seen; 199 rows written (6.0s)
+2026-09-12T17:29:19Z [ucr] term 202330 "Summer 2023 (View Only)": 1358 sections, 1367 meetings, 0 extraction failures; 0 added, 27 changed, 1331 unchanged, 0 not seen; 159 rows written (14.8s)
+2026-09-12T17:29:26Z [uncw] term 202160 "Summer 2021 (View Only)": 915 sections, 1036 meetings, 0 extraction failures; 0 added, 5 changed, 910 unchanged, 0 not seen; 43 rows written (12.1s)
+2026-09-12T17:29:30Z [siu] term 202560 "Fall 2025 (View Only)": 4181 sections, 4593 meetings, 0 extraction failures; 0 added, 18 changed, 4163 unchanged, 0 not seen; 98 rows written (40.3s)
+2026-09-12T17:29:49Z [siu] term 202540 "Summer 2025 (View Only)": 1565 sections, 1580 meetings, 0 extraction failures; 0 added, 2 changed, 1563 unchanged, 0 not seen; 18 rows written (18.4s)
+2026-09-12T17:29:59Z [okstate] term 202120 "Spring 2021 (View Only)": 8446 sections, 13803 meetings, 0 extraction failures; 0 added, 0 changed, 8446 unchanged, 0 not seen; 0 rows written (76.3s)
+2026-09-12T17:30:00Z [uncw] term 202120 "Spring 2021 (View Only)": 3508 sections, 4041 meetings, 0 extraction failures; 0 added, 6 changed, 3502 unchanged, 0 not seen; 44 rows written (33.3s)
+2026-09-12T17:30:15Z [temple] term 202536 "2025 Fall": 9257 sections, 11149 meetings, 0 extraction failures; 0 added, 2 changed, 9255 unchanged, 0 not seen; 6 rows written (246.0s)
+2026-09-12T17:30:32Z [usf] term 202608 "Fall 2026": 8615 sections, 9228 meetings, 0 extraction failures; 0 added, 0 changed, 8615 unchanged, 0 not seen; 0 rows written (265.3s)
+2026-09-12T17:30:32Z [siu] term 202520 "Spring 2025 (View Only)": 4136 sections, 4459 meetings, 0 extraction failures; 0 added, 5 changed, 4131 unchanged, 0 not seen; 27 rows written (43.8s)
+2026-09-12T17:30:33Z [unf] term 202480 "Fall 2024 (View Only)": 2934 sections, 3606 meetings, 0 extraction failures; 0 added, 0 changed, 2934 unchanged, 0 not seen; 0 rows written (86.5s)
+2026-09-12T17:30:38Z [gsu] term 202501 "Spring Semester 2025 (View Only)": 10225 sections, 11314 meetings, 0 extraction failures; 0 added, 0 changed, 10225 unchanged, 0 not seen; 0 rows written (106.8s)
+2026-09-12T17:30:38Z [uncw] term 202110 "Fall 2020 (View Only)": 3951 sections, 4585 meetings, 0 extraction failures; 0 added, 13 changed, 3938 unchanged, 0 not seen; 103 rows written (38.7s)
+2026-09-12T17:30:40Z [msudenver] term 202150 "Fall 2021 (View Only)": 3547 sections, 4035 meetings, 0 extraction failures; 0 added, 1 changed, 3546 unchanged, 0 not seen; 5 rows written (92.3s)
+2026-09-12T17:30:44Z [temple] term 202526 "2025 Summer II (View Only)": 452 sections, 521 meetings, 0 extraction failures; 0 added, 0 changed, 452 unchanged, 0 not seen; 0 rows written (29.7s)
+2026-09-12T17:30:49Z [uncw] term 202060 "Summer 2020 (View Only)": 914 sections, 927 meetings, 0 extraction failures; 0 added, 0 changed, 914 unchanged, 0 not seen; 0 rows written (10.1s)
+2026-09-12T17:30:49Z [gmu] term 202270 "Fall 2022 (View Only)": 6495 sections, 7448 meetings, 0 extraction failures; 0 added, 19 changed, 6476 unchanged, 0 not seen; 269 rows written (103.6s)
+2026-09-12T17:30:52Z [uncc] term 202410 "Spring 2024 (View Only)" (new): 5431 sections, 6279 meetings, 0 extraction failures; 5431 added, 0 changed, 0 unchanged, 0 not seen; 17299 rows written (104.8s)
+2026-09-12T17:30:53Z [ucr] term 202320 "Spring 2023 (View Only)": 9965 sections, 9949 meetings, 0 extraction failures; 0 added, 70 changed, 9895 unchanged, 0 not seen; 462 rows written (93.5s)
+2026-09-12T17:31:03Z [msudenver] term 202140 "Summer 2021 (View Only)": 812 sections, 879 meetings, 0 extraction failures; 0 added, 0 changed, 812 unchanged, 0 not seen; 0 rows written (22.3s)
+2026-09-12T17:31:12Z [unf] term 202450 "Summer 2024 (View Only)": 1165 sections, 1430 meetings, 0 extraction failures; 0 added, 0 changed, 1165 unchanged, 0 not seen; 0 rows written (39.5s)
+2026-09-12T17:31:14Z [siu] term 202460 "Fall 2024 (View Only)": 4276 sections, 4717 meetings, 0 extraction failures; 0 added, 7 changed, 4269 unchanged, 0 not seen; 35 rows written (41.1s)
+2026-09-12T17:31:15Z [gmu] term 202240 "Summer 2022 (View Only)": 1419 sections, 1616 meetings, 0 extraction failures; 0 added, 12 changed, 1407 unchanged, 0 not seen; 84 rows written (26.1s)
+2026-09-12T17:31:18Z [okstate] term 202060 "Fall 2020 (View Only)": 8700 sections, 13307 meetings, 0 extraction failures; 0 added, 0 changed, 8700 unchanged, 0 not seen; 0 rows written (79.1s)
+2026-09-12T17:31:26Z [uncw] term 202020 "Spring 2020 (View Only)": 3455 sections, 4110 meetings, 0 extraction failures; 0 added, 9 changed, 3446 unchanged, 0 not seen; 67 rows written (37.8s)
+2026-09-12T17:31:27Z [temple] term 202520 "2025 Summer I (View Only)": 1943 sections, 2336 meetings, 0 extraction failures; 0 added, 1 changed, 1942 unchanged, 0 not seen; 3 rows written (42.7s)
+2026-09-12T17:31:33Z [siu] term 202440 "Summer 2024 (View Only)": 1595 sections, 1605 meetings, 0 extraction failures; 0 added, 0 changed, 1595 unchanged, 0 not seen; 0 rows written (19.0s)
+2026-09-12T17:31:34Z [utrgv] term 202720 "Spring 2027 (View Only)" (new): 5235 sections, 5487 meetings, 0 extraction failures; 5235 added, 0 changed, 0 unchanged, 0 not seen; 14835 rows written (138.3s)
+2026-09-12T17:31:39Z [okstate] term 202040 "Summer 2020 (View Only)": 3023 sections, 3148 meetings, 0 extraction failures; 0 added, 0 changed, 3023 unchanged, 0 not seen; 0 rows written (21.0s)
+2026-09-12T17:31:39Z [utrgv] term 202719 "Fall-Spr 2026-27 SOM Y1" (new): 9 sections, 9 meetings, 0 extraction failures; 9 added, 0 changed, 0 unchanged, 0 not seen; 41 rows written (4.5s)
+2026-09-12T17:31:45Z [utrgv] term 202718 "Fall-Spr 2026-27 SOPM Y1" (new): 11 sections, 11 meetings, 0 extraction failures; 11 added, 0 changed, 0 unchanged, 0 not seen; 39 rows written (6.0s)
+2026-09-12T17:31:51Z [utrgv] term 202717 "FALL 2026 MODULE 2" (new): 78 sections, 78 meetings, 0 extraction failures; 78 added, 0 changed, 0 unchanged, 0 not seen; 235 rows written (6.0s)
+2026-09-12T17:31:57Z [utrgv] term 202713 "FALL 2026 MODULE 1" (new): 84 sections, 84 meetings, 0 extraction failures; 84 added, 0 changed, 0 unchanged, 0 not seen; 253 rows written (6.0s)
+2026-09-12T17:32:07Z [uncw] term 202010 "Fall 2019 (View Only)": 3529 sections, 4161 meetings, 0 extraction failures; 0 added, 25 changed, 3504 unchanged, 0 not seen; 179 rows written (40.4s)
+2026-09-12T17:32:14Z [siu] term 202420 "Spring 2024 (View Only)": 4140 sections, 4517 meetings, 0 extraction failures; 0 added, 0 changed, 4140 unchanged, 0 not seen; 0 rows written (41.4s)
+2026-09-12T17:32:16Z [uncw] term 201960 "Summer 2019 (View Only)": 875 sections, 904 meetings, 0 extraction failures; 0 added, 0 changed, 875 unchanged, 0 not seen; 0 rows written (9.3s)
+2026-09-12T17:32:16Z [uncw] Collected: 24/24 terms (0 new), 64964 sections, 77922 meetings, 197 requests (0 from cache), 213.1 MB, 00:11:57
+2026-09-12T17:32:16Z [clpccd] started (banner9, https://banssprod.clpccd.cc.ca.us/StudentRegistrationSsb/)
+2026-09-12T17:32:18Z [usf] term 202605 "Summer 2026 (View Only)": 3593 sections, 3683 meetings, 0 extraction failures; 0 added, 3 changed, 3590 unchanged, 0 not seen; 15 rows written (106.4s)
+2026-09-12T17:32:18Z [clpccd] 12 terms listed, collecting 12
+2026-09-12T17:32:22Z [ucr] term 202310 "Winter 2023 (View Only)": 10419 sections, 10435 meetings, 0 extraction failures; 0 added, 84 changed, 10335 unchanged, 0 not seen; 560 rows written (89.4s)
+2026-09-12T17:32:28Z [msudenver] term 202130 "Spring 2021 (View Only)": 3425 sections, 3833 meetings, 0 extraction failures; 0 added, 0 changed, 3425 unchanged, 0 not seen; 0 rows written (85.0s)
+2026-09-12T17:32:31Z [gsu] term 202408 "Fall Semester 2024 (View Only)": 10904 sections, 12110 meetings, 0 extraction failures; 0 added, 0 changed, 10904 unchanged, 0 not seen; 0 rows written (113.1s)
+2026-09-12T17:32:33Z [uncc] term 202380 "Fall 2023 (View Only)" (new): 5534 sections, 6385 meetings, 0 extraction failures; 5534 added, 0 changed, 0 unchanged, 0 not seen; 17679 rows written (100.9s)
+2026-09-12T17:32:40Z [utrgv] term 202710 "Fall 2026" (new): 5905 sections, 6115 meetings, 0 extraction failures; 5905 added, 0 changed, 0 unchanged, 0 not seen; 18031 rows written (42.8s)
+2026-09-12T17:32:40Z [unf] term 202410 "Spring 2024 (View Only)": 2913 sections, 3644 meetings, 0 extraction failures; 0 added, 0 changed, 2913 unchanged, 0 not seen; 0 rows written (87.6s)
+2026-09-12T17:32:44Z [utrgv] term 202649 "Fall-Spr 2025-26 SOM Y4 (View Only)" (new): 289 sections, 289 meetings, 0 extraction failures; 289 added, 0 changed, 0 unchanged, 0 not seen; 1212 rows written (4.2s)
+2026-09-12T17:32:47Z [clpccd] term 202602 "Fall 2026": 2362 sections, 3572 meetings, 0 extraction failures; 0 added, 2 changed, 2360 unchanged, 0 not seen; 2 rows written (28.1s)
+2026-09-12T17:32:50Z [utrgv] term 202648 "Fall-Spr 2025-26 SOPM Y4 (View Only)" (new): 19 sections, 19 meetings, 0 extraction failures; 19 added, 0 changed, 0 unchanged, 0 not seen; 58 rows written (5.9s)
+2026-09-12T17:32:55Z [gmu] term 202210 "Spring 2022 (View Only)": 6366 sections, 7233 meetings, 0 extraction failures; 0 added, 37 changed, 6329 unchanged, 0 not seen; 391 rows written (100.1s)
+2026-09-12T17:32:56Z [okstate] term 202020 "Spring 2020 (View Only)": 8158 sections, 13496 meetings, 0 extraction failures; 0 added, 3 changed, 8155 unchanged, 0 not seen; 35 rows written (77.5s)
+2026-09-12T17:32:57Z [siu] term 202360 "Fall 2023 (View Only)": 4197 sections, 4650 meetings, 0 extraction failures; 0 added, 0 changed, 4197 unchanged, 0 not seen; 0 rows written (42.8s)
+2026-09-12T17:32:57Z [utrgv] term 202643 "Summer 2026 Module 2 (View Only)" (new): 71 sections, 71 meetings, 0 extraction failures; 71 added, 0 changed, 0 unchanged, 0 not seen; 215 rows written (7.1s)
+2026-09-12T17:32:58Z [clpccd] term 202601 "Summer 2026 (View Only)": 747 sections, 973 meetings, 0 extraction failures; 0 added, 7 changed, 740 unchanged, 0 not seen; 49 rows written (11.2s)
+2026-09-12T17:33:01Z [uncc] term 202360 "Summer 2023 (View Only)" (new): 1780 sections, 1861 meetings, 0 extraction failures; 1780 added, 0 changed, 0 unchanged, 0 not seen; 5329 rows written (27.9s)
+2026-09-12T17:33:05Z [utrgv] term 202640 "Summer II 2026 (View Only)" (new): 710 sections, 710 meetings, 0 extraction failures; 710 added, 0 changed, 0 unchanged, 0 not seen; 2132 rows written (7.9s)
+2026-09-12T17:33:10Z [utrgv] term 202639 "Fall-Spr 2025-26 SOM Y3 (View Only)" (new): 61 sections, 61 meetings, 0 extraction failures; 61 added, 0 changed, 0 unchanged, 0 not seen; 260 rows written (5.8s)
+2026-09-12T17:33:14Z [siu] term 202340 "Summer 2023 (View Only)": 1503 sections, 1515 meetings, 0 extraction failures; 0 added, 0 changed, 1503 unchanged, 0 not seen; 0 rows written (17.7s)
+2026-09-12T17:33:16Z [gsu] term 202405 "Summer Semester 2024 (View Only)": 4313 sections, 4615 meetings, 0 extraction failures; 0 added, 0 changed, 4313 unchanged, 0 not seen; 0 rows written (44.5s)
+2026-09-12T17:33:17Z [utrgv] term 202638 "Fall-Spr 2025-26 SOPM Y3 (View Only)" (new): 72 sections, 72 meetings, 0 extraction failures; 72 added, 0 changed, 0 unchanged, 0 not seen; 217 rows written (6.3s)
+2026-09-12T17:33:23Z [utrgv] term 202633 "Summer 2026 Module 1 (View Only)" (new): 82 sections, 82 meetings, 0 extraction failures; 82 added, 0 changed, 0 unchanged, 0 not seen; 249 rows written (6.0s)
+2026-09-12T17:33:25Z [clpccd] term 202505 "Spring 2026 (View Only)": 2325 sections, 3438 meetings, 0 extraction failures; 0 added, 35 changed, 2290 unchanged, 0 not seen; 225 rows written (27.2s)
+2026-09-12T17:33:31Z [clpccd] term 202504 "Winter Intersession 2025-2026 (View Only)": 72 sections, 77 meetings, 0 extraction failures; 0 added, 0 changed, 72 unchanged, 0 not seen; 0 rows written (5.7s)
+2026-09-12T17:33:35Z [utrgv] term 202630 "Summer I 2026 (View Only)" (new): 1323 sections, 1329 meetings, 0 extraction failures; 1323 added, 0 changed, 0 unchanged, 0 not seen; 4030 rows written (12.0s)
+2026-09-12T17:33:40Z [utrgv] term 202629 "Fall-Spr 2025-26 SOM Y2 (View Only)" (new): 9 sections, 9 meetings, 0 extraction failures; 9 added, 0 changed, 0 unchanged, 0 not seen; 38 rows written (5.6s)
+2026-09-12T17:33:46Z [utrgv] term 202628 "Fall-Spr 2025-26 SOPM Y2 (View Only)" (new): 11 sections, 11 meetings, 0 extraction failures; 11 added, 0 changed, 0 unchanged, 0 not seen; 37 rows written (6.0s)
+2026-09-12T17:33:46Z [utrgv] Collected: 24/24 terms (24 new), 14501 sections, 14969 meetings, 98 requests (0 from cache), 46.3 MB, 00:05:20
+2026-09-12T17:33:46Z [cocc] started (banner9, https://reg-prod.cocc.edu/StudentRegistrationSsb/)
+2026-09-12T17:33:47Z [cocc] 11 terms listed, collecting 11
+2026-09-12T17:33:51Z [msudenver] term 202050 "Fall 2020 (View Only)": 3468 sections, 3614 meetings, 0 extraction failures; 0 added, 0 changed, 3468 unchanged, 0 not seen; 0 rows written (83.0s)
+2026-09-12T17:33:54Z [ucr] term 202240 "Fall 2022 (View Only)": 10510 sections, 10496 meetings, 0 extraction failures; 0 added, 53 changed, 10457 unchanged, 0 not seen; 353 rows written (92.1s)
+2026-09-12T17:33:56Z [siu] term 202320 "Spring 2023 (View Only)": 4097 sections, 4537 meetings, 0 extraction failures; 0 added, 0 changed, 4097 unchanged, 0 not seen; 0 rows written (41.4s)
+2026-09-12T17:33:56Z [cocc] term 202720 "Spring 2027 (View Only)": 741 sections, 1027 meetings, 0 extraction failures; 0 added, 0 changed, 741 unchanged, 0 not seen; 0 rows written (9.6s)
+2026-09-12T17:33:59Z [clpccd] term 202502 "Fall 2025 (View Only)": 2479 sections, 3614 meetings, 0 extraction failures; 0 added, 13 changed, 2466 unchanged, 0 not seen; 71 rows written (28.2s)
+2026-09-12T17:34:05Z [unf] term 202380 "Fall 2023 (View Only)": 2958 sections, 3618 meetings, 0 extraction failures; 0 added, 0 changed, 2958 unchanged, 0 not seen; 0 rows written (85.6s)
+2026-09-12T17:34:06Z [cocc] term 202710 "Winter 2027 (View Only)": 738 sections, 1035 meetings, 0 extraction failures; 0 added, 0 changed, 738 unchanged, 0 not seen; 0 rows written (9.8s)
+2026-09-12T17:34:10Z [ucr] term 202230 "Summer 2022 (View Only)": 1395 sections, 1402 meetings, 0 extraction failures; 0 added, 35 changed, 1360 unchanged, 0 not seen; 215 rows written (15.7s)
+2026-09-12T17:34:10Z [clpccd] term 202501 "Summer 2025 (View Only)": 781 sections, 1035 meetings, 0 extraction failures; 0 added, 2 changed, 779 unchanged, 0 not seen; 12 rows written (11.4s)
+2026-09-12T17:34:11Z [msudenver] term 202040 "Summer 2020 (View Only)": 766 sections, 797 meetings, 0 extraction failures; 0 added, 0 changed, 766 unchanged, 0 not seen; 0 rows written (20.8s)
+2026-09-12T17:34:16Z [cocc] term 202640 "Fall 2026": 715 sections, 988 meetings, 0 extraction failures; 0 added, 12 changed, 703 unchanged, 0 not seen; 12 rows written (10.1s)
+2026-09-12T17:34:18Z [okstate] term 201960 "Fall 2019 (View Only)": 8476 sections, 14255 meetings, 0 extraction failures; 0 added, 1 changed, 8475 unchanged, 0 not seen; 5 rows written (82.1s)
+2026-09-12T17:34:22Z [cocc] term 202630 "Summer 2026 (View Only)": 209 sections, 272 meetings, 0 extraction failures; 0 added, 0 changed, 209 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:34:32Z [uncc] term 202310 "Spring 2023 (View Only)" (new): 5179 sections, 5939 meetings, 0 extraction failures; 5179 added, 0 changed, 0 unchanged, 0 not seen; 16496 rows written (91.2s)
+2026-09-12T17:34:34Z [cocc] term 202620 "Spring 2026 (View Only)": 680 sections, 1237 meetings, 0 extraction failures; 0 added, 0 changed, 680 unchanged, 0 not seen; 0 rows written (11.5s)
+2026-09-12T17:34:36Z [temple] term 202503 "2025 Spring (View Only)": 9317 sections, 11001 meetings, 0 extraction failures; 0 added, 2 changed, 9315 unchanged, 0 not seen; 6 rows written (188.9s)
+2026-09-12T17:34:37Z [siu] term 202260 "Fall 2022 (View Only)": 4010 sections, 4503 meetings, 0 extraction failures; 0 added, 13 changed, 3997 unchanged, 0 not seen; 67 rows written (41.2s)
+2026-09-12T17:34:37Z [okstate] term 201940 "Summer 2019 (View Only)": 2942 sections, 3087 meetings, 0 extraction failures; 0 added, 1 changed, 2941 unchanged, 0 not seen; 7 rows written (18.8s)
+2026-09-12T17:34:39Z [clpccd] term 202403 "Spring 2025 (View Only)": 2443 sections, 3610 meetings, 0 extraction failures; 0 added, 8 changed, 2435 unchanged, 0 not seen; 50 rows written (29.1s)
+2026-09-12T17:34:40Z [gmu] term 202170 "Fall 2021 (View Only)": 6516 sections, 7691 meetings, 0 extraction failures; 0 added, 33 changed, 6483 unchanged, 0 not seen; 563 rows written (104.8s)
+2026-09-12T17:34:42Z [unf] term 202350 "Summer 2023 (View Only)": 1139 sections, 1383 meetings, 0 extraction failures; 0 added, 0 changed, 1139 unchanged, 0 not seen; 0 rows written (36.3s)
+2026-09-12T17:34:45Z [cocc] term 202610 "Winter 2026 (View Only)": 734 sections, 1292 meetings, 0 extraction failures; 0 added, 0 changed, 734 unchanged, 0 not seen; 0 rows written (11.0s)
+2026-09-12T17:34:53Z [siu] term 202240 "Summer 2022 (View Only)": 1386 sections, 1397 meetings, 0 extraction failures; 0 added, 2 changed, 1384 unchanged, 0 not seen; 14 rows written (15.6s)
+2026-09-12T17:34:56Z [cocc] term 202540 "Fall 2025 (View Only)": 732 sections, 1359 meetings, 0 extraction failures; 0 added, 0 changed, 732 unchanged, 0 not seen; 0 rows written (11.2s)
+2026-09-12T17:34:57Z [gsu] term 202401 "Spring Semester 2024 (View Only)": 10044 sections, 11240 meetings, 0 extraction failures; 0 added, 0 changed, 10044 unchanged, 0 not seen; 0 rows written (101.8s)
+2026-09-12T17:35:02Z [cocc] term 102820 "Spring 2028 (View Only)": 0 sections, 0 meetings, 0 extraction failures; 0 added, 0 changed, 0 unchanged, 0 not seen; 0 rows written (5.9s)
+2026-09-12T17:35:05Z [gmu] term 202140 "Summer 2021 (View Only)": 1388 sections, 1606 meetings, 0 extraction failures; 0 added, 0 changed, 1388 unchanged, 0 not seen; 0 rows written (24.9s)
+2026-09-12T17:35:08Z [clpccd] term 202402 "Fall 2024 (View Only)": 2486 sections, 3608 meetings, 0 extraction failures; 0 added, 10 changed, 2476 unchanged, 0 not seen; 52 rows written (28.4s)
+2026-09-12T17:35:08Z [cocc] term 102810 "Winter 2028 (View Only)": 0 sections, 0 meetings, 0 extraction failures; 0 added, 0 changed, 0 unchanged, 0 not seen; 0 rows written (6.1s)
+2026-09-12T17:35:14Z [cocc] term 102740 "Fall 2027 (View Only)": 0 sections, 0 meetings, 0 extraction failures; 0 added, 0 changed, 0 unchanged, 0 not seen; 0 rows written (5.9s)
+2026-09-12T17:35:20Z [clpccd] term 202401 "Summer 2024 (View Only)": 761 sections, 1025 meetings, 0 extraction failures; 0 added, 1 changed, 760 unchanged, 0 not seen; 5 rows written (11.9s)
+2026-09-12T17:35:20Z [cocc] term 102730 "Summer 2027 (View Only)": 0 sections, 0 meetings, 0 extraction failures; 0 added, 0 changed, 0 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:35:20Z [cocc] Collected: 11/11 terms (0 new), 4549 sections, 7210 meetings, 47 requests (0 from cache), 17.2 MB, 00:01:42
+2026-09-12T17:35:20Z [ufv] started (banner9, https://apps.ban.ufv.ca/StudentRegistrationSsb/)
+2026-09-12T17:35:20Z [ufv] 11 terms listed, collecting 11
+2026-09-12T17:35:26Z [ufv] term 202701 "Winter 2027": 75 sections, 370 meetings, 0 extraction failures; 0 added, 0 changed, 75 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:35:35Z [siu] term 202220 "Spring 2022 (View Only)": 4022 sections, 4497 meetings, 0 extraction failures; 0 added, 1 changed, 4021 unchanged, 0 not seen; 5 rows written (41.9s)
+2026-09-12T17:35:36Z [ucr] term 202220 "Spring 2022 (View Only)": 9965 sections, 9921 meetings, 0 extraction failures; 0 added, 28 changed, 9937 unchanged, 0 not seen; 206 rows written (85.8s)
+2026-09-12T17:35:41Z [msudenver] term 202030 "Spring 2020 (View Only)": 3786 sections, 4144 meetings, 0 extraction failures; 0 added, 0 changed, 3786 unchanged, 0 not seen; 0 rows written (89.6s)
+2026-09-12T17:35:47Z [clpccd] term 202303 "Spring 2024 (View Only)": 2337 sections, 3460 meetings, 0 extraction failures; 0 added, 0 changed, 2337 unchanged, 0 not seen; 0 rows written (27.6s)
+2026-09-12T17:35:48Z [ufv] term 202609 "Fall 2026": 1378 sections, 2985 meetings, 0 extraction failures; 0 added, 16 changed, 1362 unchanged, 0 not seen; 16 rows written (22.2s)
+2026-09-12T17:35:54Z [ufv] term 202608 "Continuing Ed Sep-Dec 2026": 2 sections, 2 meetings, 0 extraction failures; 0 added, 0 changed, 2 unchanged, 0 not seen; 0 rows written (6.2s)
+2026-09-12T17:35:54Z [okstate] term 201920 "Spring 2019 (View Only)": 8206 sections, 13679 meetings, 0 extraction failures; 0 added, 5 changed, 8201 unchanged, 0 not seen; 35 rows written (77.0s)
+2026-09-12T17:35:54Z [okstate] Collected: 24/24 terms (0 new), 161796 sections, 245255 meetings, 384 requests (0 from cache), 556.1 MB, 00:23:32
+2026-09-12T17:36:00Z [ufv] term 202607 "Trades 2026-2027": 59 sections, 82 meetings, 0 extraction failures; 0 added, 0 changed, 59 unchanged, 0 not seen; 0 rows written (5.6s)
+2026-09-12T17:36:02Z [uncc] term 202280 "Fall 2022 (View Only)" (new): 5215 sections, 5957 meetings, 0 extraction failures; 5215 added, 0 changed, 0 unchanged, 0 not seen; 16670 rows written (90.0s)
+2026-09-12T17:36:08Z [unf] term 202310 "Spring 2023 (View Only)": 2901 sections, 3715 meetings, 0 extraction failures; 0 added, 0 changed, 2901 unchanged, 0 not seen; 0 rows written (86.3s)
+2026-09-12T17:36:08Z [ufv] term 202605 "Summer 2026 (View Only)": 450 sections, 693 meetings, 0 extraction failures; 0 added, 0 changed, 450 unchanged, 0 not seen; 0 rows written (8.2s)
+2026-09-12T17:36:13Z [siu] term 202160 "Fall 2021 (View Only)": 3670 sections, 4166 meetings, 0 extraction failures; 0 added, 23 changed, 3647 unchanged, 0 not seen; 123 rows written (38.5s)
+2026-09-12T17:36:14Z [clpccd] term 202302 "Fall 2023 (View Only)": 2359 sections, 3475 meetings, 0 extraction failures; 0 added, 0 changed, 2359 unchanged, 0 not seen; 0 rows written (26.4s)
+2026-09-12T17:36:14Z [ufv] term 202604 "Continuing Ed May-Aug 2026 (View Only)": 10 sections, 11 meetings, 0 extraction failures; 0 added, 0 changed, 10 unchanged, 0 not seen; 0 rows written (5.7s)
+2026-09-12T17:36:24Z [clpccd] term 202301 "Summer 2023 (View Only)": 715 sections, 963 meetings, 0 extraction failures; 0 added, 0 changed, 715 unchanged, 0 not seen; 0 rows written (10.6s)
+2026-09-12T17:36:24Z [clpccd] Collected: 12/12 terms (0 new), 19867 sections, 28850 meetings, 70 requests (0 from cache), 86.9 MB, 00:04:08
+2026-09-12T17:36:28Z [uncc] term 202260 "Summer 2022 (View Only)" (new): 1528 sections, 1642 meetings, 0 extraction failures; 1528 added, 0 changed, 0 unchanged, 0 not seen; 4652 rows written (26.3s)
+2026-09-12T17:36:29Z [siu] term 202140 "Summer 2021 (View Only)": 1386 sections, 1408 meetings, 0 extraction failures; 0 added, 0 changed, 1386 unchanged, 0 not seen; 0 rows written (16.1s)
+2026-09-12T17:36:37Z [ufv] term 202601 "Winter 2026 (View Only)": 1438 sections, 3128 meetings, 0 extraction failures; 0 added, 0 changed, 1438 unchanged, 0 not seen; 0 rows written (23.5s)
+2026-09-12T17:36:43Z [ufv] term 202600 "Continuing Ed Jan-Apr 2026 (View Only)": 143 sections, 236 meetings, 0 extraction failures; 0 added, 0 changed, 143 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:36:45Z [usf] term 202601 "Spring 2026 (View Only)": 8650 sections, 9208 meetings, 0 extraction failures; 0 added, 9 changed, 8641 unchanged, 0 not seen; 69 rows written (266.4s)
+2026-09-12T17:36:47Z [gsu] term 202308 "Fall Semester 2023 (View Only)": 10828 sections, 12046 meetings, 0 extraction failures; 0 added, 0 changed, 10828 unchanged, 0 not seen; 0 rows written (109.4s)
+2026-09-12T17:36:50Z [gmu] term 202110 "Spring 2021 (View Only)": 6398 sections, 7641 meetings, 0 extraction failures; 0 added, 13 changed, 6385 unchanged, 0 not seen; 171 rows written (105.3s)
+2026-09-12T17:37:04Z [ucr] term 202210 "Winter 2022 (View Only)": 10251 sections, 10285 meetings, 0 extraction failures; 0 added, 63 changed, 10188 unchanged, 0 not seen; 425 rows written (88.0s)
+2026-09-12T17:37:12Z [msudenver] term 201950 "Fall 2019 (View Only)": 3862 sections, 4197 meetings, 0 extraction failures; 0 added, 0 changed, 3862 unchanged, 0 not seen; 0 rows written (91.5s)
+2026-09-12T17:37:14Z [siu] term 202120 "Spring 2021 (View Only)": 4079 sections, 5155 meetings, 0 extraction failures; 0 added, 9 changed, 4070 unchanged, 0 not seen; 51 rows written (45.2s)
+2026-09-12T17:37:15Z [ufv] term 202509 "Fall 2025 (View Only)": 1606 sections, 4168 meetings, 0 extraction failures; 0 added, 0 changed, 1606 unchanged, 0 not seen; 0 rows written (31.8s)
+2026-09-12T17:37:21Z [ufv] term 202508 "Continuing Ed Sep-Dec 2025 (View Only)": 115 sections, 231 meetings, 0 extraction failures; 0 added, 0 changed, 115 unchanged, 0 not seen; 0 rows written (5.8s)
+2026-09-12T17:37:27Z [ufv] term 202507 "Trades 2025-2026 (View Only)": 69 sections, 97 meetings, 0 extraction failures; 0 added, 0 changed, 69 unchanged, 0 not seen; 0 rows written (6.0s)
+2026-09-12T17:37:27Z [ufv] Collected: 11/11 terms (0 new), 5345 sections, 12003 meetings, 46 requests (0 from cache), 24.2 MB, 00:02:13
+2026-09-12T17:37:28Z [gsu] term 202305 "Summer Semester 2023 (View Only)": 4237 sections, 4567 meetings, 0 extraction failures; 0 added, 0 changed, 4237 unchanged, 0 not seen; 0 rows written (41.0s)
+2026-09-12T17:37:35Z [msudenver] term 201940 "Summer 2019 (View Only)": 884 sections, 955 meetings, 0 extraction failures; 0 added, 0 changed, 884 unchanged, 0 not seen; 0 rows written (22.9s)
+2026-09-12T17:37:37Z [unf] term 202280 "Fall 2022 (View Only)": 3102 sections, 3885 meetings, 0 extraction failures; 0 added, 0 changed, 3102 unchanged, 0 not seen; 0 rows written (89.5s)
+2026-09-12T17:37:59Z [siu] term 202060 "Fall 2020 (View Only)": 4115 sections, 5164 meetings, 0 extraction failures; 0 added, 0 changed, 4115 unchanged, 0 not seen; 0 rows written (44.9s)
+2026-09-12T17:38:03Z [uncc] term 202210 "Spring 2022 (View Only)" (new): 5010 sections, 5571 meetings, 0 extraction failures; 5010 added, 0 changed, 0 unchanged, 0 not seen; 15963 rows written (94.5s)
+2026-09-12T17:38:13Z [unf] term 202250 "Summer 2022 (View Only)": 1142 sections, 1391 meetings, 0 extraction failures; 0 added, 0 changed, 1142 unchanged, 0 not seen; 0 rows written (35.8s)
+2026-09-12T17:38:14Z [siu] term 202040 "Summer 2020 (View Only)": 1070 sections, 1076 meetings, 0 extraction failures; 0 added, 0 changed, 1070 unchanged, 0 not seen; 0 rows written (14.9s)
+2026-09-12T17:38:31Z [ucr] term 202140 "Fall 2021 (View Only)": 10467 sections, 10470 meetings, 0 extraction failures; 0 added, 65 changed, 10402 unchanged, 0 not seen; 495 rows written (87.4s)
+2026-09-12T17:38:40Z [gmu] term 202070 "Fall 2020 (View Only)": 6389 sections, 7376 meetings, 0 extraction failures; 0 added, 8 changed, 6381 unchanged, 0 not seen; 104 rows written (109.3s)
+2026-09-12T17:38:48Z [ucr] term 202130 "Summer 2021 (View Only)": 1423 sections, 1430 meetings, 0 extraction failures; 0 added, 11 changed, 1412 unchanged, 0 not seen; 71 rows written (16.8s)
+2026-09-12T17:38:51Z [siu] term 202020 "Spring 2020 (View Only)": 3787 sections, 4222 meetings, 0 extraction failures; 0 added, 1 changed, 3786 unchanged, 0 not seen; 5 rows written (37.3s)
+2026-09-12T17:39:03Z [gmu] term 202040 "Summer 2020 (View Only)": 1377 sections, 1522 meetings, 0 extraction failures; 0 added, 3 changed, 1374 unchanged, 0 not seen; 25 rows written (22.9s)
+2026-09-12T17:39:06Z [temple] term 202436 "2024 Fall (View Only)": 9302 sections, 11128 meetings, 0 extraction failures; 0 added, 1 changed, 9301 unchanged, 0 not seen; 3 rows written (270.6s)
+2026-09-12T17:39:07Z [msudenver] term 201930 "Spring 2019 (View Only)": 3833 sections, 4147 meetings, 0 extraction failures; 0 added, 0 changed, 3833 unchanged, 0 not seen; 0 rows written (91.4s)
+2026-09-12T17:39:07Z [msudenver] Partial: 24/24 terms (0 new), 61702 sections, 67310 meetings, 222 requests (0 from cache), 196.2 MB, 00:26:51
+2026-09-12T17:39:08Z [gsu] term 202301 "Spring Semester 2023 (View Only)": 10038 sections, 11124 meetings, 0 extraction failures; 0 added, 0 changed, 10038 unchanged, 0 not seen; 0 rows written (99.9s)
+2026-09-12T17:39:20Z [temple] term 202426 "2024 Summer II (View Only)": 544 sections, 587 meetings, 0 extraction failures; 0 added, 0 changed, 544 unchanged, 0 not seen; 0 rows written (13.8s)
+2026-09-12T17:39:29Z [siu] term 201960 "Fall 2019 (View Only)": 3881 sections, 4394 meetings, 0 extraction failures; 0 added, 0 changed, 3881 unchanged, 0 not seen; 0 rows written (37.8s)
+2026-09-12T17:39:38Z [uncc] term 202180 "Fall 2021 (View Only)" (new): 5131 sections, 5790 meetings, 0 extraction failures; 5131 added, 0 changed, 0 unchanged, 0 not seen; 16520 rows written (94.8s)
+2026-09-12T17:39:40Z [unf] term 202210 "Spring 2022 (View Only)": 2935 sections, 3816 meetings, 0 extraction failures; 0 added, 0 changed, 2935 unchanged, 0 not seen; 0 rows written (87.1s)
+2026-09-12T17:39:45Z [siu] term 201940 "Summer 2019 (View Only)": 1375 sections, 1410 meetings, 0 extraction failures; 0 added, 0 changed, 1375 unchanged, 0 not seen; 0 rows written (16.0s)
+2026-09-12T17:39:45Z [siu] Collected: 24/24 terms (0 new), 75299 sections, 83534 meetings, 216 requests (0 from cache), 246.7 MB, 00:13:02
+2026-09-12T17:40:04Z [uncc] term 202160 "Summer 2021 (View Only)" (new): 1465 sections, 1525 meetings, 0 extraction failures; 1465 added, 0 changed, 0 unchanged, 0 not seen; 4490 rows written (26.2s)
+2026-09-12T17:40:14Z [ucr] term 202120 "Spring 2021 (View Only)": 9974 sections, 9929 meetings, 0 extraction failures; 0 added, 15 changed, 9959 unchanged, 0 not seen; 91 rows written (86.0s)
+2026-09-12T17:40:31Z [gmu] term 202010 "Spring 2020 - COVID-19 (View Only)": 6162 sections, 6535 meetings, 0 extraction failures; 0 added, 15 changed, 6147 unchanged, 0 not seen; 161 rows written (88.5s)
+2026-09-12T17:40:37Z [gmu] term 202000 "Continuing Education 2019/2020 (View Only)": 0 sections, 0 meetings, 0 extraction failures; 0 added, 0 changed, 0 unchanged, 0 not seen; 0 rows written (5.4s)
+2026-09-12T17:40:47Z [temple] term 202420 "2024 Summer I (View Only)": 1847 sections, 2090 meetings, 0 extraction failures; 0 added, 0 changed, 1847 unchanged, 0 not seen; 0 rows written (87.2s)
+2026-09-12T17:41:01Z [gsu] term 202208 "Fall Semester 2022 (View Only)": 10898 sections, 12157 meetings, 0 extraction failures; 0 added, 0 changed, 10898 unchanged, 0 not seen; 0 rows written (113.2s)
+2026-09-12T17:41:10Z [usf] term 202508 "Fall 2025 (View Only)": 8647 sections, 9269 meetings, 0 extraction failures; 0 added, 19 changed, 8628 unchanged, 0 not seen; 139 rows written (265.6s)
+2026-09-12T17:41:12Z [unf] term 202180 "Fall 2021 (View Only)": 3014 sections, 3853 meetings, 0 extraction failures; 0 added, 0 changed, 3014 unchanged, 0 not seen; 0 rows written (91.2s)
+2026-09-12T17:41:37Z [uncc] term 202110 "Spring 2021 (View Only)" (new): 5139 sections, 5915 meetings, 0 extraction failures; 5139 added, 0 changed, 0 unchanged, 0 not seen; 16582 rows written (93.2s)
+2026-09-12T17:41:41Z [ucr] term 202110 "Winter 2021 (View Only)": 10093 sections, 10120 meetings, 0 extraction failures; 0 added, 12 changed, 10081 unchanged, 0 not seen; 68 rows written (87.0s)
+2026-09-12T17:41:41Z [ucr] Collected: 24/24 terms (0 new), 198286 sections, 198277 meetings, 470 requests (0 from cache), 544.3 MB, 00:29:26
+2026-09-12T17:41:43Z [gsu] term 202205 "Summer Semester 2022 (View Only)": 4319 sections, 4694 meetings, 0 extraction failures; 0 added, 0 changed, 4319 unchanged, 0 not seen; 0 rows written (42.2s)
+2026-09-12T17:41:48Z [unf] term 202150 "Summer 2021 (View Only)": 1144 sections, 1411 meetings, 0 extraction failures; 0 added, 0 changed, 1144 unchanged, 0 not seen; 0 rows written (36.6s)
+2026-09-12T17:42:03Z [gmu] term 201970 "Fall 2019 (View Only)": 6195 sections, 6424 meetings, 0 extraction failures; 0 added, 5 changed, 6190 unchanged, 0 not seen; 61 rows written (86.5s)
+2026-09-12T17:42:25Z [gmu] term 201940 "Summer 2019 (View Only)": 1345 sections, 1518 meetings, 0 extraction failures; 0 added, 0 changed, 1345 unchanged, 0 not seen; 0 rows written (22.0s)
+2026-09-12T17:42:25Z [gmu] Collected: 24/24 terms (0 new), 107817 sections, 122824 meetings, 276 requests (0 from cache), 380.1 MB, 00:28:50
+2026-09-12T17:43:02Z [usf] term 202505 "Summer 2025 (View Only)": 3703 sections, 3793 meetings, 0 extraction failures; 0 added, 0 changed, 3703 unchanged, 0 not seen; 0 rows written (111.4s)
+2026-09-12T17:43:16Z [unf] term 202110 "Spring 2021 (View Only)": 2855 sections, 3720 meetings, 0 extraction failures; 0 added, 0 changed, 2855 unchanged, 0 not seen; 0 rows written (87.5s)
+2026-09-12T17:43:26Z [gsu] term 202201 "Spring Semester 2022 (View Only)": 10270 sections, 11283 meetings, 0 extraction failures; 0 added, 0 changed, 10270 unchanged, 0 not seen; 0 rows written (102.8s)
+2026-09-12T17:43:31Z [uncc] term 202080 "Fall 2020 (View Only)" (new): 5915 sections, 7153 meetings, 0 extraction failures; 5915 added, 0 changed, 0 unchanged, 0 not seen; 19452 rows written (114.1s)
+2026-09-12T17:43:54Z [uncc] term 202060 "Summer 2020 (View Only)" (new): 1382 sections, 1394 meetings, 0 extraction failures; 1382 added, 0 changed, 0 unchanged, 0 not seen; 4205 rows written (22.6s)
+2026-09-12T17:44:23Z [temple] term 202403 "2024 Spring (View Only)": 9345 sections, 10956 meetings, 0 extraction failures; 0 added, 0 changed, 9345 unchanged, 0 not seen; 0 rows written (215.5s)
+2026-09-12T17:44:54Z [unf] term 202080 "Fall 2020 (View Only)": 3097 sections, 4204 meetings, 0 extraction failures; 0 added, 0 changed, 3097 unchanged, 0 not seen; 0 rows written (98.1s)
+2026-09-12T17:45:25Z [uncc] term 202010 "Spring 2020 (View Only)" (new): 5129 sections, 5545 meetings, 0 extraction failures; 5129 added, 0 changed, 0 unchanged, 0 not seen; 16125 rows written (91.1s)
+2026-09-12T17:45:28Z [unf] term 202050 "Summer 2020 (View Only)": 1051 sections, 1279 meetings, 0 extraction failures; 0 added, 0 changed, 1051 unchanged, 0 not seen; 0 rows written (34.5s)
+2026-09-12T17:45:36Z [gsu] term 202108 "Fall Semester 2021 (View Only)": 11707 sections, 12959 meetings, 0 extraction failures; 0 added, 0 changed, 11707 unchanged, 0 not seen; 0 rows written (129.6s)
+2026-09-12T17:46:06Z [usf] term 202501 "Spring 2025 (View Only)": 6023 sections, 6307 meetings, 0 extraction failures; 0 added, 14 changed, 6009 unchanged, 0 not seen; 106 rows written (183.8s)
+2026-09-12T17:46:21Z [gsu] term 202105 "Summer Semester 2021 (View Only)": 4634 sections, 4992 meetings, 0 extraction failures; 0 added, 0 changed, 4634 unchanged, 0 not seen; 0 rows written (44.9s)
+2026-09-12T17:46:52Z [unf] term 202010 "Spring 2020 (View Only)": 2900 sections, 3587 meetings, 0 extraction failures; 0 added, 0 changed, 2900 unchanged, 0 not seen; 0 rows written (83.5s)
+2026-09-12T17:46:56Z [uncc] term 201980 "Fall 2019 (View Only)" (new): 5253 sections, 5639 meetings, 0 extraction failures; 5253 added, 0 changed, 0 unchanged, 0 not seen; 16525 rows written (91.4s)
+2026-09-12T17:47:08Z [uncc] term 201970 "Second Summer 2019 (View Only)" (new): 636 sections, 644 meetings, 0 extraction failures; 636 added, 0 changed, 0 unchanged, 0 not seen; 1864 rows written (11.4s)
+2026-09-12T17:47:25Z [uncc] term 201950 "First Summer 2019 (View Only)" (new): 889 sections, 895 meetings, 0 extraction failures; 889 added, 0 changed, 0 unchanged, 0 not seen; 2627 rows written (17.4s)
+2026-09-12T17:47:25Z [uncc] Collected: 24/24 terms (24 new), 93686 sections, 105531 meetings, 256 requests (0 from cache), 280.1 MB, 00:28:38
+2026-09-12T17:48:02Z [gsu] term 202101 "Spring Semester 2021 (View Only)": 10280 sections, 11330 meetings, 0 extraction failures; 0 added, 0 changed, 10280 unchanged, 0 not seen; 0 rows written (101.9s)
+2026-09-12T17:48:22Z [unf] term 201980 "Fall 2019 (View Only)": 3004 sections, 3683 meetings, 0 extraction failures; 0 added, 0 changed, 3004 unchanged, 0 not seen; 0 rows written (90.0s)
+2026-09-12T17:49:00Z [unf] term 201950 "Summer 2019 (View Only)": 1197 sections, 1527 meetings, 0 extraction failures; 0 added, 0 changed, 1197 unchanged, 0 not seen; 0 rows written (37.9s)
+2026-09-12T17:50:00Z [temple] term 202336 "2023 Fall (View Only)": 9260 sections, 11113 meetings, 0 extraction failures; 0 added, 0 changed, 9260 unchanged, 0 not seen; 0 rows written (337.3s)
+2026-09-12T17:50:04Z [gsu] term 202008 "Fall Semester 2020 (View Only)": 12128 sections, 13278 meetings, 0 extraction failures; 0 added, 0 changed, 12128 unchanged, 0 not seen; 0 rows written (121.3s)
+2026-09-12T17:50:15Z [temple] term 202326 "2023 Summer II (View Only)": 611 sections, 653 meetings, 0 extraction failures; 0 added, 0 changed, 611 unchanged, 0 not seen; 0 rows written (14.5s)
+2026-09-12T17:50:18Z [unf] term 201910 "Spring 2019 (View Only)": 2645 sections, 3266 meetings, 0 extraction failures; 0 added, 0 changed, 2645 unchanged, 0 not seen; 0 rows written (77.9s)
+2026-09-12T17:50:18Z [unf] Collected: 24/24 terms (0 new), 56941 sections, 72018 meetings, 177 requests (0 from cache), 219.5 MB, 00:29:03
+2026-09-12T17:50:35Z [usf] term 202408 "Fall 2024 (View Only)": 8673 sections, 9334 meetings, 0 extraction failures; 0 added, 25 changed, 8648 unchanged, 0 not seen; 289 rows written (269.4s)
+2026-09-12T17:50:52Z [gsu] term 202005 "Summer Semester 2020 (View Only)": 4545 sections, 4843 meetings, 0 extraction failures; 0 added, 0 changed, 4545 unchanged, 0 not seen; 0 rows written (48.3s)
+2026-09-12T17:51:20Z [temple] term 202320 "2023 Summer I (View Only)": 1916 sections, 2130 meetings, 0 extraction failures; 0 added, 0 changed, 1916 unchanged, 0 not seen; 0 rows written (65.5s)
+2026-09-12T17:52:22Z [usf] term 202405 "Summer 2024 (View Only)": 3386 sections, 3509 meetings, 0 extraction failures; 0 added, 4 changed, 3382 unchanged, 0 not seen; 26 rows written (107.1s)
+2026-09-12T17:52:41Z [gsu] term 202001 "Spring Semester 2020 (View Only)": 10947 sections, 12239 meetings, 0 extraction failures; 0 added, 0 changed, 10947 unchanged, 0 not seen; 0 rows written (108.8s)
+2026-09-12T17:54:49Z [gsu] term 201908 "Fall Semester 2019 (View Only)": 12696 sections, 14049 meetings, 0 extraction failures; 0 added, 0 changed, 12696 unchanged, 0 not seen; 0 rows written (128.3s)
+2026-09-12T17:55:34Z [gsu] term 201905 "Summer Semester 2019 (View Only)": 4867 sections, 5229 meetings, 0 extraction failures; 0 added, 0 changed, 4867 unchanged, 0 not seen; 0 rows written (45.0s)
+2026-09-12T17:56:30Z [temple] term 202303 "2023 Spring (View Only)": 9693 sections, 11420 meetings, 0 extraction failures; 0 added, 0 changed, 9693 unchanged, 0 not seen; 0 rows written (309.8s)
+2026-09-12T17:56:47Z [usf] term 202401 "Spring 2024 (View Only)": 8447 sections, 9115 meetings, 0 extraction failures; 0 added, 19 changed, 8428 unchanged, 0 not seen; 97 rows written (264.6s)
+2026-09-12T17:57:25Z [gsu] term 201901 "Spring Semester 2019 (View Only)": 10767 sections, 11909 meetings, 0 extraction failures; 0 added, 0 changed, 10767 unchanged, 0 not seen; 0 rows written (111.4s)
+2026-09-12T17:57:25Z [gsu] Collected: 24/24 terms (0 new), 208399 sections, 229208 meetings, 478 requests (0 from cache), 945.7 MB, 00:35:14
+2026-09-12T17:59:31Z [temple] term 202236 "2022 Fall (View Only)": 9679 sections, 11718 meetings, 0 extraction failures; 0 added, 0 changed, 9679 unchanged, 0 not seen; 0 rows written (181.1s)
+2026-09-12T18:00:08Z [temple] term 202226 "2022 Summer II (View Only)": 724 sections, 786 meetings, 0 extraction failures; 0 added, 0 changed, 724 unchanged, 0 not seen; 0 rows written (37.1s)
+2026-09-12T18:01:16Z [usf] term 202308 "Fall 2023 (View Only)": 8612 sections, 9302 meetings, 0 extraction failures; 0 added, 12 changed, 8600 unchanged, 0 not seen; 66 rows written (268.7s)
+2026-09-12T18:01:16Z [temple] term 202220 "2022 Summer I (View Only)": 1934 sections, 2209 meetings, 0 extraction failures; 0 added, 0 changed, 1934 unchanged, 0 not seen; 0 rows written (67.5s)
+2026-09-12T18:03:08Z [usf] term 202305 "Summer 2023 (View Only)": 3655 sections, 3814 meetings, 0 extraction failures; 0 added, 1 changed, 3654 unchanged, 0 not seen; 5 rows written (112.7s)
+2026-09-12T18:06:25Z [temple] term 202203 "2022 Spring (View Only)": 10039 sections, 11817 meetings, 0 extraction failures; 0 added, 0 changed, 10039 unchanged, 0 not seen; 0 rows written (309.1s)
+2026-09-12T18:07:59Z [usf] term 202301 "Spring 2023 (View Only)": 9527 sections, 10236 meetings, 0 extraction failures; 0 added, 9 changed, 9518 unchanged, 0 not seen; 61 rows written (290.6s)
+2026-09-12T18:10:37Z [temple] term 202136 "2021 Fall (View Only)": 10119 sections, 12762 meetings, 0 extraction failures; 0 added, 1 changed, 10118 unchanged, 0 not seen; 3 rows written (252.3s)
+2026-09-12T18:10:57Z [temple] term 202126 "2021 Summer II (View Only)": 844 sections, 926 meetings, 0 extraction failures; 0 added, 0 changed, 844 unchanged, 0 not seen; 0 rows written (19.6s)
+2026-09-12T18:11:37Z [temple] term 202120 "2021 Summer I (View Only)": 1953 sections, 2140 meetings, 0 extraction failures; 0 added, 0 changed, 1953 unchanged, 0 not seen; 0 rows written (40.7s)
+2026-09-12T18:12:53Z [usf] term 202208 "Fall 2022 (View Only)": 9582 sections, 10463 meetings, 0 extraction failures; 0 added, 15 changed, 9567 unchanged, 0 not seen; 91 rows written (293.9s)
+2026-09-12T18:15:03Z [usf] term 202205 "Summer 2022 (View Only)": 4559 sections, 4686 meetings, 0 extraction failures; 0 added, 2 changed, 4557 unchanged, 0 not seen; 10 rows written (130.4s)
+2026-09-12T18:16:26Z [temple] term 202103 "2021 Spring (View Only)": 10076 sections, 12794 meetings, 0 extraction failures; 0 added, 3 changed, 10073 unchanged, 0 not seen; 9 rows written (288.2s)
+2026-09-12T18:16:26Z [temple] Collected: 24/24 terms (0 new), 129345 sections, 154501 meetings, 324 requests (0 from cache), 428.7 MB, 01:00:50
+2026-09-12T18:19:46Z [usf] term 202201 "Spring 2022 (View Only)": 9497 sections, 10301 meetings, 0 extraction failures; 0 added, 7 changed, 9490 unchanged, 0 not seen; 41 rows written (282.9s)
+2026-09-12T18:24:39Z [usf] term 202108 "Fall 2021 (View Only)": 9703 sections, 10629 meetings, 0 extraction failures; 0 added, 3 changed, 9700 unchanged, 0 not seen; 17 rows written (292.6s)
+2026-09-12T18:26:53Z [usf] term 202105 "Summer 2021 (View Only)": 4732 sections, 4837 meetings, 0 extraction failures; 0 added, 3 changed, 4729 unchanged, 0 not seen; 15 rows written (134.6s)
+2026-09-12T18:32:02Z [usf] term 202101 "Spring 2021 (View Only)": 10174 sections, 10990 meetings, 0 extraction failures; 0 added, 18 changed, 10156 unchanged, 0 not seen; 208 rows written (308.8s)
+2026-09-12T18:35:51Z [usf] term 202008 "Fall 2020 (View Only)": 7733 sections, 8167 meetings, 0 extraction failures; 0 added, 4 changed, 7729 unchanged, 0 not seen; 46 rows written (229.3s)
+2026-09-12T18:37:38Z [usf] term 202005 "Summer 2020 (View Only)": 3912 sections, 3908 meetings, 0 extraction failures; 0 added, 0 changed, 3912 unchanged, 0 not seen; 0 rows written (107.2s)
+2026-09-12T18:37:38Z [usf] Collected: 24/24 terms (0 new), 152991 sections, 162980 meetings, 384 requests (0 from cache), 420.0 MB, 01:16:27
+2026-09-12T18:37:38Z Run finished in 01:28:23; results in reports/run-20260912T170914Z.json
+2026-09-12T18:37:38Z school         status      terms  sections  meetings  requests       MB      time  reason
+2026-09-12T18:37:38Z eku            NotIdentified     0/0         0         0        17      0.6  00:01:08  not identified from the homepage: the well-known banner9 host banner.eku.edu exists, but its robots.txt refused the probe: the probe was not sent or failed: robots.txt (https://banner.eku.edu/robots.txt) could not be read (Cannot determine the frame size or a corrupted frame was received.); RFC 9309 treats that as disallow-all, so the request was not sent
+2026-09-12T18:37:38Z uiuc           Failed        0/5         0         0         7      0.0  00:00:12  stopped after 5 terms failed in a row; last: term/search redirected (HTTP 302), so class search needs a sign-in; only public data is collected
+2026-09-12T18:37:38Z sunyempire     NotIdentified     0/0         0         0        24      0.5  00:00:15  not identified from the homepage: a banner9 entry point https://banner.esc.edu/StudentRegistrationSsb/ was found on https://www.sunyempire.edu/academics/classes-and-registration/index.html, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://banner.esc.edu/robots.txt) disallows /StudentRegistrationSsb/ssb/classSearch/getTerms?searchTerm=&offset=1&max=100 for DueGooderBot, so the request was not sent
+2026-09-12T18:37:38Z oakland        NotIdentified     0/0         0         0        21      0.5  00:00:18  not identified from the homepage: a banner9 entry point https://bstreg.oakland.edu/StudentRegistrationSsb/ was found on https://www.oakland.edu/registrar/registration/regschedule/, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://bstreg.oakland.edu/robots.txt) disallows /StudentRegistrationSsb/ssb/classSearch/getTerms?searchTerm=&offset=1&max=100 for DueGooderBot, so the request was not sent
+2026-09-12T18:37:38Z uindy          NotIdentified     0/0         0         0        30      2.0  00:03:02  not identified from the homepage: a banner9 entry point https://banner.uindy.edu/StudentRegistrationSsb/ was found on https://uindy.edu/registrar/course-schedules, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://banner.uindy.edu/robots.txt) could not be read (The response ended prematurely. (ResponseEnded)); RFC 9309 treats that as disallow-all, so the request was not sent
+2026-09-12T18:37:38Z wvu            NotIdentified     0/0         0         0        12      0.0  00:00:02  not identified from the homepage: no connector recognized the site after 1 pages and 10 probes
+2026-09-12T18:37:38Z kccd           NotIdentified     0/0         0         0        14      0.1  00:00:42  not identified from the homepage: the well-known banner9 host reg-prod.ec.kccd.edu exists, but its robots.txt refused the probe: the probe was not sent or failed: robots.txt (https://reg-prod.ec.kccd.edu/robots.txt) could not be read (HTTP 503); RFC 9309 treats that as disallow-all, so the request was not sent
+2026-09-12T18:37:38Z starkstate     Collected   24/24     26164     29027       116     92.1  00:06:45  
+2026-09-12T18:37:38Z oakton         NotIdentified     0/0         0         0        17      0.2  00:01:23  not identified from the homepage: a banner9 entry point https://banner.oakton.edu/StudentRegistrationSsb/ was found on https://www.oakton.edu/, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://banner.oakton.edu/robots.txt) could not be read (HTTP 503); RFC 9309 treats that as disallow-all, so the request was not sent
+2026-09-12T18:37:38Z lehigh         NotIdentified     0/0         0         0        18      0.2  00:00:49  not identified from the homepage: the well-known banner9 host reg-prod.ec.lehigh.edu exists, but its robots.txt refused the probe: the probe was not sent or failed: robots.txt (https://reg-prod.ec.lehigh.edu/robots.txt) could not be read (HTTP 503); RFC 9309 treats that as disallow-all, so the request was not sent
+2026-09-12T18:37:38Z odu            NotIdentified     0/0         0         0        15      0.8  00:00:44  not identified from the homepage: the well-known banner9 host reg-prod.ec.odu.edu exists, but its robots.txt refused the probe: the probe was not sent or failed: robots.txt (https://reg-prod.ec.odu.edu/robots.txt) could not be read (HTTP 503); RFC 9309 treats that as disallow-all, so the request was not sent
+2026-09-12T18:37:38Z ctstate        NotIdentified     0/0         0         0        24      1.1  00:01:01  not identified from the homepage: a banner9 entry point https://reg-prod.ec.ct.edu/StudentRegistrationSsb/ was found on https://ctstate.edu/admissions-registration/one-stop-enrollment-center, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://reg-prod.ec.ct.edu/robots.txt) could not be read (HTTP 503); RFC 9309 treats that as disallow-all, so the request was not sent
+2026-09-12T18:37:38Z tric           NotIdentified     0/0         0         0        13      0.1  00:00:02  not identified from the homepage: a banner9 entry point https://banstup.tri-c.edu/StudentRegistrationSsb/ was found on https://www.tri-c.edu/, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://banstup.tri-c.edu/robots.txt) disallows /StudentRegistrationSsb/ssb/classSearch/getTerms?searchTerm=&offset=1&max=100 for DueGooderBot, so the request was not sent
+2026-09-12T18:37:38Z blinn          Collected     9/9      5004      5821        37     14.9  00:03:20  
+2026-09-12T18:37:38Z ullafayette    NotIdentified     0/0         0         0        25      0.4  00:01:39  not identified from the homepage: a banner9 entry point https://reg-prod.ec.louisiana.edu/StudentRegistrationSsb/ was found on https://louisiana.edu/registrar/registration/schedule-classes, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://reg-prod.ec.louisiana.edu/robots.txt) could not be read (HTTP 503); RFC 9309 treats that as disallow-all, so the request was not sent
+2026-09-12T18:37:38Z aum            NotIdentified     0/0         0         0        21      3.6  00:03:04  not identified from the homepage: a banner9 entry point https://ssb9.aum.edu/StudentRegistrationSsb/ was found on https://www.aum.edu/, but it wasn't confirmed: the probe was not sent or failed: robots.txt (https://ssb9.aum.edu/robots.txt) could not be read (The response ended prematurely. (ResponseEnded)); RFC 9309 treats that as disallow-all, so the request was not sent
+2026-09-12T18:37:38Z ucmerced       NotIdentified     0/0         0         0        16      0.0  00:01:45  not identified from the homepage: the well-known banner9 host reg-prod.ec.ucmerced.edu exists, but its robots.txt refused the probe: the probe was not sent or failed: robots.txt (https://reg-prod.ec.ucmerced.edu/robots.txt) could not be read (HTTP 503); RFC 9309 treats that as disallow-all, so the request was not sent
+2026-09-12T18:37:38Z uidaho         Collected   24/24     59456     63197       190    164.1  00:14:28  
+2026-09-12T18:37:38Z samford        Collected     3/3      5076      5031        24     16.4  00:01:20  
+2026-09-12T18:37:38Z msudenver      Partial     24/24     61702     67310       222    196.2  00:26:51  
+2026-09-12T18:37:38Z okstate        Collected   24/24    161796    245255       384    556.1  00:23:32  
+2026-09-12T18:37:38Z ou             Collected   24/24    106215    130837       293    503.7  00:10:55  
+2026-09-12T18:37:38Z cofc           Collected   24/24     54597     58362       173    158.3  00:08:03  
+2026-09-12T18:37:38Z neu            Collected   24/24     51540     58181       176    160.2  00:11:56  
+2026-09-12T18:37:38Z ucr            Collected   24/24    198286    198277       470    544.3  00:29:26  
+2026-09-12T18:37:38Z fhda           Collected   24/24     27597     40634       125    104.4  00:08:52  
+2026-09-12T18:37:38Z montgomery     Collected     8/8     16745     18774        59     57.9  00:05:18  
+2026-09-12T18:37:38Z gmu            Collected   24/24    107817    122824       276    380.1  00:28:50  
+2026-09-12T18:37:38Z temple         Collected   24/24    129345    154501       324    428.7  01:00:50  
+2026-09-12T18:37:38Z ccsf           Collected   24/24     18560     27461        99     59.7  00:03:45  
+2026-09-12T18:37:38Z uncc           Collected   24/24     93686    105531       256    280.1  00:28:38  
+2026-09-12T18:37:38Z uncw           Collected   24/24     64964     77922       197    213.1  00:11:57  
+2026-09-12T18:37:38Z unf            Collected   24/24     56941     72018       177    219.5  00:29:03  
+2026-09-12T18:37:38Z usf            Collected   24/24    152991    162980       384    420.0  01:16:27  
+2026-09-12T18:37:38Z gsu            Collected   24/24    208399    229208       478    945.7  00:35:14  
+2026-09-12T18:37:38Z sju            Collected   24/24     23448     25117       113     77.1  00:04:32  
+2026-09-12T18:37:38Z siu            Collected   24/24     75299     83534       216    246.7  00:13:02  
+2026-09-12T18:37:38Z utrgv          Collected   24/24     14501     14969        98     46.3  00:05:20  
+2026-09-12T18:37:38Z clpccd         Collected   12/12     19867     28850        70     86.9  00:04:08  
+2026-09-12T18:37:38Z cocc           Collected   11/11      4549      7210        47     17.2  00:01:42  
+2026-09-12T18:37:38Z ufv            Collected   11/11      5345     12003        46     24.2  00:02:13  
+2026-09-12T18:37:38Z louisville     NotIdentified     0/0         0         0        21      1.2  00:00:13  not identified from the homepage: no connector recognized the site; its pages point to workday, peoplesoft
+2026-09-12T18:37:38Z mizzou         NotIdentified     0/0         0         0        13      0.1  00:00:04  not identified from the homepage: no connector recognized the site after 2 pages and 10 probes
+2026-09-12T18:37:38Z nau            NotIdentified     0/0         0         0        12      0.2  00:00:02  not identified from the homepage: no connector recognized the site after 1 pages and 10 probes
+2026-09-12T18:37:38Z lsu            NotIdentified     0/0         0         0        23      1.0  00:00:19  not identified from the homepage: no connector recognized the site after 10 pages and 10 probes
+2026-09-12T18:37:38Z dallascollege  NotIdentified     0/0         0         0        21      0.7  00:00:20  not identified from the homepage: no connector recognized the site; its pages point to workday
+2026-09-12T18:37:38Z bellarmine     NotIdentified     0/0         0         0        19      0.1  00:00:14  not identified from the homepage: no connector recognized the site after 6 pages and 10 probes
+2026-09-12T18:37:38Z swccd          NotIdentified     0/0         0         0        22      0.7  00:00:18  not identified from the homepage: no connector recognized the site; its pages point to colleague
+2026-09-12T18:37:38Z kishwaukee     NotIdentified     0/0         0         0        19      0.4  00:01:14  not identified from the homepage: no connector recognized the site; its pages point to colleague
+2026-09-12T18:37:38Z Schools: 25 collected, 1 partial, 1 failed. Sections: 1749890. Meetings: 2044834. Requests: 5474. Body MB: 6028.5.
+2026-09-12T18:37:38Z Report: reports/run-20260912T170914Z.md

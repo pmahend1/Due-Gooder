@@ -13,5 +13,8 @@ public sealed record HttpFetchResult(Uri Url, int StatusCode, string Body, DateT
 
     public bool IsSuccess => StatusCode is >= 200 and < 300;
 
+    /// <summary>Where a redirect points, resolved against <see cref="Url"/>; null when the response isn't a redirect.</summary>
+    public Uri? RedirectLocation { get; init; }
+
     #endregion State
 }

@@ -1,3 +1,4 @@
+using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
 namespace DueGooder.Infrastructure.Persistence;
@@ -14,6 +15,25 @@ public sealed class DueGooderDbContext(DbContextOptions<DueGooderDbContext> opti
     #endregion State
 
     #region Methods
+
+    /// <summary>Creates the database if it doesn't exist, then checks that its schema is the current one.</summary>
+    /// <returns>Why the existing file can't be used, or null when it can.</returns>
+    public async Task<string?> EnsureCurrentSchemaAsync(CancellationToken cancellationToken)
+    {
+        await Database.EnsureCreatedAsync(cancellationToken);
+
+        // EnsureCreated never alters an existing file, so a database from before a schema change would fail mid-run instead.
+        try
+        {
+            _ = await Sections.Select(row => row.LastConfirmedAt).FirstOrDefaultAsync(cancellationToken);
+            _ = await Terms.Select(row => row.GapDetail).FirstOrDefaultAsync(cancellationToken);
+            return null;
+        }
+        catch (SqliteException exception)
+        {
+            return $"the database has an older schema ({exception.Message})";
+        }
+    }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

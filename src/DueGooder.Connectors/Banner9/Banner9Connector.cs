@@ -3,6 +3,7 @@ using System.Net;
 using System.Runtime.CompilerServices;
 using System.Text.Json;
 using DueGooder.Application;
+using DueGooder.Application.Discovery;
 using DueGooder.Domain;
 
 namespace DueGooder.Connectors.Banner9;
@@ -24,6 +25,12 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
 
     public const string PageSizeOption = "page_size";
 
+    /// <summary>
+    /// Request parameters whose values are random per search session. A response cache must leave them
+    /// out of its keys, or a repeated search would never be a hit.
+    /// </summary>
+    public static readonly IReadOnlySet<string> SessionScopedParameters = new HashSet<string> { "uniqueSessionId" };
+
     // Fewer, larger pages mean fewer requests per term; 500 is the largest page Banner 9 servers commonly accept.
     private const int DefaultPageSize = 500;
 
@@ -35,11 +42,77 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
 
     private const double PathOnlyConfidence = 0.3;
 
+    // Enough to isolate a few unreturnable records in a 500-section window: each one costs about 2 × log2(500) requests.
+    private const int MaxRecoveryRequestsPerTerm = 40;
+
+    internal const string UnreturnableReason =
+        "Banner answered success:false with no sections, which it does when it can't return a record in the requested range";
+
+    /*
+     * Host names Banner 9 schools commonly use for Self-Service, most common first. Drawn from the hosts found while
+     * building config/schools.yaml; reg-prod.ec is Ellucian's hosted-cloud convention. Only probed when no page of the
+     * school's site links to Banner.
+     */
+    private static readonly string[] CommonHostPrefixes =
+    [
+        "ssb", "registration", "banner", "reg-prod.ec", "reg-prod", "selfservice", "sis", "ssb9", "registrationssb",
+        "studentregistrationssb",
+    ];
+
+    // Characters that end a URL written in HTML or JavaScript.
+    private const string UrlTerminators = " \t\r\n\"'<>=(),;`";
+
     public string Platform => "banner9";
 
     #endregion State
 
     #region Methods
+
+    public IReadOnlyList<Uri> FindEntryPoints(Uri pageUrl, string html)
+    {
+        var found = new List<Uri>();
+        var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        if (FindBaseUrlInPath(pageUrl) is { } ownBaseUrl && seen.Add(ownBaseUrl.AbsoluteUri))
+        {
+            found.Add(ownBaseUrl);
+        }
+
+        // Links, iframes, form actions and script strings all count; JSON-escaped slashes are unescaped first.
+        var text = html.Replace("\\/", "/");
+        for (var index = text.IndexOf(BannerPathSegment, StringComparison.OrdinalIgnoreCase);
+             index > 0;
+             index = text.IndexOf(BannerPathSegment, index + BannerPathSegment.Length, StringComparison.OrdinalIgnoreCase))
+        {
+            if (text[index - 1] is not '/')
+            {
+                continue;
+            }
+
+            var start = index;
+            while (start > 0 && UrlTerminators.Contains(text[start - 1]) is false)
+            {
+                start--;
+            }
+
+            // Keeps the server's own casing, like FindBaseUrlInPath.
+            var url = text[start..(index + BannerPathSegment.Length)];
+            if ((url.StartsWith("http", StringComparison.OrdinalIgnoreCase) || url.StartsWith('/'))
+                && Uri.TryCreate(pageUrl, url + "/", out var baseUrl)
+                && baseUrl.Scheme is "http" or "https"
+                && seen.Add(baseUrl.AbsoluteUri))
+            {
+                found.Add(baseUrl);
+            }
+        }
+
+        return found;
+    }
+
+    public IReadOnlyList<Uri> GuessEntryPoints(Uri homepage)
+    {
+        var domain = RegistrableDomain.Of(homepage.Host);
+        return [.. CommonHostPrefixes.Select(prefix => new Uri($"https://{prefix}.{domain}/{BannerPathSegment}/"))];
+    }
 
     public async Task<Fingerprint> FingerprintAsync(Uri candidate, CancellationToken cancellationToken)
     {
@@ -51,7 +124,8 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
         }
 
         var baseUrl = baseUrlFromPath ?? new Uri(candidate, $"/{BannerPathSegment}/");
-        var probeUrl = new Banner9Endpoints(baseUrl, mepCode: null).Terms(page: 1, pageSize: 1);
+        // The same request ListTermsAsync sends first: UNCC's server answers max=1 with HTTP 500 but max=100 with its terms.
+        var probeUrl = new Banner9Endpoints(baseUrl, mepCode: null).Terms(page: 1, TermPageSize);
         using var session = fetcher.OpenSession();
         var probe = await session.GetAsync(probeUrl, cancellationToken);
         if (probe.IsSuccess && TryReadTerms(probe.Body, out var terms) && terms.Count > 0)
@@ -100,25 +174,15 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
 
     public async IAsyncEnumerable<RawSection> CollectSectionsAsync(ConnectorTarget target,
                                                                    Term term,
+                                                                   ICollection<CollectionGap> gaps,
                                                                    [EnumeratorCancellation] CancellationToken cancellationToken)
     {
         var endpoints = EndpointsFor(target);
         var pageSize = PageSizeFor(target);
         var sessionId = "dg" + Guid.NewGuid().ToString("N")[..12];
         using var session = fetcher.OpenSession();
-
-        var termBinding = await session.PostFormAsync(endpoints.TermSearch(),
-                                                      new Dictionary<string, string>
-                                                      {
-                                                          ["term"] = term.Key.TermCode,
-                                                          ["studyPath"] = "",
-                                                          ["studyPathText"] = "",
-                                                          ["startDatepicker"] = "",
-                                                          ["endDatepicker"] = "",
-                                                          ["uniqueSessionId"] = sessionId,
-                                                      },
-                                                      cancellationToken);
-        EnsureTermBound(termBinding);
+        await BindTermAsync(session, endpoints, term, sessionId, cancellationToken);
+        var recoveryBudget = new StrongBox<int>(MaxRecoveryRequestsPerTerm);
 
         try
         {
@@ -126,13 +190,30 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
             {
                 var url = endpoints.SearchResults(term.Key.TermCode, sessionId, pageOffset, pageSize);
                 var response = await session.GetAsync(url, cancellationToken);
-                var (totalCount, sections) = ReadSearchPage(response);
-                foreach (var payload in sections)
+                var page = ReadSearchPage(response);
+                var sections = page.Sections.Select(payload => new RawSection(term.Key, response.Url, response.RetrievedAt, payload));
+                if (page.Success is false)
                 {
-                    yield return new RawSection(term.Key, response.Url, response.RetrievedAt, payload);
+                    /* Banner answers success:false, the term's real totalCount and no sections when it can't return a record in
+                       the requested range. At MSU Denver (2026-09-12) one 100-section window failed on every try, even after
+                       binding the term again, while the windows around it succeeded. So the window is narrowed instead of
+                       retried: the records Banner can return are kept and the rest become a recorded gap. */
+                    var recovery = new Banner9GapRecovery(session, endpoints, term.Key, sessionId, page.TotalCount, recoveryBudget);
+                    await recovery.RecoverAsync(pageOffset, Math.Min(pageSize, page.TotalCount - pageOffset), response.Url, cancellationToken);
+                    foreach (var gap in recovery.Gaps)
+                    {
+                        gaps.Add(gap);
+                    }
+
+                    sections = recovery.Recovered;
                 }
 
-                if (sections.Count is 0 || pageOffset + pageSize >= totalCount)
+                foreach (var section in sections)
+                {
+                    yield return section;
+                }
+
+                if ((page.Success && page.Sections.Count is 0) || pageOffset + pageSize >= page.TotalCount)
                 {
                     break;
                 }
@@ -141,13 +222,7 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
         finally
         {
             // Clears the term binding so the next term searched on this server starts from a clean form.
-            await session.PostFormAsync(endpoints.ResetDataForm(),
-                                        new Dictionary<string, string>
-                                        {
-                                            ["resetCourses"] = "false",
-                                            ["resetSections"] = "true",
-                                        },
-                                        CancellationToken.None);
+            await ResetSearchFormAsync(session, endpoints, CancellationToken.None);
         }
     }
 
@@ -180,6 +255,37 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
             ? null
             : new Uri(candidate, path[..(start + 1 + BannerPathSegment.Length)] + "/");
     }
+
+    private static async Task BindTermAsync(IHttpSession session,
+                                            Banner9Endpoints endpoints,
+                                            Term term,
+                                            string sessionId,
+                                            CancellationToken cancellationToken)
+    {
+        var response = await session.PostFormAsync(endpoints.TermSearch(),
+                                                   new Dictionary<string, string>
+                                                   {
+                                                       ["term"] = term.Key.TermCode,
+                                                       ["studyPath"] = "",
+                                                       ["studyPathText"] = "",
+                                                       ["startDatepicker"] = "",
+                                                       ["endDatepicker"] = "",
+                                                       ["uniqueSessionId"] = sessionId,
+                                                   },
+                                                   cancellationToken);
+        EnsureTermBound(response);
+    }
+
+    private static Task<HttpFetchResult> ResetSearchFormAsync(IHttpSession session,
+                                                              Banner9Endpoints endpoints,
+                                                              CancellationToken cancellationToken) =>
+        session.PostFormAsync(endpoints.ResetDataForm(),
+                              new Dictionary<string, string>
+                              {
+                                  ["resetCourses"] = "false",
+                                  ["resetSections"] = "true",
+                              },
+                              cancellationToken);
 
     private static void EnsureTermBound(HttpFetchResult response)
     {
@@ -225,7 +331,7 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
         }
     }
 
-    private static (int TotalCount, List<string> Sections) ReadSearchPage(HttpFetchResult response)
+    internal static (bool Success, int TotalCount, List<string> Sections) ReadSearchPage(HttpFetchResult response)
     {
         if (response.IsSuccess is false)
         {
@@ -236,13 +342,13 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
         {
             using var document = JsonDocument.Parse(response.Body);
             var root = document.RootElement;
-            if (root.ValueKind is not JsonValueKind.Object || root.OptionalBool("success") is not true)
+            if (root.ValueKind is not JsonValueKind.Object)
             {
-                throw new ConnectorException("searchResults did not report success", response.Url);
+                throw new ConnectorException("searchResults did not return a JSON object", response.Url);
             }
 
             var sections = root.OptionalArray("data").Select(section => section.GetRawText()).ToList();
-            return (root.OptionalInt("totalCount") ?? 0, sections);
+            return (root.OptionalBool("success") is true, root.OptionalInt("totalCount") ?? 0, sections);
         }
         catch (JsonException exception)
         {

@@ -126,6 +126,15 @@ run cost (as billed)  = H_wall × P_vm
 politeness floor      = 1,000 × r × min-request-interval-seconds ÷ k ÷ 3,600     [hours for 1,000]
 ```
 
+### Where this lives in code
+
+The run report computes the same thing in `src/DueGooder.Cli/RunCostEstimate.cs`, with the same baseline prices (`t4g.small` at $0.0168/h, inbound at $0/GB, `gp3` at $0.08/GB-month, Haiku 4.5 at $1/$5 per MTok). That file is the authority for what a run reports; this document is the authority for where the prices came from and what the numbers do and don't claim. If one changes, change the other — T13 and T22 disagreeing in the submission would be worse than either being slightly stale.
+
+Two inputs this document models that the code does not, both **deliberate** and worth a look when the fallback lands:
+
+- **`b_out`** — the code's transfer line is inbound only, which is $0 and therefore correct today. Outbound is priced here because it's the line that would bite on a provider that bills it, and because it isn't instrumented yet.
+- **`f`, the fallback share** — the code multiplies absolute measured token totals, which is right for reporting a run that happened. `f` is what makes the 1,000-school extrapolation meaningful before the fallback exists, and it's the input this model is most sensitive to.
+
 `run cost (as billed)` uses measured wall clock, so it is the number to trust for a run that actually happened; `cost per school × S_col` should land close to it, and a gap means `k` wasn't the real level of parallelism (idle hosts at the end of a run, mostly). The `politeness floor` is the fastest 1,000 schools could go at the configured per-host delay even with infinitely fast responses — if the extrapolated wall clock is near the floor, runtime is delay-bound and a bigger VM buys nothing; if it's well above, time is going into transfer and parsing and a faster machine or more concurrency would help.
 
 ## Worked example
@@ -159,7 +168,7 @@ What the example shows, and what we'd expect to survive contact with real number
 2. Set `f`, `t_in`, `t_out` from the fallback extractor's usage log. If the fallback still doesn't exist at submission time, say so plainly and report the LLM line as a **priced scenario** at a stated `f`, not as a measured cost — the way `reports/run-20260912T033215Z.md` reports 0 tokens today.
 3. Redo the worked example with those numbers, drop the "example only" warning from it, and keep the estimate labels on every price and on both 1,000-school rows.
 4. Re-check all six source links and update the check date. Note any price that moved.
-5. Reconcile against the run report's Cost section so T13 and this document can't disagree.
+5. Reconcile against the run report's Cost section and the prices in `src/DueGooder.Cli/RunCostEstimate.cs` so T13 and this document can't disagree.
 
 ## What this model leaves out
 

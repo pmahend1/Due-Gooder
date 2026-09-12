@@ -26,14 +26,24 @@ internal sealed class RunReportFile(string filePath, string runId, IReadOnlyDict
 
     #region Methods
 
-    public void Write(RunResult run)
+    public void Write(RunResult run, RunCostEstimate? cost = null)
     {
         lock (_lock)
         {
-            var temporaryPath = filePath + ".tmp";
-            File.WriteAllText(temporaryPath, JsonSerializer.Serialize(new { runId, settings, run }, JsonOptions));
-            File.Move(temporaryPath, filePath, overwrite: true);
+            Save(filePath, new RunReportDocument(runId, settings, run, cost));
         }
+    }
+
+    public static RunReportDocument Read(string path) =>
+        JsonSerializer.Deserialize<RunReportDocument>(File.ReadAllText(path), JsonOptions)
+        ?? throw new InvalidDataException($"{path} holds no run report");
+
+    // Written to a temporary file first, so a reader never sees half a report.
+    public static void Save(string path, RunReportDocument document)
+    {
+        var temporaryPath = path + ".tmp";
+        File.WriteAllText(temporaryPath, JsonSerializer.Serialize(document, JsonOptions));
+        File.Move(temporaryPath, path, overwrite: true);
     }
 
     #endregion Methods

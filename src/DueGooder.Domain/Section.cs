@@ -22,7 +22,17 @@ public sealed record Section
 
     public string? Title { get; init; }
 
+    /// <summary>The section's credits when they are fixed; <c>null</c> for variable credit, which has a range instead.</summary>
     public decimal? Credits { get; init; }
+
+    /// <summary>Fewest credits the section can be taken for; equals <see cref="Credits"/> when credits are fixed.</summary>
+    public decimal? CreditsMin { get; init; }
+
+    /// <summary>Most credits the section can be taken for; equals <see cref="Credits"/> when credits are fixed.</summary>
+    public decimal? CreditsMax { get; init; }
+
+    /// <summary>Credits as published, e.g. <c>3</c>, <c>1 TO 6</c> or <c>0 OR 4</c>.</summary>
+    public string? CreditsRaw { get; init; }
 
     /// <summary>Delivery mode as published, e.g. <c>Online</c> or <c>Hybrid</c>.</summary>
     public string? InstructionalMethod { get; init; }
@@ -36,6 +46,18 @@ public sealed record Section
     public int? WaitlistCapacity { get; init; }
 
     public int? WaitlistCount { get; init; }
+
+    /// <summary>
+    /// The platform's cross-list group, e.g. Banner's <c>crossList</c> code. Sections of one term that share it are
+    /// one class listed under several course numbers; each listing stays its own section with its own key.
+    /// </summary>
+    public string? CrossListGroup { get; init; }
+
+    /// <summary>Seats shared by the whole cross-list group.</summary>
+    public int? CrossListCapacity { get; init; }
+
+    /// <summary>Enrollment across the whole cross-list group.</summary>
+    public int? CrossListEnrolled { get; init; }
 
     public IReadOnlyList<Meeting> Meetings { get; init; } = [];
 

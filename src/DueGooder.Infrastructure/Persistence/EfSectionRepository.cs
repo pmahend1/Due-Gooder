@@ -133,12 +133,18 @@ public sealed class EfSectionRepository(Func<DueGooderDbContext> createContext) 
         row.DisplaySectionNumber = section.DisplaySectionNumber;
         row.Title = section.Title;
         row.Credits = section.Credits;
+        row.CreditsMin = section.CreditsMin;
+        row.CreditsMax = section.CreditsMax;
+        row.CreditsRaw = section.CreditsRaw;
         row.InstructionalMethod = section.InstructionalMethod;
         row.Campus = section.Campus;
         row.Capacity = section.Capacity;
         row.Enrolled = section.Enrolled;
         row.WaitlistCapacity = section.WaitlistCapacity;
         row.WaitlistCount = section.WaitlistCount;
+        row.CrossListGroup = section.CrossListGroup;
+        row.CrossListCapacity = section.CrossListCapacity;
+        row.CrossListEnrolled = section.CrossListEnrolled;
         row.SourceUrl = section.SourceUrl.ToString();
         row.RetrievedAt = section.RetrievedAt;
     }

@@ -11,7 +11,8 @@ using Microsoft.EntityFrameworkCore;
 const string Usage = """
     Usage: duegooder run [--schools <path>] [--school <id>] [--term <code>] [--max-terms <n>]
                          [--db <path>] [--reports <dir>] [--cache off|use|record] [--cache-dir <dir>]
-                         [--min-interval <seconds>] [--max-hosts <n>]
+                         [--min-interval <seconds>] [--max-hosts <n>] [--human-steps <path>]
+           duegooder report --run <reports/run-id.json> (see `duegooder report` for its options)
 
       --schools       school list (default config/schools.yaml)
       --school        run only this school id
@@ -23,13 +24,19 @@ const string Usage = """
       --cache-dir     cache directory (default .cache/http)
       --min-interval  seconds between request starts per host (default 2; robots.txt Crawl-delay can raise it)
       --max-hosts     hosts collected at the same time (default 8)
+      --human-steps   Markdown list of every human step, copied into the report (default config/human-steps.md)
     """;
 
 string[] knownOptions =
 [
     "--schools", "--school", "--term", "--max-terms", "--db", "--reports",
-    "--cache", "--cache-dir", "--min-interval", "--max-hosts",
+    "--cache", "--cache-dir", "--min-interval", "--max-hosts", "--human-steps",
 ];
+
+if (args is ["report", .. var reportArgs])
+{
+    return ReportCommand.Execute(reportArgs);
+}
 
 if (args is not ["run", ..])
 {
@@ -151,8 +158,15 @@ progress.WriteLine($"{runId}: {schools.Count} schools from {schoolsPath}; cache 
                    + $"{fetcherOptions.MinRequestInterval.TotalSeconds}s between requests per host; "
                    + $"up to {pipelineOptions.MaxConcurrentHosts} hosts at once");
 var run = await pipeline.RunAsync(schools, cancellation.Token);
-report.Write(run);
+var cost = RunCostEstimate.From(run, pipelineOptions.MaxConcurrentHosts, ReportCommand.FileSize(databasePath));
+report.Write(run, cost);
+var markdownPath = RunReportMarkdown.WriteFile(report.FilePath,
+                                               new RunReportDocument(runId, settings, run, cost),
+                                               run.Schools.ToDictionary(school => school.SchoolId, school => school.Fields),
+                                               "counted by this run",
+                                               values.GetValueOrDefault("--human-steps", ReportCommand.DefaultHumanStepsPath));
 PrintSummary(progress, run, report.FilePath);
+progress.WriteLine($"Report: {markdownPath}");
 return 0;
 
 int? OptionalPositive(string name)

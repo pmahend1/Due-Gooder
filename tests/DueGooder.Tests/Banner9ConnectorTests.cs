@@ -6,6 +6,13 @@ namespace DueGooder.Tests;
 
 public sealed class Banner9ConnectorTests
 {
+    #region State
+
+    // What MSU Denver answered on 2026-09-12 for sections 301-400 of term 202340: HTTP 200, success false, the real count, no sections.
+    private const string PageBannerCannotReturn = """{"success":false,"totalCount":684,"data":[]}""";
+
+    #endregion State
+
     #region Methods
 
     [Theory]
@@ -96,6 +103,24 @@ public sealed class Banner9ConnectorTests
         Assert.Contains("sign-in", exception.Message);
         Assert.Contains("mepCode=1UIUC", exception.SourceUrl?.Query);
         Assert.DoesNotContain(fetcher.Requests, request => request.Url.AbsolutePath.EndsWith("/searchResults"));
+    }
+
+    [Fact]
+    public async Task A_results_page_banner_cannot_return_is_reported_with_its_section_range()
+    {
+        var fetcher = new FixtureHttpFetcher("eku");
+        fetcher.OneTimeBodies["searchResults-10.json"] = new Queue<string>([PageBannerCannotReturn]);
+        var connector = new Banner9Connector(fetcher);
+
+        var exception = await Assert.ThrowsAsync<ConnectorException>(
+            async () => await connector.CollectSectionsAsync(Banner9Fixtures.Target("eku"),
+                                                             Banner9Fixtures.CapturedTerm("eku"),
+                                                             CancellationToken.None)
+                                       .ToListAsync());
+
+        Assert.Contains("sections 11-20 of 684", exception.Message);
+        Assert.Contains("pageOffset=10", exception.SourceUrl?.Query);
+        Assert.EndsWith("/resetDataForm", fetcher.Requests[^1].Url.AbsolutePath);
     }
 
     [Fact]

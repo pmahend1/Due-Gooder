@@ -14,6 +14,7 @@ namespace DueGooder.Application.Pipeline;
 /// <param name="Duration">Wall-clock time for this term, collection and storage together.</param>
 /// <param name="FailureReason">Why the term failed; null when it was collected. Nothing is stored for a failed term.</param>
 /// <param name="FailureSourceUrl">The request that got the unexpected answer, when known.</param>
+/// <param name="Fields">Field completeness of the stored sections; null for a failed term or a run that predates it.</param>
 public sealed record TermRunResult(string TermCode,
                                    string? Name,
                                    int Sections,
@@ -23,4 +24,5 @@ public sealed record TermRunResult(string TermCode,
                                    int RowsWritten,
                                    TimeSpan Duration,
                                    string? FailureReason,
-                                   Uri? FailureSourceUrl);
+                                   Uri? FailureSourceUrl,
+                                   FieldCompleteness? Fields = null);

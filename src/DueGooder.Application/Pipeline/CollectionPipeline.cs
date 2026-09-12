@@ -174,7 +174,8 @@ public sealed class CollectionPipeline(IReadOnlyDictionary<string, Func<IHttpFet
                                      rowsWritten,
                                      timeProvider.GetElapsedTime(startTimestamp),
                                      FailureReason: null,
-                                     FailureSourceUrl: null);
+                                     FailureSourceUrl: null,
+                                     FieldCompleteness.Of(sections));
         }
         catch (Exception exception) when (IsRunCancellation(exception, cancellationToken) is false)
         {

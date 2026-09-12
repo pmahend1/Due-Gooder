@@ -112,19 +112,7 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
         var pageSize = PageSizeFor(target);
         var sessionId = "dg" + Guid.NewGuid().ToString("N")[..12];
         using var session = fetcher.OpenSession();
-
-        var termBinding = await session.PostFormAsync(endpoints.TermSearch(),
-                                                      new Dictionary<string, string>
-                                                      {
-                                                          ["term"] = term.Key.TermCode,
-                                                          ["studyPath"] = "",
-                                                          ["studyPathText"] = "",
-                                                          ["startDatepicker"] = "",
-                                                          ["endDatepicker"] = "",
-                                                          ["uniqueSessionId"] = sessionId,
-                                                      },
-                                                      cancellationToken);
-        EnsureTermBound(termBinding);
+        await BindTermAsync(session, endpoints, term, sessionId, cancellationToken);
 
         try
         {
@@ -132,13 +120,24 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
             {
                 var url = endpoints.SearchResults(term.Key.TermCode, sessionId, pageOffset, pageSize);
                 var response = await session.GetAsync(url, cancellationToken);
-                var (totalCount, sections) = ReadSearchPage(response);
-                foreach (var payload in sections)
+                var page = ReadSearchPage(response);
+                if (page.Success is false)
+                {
+                    /* Banner answers success:false, the term's real totalCount and no sections when it can't return a record in
+                       the requested range. At MSU Denver (2026-09-12) one 100-section window failed on every try, even after
+                       binding the term again, while the windows around it succeeded, so retrying doesn't help. */
+                    throw new ConnectorException($"searchResults reported no success for sections {pageOffset + 1}-"
+                                                 + $"{Math.Min(pageOffset + pageSize, page.TotalCount)} of {page.TotalCount}, which "
+                                                 + "Banner does when it can't return a record in that range",
+                                                 response.Url);
+                }
+
+                foreach (var payload in page.Sections)
                 {
                     yield return new RawSection(term.Key, response.Url, response.RetrievedAt, payload);
                 }
 
-                if (sections.Count is 0 || pageOffset + pageSize >= totalCount)
+                if (page.Sections.Count is 0 || pageOffset + pageSize >= page.TotalCount)
                 {
                     break;
                 }
@@ -147,13 +146,7 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
         finally
         {
             // Clears the term binding so the next term searched on this server starts from a clean form.
-            await session.PostFormAsync(endpoints.ResetDataForm(),
-                                        new Dictionary<string, string>
-                                        {
-                                            ["resetCourses"] = "false",
-                                            ["resetSections"] = "true",
-                                        },
-                                        CancellationToken.None);
+            await ResetSearchFormAsync(session, endpoints, CancellationToken.None);
         }
     }
 
@@ -186,6 +179,37 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
             ? null
             : new Uri(candidate, path[..(start + 1 + BannerPathSegment.Length)] + "/");
     }
+
+    private static async Task BindTermAsync(IHttpSession session,
+                                            Banner9Endpoints endpoints,
+                                            Term term,
+                                            string sessionId,
+                                            CancellationToken cancellationToken)
+    {
+        var response = await session.PostFormAsync(endpoints.TermSearch(),
+                                                   new Dictionary<string, string>
+                                                   {
+                                                       ["term"] = term.Key.TermCode,
+                                                       ["studyPath"] = "",
+                                                       ["studyPathText"] = "",
+                                                       ["startDatepicker"] = "",
+                                                       ["endDatepicker"] = "",
+                                                       ["uniqueSessionId"] = sessionId,
+                                                   },
+                                                   cancellationToken);
+        EnsureTermBound(response);
+    }
+
+    private static Task<HttpFetchResult> ResetSearchFormAsync(IHttpSession session,
+                                                              Banner9Endpoints endpoints,
+                                                              CancellationToken cancellationToken) =>
+        session.PostFormAsync(endpoints.ResetDataForm(),
+                              new Dictionary<string, string>
+                              {
+                                  ["resetCourses"] = "false",
+                                  ["resetSections"] = "true",
+                              },
+                              cancellationToken);
 
     private static void EnsureTermBound(HttpFetchResult response)
     {
@@ -231,7 +255,7 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
         }
     }
 
-    private static (int TotalCount, List<string> Sections) ReadSearchPage(HttpFetchResult response)
+    private static (bool Success, int TotalCount, List<string> Sections) ReadSearchPage(HttpFetchResult response)
     {
         if (response.IsSuccess is false)
         {
@@ -242,13 +266,13 @@ public sealed class Banner9Connector(IHttpFetcher fetcher) : IConnector
         {
             using var document = JsonDocument.Parse(response.Body);
             var root = document.RootElement;
-            if (root.ValueKind is not JsonValueKind.Object || root.OptionalBool("success") is not true)
+            if (root.ValueKind is not JsonValueKind.Object)
             {
-                throw new ConnectorException("searchResults did not report success", response.Url);
+                throw new ConnectorException("searchResults did not return a JSON object", response.Url);
             }
 
             var sections = root.OptionalArray("data").Select(section => section.GetRawText()).ToList();
-            return (root.OptionalInt("totalCount") ?? 0, sections);
+            return (root.OptionalBool("success") is true, root.OptionalInt("totalCount") ?? 0, sections);
         }
         catch (JsonException exception)
         {

@@ -42,5 +42,8 @@ public sealed record SchoolRunResult
 
     public int RowsWritten => Terms.Sum(term => term.RowsWritten);
 
+    public FieldCompleteness Fields =>
+        Terms.Aggregate(FieldCompleteness.Empty, (total, term) => term.Fields is null ? total : total + term.Fields);
+
     #endregion State
 }

@@ -29,6 +29,12 @@ internal sealed class SectionRow
 
     public decimal? Credits { get; set; }
 
+    public decimal? CreditsMin { get; set; }
+
+    public decimal? CreditsMax { get; set; }
+
+    public string? CreditsRaw { get; set; }
+
     public string? InstructionalMethod { get; set; }
 
     public string? Campus { get; set; }
@@ -40,6 +46,12 @@ internal sealed class SectionRow
     public int? WaitlistCapacity { get; set; }
 
     public int? WaitlistCount { get; set; }
+
+    public string? CrossListGroup { get; set; }
+
+    public int? CrossListCapacity { get; set; }
+
+    public int? CrossListEnrolled { get; set; }
 
     public required string SourceUrl { get; set; }
 

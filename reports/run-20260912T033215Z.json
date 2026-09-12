@@ -45,7 +45,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "uiuc",
@@ -66,7 +83,8 @@
             "rowsWritten": 0,
             "duration": "00:00:01.9398086",
             "failureReason": "term/search redirected (HTTP 302), so class search needs a sign-in; only public data is collected",
-            "failureSourceUrl": "https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search\u0026mepCode=1UIUC"
+            "failureSourceUrl": "https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search\u0026mepCode=1UIUC",
+            "fields": null
           },
           {
             "termCode": "120265",
@@ -78,7 +96,8 @@
             "rowsWritten": 0,
             "duration": "00:00:01.9967517",
             "failureReason": "term/search redirected (HTTP 302), so class search needs a sign-in; only public data is collected",
-            "failureSourceUrl": "https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search\u0026mepCode=1UIUC"
+            "failureSourceUrl": "https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search\u0026mepCode=1UIUC",
+            "fields": null
           },
           {
             "termCode": "120261",
@@ -90,7 +109,8 @@
             "rowsWritten": 0,
             "duration": "00:00:02.0047381",
             "failureReason": "term/search redirected (HTTP 302), so class search needs a sign-in; only public data is collected",
-            "failureSourceUrl": "https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search\u0026mepCode=1UIUC"
+            "failureSourceUrl": "https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search\u0026mepCode=1UIUC",
+            "fields": null
           },
           {
             "termCode": "120260",
@@ -102,7 +122,8 @@
             "rowsWritten": 0,
             "duration": "00:00:01.9946121",
             "failureReason": "term/search redirected (HTTP 302), so class search needs a sign-in; only public data is collected",
-            "failureSourceUrl": "https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search\u0026mepCode=1UIUC"
+            "failureSourceUrl": "https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search\u0026mepCode=1UIUC",
+            "fields": null
           },
           {
             "termCode": "120258",
@@ -114,7 +135,8 @@
             "rowsWritten": 0,
             "duration": "00:00:02.0027617",
             "failureReason": "term/search redirected (HTTP 302), so class search needs a sign-in; only public data is collected",
-            "failureSourceUrl": "https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search\u0026mepCode=1UIUC"
+            "failureSourceUrl": "https://banner.apps.uillinois.edu/StudentRegistrationSSB/ssb/term/search?mode=search\u0026mepCode=1UIUC",
+            "fields": null
           }
         ],
         "requests": {
@@ -136,7 +158,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "sunyempire",
@@ -164,7 +203,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "oakland",
@@ -192,7 +248,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "uindy",
@@ -218,7 +291,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "wvu",
@@ -246,7 +336,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "kccd",
@@ -274,7 +381,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "starkstate",
@@ -295,7 +419,8 @@
             "rowsWritten": 5934,
             "duration": "00:00:26.2489318",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202710",
@@ -307,7 +432,8 @@
             "rowsWritten": 1182,
             "duration": "00:00:06.8319735",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202640",
@@ -319,7 +445,8 @@
             "rowsWritten": 5706,
             "duration": "00:00:21.6966227",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202620",
@@ -331,7 +458,8 @@
             "rowsWritten": 5893,
             "duration": "00:00:24.0839000",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202610",
@@ -343,7 +471,8 @@
             "rowsWritten": 1192,
             "duration": "00:00:07.6473960",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202540",
@@ -355,7 +484,8 @@
             "rowsWritten": 5780,
             "duration": "00:00:24.4326440",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202520",
@@ -367,7 +497,8 @@
             "rowsWritten": 6223,
             "duration": "00:00:26.6615204",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202510",
@@ -379,7 +510,8 @@
             "rowsWritten": 1150,
             "duration": "00:00:07.4065834",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202440",
@@ -391,7 +523,8 @@
             "rowsWritten": 5647,
             "duration": "00:00:21.9182198",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202420",
@@ -403,7 +536,8 @@
             "rowsWritten": 6130,
             "duration": "00:00:23.9607534",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202410",
@@ -415,7 +549,8 @@
             "rowsWritten": 1107,
             "duration": "00:00:07.3146569",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202345",
@@ -427,7 +562,8 @@
             "rowsWritten": 1,
             "duration": "00:00:05.9042512",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202340",
@@ -439,7 +575,8 @@
             "rowsWritten": 5797,
             "duration": "00:00:24.7983428",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202320",
@@ -451,7 +588,8 @@
             "rowsWritten": 6134,
             "duration": "00:00:25.2094080",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202310",
@@ -463,7 +601,8 @@
             "rowsWritten": 1168,
             "duration": "00:00:07.2430932",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202245",
@@ -475,7 +614,8 @@
             "rowsWritten": 1,
             "duration": "00:00:05.9100949",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202240",
@@ -487,7 +627,8 @@
             "rowsWritten": 5808,
             "duration": "00:00:25.0954062",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202220",
@@ -499,7 +640,8 @@
             "rowsWritten": 6215,
             "duration": "00:00:24.2490562",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202210",
@@ -511,7 +653,8 @@
             "rowsWritten": 1260,
             "duration": "00:00:08.7513085",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202140",
@@ -523,7 +666,8 @@
             "rowsWritten": 5788,
             "duration": "00:00:21.7643063",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202125",
@@ -535,7 +679,8 @@
             "rowsWritten": 1,
             "duration": "00:00:05.5185858",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202120",
@@ -547,7 +692,8 @@
             "rowsWritten": 6101,
             "duration": "00:00:25.1956203",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202115",
@@ -559,7 +705,8 @@
             "rowsWritten": 1,
             "duration": "00:00:05.5325641",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202110",
@@ -571,7 +718,8 @@
             "rowsWritten": 1175,
             "duration": "00:00:07.8873027",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -592,7 +740,24 @@
         "sections": 26164,
         "meetings": 29027,
         "extractionFailures": 0,
-        "rowsWritten": 85394
+        "rowsWritten": 85394,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "oakton",
@@ -620,7 +785,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "lehigh",
@@ -648,7 +830,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "odu",
@@ -676,7 +875,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "ctstate",
@@ -704,7 +920,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "tric",
@@ -732,7 +965,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "blinn",
@@ -753,7 +1003,8 @@
             "rowsWritten": 37,
             "duration": "00:00:06.1019329",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "502640",
@@ -765,7 +1016,8 @@
             "rowsWritten": 97,
             "duration": "00:00:06.8194083",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "502610",
@@ -777,7 +1029,8 @@
             "rowsWritten": 101,
             "duration": "00:00:09.3071935",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202710",
@@ -789,7 +1042,8 @@
             "rowsWritten": 7147,
             "duration": "00:03:09.6769920",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202640",
@@ -801,7 +1055,8 @@
             "rowsWritten": 534,
             "duration": "00:00:07.9168287",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202630",
@@ -813,7 +1068,8 @@
             "rowsWritten": 1087,
             "duration": "00:00:12.3674348",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202625",
@@ -825,7 +1081,8 @@
             "rowsWritten": 124,
             "duration": "00:00:05.9081637",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202620",
@@ -837,7 +1094,8 @@
             "rowsWritten": 6638,
             "duration": "00:01:04.8022462",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202615",
@@ -849,7 +1107,8 @@
             "rowsWritten": 241,
             "duration": "00:00:06.1893327",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -870,7 +1129,24 @@
         "sections": 5004,
         "meetings": 5821,
         "extractionFailures": 0,
-        "rowsWritten": 16006
+        "rowsWritten": 16006,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "ullafayette",
@@ -898,7 +1174,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "aum",
@@ -924,7 +1217,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "ucmerced",
@@ -952,7 +1262,24 @@
         "sections": 0,
         "meetings": 0,
         "extractionFailures": 0,
-        "rowsWritten": 0
+        "rowsWritten": 0,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "uidaho",
@@ -973,7 +1300,8 @@
             "rowsWritten": 10506,
             "duration": "00:00:45.8572009",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202610",
@@ -985,7 +1313,8 @@
             "rowsWritten": 13167,
             "duration": "00:01:01.4516283",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202600",
@@ -997,7 +1326,8 @@
             "rowsWritten": 2766,
             "duration": "00:00:14.4108388",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202520",
@@ -1009,7 +1339,8 @@
             "rowsWritten": 12561,
             "duration": "00:00:55.2119062",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202515",
@@ -1021,7 +1352,8 @@
             "rowsWritten": 31,
             "duration": "00:00:05.0089222",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202510",
@@ -1033,7 +1365,8 @@
             "rowsWritten": 12836,
             "duration": "00:00:58.6285190",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202500",
@@ -1045,7 +1378,8 @@
             "rowsWritten": 2763,
             "duration": "00:00:13.1588265",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202420",
@@ -1057,7 +1391,8 @@
             "rowsWritten": 13353,
             "duration": "00:00:59.2809592",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202415",
@@ -1069,7 +1404,8 @@
             "rowsWritten": 29,
             "duration": "00:00:04.9029154",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202410",
@@ -1081,7 +1417,8 @@
             "rowsWritten": 13639,
             "duration": "00:00:57.7998635",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202400",
@@ -1093,7 +1430,8 @@
             "rowsWritten": 3356,
             "duration": "00:00:15.7898297",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202320",
@@ -1105,7 +1443,8 @@
             "rowsWritten": 13497,
             "duration": "00:00:57.6534891",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202315",
@@ -1117,7 +1456,8 @@
             "rowsWritten": 58,
             "duration": "00:00:04.0818307",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202310",
@@ -1129,7 +1469,8 @@
             "rowsWritten": 13736,
             "duration": "00:00:59.0474840",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202300",
@@ -1141,7 +1482,8 @@
             "rowsWritten": 3514,
             "duration": "00:00:16.0837056",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202220",
@@ -1153,7 +1495,8 @@
             "rowsWritten": 13915,
             "duration": "00:00:58.7837620",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202215",
@@ -1165,7 +1508,8 @@
             "rowsWritten": 15,
             "duration": "00:00:04.9147139",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202210",
@@ -1177,7 +1521,8 @@
             "rowsWritten": 13904,
             "duration": "00:00:59.2247903",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202200",
@@ -1189,7 +1534,8 @@
             "rowsWritten": 3476,
             "duration": "00:00:15.9697778",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202120",
@@ -1201,7 +1547,8 @@
             "rowsWritten": 13273,
             "duration": "00:01:00.4849338",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202115",
@@ -1213,7 +1560,8 @@
             "rowsWritten": 13,
             "duration": "00:00:04.0707698",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202110",
@@ -1225,7 +1573,8 @@
             "rowsWritten": 13714,
             "duration": "00:01:00.0519724",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202100",
@@ -1237,7 +1586,8 @@
             "rowsWritten": 3652,
             "duration": "00:00:16.5434755",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202020",
@@ -1249,7 +1599,8 @@
             "rowsWritten": 13141,
             "duration": "00:00:57.8910980",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -1270,7 +1621,24 @@
         "sections": 59456,
         "meetings": 63197,
         "extractionFailures": 0,
-        "rowsWritten": 190915
+        "rowsWritten": 190915,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "samford",
@@ -1291,7 +1659,8 @@
             "rowsWritten": 7917,
             "duration": "00:00:32.0903199",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202650",
@@ -1303,7 +1672,8 @@
             "rowsWritten": 1649,
             "duration": "00:00:08.6226923",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202620",
@@ -1315,7 +1685,8 @@
             "rowsWritten": 7309,
             "duration": "00:00:29.5102084",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -1336,7 +1707,24 @@
         "sections": 5077,
         "meetings": 5032,
         "extractionFailures": 0,
-        "rowsWritten": 16875
+        "rowsWritten": 16875,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "msudenver",
@@ -1357,7 +1745,8 @@
             "rowsWritten": 10830,
             "duration": "00:01:28.1064728",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202640",
@@ -1369,7 +1758,8 @@
             "rowsWritten": 2071,
             "duration": "00:00:19.4781769",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202630",
@@ -1381,7 +1771,8 @@
             "rowsWritten": 10529,
             "duration": "00:01:24.0153120",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202550",
@@ -1393,7 +1784,8 @@
             "rowsWritten": 0,
             "duration": "00:00:55.2235894",
             "failureReason": "searchResults did not report success",
-            "failureSourceUrl": "https://ssb.msudenver.edu/StudentRegistrationSsb/ssb/searchResults/searchResults?txt_term=202550\u0026startDatepicker=\u0026endDatepicker=\u0026uniqueSessionId=dgf40e7d33f1e3\u0026pageOffset=2000\u0026pageMaxSize=500\u0026sortColumn=subjectDescription\u0026sortDirection=asc"
+            "failureSourceUrl": "https://ssb.msudenver.edu/StudentRegistrationSsb/ssb/searchResults/searchResults?txt_term=202550\u0026startDatepicker=\u0026endDatepicker=\u0026uniqueSessionId=dgf40e7d33f1e3\u0026pageOffset=2000\u0026pageMaxSize=500\u0026sortColumn=subjectDescription\u0026sortDirection=asc",
+            "fields": null
           },
           {
             "termCode": "202540",
@@ -1405,7 +1797,8 @@
             "rowsWritten": 2128,
             "duration": "00:00:20.6335104",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202530",
@@ -1417,7 +1810,8 @@
             "rowsWritten": 10287,
             "duration": "00:01:21.3765561",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202450",
@@ -1429,7 +1823,8 @@
             "rowsWritten": 10423,
             "duration": "00:01:23.8473568",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202440",
@@ -1441,7 +1836,8 @@
             "rowsWritten": 2090,
             "duration": "00:00:19.6136371",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202430",
@@ -1453,7 +1849,8 @@
             "rowsWritten": 10416,
             "duration": "00:01:22.7866019",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202350",
@@ -1465,7 +1862,8 @@
             "rowsWritten": 10475,
             "duration": "00:01:21.3920260",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202340",
@@ -1477,7 +1875,8 @@
             "rowsWritten": 0,
             "duration": "00:00:10.0214017",
             "failureReason": "searchResults did not report success",
-            "failureSourceUrl": "https://ssb.msudenver.edu/StudentRegistrationSsb/ssb/searchResults/searchResults?txt_term=202340\u0026startDatepicker=\u0026endDatepicker=\u0026uniqueSessionId=dg8c2fb1fcbcaa\u0026pageOffset=0\u0026pageMaxSize=500\u0026sortColumn=subjectDescription\u0026sortDirection=asc"
+            "failureSourceUrl": "https://ssb.msudenver.edu/StudentRegistrationSsb/ssb/searchResults/searchResults?txt_term=202340\u0026startDatepicker=\u0026endDatepicker=\u0026uniqueSessionId=dg8c2fb1fcbcaa\u0026pageOffset=0\u0026pageMaxSize=500\u0026sortColumn=subjectDescription\u0026sortDirection=asc",
+            "fields": null
           },
           {
             "termCode": "202330",
@@ -1489,7 +1888,8 @@
             "rowsWritten": 10370,
             "duration": "00:01:23.5474087",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202250",
@@ -1501,7 +1901,8 @@
             "rowsWritten": 10649,
             "duration": "00:01:25.2927496",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202240",
@@ -1513,7 +1914,8 @@
             "rowsWritten": 2254,
             "duration": "00:00:21.8255528",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202230",
@@ -1525,7 +1927,8 @@
             "rowsWritten": 10708,
             "duration": "00:01:26.3087774",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202150",
@@ -1537,7 +1940,8 @@
             "rowsWritten": 11190,
             "duration": "00:01:31.1261453",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202140",
@@ -1549,7 +1953,8 @@
             "rowsWritten": 2516,
             "duration": "00:00:24.1562451",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202130",
@@ -1561,7 +1966,8 @@
             "rowsWritten": 10633,
             "duration": "00:01:24.5355602",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202050",
@@ -1573,7 +1979,8 @@
             "rowsWritten": 10516,
             "duration": "00:01:23.7053651",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202040",
@@ -1585,7 +1992,8 @@
             "rowsWritten": 2339,
             "duration": "00:00:18.9718468",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202030",
@@ -1597,7 +2005,8 @@
             "rowsWritten": 11754,
             "duration": "00:01:34.2664828",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201950",
@@ -1609,7 +2018,8 @@
             "rowsWritten": 11994,
             "duration": "00:01:32.4287312",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201940",
@@ -1621,7 +2031,8 @@
             "rowsWritten": 2734,
             "duration": "00:00:25.1942804",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201930",
@@ -1633,7 +2044,8 @@
             "rowsWritten": 11834,
             "duration": "00:01:29.3088023",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -1654,7 +2066,24 @@
         "sections": 57602,
         "meetings": 62854,
         "extractionFailures": 0,
-        "rowsWritten": 178740
+        "rowsWritten": 178740,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "okstate",
@@ -1675,7 +2104,8 @@
             "rowsWritten": 28296,
             "duration": "00:01:07.1742317",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202640",
@@ -1687,7 +2117,8 @@
             "rowsWritten": 10713,
             "duration": "00:00:24.8647627",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202620",
@@ -1699,7 +2130,8 @@
             "rowsWritten": 30744,
             "duration": "00:01:17.4594259",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202560",
@@ -1711,7 +2143,8 @@
             "rowsWritten": 31838,
             "duration": "00:01:21.9207961",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202540",
@@ -1723,7 +2156,8 @@
             "rowsWritten": 11008,
             "duration": "00:00:23.0780618",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202520",
@@ -1735,7 +2169,8 @@
             "rowsWritten": 31023,
             "duration": "00:01:18.8509616",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202460",
@@ -1747,7 +2182,8 @@
             "rowsWritten": 32553,
             "duration": "00:01:25.9864119",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202440",
@@ -1759,7 +2195,8 @@
             "rowsWritten": 10675,
             "duration": "00:00:22.0068745",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202420",
@@ -1771,7 +2208,8 @@
             "rowsWritten": 30804,
             "duration": "00:01:18.5810524",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202360",
@@ -1783,7 +2221,8 @@
             "rowsWritten": 33101,
             "duration": "00:01:27.0392621",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202340",
@@ -1795,7 +2234,8 @@
             "rowsWritten": 10070,
             "duration": "00:00:20.5343185",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202320",
@@ -1807,7 +2247,8 @@
             "rowsWritten": 31510,
             "duration": "00:01:21.2229513",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202260",
@@ -1819,7 +2260,8 @@
             "rowsWritten": 32932,
             "duration": "00:01:27.1580680",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202240",
@@ -1831,7 +2273,8 @@
             "rowsWritten": 9843,
             "duration": "00:00:20.4799114",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202220",
@@ -1843,7 +2286,8 @@
             "rowsWritten": 32750,
             "duration": "00:01:34.6034106",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202160",
@@ -1855,7 +2299,8 @@
             "rowsWritten": 32998,
             "duration": "00:01:27.5785292",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202140",
@@ -1867,7 +2312,8 @@
             "rowsWritten": 9447,
             "duration": "00:00:21.2111197",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202120",
@@ -1879,7 +2325,8 @@
             "rowsWritten": 32094,
             "duration": "00:01:23.0730828",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202060",
@@ -1891,7 +2338,8 @@
             "rowsWritten": 32244,
             "duration": "00:01:21.4328011",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202040",
@@ -1903,7 +2351,8 @@
             "rowsWritten": 9443,
             "duration": "00:00:20.7903597",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202020",
@@ -1915,7 +2364,8 @@
             "rowsWritten": 31405,
             "duration": "00:01:23.3063387",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201960",
@@ -1927,7 +2377,8 @@
             "rowsWritten": 32832,
             "duration": "00:01:27.7701348",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201940",
@@ -1939,7 +2390,8 @@
             "rowsWritten": 9139,
             "duration": "00:00:21.4359279",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201920",
@@ -1951,7 +2403,8 @@
             "rowsWritten": 31517,
             "duration": "00:01:21.7542184",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -1972,7 +2425,24 @@
         "sections": 161796,
         "meetings": 245255,
         "extractionFailures": 0,
-        "rowsWritten": 588979
+        "rowsWritten": 588979,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "ou",
@@ -1993,7 +2463,8 @@
             "rowsWritten": 1,
             "duration": "00:00:05.9942496",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202610",
@@ -2005,7 +2476,8 @@
             "rowsWritten": 39424,
             "duration": "00:02:03.2729012",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202560",
@@ -2017,7 +2489,8 @@
             "rowsWritten": 4,
             "duration": "00:00:04.0614535",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202530",
@@ -2029,7 +2502,8 @@
             "rowsWritten": 8295,
             "duration": "00:00:52.0422340",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202520",
@@ -2041,7 +2515,8 @@
             "rowsWritten": 38245,
             "duration": "00:01:50.0652176",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202510",
@@ -2053,7 +2528,8 @@
             "rowsWritten": 39361,
             "duration": "00:01:53.4735033",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202460",
@@ -2065,7 +2541,8 @@
             "rowsWritten": 4,
             "duration": "00:00:05.5644005",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202450",
@@ -2077,7 +2554,8 @@
             "rowsWritten": 1,
             "duration": "00:00:04.4973113",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202430",
@@ -2089,7 +2567,8 @@
             "rowsWritten": 7957,
             "duration": "00:00:25.8691347",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202420",
@@ -2101,7 +2580,8 @@
             "rowsWritten": 37770,
             "duration": "00:01:32.7742029",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202410",
@@ -2113,7 +2593,8 @@
             "rowsWritten": 39263,
             "duration": "00:02:35.6126391",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202360",
@@ -2125,7 +2606,8 @@
             "rowsWritten": 1,
             "duration": "00:00:04.0596139",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202350",
@@ -2137,7 +2619,8 @@
             "rowsWritten": 6,
             "duration": "00:00:06.0055335",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202330",
@@ -2149,7 +2632,8 @@
             "rowsWritten": 7847,
             "duration": "00:00:33.7946116",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202321",
@@ -2161,7 +2645,8 @@
             "rowsWritten": 4,
             "duration": "00:00:05.9878428",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202320",
@@ -2173,7 +2658,8 @@
             "rowsWritten": 37921,
             "duration": "00:02:25.5215486",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202311",
@@ -2185,7 +2671,8 @@
             "rowsWritten": 7,
             "duration": "00:00:04.1003644",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202310",
@@ -2197,7 +2684,8 @@
             "rowsWritten": 39216,
             "duration": "00:01:48.5081527",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202260",
@@ -2209,7 +2697,8 @@
             "rowsWritten": 7,
             "duration": "00:00:04.0705531",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202250",
@@ -2221,7 +2710,8 @@
             "rowsWritten": 6,
             "duration": "00:00:08.1515071",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202231",
@@ -2233,7 +2723,8 @@
             "rowsWritten": 72,
             "duration": "00:00:04.0710449",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202230",
@@ -2245,7 +2736,8 @@
             "rowsWritten": 7772,
             "duration": "00:00:33.0740743",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202221",
@@ -2257,7 +2749,8 @@
             "rowsWritten": 117,
             "duration": "00:00:05.3692866",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202220",
@@ -2269,7 +2762,8 @@
             "rowsWritten": 37445,
             "duration": "00:02:04.9092945",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -2289,7 +2783,24 @@
         "sections": 106215,
         "meetings": 130837,
         "extractionFailures": 0,
-        "rowsWritten": 340746
+        "rowsWritten": 340746,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "cofc",
@@ -2310,7 +2821,8 @@
             "rowsWritten": 10381,
             "duration": "00:00:27.3460290",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202630",
@@ -2322,7 +2834,8 @@
             "rowsWritten": 2182,
             "duration": "00:00:08.3776922",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202620",
@@ -2334,7 +2847,8 @@
             "rowsWritten": 9798,
             "duration": "00:00:26.8103399",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202610",
@@ -2346,7 +2860,8 @@
             "rowsWritten": 9849,
             "duration": "00:00:30.2996024",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202530",
@@ -2358,7 +2873,8 @@
             "rowsWritten": 2123,
             "duration": "00:00:07.7081375",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202520",
@@ -2370,7 +2886,8 @@
             "rowsWritten": 9632,
             "duration": "00:00:26.6394584",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202510",
@@ -2382,7 +2899,8 @@
             "rowsWritten": 9906,
             "duration": "00:00:26.2849871",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202430",
@@ -2394,7 +2912,8 @@
             "rowsWritten": 2069,
             "duration": "00:00:08.5262385",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202420",
@@ -2406,7 +2925,8 @@
             "rowsWritten": 9592,
             "duration": "00:00:25.7995947",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202410",
@@ -2418,7 +2938,8 @@
             "rowsWritten": 9530,
             "duration": "00:00:25.3188955",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202330",
@@ -2430,7 +2951,8 @@
             "rowsWritten": 2096,
             "duration": "00:00:08.2494990",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202320",
@@ -2442,7 +2964,8 @@
             "rowsWritten": 9195,
             "duration": "00:00:24.0003230",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202310",
@@ -2454,7 +2977,8 @@
             "rowsWritten": 9455,
             "duration": "00:00:26.3129577",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202230",
@@ -2466,7 +2990,8 @@
             "rowsWritten": 2042,
             "duration": "00:00:09.0174736",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202220",
@@ -2478,7 +3003,8 @@
             "rowsWritten": 9127,
             "duration": "00:00:24.6931839",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202210",
@@ -2490,7 +3016,8 @@
             "rowsWritten": 9527,
             "duration": "00:00:25.7386234",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202130",
@@ -2502,7 +3029,8 @@
             "rowsWritten": 2177,
             "duration": "00:00:09.0303849",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202120",
@@ -2514,7 +3042,8 @@
             "rowsWritten": 9460,
             "duration": "00:00:26.9249479",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202110",
@@ -2526,7 +3055,8 @@
             "rowsWritten": 9299,
             "duration": "00:00:26.2148558",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202030",
@@ -2538,7 +3068,8 @@
             "rowsWritten": 1831,
             "duration": "00:00:08.8017055",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202020",
@@ -2550,7 +3081,8 @@
             "rowsWritten": 9723,
             "duration": "00:00:27.2119274",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202010",
@@ -2562,7 +3094,8 @@
             "rowsWritten": 9366,
             "duration": "00:00:26.2040001",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201930",
@@ -2574,7 +3107,8 @@
             "rowsWritten": 2121,
             "duration": "00:00:08.6562540",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201920",
@@ -2586,7 +3120,8 @@
             "rowsWritten": 9848,
             "duration": "00:00:25.9336275",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -2607,7 +3142,24 @@
         "sections": 54597,
         "meetings": 58362,
         "extractionFailures": 0,
-        "rowsWritten": 170329
+        "rowsWritten": 170329,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "neu",
@@ -2628,7 +3180,8 @@
             "rowsWritten": 19861,
             "duration": "00:01:45.3581684",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202655",
@@ -2640,7 +3193,8 @@
             "rowsWritten": 296,
             "duration": "00:00:04.2019971",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202650",
@@ -2652,7 +3206,8 @@
             "rowsWritten": 7068,
             "duration": "00:00:56.3708408",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202635",
@@ -2664,7 +3219,8 @@
             "rowsWritten": 1130,
             "duration": "00:00:09.3893404",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202630",
@@ -2676,7 +3232,8 @@
             "rowsWritten": 15141,
             "duration": "00:01:47.7083611",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202625",
@@ -2688,7 +3245,8 @@
             "rowsWritten": 1346,
             "duration": "00:00:13.6033511",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202615",
@@ -2700,7 +3258,8 @@
             "rowsWritten": 1692,
             "duration": "00:00:12.4378001",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202610",
@@ -2712,7 +3271,8 @@
             "rowsWritten": 16307,
             "duration": "00:01:46.4435861",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202560",
@@ -2724,7 +3284,8 @@
             "rowsWritten": 1405,
             "duration": "00:00:20.1535355",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202555",
@@ -2736,7 +3297,8 @@
             "rowsWritten": 389,
             "duration": "00:00:06.0526517",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202554",
@@ -2748,7 +3310,8 @@
             "rowsWritten": 435,
             "duration": "00:00:07.1538724",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202552",
@@ -2760,7 +3323,8 @@
             "rowsWritten": 196,
             "duration": "00:00:05.9688845",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202550",
@@ -2772,7 +3336,8 @@
             "rowsWritten": 3615,
             "duration": "00:00:20.9323473",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202540",
@@ -2784,7 +3349,8 @@
             "rowsWritten": 2081,
             "duration": "00:00:19.4453689",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202535",
@@ -2796,7 +3362,8 @@
             "rowsWritten": 1559,
             "duration": "00:00:15.1111675",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202534",
@@ -2808,7 +3375,8 @@
             "rowsWritten": 710,
             "duration": "00:00:09.4880541",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202532",
@@ -2820,7 +3388,8 @@
             "rowsWritten": 386,
             "duration": "00:00:05.9627043",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202530",
@@ -2832,7 +3401,8 @@
             "rowsWritten": 14528,
             "duration": "00:01:34.3636807",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202525",
@@ -2844,7 +3414,8 @@
             "rowsWritten": 1952,
             "duration": "00:00:12.7476551",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202515",
@@ -2856,7 +3427,8 @@
             "rowsWritten": 1983,
             "duration": "00:00:18.0427513",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202514",
@@ -2868,7 +3440,8 @@
             "rowsWritten": 698,
             "duration": "00:00:07.6189085",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202512",
@@ -2880,7 +3453,8 @@
             "rowsWritten": 424,
             "duration": "00:00:05.9808253",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202510",
@@ -2892,7 +3466,8 @@
             "rowsWritten": 15136,
             "duration": "00:01:37.5076315",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202460",
@@ -2904,7 +3479,8 @@
             "rowsWritten": 1407,
             "duration": "00:00:10.3375450",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -2925,7 +3501,24 @@
         "sections": 51540,
         "meetings": 58181,
         "extractionFailures": 0,
-        "rowsWritten": 109745
+        "rowsWritten": 109745,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "ucr",
@@ -2946,7 +3539,8 @@
             "rowsWritten": 32969,
             "duration": "00:01:28.4353073",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202630",
@@ -2958,7 +3552,8 @@
             "rowsWritten": 5907,
             "duration": "00:00:19.8534231",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202620",
@@ -2970,7 +3565,8 @@
             "rowsWritten": 34519,
             "duration": "00:01:38.0957934",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202610",
@@ -2982,7 +3578,8 @@
             "rowsWritten": 46151,
             "duration": "00:02:06.8326442",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202540",
@@ -2994,7 +3591,8 @@
             "rowsWritten": 36438,
             "duration": "00:01:40.7039293",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202530",
@@ -3006,7 +3604,8 @@
             "rowsWritten": 5619,
             "duration": "00:00:18.3299895",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202520",
@@ -3018,7 +3617,8 @@
             "rowsWritten": 34086,
             "duration": "00:01:42.8753603",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202510",
@@ -3030,7 +3630,8 @@
             "rowsWritten": 36092,
             "duration": "00:01:37.2265689",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202440",
@@ -3042,7 +3643,8 @@
             "rowsWritten": 35039,
             "duration": "00:01:33.3738269",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202430",
@@ -3054,7 +3656,8 @@
             "rowsWritten": 4925,
             "duration": "00:00:16.4532978",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202420",
@@ -3066,7 +3669,8 @@
             "rowsWritten": 32689,
             "duration": "00:01:30.8420709",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202410",
@@ -3078,7 +3682,8 @@
             "rowsWritten": 33808,
             "duration": "00:01:31.3501855",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202340",
@@ -3090,7 +3695,8 @@
             "rowsWritten": 34073,
             "duration": "00:01:28.6730344",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202330",
@@ -3102,7 +3708,8 @@
             "rowsWritten": 4786,
             "duration": "00:00:14.4492061",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202320",
@@ -3114,7 +3721,8 @@
             "rowsWritten": 31930,
             "duration": "00:01:31.2797473",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202310",
@@ -3126,7 +3734,8 @@
             "rowsWritten": 33475,
             "duration": "00:01:27.1387289",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202240",
@@ -3138,7 +3747,8 @@
             "rowsWritten": 33640,
             "duration": "00:01:29.7679495",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202230",
@@ -3150,7 +3760,8 @@
             "rowsWritten": 4847,
             "duration": "00:00:14.7532356",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202220",
@@ -3162,7 +3773,8 @@
             "rowsWritten": 31629,
             "duration": "00:01:28.1206819",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202210",
@@ -3174,7 +3786,8 @@
             "rowsWritten": 33237,
             "duration": "00:01:29.1783345",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202140",
@@ -3186,7 +3799,8 @@
             "rowsWritten": 33034,
             "duration": "00:01:25.8712227",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202130",
@@ -3198,7 +3812,8 @@
             "rowsWritten": 4554,
             "duration": "00:00:13.8443496",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202120",
@@ -3210,7 +3825,8 @@
             "rowsWritten": 31175,
             "duration": "00:01:35.6920118",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202110",
@@ -3222,7 +3838,8 @@
             "rowsWritten": 31474,
             "duration": "00:01:39.2255814",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -3243,7 +3860,24 @@
         "sections": 198286,
         "meetings": 198277,
         "extractionFailures": 0,
-        "rowsWritten": 646096
+        "rowsWritten": 646096,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "fhda",
@@ -3264,7 +3898,8 @@
             "rowsWritten": 5222,
             "duration": "00:00:29.4225888",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202741",
@@ -3276,7 +3911,8 @@
             "rowsWritten": 3695,
             "duration": "00:00:14.7505496",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202732",
@@ -3288,7 +3924,8 @@
             "rowsWritten": 5336,
             "duration": "00:00:29.0088424",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202731",
@@ -3300,7 +3937,8 @@
             "rowsWritten": 4067,
             "duration": "00:00:16.8166249",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202722",
@@ -3312,7 +3950,8 @@
             "rowsWritten": 5871,
             "duration": "00:00:19.2216747",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202721",
@@ -3324,7 +3963,8 @@
             "rowsWritten": 4037,
             "duration": "00:00:15.6402784",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202712",
@@ -3336,7 +3976,8 @@
             "rowsWritten": 2004,
             "duration": "00:00:10.2178738",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202711",
@@ -3348,7 +3989,8 @@
             "rowsWritten": 1814,
             "duration": "00:00:11.1131386",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202642",
@@ -3360,7 +4002,8 @@
             "rowsWritten": 5336,
             "duration": "00:00:21.3478016",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202641",
@@ -3372,7 +4015,8 @@
             "rowsWritten": 3788,
             "duration": "00:00:15.4806686",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202632",
@@ -3384,7 +4028,8 @@
             "rowsWritten": 5580,
             "duration": "00:00:18.7581319",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202631",
@@ -3396,7 +4041,8 @@
             "rowsWritten": 4158,
             "duration": "00:00:14.8516447",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202622",
@@ -3408,7 +4054,8 @@
             "rowsWritten": 5966,
             "duration": "00:00:19.7804280",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202621",
@@ -3420,7 +4067,8 @@
             "rowsWritten": 4018,
             "duration": "00:00:14.8726129",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202612",
@@ -3432,7 +4080,8 @@
             "rowsWritten": 2199,
             "duration": "00:00:10.4845504",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202611",
@@ -3444,7 +4093,8 @@
             "rowsWritten": 1797,
             "duration": "00:00:10.1874139",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202542",
@@ -3456,7 +4106,8 @@
             "rowsWritten": 5358,
             "duration": "00:00:20.6949382",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202541",
@@ -3468,7 +4119,8 @@
             "rowsWritten": 3667,
             "duration": "00:00:15.6384324",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202532",
@@ -3480,7 +4132,8 @@
             "rowsWritten": 5574,
             "duration": "00:00:24.8297621",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202531",
@@ -3492,7 +4145,8 @@
             "rowsWritten": 4045,
             "duration": "00:00:13.8643892",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202522",
@@ -3504,7 +4158,8 @@
             "rowsWritten": 5934,
             "duration": "00:00:22.1007903",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202521",
@@ -3516,7 +4171,8 @@
             "rowsWritten": 3740,
             "duration": "00:00:15.4070651",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202512",
@@ -3528,7 +4184,8 @@
             "rowsWritten": 2192,
             "duration": "00:00:12.8342336",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202511",
@@ -3540,7 +4197,8 @@
             "rowsWritten": 1629,
             "duration": "00:00:08.7079344",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -3561,7 +4219,24 @@
         "sections": 27597,
         "meetings": 40634,
         "extractionFailures": 0,
-        "rowsWritten": 97027
+        "rowsWritten": 97027,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "montgomery",
@@ -3582,7 +4257,8 @@
             "rowsWritten": 6946,
             "duration": "00:00:19.6227934",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202824",
@@ -3594,7 +4270,8 @@
             "rowsWritten": 369,
             "duration": "00:00:06.0367427",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202820",
@@ -3606,7 +4283,8 @@
             "rowsWritten": 7520,
             "duration": "00:00:22.2159988",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202730",
@@ -3618,7 +4296,8 @@
             "rowsWritten": 8153,
             "duration": "00:00:21.9138491",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202724",
@@ -3630,7 +4309,8 @@
             "rowsWritten": 460,
             "duration": "00:00:05.2901316",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202720",
@@ -3642,7 +4322,8 @@
             "rowsWritten": 15264,
             "duration": "00:00:38.4474794",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202710",
@@ -3654,7 +4335,8 @@
             "rowsWritten": 2855,
             "duration": "00:00:07.9805446",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202640",
@@ -3666,7 +4348,8 @@
             "rowsWritten": 2619,
             "duration": "00:00:11.4383613",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -3687,7 +4370,24 @@
         "sections": 16745,
         "meetings": 18774,
         "extractionFailures": 0,
-        "rowsWritten": 44186
+        "rowsWritten": 44186,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "gmu",
@@ -3708,7 +4408,8 @@
             "rowsWritten": 21377,
             "duration": "00:01:41.8655766",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202640",
@@ -3720,7 +4421,8 @@
             "rowsWritten": 4711,
             "duration": "00:00:29.9515105",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202610",
@@ -3732,7 +4434,8 @@
             "rowsWritten": 21291,
             "duration": "00:01:42.6384382",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202570",
@@ -3744,7 +4447,8 @@
             "rowsWritten": 21398,
             "duration": "00:01:40.7232213",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202540",
@@ -3756,7 +4460,8 @@
             "rowsWritten": 4668,
             "duration": "00:00:30.6026177",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202510",
@@ -3768,7 +4473,8 @@
             "rowsWritten": 20801,
             "duration": "00:01:44.6865651",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202470",
@@ -3780,7 +4486,8 @@
             "rowsWritten": 20853,
             "duration": "00:01:47.6738988",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202440",
@@ -3792,7 +4499,8 @@
             "rowsWritten": 4390,
             "duration": "00:00:25.2775328",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202410",
@@ -3804,7 +4512,8 @@
             "rowsWritten": 20294,
             "duration": "00:01:32.0905952",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202370",
@@ -3816,7 +4525,8 @@
             "rowsWritten": 20545,
             "duration": "00:01:29.9296316",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202340",
@@ -3828,7 +4538,8 @@
             "rowsWritten": 4394,
             "duration": "00:00:24.4756580",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202310",
@@ -3840,7 +4551,8 @@
             "rowsWritten": 20252,
             "duration": "00:01:34.4566019",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202270",
@@ -3852,7 +4564,8 @@
             "rowsWritten": 20931,
             "duration": "00:01:32.3087034",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202240",
@@ -3864,7 +4577,8 @@
             "rowsWritten": 4564,
             "duration": "00:00:26.4902951",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202210",
@@ -3876,7 +4590,8 @@
             "rowsWritten": 20527,
             "duration": "00:01:25.9971919",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202170",
@@ -3888,7 +4603,8 @@
             "rowsWritten": 21287,
             "duration": "00:01:31.2485267",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202140",
@@ -3900,7 +4616,8 @@
             "rowsWritten": 4465,
             "duration": "00:00:26.2338312",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202110",
@@ -3912,7 +4629,8 @@
             "rowsWritten": 20875,
             "duration": "00:01:30.7352602",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202070",
@@ -3924,7 +4642,8 @@
             "rowsWritten": 20571,
             "duration": "00:01:33.4589550",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202040",
@@ -3936,7 +4655,8 @@
             "rowsWritten": 4338,
             "duration": "00:00:26.0625018",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202010",
@@ -3948,7 +4668,8 @@
             "rowsWritten": 19300,
             "duration": "00:01:17.8649134",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202000",
@@ -3960,7 +4681,8 @@
             "rowsWritten": 1,
             "duration": "00:00:04.1302594",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201970",
@@ -3972,7 +4694,8 @@
             "rowsWritten": 19073,
             "duration": "00:01:21.8839303",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201940",
@@ -3984,7 +4707,8 @@
             "rowsWritten": 4272,
             "duration": "00:00:23.0049751",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -4005,7 +4729,24 @@
         "sections": 107817,
         "meetings": 122824,
         "extractionFailures": 0,
-        "rowsWritten": 345178
+        "rowsWritten": 345178,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "temple",
@@ -4026,7 +4767,8 @@
             "rowsWritten": 30359,
             "duration": "00:04:09.8773920",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202626",
@@ -4038,7 +4780,8 @@
             "rowsWritten": 1410,
             "duration": "00:00:36.5502473",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202620",
@@ -4050,7 +4793,8 @@
             "rowsWritten": 5963,
             "duration": "00:00:39.8646667",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202603",
@@ -4062,7 +4806,8 @@
             "rowsWritten": 30397,
             "duration": "00:03:36.9221145",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202536",
@@ -4074,7 +4819,8 @@
             "rowsWritten": 31135,
             "duration": "00:04:00.2393152",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202526",
@@ -4086,7 +4832,8 @@
             "rowsWritten": 1432,
             "duration": "00:00:36.3041626",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202520",
@@ -4098,7 +4845,8 @@
             "rowsWritten": 6291,
             "duration": "00:01:10.1255140",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202503",
@@ -4110,7 +4858,8 @@
             "rowsWritten": 31079,
             "duration": "00:03:50.3759487",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202436",
@@ -4122,7 +4871,8 @@
             "rowsWritten": 31155,
             "duration": "00:03:07.4759983",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202426",
@@ -4134,7 +4884,8 @@
             "rowsWritten": 1681,
             "duration": "00:00:31.2800229",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202420",
@@ -4146,7 +4897,8 @@
             "rowsWritten": 5857,
             "duration": "00:00:37.4397819",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202403",
@@ -4158,7 +4910,8 @@
             "rowsWritten": 30806,
             "duration": "00:05:14.1900206",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202336",
@@ -4170,7 +4923,8 @@
             "rowsWritten": 31076,
             "duration": "00:04:45.4215231",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202326",
@@ -4182,7 +4936,8 @@
             "rowsWritten": 1872,
             "duration": "00:00:16.4473245",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202320",
@@ -4194,7 +4949,8 @@
             "rowsWritten": 6014,
             "duration": "00:00:40.3189713",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202303",
@@ -4206,7 +4962,8 @@
             "rowsWritten": 32237,
             "duration": "00:04:12.0697370",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202236",
@@ -4218,7 +4975,8 @@
             "rowsWritten": 32649,
             "duration": "00:03:46.7050602",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202226",
@@ -4230,7 +4988,8 @@
             "rowsWritten": 2234,
             "duration": "00:00:17.0717862",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202220",
@@ -4242,7 +5001,8 @@
             "rowsWritten": 6152,
             "duration": "00:00:42.9986737",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202203",
@@ -4254,7 +5014,8 @@
             "rowsWritten": 33404,
             "duration": "00:05:38.4798535",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202136",
@@ -4266,7 +5027,8 @@
             "rowsWritten": 34774,
             "duration": "00:04:17.9901513",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202126",
@@ -4278,7 +5040,8 @@
             "rowsWritten": 2645,
             "duration": "00:00:35.4363716",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202120",
@@ -4290,7 +5053,8 @@
             "rowsWritten": 6165,
             "duration": "00:00:39.4909559",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202103",
@@ -4302,7 +5066,8 @@
             "rowsWritten": 34579,
             "duration": "00:05:50.8663283",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -4323,7 +5088,24 @@
         "sections": 129344,
         "meetings": 154500,
         "extractionFailures": 0,
-        "rowsWritten": 431366
+        "rowsWritten": 431366,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "ccsf",
@@ -4344,7 +5126,8 @@
             "rowsWritten": 966,
             "duration": "00:00:06.0625687",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202670",
@@ -4356,7 +5139,8 @@
             "rowsWritten": 6555,
             "duration": "00:00:16.7363535",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202651",
@@ -4368,7 +5152,8 @@
             "rowsWritten": 483,
             "duration": "00:00:05.4077393",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202650",
@@ -4380,7 +5165,8 @@
             "rowsWritten": 1005,
             "duration": "00:00:06.7550539",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202631",
@@ -4392,7 +5178,8 @@
             "rowsWritten": 1263,
             "duration": "00:00:05.5035879",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202630",
@@ -4404,7 +5191,8 @@
             "rowsWritten": 6839,
             "duration": "00:00:16.3604580",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202571",
@@ -4416,7 +5204,8 @@
             "rowsWritten": 1031,
             "duration": "00:00:06.0590333",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202570",
@@ -4428,7 +5217,8 @@
             "rowsWritten": 6512,
             "duration": "00:00:17.3354353",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202551",
@@ -4440,7 +5230,8 @@
             "rowsWritten": 515,
             "duration": "00:00:04.1234145",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202550",
@@ -4452,7 +5243,8 @@
             "rowsWritten": 980,
             "duration": "00:00:06.0375551",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202531",
@@ -4464,7 +5256,8 @@
             "rowsWritten": 1055,
             "duration": "00:00:06.0102717",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202530",
@@ -4476,7 +5269,8 @@
             "rowsWritten": 6600,
             "duration": "00:00:17.4870910",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202471",
@@ -4488,7 +5282,8 @@
             "rowsWritten": 1130,
             "duration": "00:00:04.1604691",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202470",
@@ -4500,7 +5295,8 @@
             "rowsWritten": 6375,
             "duration": "00:00:15.4122737",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202451",
@@ -4512,7 +5308,8 @@
             "rowsWritten": 480,
             "duration": "00:00:07.2022410",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202450",
@@ -4524,7 +5321,8 @@
             "rowsWritten": 1021,
             "duration": "00:00:05.6125210",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202431",
@@ -4536,7 +5334,8 @@
             "rowsWritten": 943,
             "duration": "00:00:04.8268963",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202430",
@@ -4548,7 +5347,8 @@
             "rowsWritten": 6569,
             "duration": "00:00:15.7328258",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202371",
@@ -4560,7 +5360,8 @@
             "rowsWritten": 1038,
             "duration": "00:00:05.1562150",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202370",
@@ -4572,7 +5373,8 @@
             "rowsWritten": 6251,
             "duration": "00:00:14.8281133",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202351",
@@ -4584,7 +5386,8 @@
             "rowsWritten": 496,
             "duration": "00:00:05.5745557",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202350",
@@ -4596,7 +5399,8 @@
             "rowsWritten": 965,
             "duration": "00:00:06.0393430",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202331",
@@ -4608,7 +5412,8 @@
             "rowsWritten": 858,
             "duration": "00:00:05.9931878",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202330",
@@ -4620,7 +5425,8 @@
             "rowsWritten": 6223,
             "duration": "00:00:14.8465559",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -4641,7 +5447,24 @@
         "sections": 18557,
         "meetings": 27458,
         "extractionFailures": 0,
-        "rowsWritten": 66153
+        "rowsWritten": 66153,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "uncc",
@@ -4662,7 +5485,8 @@
             "rowsWritten": 18064,
             "duration": "00:01:49.7219460",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202660",
@@ -4674,7 +5498,8 @@
             "rowsWritten": 5019,
             "duration": "00:00:26.5623216",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202610",
@@ -4686,7 +5511,8 @@
             "rowsWritten": 17610,
             "duration": "00:01:42.1078203",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202580",
@@ -4698,7 +5524,8 @@
             "rowsWritten": 17737,
             "duration": "00:01:43.8913432",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202560",
@@ -4710,7 +5537,8 @@
             "rowsWritten": 5830,
             "duration": "00:00:33.8989871",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202510",
@@ -4722,7 +5550,8 @@
             "rowsWritten": 17209,
             "duration": "00:01:40.9076301",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202480",
@@ -4734,7 +5563,8 @@
             "rowsWritten": 17488,
             "duration": "00:01:42.8450937",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202460",
@@ -4746,7 +5576,8 @@
             "rowsWritten": 5401,
             "duration": "00:00:29.6678773",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202410",
@@ -4758,7 +5589,8 @@
             "rowsWritten": 17299,
             "duration": "00:01:41.0713162",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202380",
@@ -4770,7 +5602,8 @@
             "rowsWritten": 17679,
             "duration": "00:01:43.3467957",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202360",
@@ -4782,7 +5615,8 @@
             "rowsWritten": 5329,
             "duration": "00:00:30.9639019",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202310",
@@ -4794,7 +5628,8 @@
             "rowsWritten": 16496,
             "duration": "00:01:37.4916307",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202280",
@@ -4806,7 +5641,8 @@
             "rowsWritten": 16670,
             "duration": "00:01:42.6620148",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202260",
@@ -4818,7 +5654,8 @@
             "rowsWritten": 4652,
             "duration": "00:00:28.1411095",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202210",
@@ -4830,7 +5667,8 @@
             "rowsWritten": 15963,
             "duration": "00:01:34.6953076",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202180",
@@ -4842,7 +5680,8 @@
             "rowsWritten": 16520,
             "duration": "00:01:36.5164494",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202160",
@@ -4854,7 +5693,8 @@
             "rowsWritten": 4490,
             "duration": "00:00:23.6692210",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202110",
@@ -4866,7 +5706,8 @@
             "rowsWritten": 16582,
             "duration": "00:01:33.7073959",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202080",
@@ -4878,7 +5719,8 @@
             "rowsWritten": 19452,
             "duration": "00:01:55.1117061",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202060",
@@ -4890,7 +5732,8 @@
             "rowsWritten": 4205,
             "duration": "00:00:23.3769060",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202010",
@@ -4902,7 +5745,8 @@
             "rowsWritten": 16125,
             "duration": "00:01:30.8907249",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201980",
@@ -4914,7 +5758,8 @@
             "rowsWritten": 16525,
             "duration": "00:01:34.9213731",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201970",
@@ -4926,7 +5771,8 @@
             "rowsWritten": 1864,
             "duration": "00:00:12.4045170",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201950",
@@ -4938,7 +5784,8 @@
             "rowsWritten": 2627,
             "duration": "00:00:21.0623984",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -4959,7 +5806,24 @@
         "sections": 93686,
         "meetings": 105531,
         "extractionFailures": 0,
-        "rowsWritten": 296836
+        "rowsWritten": 296836,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "uncw",
@@ -4980,7 +5844,8 @@
             "rowsWritten": 9913,
             "duration": "00:00:31.4602778",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202710",
@@ -4992,7 +5857,8 @@
             "rowsWritten": 12413,
             "duration": "00:00:45.5805479",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202660",
@@ -5004,7 +5870,8 @@
             "rowsWritten": 2979,
             "duration": "00:00:10.8908063",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202620",
@@ -5016,7 +5883,8 @@
             "rowsWritten": 12212,
             "duration": "00:00:45.7286117",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202610",
@@ -5028,7 +5896,8 @@
             "rowsWritten": 12309,
             "duration": "00:00:40.7162899",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202560",
@@ -5040,7 +5909,8 @@
             "rowsWritten": 2939,
             "duration": "00:00:10.4453708",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202520",
@@ -5052,7 +5922,8 @@
             "rowsWritten": 11690,
             "duration": "00:00:40.2748725",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202510",
@@ -5064,7 +5935,8 @@
             "rowsWritten": 12032,
             "duration": "00:00:34.2598513",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202460",
@@ -5076,7 +5948,8 @@
             "rowsWritten": 2391,
             "duration": "00:00:09.4401972",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202420",
@@ -5088,7 +5961,8 @@
             "rowsWritten": 11062,
             "duration": "00:00:38.0981611",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202410",
@@ -5100,7 +5974,8 @@
             "rowsWritten": 11854,
             "duration": "00:00:33.8902469",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202360",
@@ -5112,7 +5987,8 @@
             "rowsWritten": 2953,
             "duration": "00:00:12.3636072",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202320",
@@ -5124,7 +6000,8 @@
             "rowsWritten": 11334,
             "duration": "00:00:41.2840580",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202310",
@@ -5136,7 +6013,8 @@
             "rowsWritten": 12919,
             "duration": "00:00:44.5782600",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202260",
@@ -5148,7 +6026,8 @@
             "rowsWritten": 2892,
             "duration": "00:00:10.0921291",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202220",
@@ -5160,7 +6039,8 @@
             "rowsWritten": 11781,
             "duration": "00:00:44.0423631",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202210",
@@ -5172,7 +6052,8 @@
             "rowsWritten": 12440,
             "duration": "00:00:45.8518183",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202160",
@@ -5184,7 +6065,8 @@
             "rowsWritten": 2876,
             "duration": "00:00:12.0006102",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202120",
@@ -5196,7 +6078,8 @@
             "rowsWritten": 11266,
             "duration": "00:00:40.3809535",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202110",
@@ -5208,7 +6091,8 @@
             "rowsWritten": 12660,
             "duration": "00:00:45.6421787",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202060",
@@ -5220,7 +6104,8 @@
             "rowsWritten": 2722,
             "duration": "00:00:11.5747530",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202020",
@@ -5232,7 +6117,8 @@
             "rowsWritten": 11214,
             "duration": "00:00:33.9222798",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202010",
@@ -5244,7 +6130,8 @@
             "rowsWritten": 11400,
             "duration": "00:00:34.5553810",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201960",
@@ -5256,7 +6143,8 @@
             "rowsWritten": 2635,
             "duration": "00:00:12.6561839",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -5277,7 +6165,24 @@
         "sections": 64964,
         "meetings": 77922,
         "extractionFailures": 0,
-        "rowsWritten": 210886
+        "rowsWritten": 210886,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "unf",
@@ -5298,7 +6203,8 @@
             "rowsWritten": 11046,
             "duration": "00:01:37.6855018",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202650",
@@ -5310,7 +6216,8 @@
             "rowsWritten": 4281,
             "duration": "00:00:41.9770260",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202610",
@@ -5322,7 +6229,8 @@
             "rowsWritten": 10501,
             "duration": "00:01:33.5908900",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202580",
@@ -5334,7 +6242,8 @@
             "rowsWritten": 10474,
             "duration": "00:01:33.4307886",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202550",
@@ -5346,7 +6255,8 @@
             "rowsWritten": 4225,
             "duration": "00:00:41.1420876",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202510",
@@ -5358,7 +6268,8 @@
             "rowsWritten": 9884,
             "duration": "00:01:29.6080943",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202480",
@@ -5370,7 +6281,8 @@
             "rowsWritten": 9761,
             "duration": "00:01:29.1883380",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202450",
@@ -5382,7 +6294,8 @@
             "rowsWritten": 3972,
             "duration": "00:00:37.3381134",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202410",
@@ -5394,7 +6307,8 @@
             "rowsWritten": 9792,
             "duration": "00:01:26.2017961",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202380",
@@ -5406,7 +6320,8 @@
             "rowsWritten": 9790,
             "duration": "00:01:24.2351140",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202350",
@@ -5418,7 +6333,8 @@
             "rowsWritten": 3807,
             "duration": "00:00:36.0886117",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202310",
@@ -5430,7 +6346,8 @@
             "rowsWritten": 9731,
             "duration": "00:01:28.1587669",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202280",
@@ -5442,7 +6359,8 @@
             "rowsWritten": 10256,
             "duration": "00:01:32.4963731",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202250",
@@ -5454,7 +6372,8 @@
             "rowsWritten": 3749,
             "duration": "00:00:37.2239455",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202210",
@@ -5466,7 +6385,8 @@
             "rowsWritten": 9880,
             "duration": "00:01:30.8971732",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202180",
@@ -5478,7 +6398,8 @@
             "rowsWritten": 10086,
             "duration": "00:01:34.8160814",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202150",
@@ -5490,7 +6411,8 @@
             "rowsWritten": 3786,
             "duration": "00:00:38.2715299",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202110",
@@ -5502,7 +6424,8 @@
             "rowsWritten": 9641,
             "duration": "00:01:27.4379879",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202080",
@@ -5514,7 +6437,8 @@
             "rowsWritten": 10625,
             "duration": "00:01:37.5828590",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202050",
@@ -5526,7 +6450,8 @@
             "rowsWritten": 3474,
             "duration": "00:00:34.8041601",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202010",
@@ -5538,7 +6463,8 @@
             "rowsWritten": 9676,
             "duration": "00:01:24.2686380",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201980",
@@ -5550,7 +6476,8 @@
             "rowsWritten": 10034,
             "duration": "00:01:30.6925333",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201950",
@@ -5562,7 +6489,8 @@
             "rowsWritten": 4057,
             "duration": "00:00:38.9501577",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201910",
@@ -5574,7 +6502,8 @@
             "rowsWritten": 8910,
             "duration": "00:01:19.1753701",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -5595,7 +6524,24 @@
         "sections": 56941,
         "meetings": 72018,
         "extractionFailures": 0,
-        "rowsWritten": 191438
+        "rowsWritten": 191438,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "usf",
@@ -5616,7 +6562,8 @@
             "rowsWritten": 1,
             "duration": "00:00:05.8391306",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202801",
@@ -5628,7 +6575,8 @@
             "rowsWritten": 1,
             "duration": "00:00:06.0003387",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202705",
@@ -5640,7 +6588,8 @@
             "rowsWritten": 7221,
             "duration": "00:01:14.7295003",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202701",
@@ -5652,7 +6601,8 @@
             "rowsWritten": 19454,
             "duration": "00:03:13.1273815",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202608",
@@ -5664,7 +6614,8 @@
             "rowsWritten": 27559,
             "duration": "00:04:29.7219586",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202605",
@@ -5676,7 +6627,8 @@
             "rowsWritten": 11250,
             "duration": "00:01:51.8340108",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202601",
@@ -5688,7 +6640,8 @@
             "rowsWritten": 27980,
             "duration": "00:04:38.1814462",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202508",
@@ -5700,7 +6653,8 @@
             "rowsWritten": 28123,
             "duration": "00:04:39.5678830",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202505",
@@ -5712,7 +6666,8 @@
             "rowsWritten": 11895,
             "duration": "00:01:57.2491258",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202501",
@@ -5724,7 +6679,8 @@
             "rowsWritten": 19073,
             "duration": "00:03:09.0486420",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202408",
@@ -5736,7 +6692,8 @@
             "rowsWritten": 28473,
             "duration": "00:04:39.0973159",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202405",
@@ -5748,7 +6705,8 @@
             "rowsWritten": 11277,
             "duration": "00:01:50.8457543",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202401",
@@ -5760,7 +6718,8 @@
             "rowsWritten": 27519,
             "duration": "00:04:32.2237739",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202308",
@@ -5772,7 +6731,8 @@
             "rowsWritten": 28119,
             "duration": "00:04:30.3018359",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202305",
@@ -5784,7 +6744,8 @@
             "rowsWritten": 11858,
             "duration": "00:01:54.9739941",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202301",
@@ -5796,7 +6757,8 @@
             "rowsWritten": 30431,
             "duration": "00:05:04.8592680",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202208",
@@ -5808,7 +6770,8 @@
             "rowsWritten": 30586,
             "duration": "00:04:59.8869464",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202205",
@@ -5820,7 +6783,8 @@
             "rowsWritten": 13974,
             "duration": "00:02:19.6360744",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202201",
@@ -5832,7 +6796,8 @@
             "rowsWritten": 30153,
             "duration": "00:05:00.3014056",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202108",
@@ -5844,7 +6809,8 @@
             "rowsWritten": 30972,
             "duration": "00:05:04.4739605",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202105",
@@ -5856,7 +6822,8 @@
             "rowsWritten": 14388,
             "duration": "00:02:19.7627105",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202101",
@@ -5868,7 +6835,8 @@
             "rowsWritten": 32233,
             "duration": "00:05:20.9674295",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202008",
@@ -5880,7 +6848,8 @@
             "rowsWritten": 23944,
             "duration": "00:03:59.9894748",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202005",
@@ -5892,7 +6861,8 @@
             "rowsWritten": 11624,
             "duration": "00:01:54.3406161",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -5913,7 +6883,24 @@
         "sections": 152991,
         "meetings": 162980,
         "extractionFailures": 0,
-        "rowsWritten": 478108
+        "rowsWritten": 478108,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "gsu",
@@ -5934,7 +6921,8 @@
             "rowsWritten": 33211,
             "duration": "00:01:51.5436462",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202605",
@@ -5946,7 +6934,8 @@
             "rowsWritten": 11664,
             "duration": "00:00:38.0001927",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202601",
@@ -5958,7 +6947,8 @@
             "rowsWritten": 30992,
             "duration": "00:01:49.9016603",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202508",
@@ -5970,7 +6960,8 @@
             "rowsWritten": 34286,
             "duration": "00:01:51.7698389",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202505",
@@ -5982,7 +6973,8 @@
             "rowsWritten": 13665,
             "duration": "00:00:47.3665600",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202501",
@@ -5994,7 +6986,8 @@
             "rowsWritten": 32177,
             "duration": "00:01:41.6557077",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202408",
@@ -6006,7 +6999,8 @@
             "rowsWritten": 34423,
             "duration": "00:01:56.2914345",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202405",
@@ -6018,7 +7012,8 @@
             "rowsWritten": 13171,
             "duration": "00:00:41.7372489",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202401",
@@ -6030,7 +7025,8 @@
             "rowsWritten": 31877,
             "duration": "00:01:42.7183370",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202308",
@@ -6042,7 +7038,8 @@
             "rowsWritten": 34297,
             "duration": "00:02:01.9080531",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202305",
@@ -6054,7 +7051,8 @@
             "rowsWritten": 13043,
             "duration": "00:00:42.7166218",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202301",
@@ -6066,7 +7064,8 @@
             "rowsWritten": 31766,
             "duration": "00:01:46.0703754",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202208",
@@ -6078,7 +7077,8 @@
             "rowsWritten": 34629,
             "duration": "00:01:52.8608625",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202205",
@@ -6090,7 +7090,8 @@
             "rowsWritten": 13340,
             "duration": "00:00:42.0681891",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202201",
@@ -6102,7 +7103,8 @@
             "rowsWritten": 32379,
             "duration": "00:01:47.1229141",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202108",
@@ -6114,7 +7116,8 @@
             "rowsWritten": 37077,
             "duration": "00:02:05.0414084",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202105",
@@ -6126,7 +7129,8 @@
             "rowsWritten": 14192,
             "duration": "00:00:46.8778756",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202101",
@@ -6138,7 +7142,8 @@
             "rowsWritten": 32485,
             "duration": "00:01:47.6149655",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202008",
@@ -6150,7 +7155,8 @@
             "rowsWritten": 38035,
             "duration": "00:02:04.8879397",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202005",
@@ -6162,7 +7168,8 @@
             "rowsWritten": 14045,
             "duration": "00:00:46.8887200",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202001",
@@ -6174,7 +7181,8 @@
             "rowsWritten": 34976,
             "duration": "00:01:48.2678209",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201908",
@@ -6186,7 +7194,8 @@
             "rowsWritten": 39988,
             "duration": "00:02:12.3995737",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201905",
@@ -6198,7 +7207,8 @@
             "rowsWritten": 15064,
             "duration": "00:00:46.8327241",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201901",
@@ -6210,7 +7220,8 @@
             "rowsWritten": 33833,
             "duration": "00:01:44.4273651",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -6231,7 +7242,24 @@
         "sections": 208399,
         "meetings": 229208,
         "extractionFailures": 0,
-        "rowsWritten": 654615
+        "rowsWritten": 654615,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "sju",
@@ -6252,7 +7280,8 @@
             "rowsWritten": 5916,
             "duration": "00:00:19.6448588",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202620",
@@ -6264,7 +7293,8 @@
             "rowsWritten": 1553,
             "duration": "00:00:06.0992976",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202610",
@@ -6276,7 +7306,8 @@
             "rowsWritten": 5803,
             "duration": "00:00:17.5709271",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202600",
@@ -6288,7 +7319,8 @@
             "rowsWritten": 58,
             "duration": "00:00:06.7102294",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202540",
@@ -6300,7 +7332,8 @@
             "rowsWritten": 5958,
             "duration": "00:00:16.6296289",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202520",
@@ -6312,7 +7345,8 @@
             "rowsWritten": 1655,
             "duration": "00:00:09.0442992",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202510",
@@ -6324,7 +7358,8 @@
             "rowsWritten": 5963,
             "duration": "00:00:17.5035741",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202500",
@@ -6336,7 +7371,8 @@
             "rowsWritten": 53,
             "duration": "00:00:05.0404850",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202440",
@@ -6348,7 +7384,8 @@
             "rowsWritten": 6411,
             "duration": "00:00:20.5607187",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202420",
@@ -6360,7 +7397,8 @@
             "rowsWritten": 1244,
             "duration": "00:00:05.9837966",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202410",
@@ -6372,7 +7410,8 @@
             "rowsWritten": 5598,
             "duration": "00:00:16.9071318",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202400",
@@ -6384,7 +7423,8 @@
             "rowsWritten": 51,
             "duration": "00:00:05.5554373",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202340",
@@ -6396,7 +7436,8 @@
             "rowsWritten": 5817,
             "duration": "00:00:19.4535286",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202320",
@@ -6408,7 +7449,8 @@
             "rowsWritten": 1378,
             "duration": "00:00:04.8266604",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202310",
@@ -6420,7 +7462,8 @@
             "rowsWritten": 5825,
             "duration": "00:00:16.2996571",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202300",
@@ -6432,7 +7475,8 @@
             "rowsWritten": 41,
             "duration": "00:00:10.0961091",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202240",
@@ -6444,7 +7488,8 @@
             "rowsWritten": 4423,
             "duration": "00:00:12.6721168",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202220",
@@ -6456,7 +7501,8 @@
             "rowsWritten": 1109,
             "duration": "00:00:05.7408908",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202210",
@@ -6468,7 +7514,8 @@
             "rowsWritten": 4339,
             "duration": "00:00:15.4310490",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202200",
@@ -6480,7 +7527,8 @@
             "rowsWritten": 44,
             "duration": "00:00:05.6113808",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202140",
@@ -6492,7 +7540,8 @@
             "rowsWritten": 4549,
             "duration": "00:00:14.6476183",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202120",
@@ -6504,7 +7553,8 @@
             "rowsWritten": 1101,
             "duration": "00:00:05.7223984",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202110",
@@ -6516,7 +7566,8 @@
             "rowsWritten": 4449,
             "duration": "00:00:14.1985157",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202100",
@@ -6528,7 +7579,8 @@
             "rowsWritten": 69,
             "duration": "00:00:05.6565020",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -6549,7 +7601,24 @@
         "sections": 23448,
         "meetings": 25117,
         "extractionFailures": 0,
-        "rowsWritten": 73407
+        "rowsWritten": 73407,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "siu",
@@ -6570,7 +7639,8 @@
             "rowsWritten": 10017,
             "duration": "00:00:38.2056737",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202660",
@@ -6582,7 +7652,8 @@
             "rowsWritten": 11719,
             "duration": "00:00:42.6238543",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202640",
@@ -6594,7 +7665,8 @@
             "rowsWritten": 3058,
             "duration": "00:00:15.8336955",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202620",
@@ -6606,7 +7678,8 @@
             "rowsWritten": 13057,
             "duration": "00:00:45.3290282",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202560",
@@ -6618,7 +7691,8 @@
             "rowsWritten": 13236,
             "duration": "00:00:42.2145379",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202540",
@@ -6630,7 +7704,8 @@
             "rowsWritten": 4646,
             "duration": "00:00:19.4953831",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202520",
@@ -6642,7 +7717,8 @@
             "rowsWritten": 13074,
             "duration": "00:00:45.8984438",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202460",
@@ -6654,7 +7730,8 @@
             "rowsWritten": 13612,
             "duration": "00:00:46.9182419",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202440",
@@ -6666,7 +7743,8 @@
             "rowsWritten": 4923,
             "duration": "00:00:19.4409563",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202420",
@@ -6678,7 +7756,8 @@
             "rowsWritten": 13076,
             "duration": "00:00:44.0953890",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202360",
@@ -6690,7 +7769,8 @@
             "rowsWritten": 13432,
             "duration": "00:00:48.8641270",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202340",
@@ -6702,7 +7782,8 @@
             "rowsWritten": 4694,
             "duration": "00:00:20.1425900",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202320",
@@ -6714,7 +7795,8 @@
             "rowsWritten": 13089,
             "duration": "00:00:48.3420383",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202260",
@@ -6726,7 +7808,8 @@
             "rowsWritten": 12971,
             "duration": "00:00:45.3171768",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202240",
@@ -6738,7 +7821,8 @@
             "rowsWritten": 4287,
             "duration": "00:00:17.7000474",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202220",
@@ -6750,7 +7834,8 @@
             "rowsWritten": 12923,
             "duration": "00:00:48.4894851",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202160",
@@ -6762,7 +7847,8 @@
             "rowsWritten": 11995,
             "duration": "00:00:41.9477085",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202140",
@@ -6774,7 +7860,8 @@
             "rowsWritten": 4306,
             "duration": "00:00:17.3581892",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202120",
@@ -6786,7 +7873,8 @@
             "rowsWritten": 13744,
             "duration": "00:00:45.7388981",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202060",
@@ -6798,7 +7886,8 @@
             "rowsWritten": 13881,
             "duration": "00:00:42.9346616",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202040",
@@ -6810,7 +7899,8 @@
             "rowsWritten": 3239,
             "duration": "00:00:14.1049973",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202020",
@@ -6822,7 +7912,8 @@
             "rowsWritten": 12213,
             "duration": "00:00:42.0570644",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201960",
@@ -6834,7 +7925,8 @@
             "rowsWritten": 12620,
             "duration": "00:00:48.5585442",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "201940",
@@ -6846,7 +7938,8 @@
             "rowsWritten": 4331,
             "duration": "00:00:19.3809332",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -6867,7 +7960,24 @@
         "sections": 75299,
         "meetings": 83534,
         "extractionFailures": 0,
-        "rowsWritten": 238143
+        "rowsWritten": 238143,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "utrgv",
@@ -6888,7 +7998,8 @@
             "rowsWritten": 1039,
             "duration": "00:00:05.9826370",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202748",
@@ -6900,7 +8011,8 @@
             "rowsWritten": 30,
             "duration": "00:00:06.2761695",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202739",
@@ -6912,7 +8024,8 @@
             "rowsWritten": 247,
             "duration": "00:00:05.3720859",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202738",
@@ -6924,7 +8037,8 @@
             "rowsWritten": 184,
             "duration": "00:00:05.9962296",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202729",
@@ -6936,7 +8050,8 @@
             "rowsWritten": 31,
             "duration": "00:00:05.9906814",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202728",
@@ -6948,7 +8063,8 @@
             "rowsWritten": 46,
             "duration": "00:00:06.0001817",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202727",
@@ -6960,7 +8076,8 @@
             "rowsWritten": 196,
             "duration": "00:00:13.0574959",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202723",
@@ -6972,7 +8089,8 @@
             "rowsWritten": 199,
             "duration": "00:00:06.0062377",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202720",
@@ -6984,7 +8102,8 @@
             "rowsWritten": 14835,
             "duration": "00:00:36.1748497",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202719",
@@ -6996,7 +8115,8 @@
             "rowsWritten": 41,
             "duration": "00:00:04.4057456",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202718",
@@ -7008,7 +8128,8 @@
             "rowsWritten": 39,
             "duration": "00:00:06.0196909",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202717",
@@ -7020,7 +8141,8 @@
             "rowsWritten": 235,
             "duration": "00:00:05.9922554",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202713",
@@ -7032,7 +8154,8 @@
             "rowsWritten": 253,
             "duration": "00:00:06.8916460",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202710",
@@ -7044,7 +8167,8 @@
             "rowsWritten": 18031,
             "duration": "00:00:44.6357804",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202649",
@@ -7056,7 +8180,8 @@
             "rowsWritten": 1212,
             "duration": "00:00:05.9451387",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202648",
@@ -7068,7 +8193,8 @@
             "rowsWritten": 58,
             "duration": "00:00:04.1285457",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202643",
@@ -7080,7 +8206,8 @@
             "rowsWritten": 215,
             "duration": "00:00:06.0413368",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202640",
@@ -7092,7 +8219,8 @@
             "rowsWritten": 2132,
             "duration": "00:00:08.8721832",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202639",
@@ -7104,7 +8232,8 @@
             "rowsWritten": 260,
             "duration": "00:00:05.6910392",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202638",
@@ -7116,7 +8245,8 @@
             "rowsWritten": 217,
             "duration": "00:00:06.0174969",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202633",
@@ -7128,7 +8258,8 @@
             "rowsWritten": 249,
             "duration": "00:00:05.9966266",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202630",
@@ -7140,7 +8271,8 @@
             "rowsWritten": 4030,
             "duration": "00:00:12.6560365",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202629",
@@ -7152,7 +8284,8 @@
             "rowsWritten": 38,
             "duration": "00:00:05.4010000",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202628",
@@ -7164,7 +8297,8 @@
             "rowsWritten": 37,
             "duration": "00:00:06.1019702",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -7185,7 +8319,24 @@
         "sections": 14501,
         "meetings": 14969,
         "extractionFailures": 0,
-        "rowsWritten": 43854
+        "rowsWritten": 43854,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "clpccd",
@@ -7206,7 +8357,8 @@
             "rowsWritten": 8386,
             "duration": "00:00:27.9638610",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202601",
@@ -7218,7 +8370,8 @@
             "rowsWritten": 2494,
             "duration": "00:00:12.3875681",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202505",
@@ -7230,7 +8383,8 @@
             "rowsWritten": 8259,
             "duration": "00:00:29.3685903",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202504",
@@ -7242,7 +8396,8 @@
             "rowsWritten": 222,
             "duration": "00:00:04.6880444",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202502",
@@ -7254,7 +8409,8 @@
             "rowsWritten": 8701,
             "duration": "00:00:30.6755637",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202501",
@@ -7266,7 +8422,8 @@
             "rowsWritten": 2614,
             "duration": "00:00:15.1093760",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202403",
@@ -7278,7 +8435,8 @@
             "rowsWritten": 8630,
             "duration": "00:00:28.2425813",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202402",
@@ -7290,7 +8448,8 @@
             "rowsWritten": 8714,
             "duration": "00:00:29.5587577",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202401",
@@ -7302,7 +8461,8 @@
             "rowsWritten": 2569,
             "duration": "00:00:10.4429711",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202303",
@@ -7314,7 +8474,8 @@
             "rowsWritten": 8258,
             "duration": "00:00:30.8371380",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202302",
@@ -7326,7 +8487,8 @@
             "rowsWritten": 8339,
             "duration": "00:00:27.8364935",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202301",
@@ -7338,7 +8500,8 @@
             "rowsWritten": 2418,
             "duration": "00:00:09.6586807",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -7359,7 +8522,24 @@
         "sections": 19867,
         "meetings": 28850,
         "extractionFailures": 0,
-        "rowsWritten": 69604
+        "rowsWritten": 69604,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "cocc",
@@ -7380,7 +8560,8 @@
             "rowsWritten": 2418,
             "duration": "00:00:10.2222269",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202710",
@@ -7392,7 +8573,8 @@
             "rowsWritten": 2434,
             "duration": "00:00:14.0637265",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202640",
@@ -7404,7 +8586,8 @@
             "rowsWritten": 2496,
             "duration": "00:00:08.4422728",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202630",
@@ -7416,7 +8599,8 @@
             "rowsWritten": 724,
             "duration": "00:00:05.7489415",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202620",
@@ -7428,7 +8612,8 @@
             "rowsWritten": 2716,
             "duration": "00:00:11.4959183",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202610",
@@ -7440,7 +8625,8 @@
             "rowsWritten": 2849,
             "duration": "00:00:12.7517853",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202540",
@@ -7452,7 +8638,8 @@
             "rowsWritten": 2914,
             "duration": "00:00:10.2539127",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "102820",
@@ -7464,7 +8651,8 @@
             "rowsWritten": 1,
             "duration": "00:00:05.2360223",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "102810",
@@ -7476,7 +8664,8 @@
             "rowsWritten": 1,
             "duration": "00:00:06.7055174",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "102740",
@@ -7488,7 +8677,8 @@
             "rowsWritten": 1,
             "duration": "00:00:05.3018381",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "102730",
@@ -7500,7 +8690,8 @@
             "rowsWritten": 1,
             "duration": "00:00:06.0042398",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -7521,7 +8712,24 @@
         "sections": 4549,
         "meetings": 7210,
         "extractionFailures": 0,
-        "rowsWritten": 16555
+        "rowsWritten": 16555,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       },
       {
         "schoolId": "ufv",
@@ -7542,7 +8750,8 @@
             "rowsWritten": 527,
             "duration": "00:00:05.7829357",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202609",
@@ -7554,7 +8763,8 @@
             "rowsWritten": 5948,
             "duration": "00:00:23.6530849",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202608",
@@ -7566,7 +8776,8 @@
             "rowsWritten": 7,
             "duration": "00:00:05.3933539",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202607",
@@ -7578,7 +8789,8 @@
             "rowsWritten": 188,
             "duration": "00:00:06.0332354",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202605",
@@ -7590,7 +8802,8 @@
             "rowsWritten": 1619,
             "duration": "00:00:10.9887544",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202604",
@@ -7602,7 +8815,8 @@
             "rowsWritten": 34,
             "duration": "00:00:04.1102119",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202601",
@@ -7614,7 +8828,8 @@
             "rowsWritten": 6235,
             "duration": "00:00:26.0128059",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202600",
@@ -7626,7 +8841,8 @@
             "rowsWritten": 509,
             "duration": "00:00:04.7310245",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202509",
@@ -7638,7 +8854,8 @@
             "rowsWritten": 7596,
             "duration": "00:00:36.3353371",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202508",
@@ -7650,7 +8867,8 @@
             "rowsWritten": 450,
             "duration": "00:00:05.3385179",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           },
           {
             "termCode": "202507",
@@ -7662,7 +8880,8 @@
             "rowsWritten": 247,
             "duration": "00:00:05.9717420",
             "failureReason": null,
-            "failureSourceUrl": null
+            "failureSourceUrl": null,
+            "fields": null
           }
         ],
         "requests": {
@@ -7683,8 +8902,51 @@
         "sections": 5345,
         "meetings": 12003,
         "extractionFailures": 0,
-        "rowsWritten": 23360
+        "rowsWritten": 23360,
+        "fields": {
+          "sections": 0,
+          "withTitle": 0,
+          "withCredits": 0,
+          "withInstructionalMethod": 0,
+          "withCampus": 0,
+          "withCapacity": 0,
+          "withEnrollment": 0,
+          "withInstructor": 0,
+          "withMeeting": 0,
+          "crossListed": 0,
+          "meetings": 0,
+          "withDays": 0,
+          "withTimes": 0,
+          "withLocation": 0,
+          "withDates": 0
+        }
       }
     ]
+  },
+  "cost": {
+    "vmDollarsPerHour": 0.0168,
+    "inboundDollarsPerGb": 0,
+    "storageDollarsPerGbMonth": 0.08,
+    "llmInputDollarsPerMillionTokens": 1,
+    "llmOutputDollarsPerMillionTokens": 5,
+    "wallClockHours": 1.46521368897222,
+    "collectedSchoolHours": 7.75022904411111,
+    "schoolsAttempted": 41,
+    "schoolsCollected": 26,
+    "concurrentHosts": 12,
+    "requests": 4956,
+    "bodyGb": 6.29450266,
+    "databaseGb": 1.11362048,
+    "llmInputTokens": 0,
+    "llmOutputTokens": 0,
+    "computeDollars": 0.024615589974733296,
+    "transferDollars": 0.00000000,
+    "llmDollars": 0,
+    "runDollars": 0.024615589974733296,
+    "dollarsPerCollectedSchool": 0.0009467534605666652307692308,
+    "storageDollarsPerMonth": 0.0890896384,
+    "hoursPerThousandSchools": 24.840477705484326923076923075,
+    "dollarsPerThousandSchools": 0.4173200254521366923076923077,
+    "storageDollarsPerMonthPerThousandSchools": 3.4265245538461538461538462000
   }
 }

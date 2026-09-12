@@ -137,3 +137,169 @@ schools:
     timezone: America/Los_Angeles
     platform: banner9
     base_url: https://banner.uidaho.edu/StudentRegistrationSsb/
+
+  # Added 2026-09-11 night (S4). Each host's robots.txt permits crawling and one term was collected live.
+  # Several schools above are refused by their own robots.txt (see the S4 pre-flight); they stay in
+  # the list so the run report shows that refusal as a recorded failure.
+
+  - id: samford
+    name: Samford University
+    homepage: https://www.samford.edu/
+    timezone: America/Chicago
+    platform: banner9
+    base_url: https://ssb.samford.edu/StudentRegistrationSsb/
+
+  - id: msudenver
+    name: Metropolitan State University of Denver
+    homepage: https://www.msudenver.edu/
+    timezone: America/Denver
+    platform: banner9
+    base_url: https://ssb.msudenver.edu/StudentRegistrationSsb/
+
+  - id: okstate
+    name: Oklahoma State University
+    homepage: https://go.okstate.edu/
+    timezone: America/Chicago
+    platform: banner9
+    base_url: https://studentregistrationssb.okstate.edu/StudentRegistrationSsb/
+    mep_code: OSU
+
+  - id: ou
+    name: University of Oklahoma
+    homepage: https://www.ou.edu/
+    timezone: America/Chicago
+    platform: banner9
+    base_url: https://sis.ou.edu/StudentRegistrationSsb/
+
+  - id: cofc
+    name: College of Charleston
+    homepage: https://charleston.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://ssb.cofc.edu/StudentRegistrationSsb/
+
+  - id: neu
+    name: Northeastern University
+    homepage: https://www.northeastern.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://nubanner.neu.edu/StudentRegistrationSsb/
+
+  - id: ucr
+    name: University of California, Riverside
+    homepage: https://www.ucr.edu/
+    timezone: America/Los_Angeles
+    platform: banner9
+    base_url: https://registrationssb.ucr.edu/StudentRegistrationSsb/
+
+  - id: fhda
+    name: Foothill-De Anza Community College District
+    homepage: https://www.fhda.edu/
+    timezone: America/Los_Angeles
+    platform: banner9
+    base_url: https://reg.oci.fhda.edu/StudentRegistrationSsb/
+
+  - id: montgomery
+    name: Montgomery College
+    homepage: https://www.montgomerycollege.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://b9pubstu.glb.montgomerycollege.edu/StudentRegistrationSsb/
+
+  - id: gmu
+    name: George Mason University
+    homepage: https://www.gmu.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://ssbstureg.gmu.edu/StudentRegistrationSsb/
+
+  - id: temple
+    name: Temple University
+    homepage: https://www.temple.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://prd-xereg.temple.edu/StudentRegistrationSsb/
+
+  - id: ccsf
+    name: City College of San Francisco
+    homepage: https://www.ccsf.edu/
+    timezone: America/Los_Angeles
+    platform: banner9
+    base_url: https://ssb1.ccsf.edu:8105/StudentRegistrationSsb/
+
+  - id: uncc
+    name: University of North Carolina at Charlotte
+    homepage: https://www.charlotte.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://selfservice.uncc.edu/StudentRegistrationSsb/
+
+  - id: uncw
+    name: University of North Carolina Wilmington
+    homepage: https://uncw.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://registration.uncw.edu/StudentRegistrationSsb/
+
+  - id: unf
+    name: University of North Florida
+    homepage: https://www.unf.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://banregister.unf.edu/StudentRegistrationSsb/
+
+  - id: usf
+    name: University of South Florida
+    homepage: https://www.usf.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://studentssb9.it.usf.edu/StudentRegistrationSsb/
+
+  - id: gsu
+    name: Georgia State University
+    homepage: https://www.gsu.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://registration.gosolar.gsu.edu/StudentRegistrationSsb/
+
+  - id: sju
+    name: Saint Joseph's University
+    homepage: https://www.sju.edu/
+    timezone: America/New_York
+    platform: banner9
+    base_url: https://registration.sju.edu/StudentRegistrationSsb/
+
+  - id: siu
+    name: Southern Illinois University Carbondale
+    homepage: https://siu.edu/
+    timezone: America/Chicago
+    platform: banner9
+    base_url: https://banssb1.siu.edu/StudentRegistrationSsb/
+
+  - id: utrgv
+    name: University of Texas Rio Grande Valley
+    homepage: https://www.utrgv.edu/
+    timezone: America/Chicago
+    platform: banner9
+    base_url: https://assist.utrgv.edu/StudentRegistrationSsb/
+
+  - id: clpccd
+    name: Chabot-Las Positas Community College District
+    homepage: https://www.clpccd.org/
+    timezone: America/Los_Angeles
+    platform: banner9
+    base_url: https://banssprod.clpccd.cc.ca.us/StudentRegistrationSsb/
+
+  - id: cocc
+    name: Central Oregon Community College
+    homepage: https://www.cocc.edu/
+    timezone: America/Los_Angeles
+    platform: banner9
+    base_url: https://reg-prod.cocc.edu/StudentRegistrationSsb/
+
+  - id: ufv
+    name: University of the Fraser Valley
+    homepage: https://www.ufv.ca/
+    timezone: America/Vancouver
+    platform: banner9
+    base_url: https://apps.ban.ufv.ca/StudentRegistrationSsb/
